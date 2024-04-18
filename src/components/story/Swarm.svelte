@@ -2,8 +2,8 @@
 	import { schemeSet2, scaleOrdinal } from "d3";
 	import { LayerCake, Svg, Html } from "layercake";
 
-	import BeeswarmForce from "$components/layercake/BeeswarmForce.svelte";
-	import AxisX from "$components/layercake/AxisX.svg.svelte";
+	import BeeswarmForce from "$components/chartcomponents/BeeswarmForce.svelte";
+	import AxisX from "$components/chartcomponents/AxisX.svg.svelte";
 	import Legend from "$components/story/Legend.html.svelte";
 
 	export let data;
