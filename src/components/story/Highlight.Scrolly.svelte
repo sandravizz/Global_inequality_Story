@@ -1,5 +1,5 @@
 <script>
-	import Scrolly from "$components/helpers/Scrolly.svelte";
+	import Scrolly from "$components/story/Scrolly.svelte";
 
 	export let component;
 	export let data;

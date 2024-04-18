@@ -1,8 +1,7 @@
 <script>
 	import { setContext } from "svelte";
-	import { group, csvParse, autoType } from "d3";
+	import { group, autoType } from "d3";
 
-	import { browser } from "$app/environment";
 	import Meta from "$components/Meta.svelte";
 	import Index from "$components/Index.svelte";
 	import copy from "$data/copy.json";
