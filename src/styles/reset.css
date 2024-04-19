@@ -1,6 +1,6 @@
 
 body {
-	background-color: var(--color-bg, white);
+	background-color: #F2EBDF;
 	color: var(--color-fg, black);
 	line-height: 1.4;
 	font-family: var(--font-body, serif);

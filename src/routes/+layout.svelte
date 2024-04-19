@@ -5,7 +5,5 @@
 </script>
 
 <Header />
-<main id="content">
-	<slot />
-</main>
+<main id="content"><slot /></main>
 <Footer />

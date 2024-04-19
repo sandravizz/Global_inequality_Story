@@ -22,7 +22,6 @@
 		"https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2"
 	];
 
-	// converting all values to strings or assigning an empty string if the value is undefined
 	const preprocessor = (data) =>
 		data.map((row) => {
 			const newRow = {};

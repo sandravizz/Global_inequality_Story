@@ -62,13 +62,13 @@
 			fill={highlightValue
 				? node[highlightKey] === highlightValue
 					? $zGet(node)
-					: "#222"
+					: "#D9D9D9"
 				: $zGet(node)}
 			fill-opacity={highlightValue
 				? node[highlightKey] === highlightValue
-					? 0.8
+					? 0.1
 					: 0.15
-				: 0.8}
+				: 0.1}
 			stroke={highlightValue
 				? node[highlightKey] === highlightValue
 					? $zGet(node)

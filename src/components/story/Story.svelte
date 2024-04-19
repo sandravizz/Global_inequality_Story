@@ -28,23 +28,14 @@
 		right: 0; 
 		height: 300px;  
 		z-index: -1;"
->
-	<!-- <ImageCarouselle /> -->
-</div>
+></div>
 
 <div id="main">
 	<section>
-		<h1>Story</h1>
+		<h1>Global inequality</h1>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Orci porta non
-			pulvinar neque laoreet. Tincidunt dui ut ornare lectus sit. Quam nulla
-			porttitor massa id neque. Turpis massa sed elementum tempus egestas sed
-			sed. Tortor id aliquet lectus proin nibh nisl condimentum. Condimentum id
-			venenatis a condimentum. Integer feugiat scelerisque varius morbi enim
-			nunc faucibus a pellentesque. Blandit massa enim nec dui nunc mattis enim
-			ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum
-			varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus.
+		When looking at the current state of global inequality on a country level, we can 
+		identify a big variance. 
 		</p>
 
 		<HighlightScrolly
@@ -82,7 +73,7 @@
 	}
 
 	:global(#main h2 span) {
-		background: var(--color-mark);
+		background-color: #F2EBDF;
 		padding: 0 8px;
 	}
 </style>
