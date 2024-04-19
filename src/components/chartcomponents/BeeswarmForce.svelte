@@ -11,7 +11,7 @@
 	const nodes = $data.map((d) => ({ ...d }));
 
 	/** @type {Number} [r=4] - The circle radius size in pixels. */
-	export let r = 4;
+	export let r = 6;
 
 	/** @type {Number} [xStrength=0.95] - The value passed into the `.strength` method on `forceX`. See [the documentation](https://github.com/d3/d3-force#x_strength). */
 	export let xStrength = 0.95;
@@ -64,17 +64,7 @@
 					? $zGet(node)
 					: "#D9D9D9"
 				: $zGet(node)}
-			fill-opacity={highlightValue
-				? node[highlightKey] === highlightValue
-					? 0.1
-					: 0.15
-				: 0.1}
-			stroke={highlightValue
-				? node[highlightKey] === highlightValue
-					? $zGet(node)
-					: "none"
-				: $zGet(node)}
-			stroke-width="1"
+			stroke-width="0"
 			cx={node.x}
 			cy={node.y}
 			{r}
