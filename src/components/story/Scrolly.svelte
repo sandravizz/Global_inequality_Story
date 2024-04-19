@@ -1,16 +1,4 @@
 <script>
-	/**
-	 * This component manages which item is most in view for scroll triggering
-	 * example:
-	 * <Scrolly
-	 * 	bind:value={scrollIndex}
-	 * >
-	 * **items here**
-	 * </Scrolly>
-	 *
-	 * optional params with defaults
-	 * <Scrolly root={null} top={0} bottom={0} increments={100}>
-	 */
 	import { onMount } from "svelte";
 	export let root = null;
 	export let top = 0;

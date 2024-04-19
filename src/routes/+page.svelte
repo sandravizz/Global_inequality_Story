@@ -5,10 +5,9 @@
 	import Meta from "$components/Meta.svelte";
 	import Index from "$components/Index.svelte";
 	import version from "$utils/version.js";
-	import mapData from "$data/map_data.json";
 
 	import countries from "$data/wid_countries.csv";
-	import gini from "$data/gini_1995-2022_all.csv";
+	import gini from "$data/gini_income.csv";
 
 	import beeswarmScrollyCopy from "$data/beeswarmscrolly_copy.json";
 
@@ -34,7 +33,6 @@
 		});
 
 	setContext("data", data.data);
-	setContext("mapData", mapData);
 
 	setContext("gini", preprocessor(gini).map(autoType));
 	setContext("countries", preprocessor(countries).map(autoType));
