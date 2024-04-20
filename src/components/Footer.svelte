@@ -1,3 +1,2 @@
-<div>This is a footer</div>
+<footer></footer>
 
-<style></style>
