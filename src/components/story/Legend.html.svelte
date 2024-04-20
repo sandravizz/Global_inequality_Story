@@ -7,7 +7,7 @@
 	const data = transpose([$zDomain, $zRange]);
 	const color = tinycolor($zRange[0]);
 
-	color.setAlpha(0.4);
+	color.setAlpha(1);
 </script>
 
 <div class="legend">
@@ -15,7 +15,7 @@
 		<div
 			class="dot"
 			style="background: {tinycolor(color)
-				.setAlpha(0.8)
+				.setAlpha(1)
 				.toRgbString()}; border-color: {color}"
 		/>
 		<div class="label">{label}</div>
@@ -35,13 +35,11 @@
 		min-height: 10px;
 		border-radius: 5px;
 		border-width: 1px;
-		border-style: solid;
 	}
 
 	.label {
 		margin-left: 6px;
 		font-size: 12px;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		margin-right: 16px;
 	}
 </style>

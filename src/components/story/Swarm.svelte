@@ -19,7 +19,7 @@
 		y={"year"}
 		z={"region"}
 		zScale={scaleOrdinal()}
-		zRange={["#076DF2", "#F23558", "#D95F18", "#F26BC3", "#F2D95C"]}
+		zRange={["#F2D022", "#F23558", "#F26B76", "#2BD968", "#F26BC3"]}
 		yDomain={(domain) => domain.sort((a, b) => (a > b ? -1 : 1))}
 	>
 		<Html>

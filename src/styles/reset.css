@@ -1,7 +1,7 @@
 
 body {
-	background-color: #F2EBDF;
-	color: var(--color-fg, black);
+	background-color: #0F0140;
+	color: #D5F2F2;
 	line-height: 1.4;
 	font-family: var(--font-body, serif);
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;

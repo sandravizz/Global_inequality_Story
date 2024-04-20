@@ -38,7 +38,7 @@
 				.y($height / 2)
 				.strength(yStrength)
 		)
-		.force("collide", forceCollide(r + 1))
+		.force("collide", forceCollide(r + 0.1))
 		.stop();
 
 	$: {
@@ -62,7 +62,7 @@
 			fill={highlightValue
 				? node[highlightKey] === highlightValue
 					? $zGet(node)
-					: "#D9D9D9"
+					: "#263973"
 				: $zGet(node)}
 			stroke-width="0"
 			cx={node.x}

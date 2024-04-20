@@ -111,7 +111,7 @@
 
 	.step .content {
 		padding: 0 0 64px;
-		background: #F2EBDF;
+		background: #0F0140;
 		width: 100%;
 	}
 

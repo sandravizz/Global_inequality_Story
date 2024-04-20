@@ -1,9 +1,8 @@
 <script>
 	import { getContext } from "svelte";
-
 	import Swarm from "./Swarm.svelte";
 	import HighlightScrolly from "./Highlight.Scrolly.svelte";
-
+	
 	const giniData = getContext("gini");
 	const countryData = getContext("countries");
 	const beeswarmScrollyCopy = getContext("beeswarmScrollyCopy");
@@ -17,18 +16,7 @@
 		(d) => d.year === 2021
 	);
 
-	const giniCountryData = merge(countryData, giniData, "country");
 </script>
-
-<div
-	style="
-		top: 0;
-		position: absolute; 
-		left: 0; 
-		right: 0; 
-		height: 300px;  
-		z-index: -1;"
-></div>
 
 <div id="main">
 	<section>
@@ -47,15 +35,8 @@
 		/>
 
 		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
+		When looking at the current state of global inequality on a country level, we can 
+		identify a big variance. 
 		</p>
 	</section>
 </div>
