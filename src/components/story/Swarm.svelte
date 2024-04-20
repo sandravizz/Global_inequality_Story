@@ -1,5 +1,5 @@
 <script>
-	import { schemeSet2, scaleOrdinal } from "d3";
+	import { scaleOrdinal } from "d3";
 	import { LayerCake, Svg, Html } from "layercake";
 
 	import BeeswarmForce from "$components/chartcomponents/BeeswarmForce.svelte";
