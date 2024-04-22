@@ -22,12 +22,12 @@
 	<section>
 		<h1>Global inequality</h1>
 		<p>
-			Rising inequality in income distribution is one of the most persistent
-			global challenges. When looking at the current state of global inequality
-			on a country level, we can identify a big variance. Inequality creates
-			instability, recession and depression when too much of national income is
-			grabbed by too few people, and too much income is taken from the real
-			economy and is accumulated between too few people.
+			Rising inequality in <Tooltip>income distribution</Tooltip> is one of the most
+			persistent global challenges. When looking at the current state of global inequality
+			on a country level, we can identify a big variance. Inequality creates instability,
+			recession and depression when too much of national income is grabbed by too
+			few people, and too much income is taken from the real economy and is accumulated
+			between too few people.
 
 			<br />
 
