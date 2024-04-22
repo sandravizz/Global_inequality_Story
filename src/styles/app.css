@@ -2,6 +2,7 @@
 @import "reset.css";
 
 :root {
+	--color-background: #0F0140;
 	--category-blue: #4477AA;
 	--category-red: #EE6677;
 	--category-green: #228833;
@@ -70,6 +71,12 @@
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
 	--1s: 1ms;
+}
+
+
+/* chart styling */
+:root {
+	--chart-lowlight: #263973;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

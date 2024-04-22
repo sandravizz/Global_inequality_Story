@@ -54,16 +54,21 @@
 			simulation.tick();
 		}
 	}
+
+	$: getColor = (node) => {
+		console.log(node);
+		return highlightValue
+			? node[highlightKey] === highlightValue
+				? $zGet(node)
+				: "var(--chart-lowlight)"
+			: $zGet(node);
+	};
 </script>
 
 <g class="bee-group">
 	{#each simulation.nodes() as node}
 		<circle
-			fill={highlightValue
-				? node[highlightKey] === highlightValue
-					? $zGet(node)
-					: "#263973"
-				: $zGet(node)}
+			style={`fill: ${getColor(node)}`}
 			stroke-width="0"
 			cx={node.x}
 			cy={node.y}

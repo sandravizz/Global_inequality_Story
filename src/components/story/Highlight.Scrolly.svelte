@@ -38,9 +38,12 @@
 				<Scrolly bind:value top={innerHeight / 2}>
 					{#each [...steps] as v, i}
 						<div class="step" class:active={value === i}>
-							<div class="content">
-								<h3>{v.title}</h3>
-								<p>{v.text}</p>
+							<div class="contentwrapper">
+								<div class="contentbackground" />
+								<div class="content">
+									<h3>{v.title}</h3>
+									<p>{v.text}</p>
+								</div>
 							</div>
 						</div>
 					{/each}
@@ -53,7 +56,6 @@
 <style>
 	.container {
 		position: relative;
-		border: 1px solid red;
 	}
 
 	.chart-container {
@@ -110,10 +112,28 @@
 		height: 200vh;
 	}
 
-	.step .content {
+	.step .contentwrapper {
 		padding: 0 0 64px;
-		background: #0F0140;
 		width: 100%;
+		position: relative;
+	}
+
+	.step .contentbackground {
+		background-color: var(--color-background);
+		opacity: 0.8;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+	}
+
+	.step .content {
+		z-index: 2;
+		position: relative;
 	}
 
 	/* Full-width layout for wide screens */
@@ -148,6 +168,11 @@
 
 		.step:last-of-type {
 			height: 63.5vh;
+		}
+
+		.step .contentbackground {
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 </style>
