@@ -56,7 +56,6 @@
 	}
 
 	$: getColor = (node) => {
-		console.log(node);
 		return highlightValue
 			? node[highlightKey] === highlightValue
 				? $zGet(node)
