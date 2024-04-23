@@ -1,5 +1,5 @@
 <script>
-	import Scrolly from "$components/story/Scrolly.svelte";
+	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
 
 	export let component;
 	export let data;
@@ -142,7 +142,7 @@
 		}
 
 		.step:first-of-type {
-			margin-top: 36.5vh;
+			margin-top: 20vh;
 		}
 
 		.step:last-of-type {

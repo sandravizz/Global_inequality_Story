@@ -1,6 +1,6 @@
 <script>
 	import { getContext } from "svelte";
-	import Swarm from "./Swarm.svelte";
+	import BeeswarmForceApplied from "./BeeswarmForce.applied.svelte";
 	import HighlightScrolly from "./Highlight.Scrolly.svelte";
 	
 	const giniData = getContext("gini");
@@ -42,10 +42,8 @@ Ultimately, the research on income inequality is research about the political ec
 talism and helps to reveal where it leads humanity.
 		</p>
 
-		
-
 		<HighlightScrolly
-			component={Swarm}
+			component={BeeswarmForceApplied}
 			data={beeswarmData}
 			copy={beeswarmScrollyCopy}
 			highligtValues={[null, "Asia", "Europe", "Africa", "Americas", "Oceania"]}
