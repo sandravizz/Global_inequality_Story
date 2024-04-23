@@ -1,23 +1,23 @@
 <script>
-	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
-
+	import * as aq from "arquero";
+	import Scrolly from "$components/story/Scrolly.svelte";
 	export let component;
-	export let data;
+	export let filters;
 	export let copy;
-	export let highligtValues;
-	export let highlightKey;
+	export let data;
 
 	const steps = copy;
 	let value;
 	let innerWidth;
-	let scrollyWidth;
 	let innerHeight;
+
+	$: filteredData = filters[value] ? data.filter(filters[value]) : [];
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
 <section id="scrolly">
-	<div class="container" bind:clientWidth={scrollyWidth}>
+	<div class="container">
 		<div class="chart-container" class:twoColumn={innerWidth >= 1000}>
 			<div
 				class="chart"
@@ -25,12 +25,7 @@
 				class:bottom={value >= steps.length}
 			>
 				{#if innerWidth}
-					<svelte:component
-						this={component}
-						{data}
-						highlightValue={highligtValues[value]}
-						{highlightKey}
-					/>
+					<svelte:component this={component} data={[...filteredData]} />
 				{/if}
 			</div>
 
@@ -163,7 +158,7 @@
 		}
 
 		.step:first-of-type {
-			margin-top: 20vh;
+			margin-top: 36.5vh;
 		}
 
 		.step:last-of-type {

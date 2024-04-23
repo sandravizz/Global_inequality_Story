@@ -1,6 +1,6 @@
 <script>
 	import { getContext } from "svelte";
-	import Swarm from "./Swarm.svelte";
+	import BeeswarmForceApplied from "./BeeswarmForce.applied.svelte";
 	import HighlightScrolly from "./Highlight.Scrolly.svelte";
 	import Tooltip from "../Tooltip.html.svelte";
 
@@ -46,7 +46,7 @@
 		</p>
 
 		<HighlightScrolly
-			component={Swarm}
+			component={BeeswarmForceApplied}
 			data={beeswarmData}
 			copy={beeswarmScrollyCopy}
 			highligtValues={[null, "Asia", "Europe", "Africa", "Americas", "Oceania"]}

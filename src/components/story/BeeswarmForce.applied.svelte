@@ -1,17 +1,18 @@
 <script>
-	import { scaleOrdinal } from "d3";
+	import { scaleOrdinal, scaleLinear} from "d3";
 	import { LayerCake, Svg, Html } from "layercake";
 
 	import BeeswarmForce from "$components/chartcomponents/BeeswarmForce.svelte";
 	import AxisX from "$components/chartcomponents/AxisX.svg.svelte";
-	import Legend from "$components/story/Legend.html.svelte";
+	import Legend from "$components/chartcomponents/Legend.html.svelte";
 
 	export let data;
 	export let highlightValue;
 	export let highlightKey;
+
 </script>
 
-<div style="height: 220px; width: 100%;">
+<div style="height: 400px; width: 100%;">
 	<LayerCake
 		padding={{ top: 24, right: 4, bottom: 18, left: 4 }}
 		{data}
@@ -19,6 +20,8 @@
 		y={"year"}
 		z={"region"}
 		zScale={scaleOrdinal()}
+		xScale={scaleLinear()}
+		xDomain={[0, 1]}
 		zRange={["#F2D022", "#F23558", "#F26B76", "#2BD968", "#F26BC3"]}
 		yDomain={(domain) => domain.sort((a, b) => (a > b ? -1 : 1))}
 	>
