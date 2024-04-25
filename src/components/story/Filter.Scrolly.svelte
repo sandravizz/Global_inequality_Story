@@ -1,17 +1,36 @@
 <script>
-	import * as aq from "arquero";
-	import Scrolly from "$components/story/Scrolly.svelte";
-	export let component;
-	export let filters;
-	export let copy;
-	export let data;
+	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
+	export let script = [];
 
-	const steps = copy;
-	let value;
 	let innerWidth;
 	let innerHeight;
+	let stepIndex = 0;
+	$: stepIndex = stepIndex ?? 0;
 
-	$: filteredData = filters[value] ? data.filter(filters[value]) : [];
+	$: step = script.steps[stepIndex];
+	const chartComponents = [];
+
+	// reset all the components
+	$: step &&
+		chartComponents.length &&
+		chartComponents.forEach((component) => {
+			component.data = [];
+			component.highlightIndexes = null;
+			component.visible = false;
+			component.animation = true;
+		});
+
+	// set all the components with new values
+	$: chartComponents.length &&
+		step.layers.forEach((layer) => {
+			const component = chartComponents[layer.componentIndex];
+			component.data = layer.data;
+			component.highlightIndexes = layer.highlightIndexes;
+			component.visible = layer.visible;
+			component.highlightColor = layer.highlightColor;
+			component.animation = layer.animation ?? true;
+			component.radius = layer.radius;
+		});
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
@@ -21,23 +40,31 @@
 		<div class="chart-container" class:twoColumn={innerWidth >= 1000}>
 			<div
 				class="chart"
-				class:sticky={value < steps.length}
-				class:bottom={value >= steps.length}
+				class:sticky={stepIndex < script.steps.length}
+				class:bottom={stepIndex >= script.steps.length}
 			>
 				{#if innerWidth}
-					<svelte:component this={component} data={[...filteredData]} />
+					{#each script.components as component, i}
+						<div class="chartComponent">
+							<svelte:component
+								this={component}
+								bind:this={chartComponents[i]}
+								data={[]}
+							/>
+						</div>
+					{/each}
 				{/if}
 			</div>
 
 			<div class="steps">
-				<Scrolly bind:value top={innerHeight / 2}>
-					{#each [...steps] as v, i}
-						<div class="step" class:active={value === i}>
+				<Scrolly bind:value={stepIndex} top={innerHeight / 2}>
+					{#each script.steps as step, i}
+						<div class="step" class:active={stepIndex === i}>
 							<div class="contentwrapper">
 								<div class="contentbackground" />
 								<div class="content">
-									<h3>{v.title}</h3>
-									<p>{v.text}</p>
+									<h3>{step.description.title}</h3>
+									<p>{step.description.text}</p>
 								</div>
 							</div>
 						</div>
@@ -58,6 +85,7 @@
 		flex-direction: column;
 		width: 100%;
 		max-width: 1200px;
+		position: relative;
 	}
 
 	.twoColumn {
@@ -65,6 +93,18 @@
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.chart {
+		position: relative;
+	}
+
+	.chartComponent {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
 	}
 
 	.chart,

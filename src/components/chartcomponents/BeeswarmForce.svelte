@@ -1,4 +1,3 @@
-
 <script>
 	import { getContext } from "svelte";
 	import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
@@ -10,13 +9,13 @@
 	export let r = 6;
 	export let xStrength = 0.95;
 	export let yStrength = 0.075;
-	export let highlightValue = undefined;
-	export let highlightKey = undefined;
+	export let highlightValue;
+	export let highlightKey;
+	export let highlightIndexes;
+	export let highlightColor;
+	export let animation = true;
 
-	let re = [];
-	data.subscribe((d) => {
-		console.log("hello", d);
-	});
+	$: console.log("animation", animation);
 
 	$: simulation = forceSimulation(nodes)
 		.force(
@@ -31,47 +30,77 @@
 				.y($height / 2)
 				.strength(yStrength)
 		)
-		.force("collide", forceCollide(r + 0.5))
+		.force("collide", forceCollide(r + 2.5))
 		.stop();
 
 	$: {
-		for (
-			let i = 0,
-				n = Math.ceil(
-					Math.log(simulation.alphaMin()) /
-						Math.log(1 - simulation.alphaDecay())
-				);
-			i < n;
-			++i
-		) {
-			simulation.tick();
+		if (animation) {
+			for (
+				let i = 0,
+					n = Math.ceil(
+						Math.log(simulation.alphaMin()) /
+							Math.log(1 - simulation.alphaDecay())
+					);
+				i < n;
+				++i
+			) {
+				simulation.tick();
+			}
+		} else {
+			// skip to last step of simulation
+			simulation.tick(300);
 		}
 	}
 
-	$: getColor = (node) => {
-		return highlightValue
-			? node[highlightKey] === highlightValue
-				? $zGet(node)
-				: "var(--chart-lowlight)"
-			: $zGet(node);
+	$: getColor = (node, i) => {
+		if (highlightIndexes) {
+			return highlightIndexes.includes(i)
+				? highlightColor ?? $zGet(node)
+				: "var(--chart-lowlight)";
+		} else {
+			return highlightValue
+				? node[highlightKey] === highlightValue
+					? highlightColor ?? $zGet(node)
+					: "var(--chart-lowlight)"
+				: $zGet(node);
+		}
 	};
 </script>
 
 <g class="bee-group">
-	{#each simulation.nodes() as node}
+	{#each simulation.nodes() as node, i}
 		<circle
-			style={`fill: ${getColor(node)}`}
+			class:animation={animation !== false}
+			class:noAnimation={!animation}
+			style={`fill: ${getColor(node, i)}`}
 			stroke-width="0"
 			cx={node.x}
 			cy={node.y}
 			{r}
-		>
-		</circle>
+		/>
+
+		{#if highlightIndexes && highlightIndexes.includes(i)}
+			<circle
+				class:animation
+				class:noAnimation={!animation}
+				style={`fill: none; stroke: ${getColor(node, i)}`}
+				stroke-width="1"
+				cx={node.x}
+				cy={node.y}
+				r={r + 2}
+			/>
+		{/if}
 	{/each}
 </g>
 
 <style>
-	circle {
+	.animation {
 		transition: all 0.7s;
+	}
+
+	.noAnimation {
+		transition:
+			fill 0.7s ease,
+			stroke 0.7s ease;
 	}
 </style>

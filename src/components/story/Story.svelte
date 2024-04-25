@@ -5,13 +5,12 @@
 	import { transformData } from "$utils/arqueroHelpers";
 
 	import BeeswarmForceApplied from "./BeeswarmForce.applied.svelte";
-	import HighlightScrolly from "./Highlight.Scrolly.svelte";
+	// import HighlightScrolly from "./Highlight.Scrolly.svelte";
 	import FilterScrolly from "./Filter.Scrolly.svelte";
 	import Tooltip from "../Tooltip.html.svelte";
 
 	const giniData = getContext("gini");
 	const countryData = getContext("countries");
-	const beeswarmScrollyCopy = getContext("beeswarmScrollyCopy");
 
 	const merge = (arr1, arr2, prop) => {
 		const mapping = new Map(arr1.map((item) => [item[prop], item]));
@@ -30,12 +29,154 @@
 		})
 		.select(aq.not(["year", "value"]));
 
-	const filterSwarmData = orgTable
+	const data = orgTable
 		.groupby(["decade", "country", "region"])
 		.select(aq.not("value"))
 		.rollup({
 			value: aq.op.mean("orgValue")
-		});
+		})
+		// .filter(aq.escape((d) => d.region === "Europe"))
+		.objects();
+
+	const script = {
+		components: [BeeswarmForceApplied, BeeswarmForceApplied],
+		steps: [
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 1980)
+					}
+				],
+				description: {
+					title: "1980s",
+					text: "The era of 'Reaganomics' and 'Thatcherism' marked a global shift toward neoliberal policies, with deregulation, privatization, and tax cuts driving economic growth but also widening income inequality."
+				}
+			},
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 1990)
+					}
+				],
+				description: {
+					title: "1990s",
+					text: "Globalization and the rise of the Internet fueled rapid economic expansion, with the fall of the Soviet Union opening up new markets and technology companies beginning to transform the way business was conducted."
+				}
+			},
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2000)
+					}
+				],
+				description: {
+					title: "2000s",
+					text: "The decade was characterized by the dot-com boom and bust, followed by a housing bubble, leading to a financial crisis in 2008 that triggered a global recession and prompted unprecedented government intervention to stabilize economies."
+				}
+			},
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2010)
+					}
+				],
+				description: {
+					title: "2010s",
+					text: "The aftermath of the financial crisis saw a period of slow recovery, central bank stimulus, and the rise of new technologies like smartphones and social media, with continued globalization alongside a growing backlash against income inequality and global trade agreements."
+				}
+			},
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2020)
+					}
+				],
+				description: {
+					title: "2020s",
+					text: "The COVID-19 pandemic disrupted global economies, leading to massive government stimulus and shifts toward remote work, while renewed focus on climate change and social equity began to reshape business practices and international cooperation."
+				}
+			},
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: null,
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
+					}
+				],
+				description: {
+					title: "Only europe",
+					text: "Testing out filtering."
+				}
+			},
+
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: [1, 2, 3, 4, 5],
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
+					}
+				],
+				description: {
+					title: "Some highlights",
+					text: "These countries are highlighted because I am trying out some new functionality."
+				}
+			},
+
+			{
+				layers: [
+					{
+						componentIndex: 0,
+						visible: true,
+						highlightIndexes: [],
+						excludeIndexes: [],
+						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
+					},
+					{
+						componentIndex: 1,
+						visible: true,
+						highlightIndexes: [0],
+						highlightColor: "purple",
+						animation: false,
+						excludeIndexes: [],
+						data: [
+							data.filter((d) => d.decade === 2020 && d.region === "Europe")[0]
+						],
+						radius: 24
+					}
+				],
+				description: {
+					title: "The mean",
+					text: "Could have been calculated but this randomly picks a country from the data set and calls it the mean. I also set the color and radius manually."
+				}
+			}
+		]
+	};
 </script>
 
 <div id="main">
@@ -65,18 +206,7 @@
 			leads humanity.
 		</p>
 
-		<FilterScrolly
-			component={BeeswarmForceApplied}
-			data={filterSwarmData}
-			copy={beeswarmScrollyCopy}
-			filters={[
-				(d) => d.decade === 1980,
-				(d) => d.decade === 1990,
-				(d) => d.decade === 2000,
-				(d) => d.decade === 2010,
-				(d) => d.decade === 2020
-			]}
-		/>
+		<FilterScrolly {script} />
 
 		<h4>The Global Debate on Finance Capitalism</h4>
 		<p>
