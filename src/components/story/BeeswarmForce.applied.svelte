@@ -1,5 +1,5 @@
 <script>
-	import { scaleOrdinal, scaleLinear} from "d3";
+	import { scaleOrdinal, scaleLinear } from "d3";
 	import { LayerCake, Svg, Html } from "layercake";
 
 	import BeeswarmForce from "$components/chartcomponents/BeeswarmForce.svelte";
@@ -10,20 +10,22 @@
 	export let highlightValue;
 	export let highlightKey;
 
+	const zDomain = Array.from(
+		data.reduce((acc, cur) => acc.add(cur.region), new Set())
+	);
 </script>
 
 <div style="height: 400px; width: 100%;">
 	<LayerCake
 		padding={{ top: 24, right: 4, bottom: 18, left: 4 }}
-		{data}
+		data={[...data]}
 		x={"value"}
-		y={"year"}
 		z={"region"}
+		xDomain={[0, 1]}
 		zScale={scaleOrdinal()}
 		xScale={scaleLinear()}
-		xDomain={[0, 1]}
 		zRange={["#F2D022", "#F23558", "#F26B76", "#2BD968", "#F26BC3"]}
-		yDomain={(domain) => domain.sort((a, b) => (a > b ? -1 : 1))}
+		{zDomain}
 	>
 		<Html>
 			<div style="transform: translate(0, -28px)">
@@ -32,7 +34,12 @@
 		</Html>
 
 		<Svg>
-			<BeeswarmForce {highlightValue} {highlightKey} />
+			<BeeswarmForce
+				{highlightValue}
+				{highlightKey}
+				getTitle={(d) => d.region}
+				r={3}
+			/>
 			<AxisX gridlines={false} baseline={true} />
 		</Svg>
 	</LayerCake>

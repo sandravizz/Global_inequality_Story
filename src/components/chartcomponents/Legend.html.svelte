@@ -8,6 +8,8 @@
 	const color = tinycolor($zRange[0]);
 
 	color.setAlpha(1);
+
+	console.log("zDomain", $zDomain, $zRange, data);
 </script>
 
 <div class="legend">

@@ -5,13 +5,18 @@
 
 	const { data, xGet, height, zGet } = getContext("LayerCake");
 
-	const nodes = $data.map((d) => ({ ...d }));
+	$: nodes = $data.map((d) => ({ ...d }));
 
 	export let r = 6;
 	export let xStrength = 0.95;
 	export let yStrength = 0.075;
 	export let highlightValue = undefined;
 	export let highlightKey = undefined;
+
+	let re = [];
+	data.subscribe((d) => {
+		console.log("hello", d);
+	});
 
 	$: simulation = forceSimulation(nodes)
 		.force(

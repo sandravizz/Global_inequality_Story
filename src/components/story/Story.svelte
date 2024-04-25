@@ -1,7 +1,12 @@
 <script>
 	import { getContext } from "svelte";
+	import * as aq from "arquero";
+
+	import { transformData } from "$utils/arqueroHelpers";
+
 	import BeeswarmForceApplied from "./BeeswarmForce.applied.svelte";
 	import HighlightScrolly from "./Highlight.Scrolly.svelte";
+	import FilterScrolly from "./Filter.Scrolly.svelte";
 	import Tooltip from "../Tooltip.html.svelte";
 
 	const giniData = getContext("gini");
@@ -13,9 +18,24 @@
 		return arr2.map((d) => ({ ...d, ...mapping.get(d[prop]) }));
 	};
 
-	const beeswarmData = merge(countryData, giniData, "country").filter(
-		(d) => d.year === 2021
-	);
+	const beeswarmData = merge(countryData, giniData, "country");
+
+	const getDecadeFromYear = (year) => Math.floor(year / 10) * 10;
+
+	const orgTable = aq
+		.table(transformData(beeswarmData))
+		.derive({
+			decade: aq.escape((d) => getDecadeFromYear(d.year)),
+			orgValue: (d) => d.value
+		})
+		.select(aq.not(["year", "value"]));
+
+	const filterSwarmData = orgTable
+		.groupby(["decade", "country", "region"])
+		.select(aq.not("value"))
+		.rollup({
+			value: aq.op.mean("orgValue")
+		});
 </script>
 
 <div id="main">
@@ -45,12 +65,17 @@
 			leads humanity.
 		</p>
 
-		<HighlightScrolly
+		<FilterScrolly
 			component={BeeswarmForceApplied}
-			data={beeswarmData}
+			data={filterSwarmData}
 			copy={beeswarmScrollyCopy}
-			highligtValues={[null, "Asia", "Europe", "Africa", "Americas", "Oceania"]}
-			highlightKey={"region"}
+			filters={[
+				(d) => d.decade === 1980,
+				(d) => d.decade === 1990,
+				(d) => d.decade === 2000,
+				(d) => d.decade === 2010,
+				(d) => d.decade === 2020
+			]}
 		/>
 
 		<h4>The Global Debate on Finance Capitalism</h4>
