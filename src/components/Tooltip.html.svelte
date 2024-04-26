@@ -60,7 +60,6 @@
 
 	// Function to animate the tooltip using Svelte's tweened store
 	function animateTooltipOpacity(isOpen) {
-		console.log(isOpen);
 		opacity.set(isOpen ? 1 : 0);
 	}
 

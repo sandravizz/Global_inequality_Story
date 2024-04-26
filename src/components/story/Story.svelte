@@ -21,33 +21,40 @@
 
 	const getDecadeFromYear = (year) => Math.floor(year / 10) * 10;
 
-	const orgTable = aq
-		.table(transformData(beeswarmData))
+	const table = aq.table(transformData(beeswarmData));
+
+	const tableWithId = table
 		.derive({
 			decade: aq.escape((d) => getDecadeFromYear(d.year)),
 			orgValue: (d) => d.value
 		})
 		.select(aq.not(["year", "value"]));
 
-	const data = orgTable
+	const data = tableWithId
 		.groupby(["decade", "country", "region"])
 		.select(aq.not("value"))
 		.rollup({
 			value: aq.op.mean("orgValue")
 		})
-		// .filter(aq.escape((d) => d.region === "Europe"))
+		.derive({
+			id: aq.op.row_number()
+		})
 		.objects();
 
 	const script = {
-		components: [BeeswarmForceApplied, BeeswarmForceApplied],
+		components: [
+			BeeswarmForceApplied,
+			BeeswarmForceApplied,
+			BeeswarmForceApplied
+		],
 		steps: [
 			{
 				layers: [
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 1980)
 					}
 				],
@@ -61,8 +68,8 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 1990)
 					}
 				],
@@ -76,8 +83,8 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2000)
 					}
 				],
@@ -91,8 +98,8 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2010)
 					}
 				],
@@ -106,8 +113,8 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2020)
 					}
 				],
@@ -121,8 +128,8 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: null,
-						excludeIndexes: [],
+						highlightIds: null,
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
 					}
 				],
@@ -137,8 +144,11 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: [1, 2, 3, 4, 5],
-						excludeIndexes: [],
+						highlightIds: data
+							.filter((d) => d.decade === 2020 && d.region === "Europe")
+							.map((d) => d.id)
+							.slice(0, 5),
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
 					}
 				],
@@ -153,21 +163,51 @@
 					{
 						componentIndex: 0,
 						visible: true,
-						highlightIndexes: [],
-						excludeIndexes: [],
+						highlightIds: [],
+						excludeIds: [],
 						data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
 					},
 					{
 						componentIndex: 1,
 						visible: true,
-						highlightIndexes: [0],
-						highlightColor: "purple",
+						highlightIds: [0],
+						highlightColor: "#ADDFFF",
 						animation: false,
-						excludeIndexes: [],
+						excludeIds: [],
 						data: [
-							data.filter((d) => d.decade === 2020 && d.region === "Europe")[0]
+							{
+								id: 0,
+								country: "mean",
+								value:
+									data
+										.filter((d) => d.decade === 2020 && d.region === "Europe")
+										.reduce((acc, cur) => acc + cur.value, 0) /
+									data.filter((d) => d.decade === 2020 && d.region === "Europe")
+										.length
+							}
 						],
-						radius: 24
+						radius: 8
+					},
+					{
+						componentIndex: 2,
+						visible: true,
+						highlightIds: [0],
+						highlightColor: "#ADDFFF90",
+						animation: false,
+						excludeIds: [],
+						data: [
+							{
+								id: 0,
+								country: "mean",
+								value:
+									data
+										.filter((d) => d.decade === 1980 && d.region === "Europe")
+										.reduce((acc, cur) => acc + cur.value, 0) /
+									data.filter((d) => d.decade === 1980 && d.region === "Europe")
+										.length
+							}
+						],
+						radius: 8
 					}
 				],
 				description: {
@@ -177,6 +217,14 @@
 			}
 		]
 	};
+
+	$: console.log(
+		"mean",
+		data
+			.filter((d) => d.decade === 2020 && d.region === "Europe")
+			.reduce((acc, cur) => acc + cur.value, 0),
+		data.filter((d) => d.decade === 2020 && d.region === "Europe").length
+	);
 </script>
 
 <div id="main">

@@ -11,11 +11,10 @@
 	export let yStrength = 0.075;
 	export let highlightValue;
 	export let highlightKey;
-	export let highlightIndexes;
+	export let highlightIds;
 	export let highlightColor;
 	export let animation = true;
-
-	$: console.log("animation", animation);
+	export let nodeKey;
 
 	$: simulation = forceSimulation(nodes)
 		.force(
@@ -52,9 +51,9 @@
 		}
 	}
 
-	$: getColor = (node, i) => {
-		if (highlightIndexes) {
-			return highlightIndexes.includes(i)
+	$: getColor = (node) => {
+		if (highlightIds) {
+			return highlightIds.includes(node.id)
 				? highlightColor ?? $zGet(node)
 				: "var(--chart-lowlight)";
 		} else {
@@ -68,22 +67,22 @@
 </script>
 
 <g class="bee-group">
-	{#each simulation.nodes() as node, i}
+	{#each simulation.nodes() as node (nodeKey ? node[nodeKey] : node.id)}
 		<circle
 			class:animation={animation !== false}
 			class:noAnimation={!animation}
-			style={`fill: ${getColor(node, i)}`}
+			style={`fill: ${getColor(node)}`}
 			stroke-width="0"
 			cx={node.x}
 			cy={node.y}
 			{r}
 		/>
 
-		{#if highlightIndexes && highlightIndexes.includes(i)}
+		{#if highlightIds && highlightIds.includes(node.id)}
 			<circle
 				class:animation
 				class:noAnimation={!animation}
-				style={`fill: none; stroke: ${getColor(node, i)}`}
+				style={`fill: none; stroke: ${getColor(node)}`}
 				stroke-width="1"
 				cx={node.x}
 				cy={node.y}

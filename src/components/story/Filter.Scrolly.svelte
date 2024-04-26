@@ -15,7 +15,7 @@
 		chartComponents.length &&
 		chartComponents.forEach((component) => {
 			component.data = [];
-			component.highlightIndexes = null;
+			component.highlightIds = null;
 			component.visible = false;
 			component.animation = true;
 		});
@@ -25,7 +25,7 @@
 		step.layers.forEach((layer) => {
 			const component = chartComponents[layer.componentIndex];
 			component.data = layer.data;
-			component.highlightIndexes = layer.highlightIndexes;
+			component.highlightIds = layer.highlightIds;
 			component.visible = layer.visible;
 			component.highlightColor = layer.highlightColor;
 			component.animation = layer.animation ?? true;

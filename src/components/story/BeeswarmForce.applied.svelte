@@ -11,7 +11,7 @@
 	export let data;
 	export let highlightValue;
 	export let highlightKey;
-	export let highlightIndexes;
+	export let highlightIds;
 	export let visible = true;
 	export let highlightColor;
 	export let animation;
@@ -28,6 +28,7 @@
 			xDomain={[0, 1]}
 			zScale={scaleOrdinal()}
 			xScale={scaleLinear()}
+			zDomain={["Europe", "Americas", "Asia", "Africa", "Oceania"]}
 			zRange={["#F2D022", "#F23558", "#F26B76", "#2BD968", "#F26BC3"]}
 		>
 			<Html>
@@ -42,9 +43,10 @@
 					{highlightKey}
 					getTitle={(d) => d.region}
 					r={radius}
-					{highlightIndexes}
+					{highlightIds}
 					{highlightColor}
 					{animation}
+					nodeKey={"country"}
 				/>
 				<AxisX gridlines={false} baseline={true} />
 			</Svg>
