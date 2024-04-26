@@ -2,19 +2,24 @@
 	import { getContext } from "svelte";
 	import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
 
-	const { data, xGet, height, zGet } = getContext("LayerCake");
+	const { data, xGet, height, zGet, zDomain, z } = getContext("LayerCake");
 
 	$: nodes = $data.map((d) => ({ ...d }));
 
 	export let r = 4;
-	export let xStrength = 0.95;
-	export let yStrength = 0.075;
+	export let xStrength = 0.5;
+	export let yStrength = 0.5;
 	export let highlightValue;
 	export let highlightKey;
 	export let highlightIds;
 	export let highlightColor;
 	export let animation = true;
 	export let nodeKey;
+	export let layout = "row";
+
+	const getRow = (node) => $zDomain.indexOf($z(node)) + 1;
+
+	$: console.log(layout);
 
 	$: simulation = forceSimulation(nodes)
 		.force(
@@ -26,7 +31,11 @@
 		.force(
 			"y",
 			forceY()
-				.y($height / 2)
+				.y((d) =>
+					layout === "row"
+						? getRow(d) * (($height * 0.8) / $zDomain.length)
+						: $height / 2
+				)
 				.strength(yStrength)
 		)
 		.force("collide", forceCollide(r + 2.5))

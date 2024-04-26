@@ -47,8 +47,6 @@ const dataRegionMeansPerDecade = tableWithId
     })
     .objects();
 
-
-
 export default {
     components: [
         BeeswarmForceApplied,
@@ -64,7 +62,8 @@ export default {
                     visible: true,
                     highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2020)
+                    data: data.filter((d) => d.decade === 2020),
+                    groupby: "region",
                 },
             ],
             description: {
@@ -77,23 +76,16 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2020)
+                    data: data.filter((d) => d.decade === 2020),
+                    groupby: "region",
+                    layout: "row",
                 },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 2020).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 2020),
-                    radius: 10,
-                },
+
             ],
             description: {
-                title: `Means for each world region`,
-                text: "Since it is a little bit hard to see the trends of individual countries we will focus on each region."
+                title: `Split by region`,
             }
         },
 
@@ -103,18 +95,13 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 1980)
-                },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 1980).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 1980),
-                    radius: 10,
+                    data: data.filter((d) => d.decade === 1980),
+                    groupby: "region",
+                    layout: "row",
+
+
                 },
             ],
             description: {
@@ -132,18 +119,11 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 1990)
-                },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 1990).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 1990),
-                    radius: 10,
+                    data: data.filter((d) => d.decade === 1990),
+                    groupby: "region",
+                    layout: "row",
                 },
             ],
             description: {
@@ -161,18 +141,11 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2000)
-                },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 2000).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 2000),
-                    radius: 10,
+                    data: data.filter((d) => d.decade === 2000),
+                    groupby: "region",
+                    layout: "row",
                 },
             ],
             description: {
@@ -190,18 +163,11 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2010)
-                },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 2010).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 2010),
-                    radius: 10,
+                    data: data.filter((d) => d.decade === 2010),
+                    groupby: "region",
+                    layout: "row",
                 },
             ],
             description: {
@@ -219,18 +185,11 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: [],
+                    highlightIds: null,
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2020)
-                },
-                {
-                    componentIndex: 1,
-                    key: "region",
-                    visible: true,
-                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 2020).map(d => d.id),
-                    excludeIds: [],
-                    data: dataRegionMeansPerDecade.filter(d => d.decade === 2020),
-                    radius: 10,
+                    data: data.filter((d) => d.decade === 2020),
+                    groupby: "region",
+                    layout: "row",
                 },
             ],
             description: {
@@ -253,7 +212,9 @@ export default {
                         .map((d) => d.id)
                         .slice(0, 5),
                     excludeIds: [],
-                    data: data.filter((d) => d.decade === 2020 && d.region === "Europe")
+                    data: data.filter((d) => d.decade === 2020),
+                    groupby: "region",
+                    layout: "row",
                 }
             ],
             description: {

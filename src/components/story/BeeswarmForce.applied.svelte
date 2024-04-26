@@ -17,8 +17,10 @@
 	export let animation;
 	export let radius;
 	export let key;
+	export let layout;
+	export let groupby = "region";
 
-	const height = 300;
+	const height = 500;
 </script>
 
 <div style="height: {height}px; width: 100%;">
@@ -27,11 +29,13 @@
 			padding={{ top: 24, right: 4, bottom: 18, left: 4 }}
 			data={[...data]}
 			x={"value"}
-			z={"region"}
+			z={groupby}
 			xDomain={[0, 1]}
 			zScale={scaleOrdinal()}
 			xScale={scaleLinear()}
-			zDomain={["Europe", "Americas", "Asia", "Africa", "Oceania"]}
+			zDomain={Array.from(
+				data.reduce((acc, cur) => acc.add(cur[groupby]), new Set())
+			)}
 			zRange={["#F2D022", "#F23558", "#F26B76", "#2BD968", "#F26BC3"]}
 		>
 			<Html>
@@ -56,6 +60,7 @@
 					{highlightIds}
 					{highlightColor}
 					{animation}
+					{layout}
 					nodeKey={key ?? "id"}
 				/>
 				<AxisX gridlines={false} baseline={true} />

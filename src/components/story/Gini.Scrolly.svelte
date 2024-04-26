@@ -18,6 +18,7 @@
 			component.highlightIds = null;
 			component.visible = false;
 			component.animation = true;
+			component.layout = null;
 		});
 
 	// set all the components with new values
@@ -31,6 +32,9 @@
 			component.animation = layer.animation ?? true;
 			component.radius = layer.radius;
 			component.key = layer.key;
+			component.layout = layer.layout;
+			console.log(layer);
+			component.groupby = layer.groupby;
 		});
 </script>
 
