@@ -30,6 +30,7 @@
 			component.highlightColor = layer.highlightColor;
 			component.animation = layer.animation ?? true;
 			component.radius = layer.radius;
+			component.key = layer.key;
 		});
 </script>
 
@@ -64,7 +65,9 @@
 								<div class="contentbackground" />
 								<div class="content">
 									<h3>{step.description.title}</h3>
-									<p>{step.description.text}</p>
+									{#if step.description.text}
+										<p>{step.description.text}</p>
+									{/if}
 								</div>
 							</div>
 						</div>
@@ -148,7 +151,7 @@
 	}
 
 	.step .contentwrapper {
-		padding: 0 0 64px;
+		padding: 24px 0;
 		width: 100%;
 		position: relative;
 	}

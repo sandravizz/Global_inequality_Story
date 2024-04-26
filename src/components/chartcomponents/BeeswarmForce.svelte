@@ -6,7 +6,7 @@
 
 	$: nodes = $data.map((d) => ({ ...d }));
 
-	export let r = 6;
+	export let r = 4;
 	export let xStrength = 0.95;
 	export let yStrength = 0.075;
 	export let highlightValue;
@@ -68,27 +68,31 @@
 
 <g class="bee-group">
 	{#each simulation.nodes() as node (nodeKey ? node[nodeKey] : node.id)}
-		<circle
+		<g
 			class:animation={animation !== false}
-			class:noAnimation={!animation}
-			style={`fill: ${getColor(node)}`}
-			stroke-width="0"
-			cx={node.x}
-			cy={node.y}
-			{r}
-		/>
-
-		{#if highlightIds && highlightIds.includes(node.id)}
+			transform="translate({node.x} {node.y})"
+		>
 			<circle
-				class:animation
+				class:animation={animation !== false}
 				class:noAnimation={!animation}
-				style={`fill: none; stroke: ${getColor(node)}`}
-				stroke-width="1"
-				cx={node.x}
-				cy={node.y}
-				r={r + 2}
+				style={`fill: ${getColor(node)}`}
+				stroke-width="0"
+				cx={0}
+				cy={0}
+				{r}
 			/>
-		{/if}
+
+			{#if highlightIds && highlightIds.includes(node.id)}
+				<circle
+					class:animation={animation !== false}
+					style={`fill: none; stroke: ${getColor(node)}`}
+					stroke-width="1"
+					cx={0}
+					cy={0}
+					r={r + 2}
+				/>
+			{/if}
+		</g>
 	{/each}
 </g>
 

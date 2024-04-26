@@ -16,9 +16,12 @@
 	export let highlightColor;
 	export let animation;
 	export let radius;
+	export let key;
+
+	const height = 300;
 </script>
 
-<div style="height: 400px; width: 100%;">
+<div style="height: {height}px; width: 100%;">
 	{#if visible && data.length}
 		<LayerCake
 			padding={{ top: 24, right: 4, bottom: 18, left: 4 }}
@@ -37,6 +40,13 @@
 				</div>
 			</Html>
 
+			<Html>
+				<div class="axisLabel" style="transform: translate(0, {height - 64}px)">
+					<div>← equal</div>
+					<div>inequal →</div>
+				</div>
+			</Html>
+
 			<Svg>
 				<BeeswarmForce
 					{highlightValue}
@@ -46,10 +56,19 @@
 					{highlightIds}
 					{highlightColor}
 					{animation}
-					nodeKey={"country"}
+					nodeKey={key ?? "id"}
 				/>
 				<AxisX gridlines={false} baseline={true} />
 			</Svg>
 		</LayerCake>
 	{/if}
 </div>
+
+<style>
+	.axisLabel {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		font-size: 12px;
+	}
+</style>
