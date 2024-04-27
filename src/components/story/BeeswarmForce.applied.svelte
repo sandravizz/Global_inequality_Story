@@ -46,8 +46,8 @@
 
 			<Html>
 				<div class="axisLabel" style="transform: translate(0, {height - 64}px)">
-					<div>← equal</div>
-					<div>inequal →</div>
+					<div>← equality</div>
+					<div>inequality →</div>
 				</div>
 			</Html>
 

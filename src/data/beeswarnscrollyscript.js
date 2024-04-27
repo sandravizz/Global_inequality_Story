@@ -36,16 +36,16 @@ const data = tableWithId
     .objects();
 
 
-const dataRegionMeansPerDecade = tableWithId
-    .groupby(["decade", "region"])
-    .select(aq.not("value"))
-    .rollup({
-        value: aq.op.mean("orgValue")
-    })
-    .derive({
-        id: aq.op.row_number()
-    })
-    .objects();
+// const dataRegionMeansPerDecade = tableWithId
+//     .groupby(["decade", "region"])
+//     .select(aq.not("value"))
+//     .rollup({
+//         value: aq.op.mean("orgValue")
+//     })
+//     .derive({
+//         id: aq.op.row_nu mber()
+//     })
+//     .objects();
 
 export default {
     components: [

@@ -33,7 +33,6 @@
 			component.radius = layer.radius;
 			component.key = layer.key;
 			component.layout = layer.layout;
-			console.log(layer);
 			component.groupby = layer.groupby;
 		});
 </script>

@@ -19,8 +19,6 @@
 
 	const getRow = (node) => $zDomain.indexOf($z(node)) + 1;
 
-	$: console.log(layout);
-
 	$: simulation = forceSimulation(nodes)
 		.force(
 			"x",
