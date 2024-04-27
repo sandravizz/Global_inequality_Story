@@ -55,7 +55,6 @@
 				<BeeswarmForce
 					{highlightValue}
 					{highlightKey}
-					getTitle={(d) => d.region}
 					r={radius}
 					{highlightIds}
 					{highlightColor}

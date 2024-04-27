@@ -35,39 +35,51 @@ const data = tableWithId
     })
     .objects();
 
+const dataRegionMeansPerDecade = tableWithId
+    .groupby(["decade", "region"])
+    .select(aq.not("value"))
+    .rollup({
+        value: aq.op.mean("orgValue")
+    })
+    .derive({
+        id: aq.op.row_number()
+    })
+    .objects();
 
-// const dataRegionMeansPerDecade = tableWithId
-//     .groupby(["decade", "region"])
-//     .select(aq.not("value"))
-//     .rollup({
-//         value: aq.op.mean("orgValue")
-//     })
-//     .derive({
-//         id: aq.op.row_nu mber()
-//     })
-//     .objects();
+console.log('-----')
+console.log(data.filter((d) => d.decade === 2020 && d.region === "Africa"))
+console.log(data.filter((d) => d.decade === 2020 && d.region === "Africa").map(d => d.id))
 
 export default {
     components: [
         BeeswarmForceApplied,
         BeeswarmForceApplied,
-        BeeswarmForceApplied
     ],
     steps: [
         {
             layers: [
                 {
-                    componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: null,
-                    excludeIds: [],
+                    // highlightIds: data.filter((d) => d.decade === 2020 && d.region === "Africa").map(d => d.id),
+                    highlightIds: [],
                     data: data.filter((d) => d.decade === 2020),
                     groupby: "region",
+                    componentIndex: 0,
+                },
+                {
+                    key: "region",
+                    visible: true,
+                    highlightIds: dataRegionMeansPerDecade.filter(d => d.decade === 2020).map(d => d.id),
+                    data: dataRegionMeansPerDecade.filter(d => d.decade === 2020),
+                    groupby: "region",
+                    componentIndex: 1,
+                    radius: 8,
                 },
             ],
             description: {
                 title: `World GINI Distribution`,
+                text: "this is a text"
             }
         },
         {
@@ -76,18 +88,20 @@ export default {
                     componentIndex: 0,
                     key: "country",
                     visible: true,
-                    highlightIds: null,
-                    excludeIds: [],
+                    highlightIds: data.filter((d) => d.decade === 2020 && d.region === "Africa").map(d => d.id),
                     data: data.filter((d) => d.decade === 2020),
                     groupby: "region",
                     layout: "row",
                 },
-
             ],
             description: {
                 title: `Split by region`,
+                text: "highlight Africa"
             }
         },
+
+
+
 
         {
             layers: [
@@ -96,11 +110,9 @@ export default {
                     key: "country",
                     visible: true,
                     highlightIds: null,
-                    excludeIds: [],
                     data: data.filter((d) => d.decade === 1980),
                     groupby: "region",
                     layout: "row",
-
 
                 },
             ],

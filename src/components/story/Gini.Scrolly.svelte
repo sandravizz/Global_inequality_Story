@@ -113,6 +113,10 @@
 		right: 0;
 	}
 
+	.step {
+		border: 1px solid red;
+	}
+
 	.chart,
 	.step {
 		height: 100vh;

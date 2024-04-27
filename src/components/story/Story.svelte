@@ -1,6 +1,6 @@
 <script>
+	// import Tooltip from "../Tooltip.html.svelte";
 	import GiniScrolly from "./Gini.Scrolly.svelte";
-	import Tooltip from "../Tooltip.html.svelte";
 	import giniSrollyScript from "$data/beeswarnscrollyscript";
 </script>
 
