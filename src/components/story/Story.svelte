@@ -1,195 +1,89 @@
 <script>
-	import { getContext } from "svelte";
-
-	// import ImageCarouselle from "./ImageCarouselle.svelte";
-	import AdditiveScrolly from "$components/story/Additive.Scrolly.svelte";
-	import FlatMap from "$components/story/FlatMap.svelte";
-	import AreaChart from "$components/story/AreaChart.svelte";
-	import DistributionTimeline from "$components/story/DistributionTimeline.svelte";
-	import InequalSwarm from "./InequalSwarm.svelte";
-	import HighlightScrolly from "./Highlight.Scrolly.svelte";
-
-	const mapData = getContext("mapData");
-	const areaData = getContext("areaData");
-	const areaCopy = getContext("areaCopy");
-	const giniData = getContext("gini");
-	const countryData = getContext("countries");
-	const beeswarmScrollyCopy = getContext("beeswarmScrollyCopy");
-
-	const merge = (arr1, arr2, prop) => {
-		const mapping = new Map(arr1.map((item) => [item[prop], item]));
-		return arr2.map((d) => ({ ...d, ...mapping.get(d[prop]) }));
-	};
-
-	const beeswarmData = merge(countryData, giniData, "country").filter(
-		(d) => d.year === 2021
-	);
-
-	const giniCountryData = merge(countryData, giniData, "country");
+	// import Tooltip from "../Tooltip.html.svelte";
+	import GiniScrolly from "./Gini.Scrolly.svelte";
+	import giniSrollyScript from "$data/beeswarnscrollyscript";
 </script>
-
-<div
-	style="
-		top: 0;
-		position: absolute; 
-		left: 0; 
-		right: 0; 
-		height: 300px;  
-		z-index: -1;"
->
-	<!-- <ImageCarouselle /> -->
-</div>
 
 <div id="main">
 	<section>
+		<h1>Global inequality</h1>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Orci porta non
-			pulvinar neque laoreet. Tincidunt dui ut ornare lectus sit. Quam nulla
-			porttitor massa id neque. Turpis massa sed elementum tempus egestas sed
-			sed. Tortor id aliquet lectus proin nibh nisl condimentum. Condimentum id
-			venenatis a condimentum. Integer feugiat scelerisque varius morbi enim
-			nunc faucibus a pellentesque. Blandit massa enim nec dui nunc mattis enim
-			ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum
-			varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus.
+			Income inequality is one of the most persistent global issues we face
+			today. Across the world, income distribution varies widely from country to
+			country, and the impact of this inequality is significant. When wealth
+			becomes concentrated in the hands of a few, it can lead to economic
+			instability, recession, and depression. This occurs because too much
+			national income is diverted from the broader economy and accumulates among
+			a small group of people.
+		</p>
+		<p>
+			Moreover, rising inequality empowers affluent countries, global
+			corporations, and even wealthy individuals to shape global rules and
+			resource allocation in their favor. With greater bargaining power, they
+			are able to secure a larger share of global economic growth, reinforcing
+			their position and further tilting international agreements and policies
+			to their advantage. This dynamic perpetuates global inequality, as noted
+			by philosopher Thomas Pogge in 2007.
+		</p>
+		<p>
+			Ultimately, studying income inequality provides insight into the political
+			economy of modern capitalism and sheds light on the direction in which our
+			world is headed. Understanding these trends is crucial for policymakers
+			and citizens alike as we work toward a more equitable future.
 		</p>
 
-		<figure style="margin: 2.5rem 0;">
-			<FlatMap data={mapData} />
+		<figure>
+			<img src="/assets/health-wealth.jpeg" />
+			<figcaption>Maybe some other charts could go here?</figcaption>
 		</figure>
 
+		<h2>Gini coefficient</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Orci porta non
-			pulvinar neque laoreet. Tincidunt dui ut ornare lectus sit. Quam nulla
-			porttitor massa id neque. Turpis massa sed elementum tempus egestas sed
-			sed. Tortor id aliquet lectus proin nibh nisl condimentum. Condimentum id
-			venenatis a condimentum. Integer feugiat scelerisque varius morbi enim
-			nunc faucibus a pellentesque. Blandit massa enim nec dui nunc mattis enim
-			ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum
-			varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus.
-		</p>
-
-		<figure style="margin: 2rem 0;">
-			<DistributionTimeline data={giniCountryData} />
-			<figcaption
-				style="text-align:center; font-size: 0.9em; margin-top: 1rem; font-style: italic;"
-			>
-				World distribution of XXX score
-			</figcaption>
-		</figure>
-
-		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
-		</p>
-
-		<figure style="margin: 2rem 0;">
-			<!-- <InequalSwarm data={beeswarmData} /> -->
-			<figcaption
-				style="text-align:center; font-size: 0.9em; margin-top: 1rem; font-style: italic;"
-			>
-				InequalSwarm
-			</figcaption>
-		</figure>
-
-		<HighlightScrolly
-			component={InequalSwarm}
-			data={beeswarmData}
-			copy={beeswarmScrollyCopy}
-			highligtValues={[null, "Asia", "Europe", "Africa", "Americas", "Oceania"]}
-			highlightKey={"region"}
-		/>
-
-		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
-		</p>
-
-		<HighlightScrolly
-			component={DistributionTimeline}
-			data={giniCountryData}
-			copy={beeswarmScrollyCopy}
-			highligtValues={[null, "Asia", "Europe", "Africa", "Americas", "Oceania"]}
-			highlightKey={"region"}
-		/>
-
-		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
-		</p>
-	</section>
-
-	<AdditiveScrolly component={AreaChart} data={areaData} copy={areaCopy} />
-
-	<section>
-		<h2>Header 2</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Orci porta non
-			pulvinar neque laoreet. Tincidunt dui ut ornare lectus sit. Quam nulla
-			porttitor massa id neque. Turpis massa sed elementum tempus egestas sed
-			sed. Tortor id aliquet lectus proin nibh nisl condimentum. Condimentum id
-			venenatis a condimentum. Integer feugiat scelerisque varius morbi enim
-			nunc faucibus a pellentesque. Blandit massa enim nec dui nunc mattis enim
-			ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum
-			varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus.
-		</p>
-
-		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Orci porta non
-			pulvinar neque laoreet. Tincidunt dui ut ornare lectus sit. Quam nulla
-			porttitor massa id neque. Turpis massa sed elementum tempus egestas sed
-			sed. Tortor id aliquet lectus proin nibh nisl condimentum. Condimentum id
-			venenatis a condimentum. Integer feugiat scelerisque varius morbi enim
-			nunc faucibus a pellentesque. Blandit massa enim nec dui nunc mattis enim
-			ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum
-			varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus.
+			The Gini coefficient is a measure of inequality used to quantify how
+			evenly income or wealth is distributed within a society.
 		</p>
 		<p>
-			Nulla facilisi cras fermentum odio. Non pulvinar neque laoreet suspendisse
-			interdum. A condimentum vitae sapien pellentesque habitant morbi tristique
-			senectus et. Justo laoreet sit amet cursus sit amet dictum sit amet. Lorem
-			dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Quis varius
-			quam quisque id diam vel quam elementum. Adipiscing elit pellentesque
-			habitant morbi tristique senectus. Sit amet nisl suscipit adipiscing
-			bibendum. Mauris pharetra et ultrices neque ornare aenean. In fermentum
-			posuere urna nec tincidunt praesent. Morbi quis commodo odio aenean sed
-			adipiscing diam donec adipiscing.
+			Named after the Italian statistician Corrado Gini, it is a number between
+			0 and 1, where a Gini coefficient of 0 means perfect equality, everyone
+			has the same income or wealth, and a Gini coefficient of 1 indicates
+			perfect inequality, one person has all the income or wealth, while
+			everyone else has none.
+		</p>
+		<p>
+			The Gini coefficient is calculated by comparing the expected income gap
+			between any two randomly selected people to twice the mean income.
+		</p>
+		<p>
+			While the Gini coefficient is widely used to measure income inequality, it
+			has limitations. It doesn't show the specific causes of inequality or
+			account for the distribution's structure, and it may not capture extreme
+			wealth concentration.
+		</p>
+
+		<GiniScrolly script={giniSrollyScript} />
+
+		<h2>The Global Debate on Finance Capitalism</h2>
+		<p>
+			There has been a wave of neoliberal policies implemented worldwide
+			beginning in the 1970s. Policies like deregulation, privatisation and the
+			withdrawing of the state from social protection and welfare delivery
+			became a common trend across different countries. Probably for the first
+			time in economic history in the USA, the share of the national income of
+			the top 1% fell from the 16% of pre-World War II rate, to less than 8% in
+			the post-war era and stayed at the same level for almost three decades
+			(Harvey, 2005). However, by the beginning of the 1970s a combination of
+			slowing economic growth, the breakdown of the Bretton Woods system of
+			fixed exchange rates, ‘stagflation’ and high unemployment put severe
+			strains on state budgets. ‘Keynesian compromise’ appeared to have reached
+			its limits and other alternatives to overcome the emerging crisis were
+			called on. For its proponents, the moment of neoliberalism had arrived.
+			The Austro-German Marxist theoretician was the first to introduce the term
+			‘finance capitalism’ and warned of the dangers associated with
+			concentration of capital and the transformation of competitive capitalism
+			into monopolistic finance capi- talism, thus anticipating the process of
+			contemporary financialisation. In the latter, he writes of
+			financialisation as ‘a prolonged split between the divergent real and
+			financial economies’
 		</p>
 	</section>
 </div>
@@ -201,13 +95,7 @@
 		margin: 0 auto;
 	}
 
-	:global(#main section) {
-		margin: 32px auto;
-		padding-top: 32px;
-	}
-
-	:global(#main h2 span) {
-		background: var(--color-mark);
-		padding: 0 8px;
+	h1 {
+		line-height: 1.1;
 	}
 </style>
