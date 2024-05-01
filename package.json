@@ -2,7 +2,6 @@
 	"name": "svelte-starter",
 	"version": "5.17.0",
 	"scripts": {
-		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
 		"dev": "vite dev",
 		"build": "vite build",
