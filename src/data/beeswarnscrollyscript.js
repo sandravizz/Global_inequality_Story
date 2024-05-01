@@ -46,9 +46,6 @@ const dataRegionMeansPerDecade = tableWithId
     })
     .objects();
 
-console.log('-----')
-console.log(data.filter((d) => d.decade === 2020 && d.region === "Africa"))
-console.log(data.filter((d) => d.decade === 2020 && d.region === "Africa").map(d => d.id))
 
 export default {
     components: [
