@@ -1,4 +1,4 @@
-PHONY: github pudding
+PHONY: github gini
 
 github:
 	rm -rf docs

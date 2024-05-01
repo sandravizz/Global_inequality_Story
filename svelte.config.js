@@ -12,9 +12,6 @@ const config = {
 	preprocess,
 	kit: {
 		adapter: adapterStatic({ strict: false }),
-		paths: {
-			base: '/gini',
-		},
 	},
 	vitePlugin: {
 		// experimental: {
