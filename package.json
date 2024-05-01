@@ -8,7 +8,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"gh-pages": "npm run build && npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@rollup/plugin-dsv": "^3.0.4",
@@ -19,6 +20,7 @@
 		"autoprefixer": "^10.4.18",
 		"bits-ui": "^0.19.7",
 		"d3": "^7.9.0",
+		"gh-pages": "^6.1.1",
 		"layercake": "^8.1.1",
 		"lodash.debounce": "^4.0.8",
 		"lucide-svelte": "^0.358.0",

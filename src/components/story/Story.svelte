@@ -2,6 +2,7 @@
 	// import Tooltip from "../Tooltip.html.svelte";
 	import GiniScrolly from "./Gini.Scrolly.svelte";
 	import giniSrollyScript from "$data/beeswarnscrollyscript";
+	import { base } from "$app/paths";
 </script>
 
 <div id="main">
@@ -33,7 +34,7 @@
 		</p>
 
 		<figure>
-			<img src="/assets/health-wealth.jpeg" />
+			<img src="{base}/assets/health-wealth.jpeg" />
 			<figcaption>Maybe some other charts could go here?</figcaption>
 		</figure>
 
