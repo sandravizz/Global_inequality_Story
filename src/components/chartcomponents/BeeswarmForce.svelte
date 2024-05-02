@@ -17,6 +17,8 @@
 	export let nodeKey;
 	export let layout = "row";
 
+	$: highlightRadius = r * 1.2 < 0.5 ? 0.5 : r * 1.2 > 3 ? r + 3 : r + r * 1.2;
+
 	const getRow = (node) => $zDomain.indexOf($z(node)) + 1;
 
 	$: simulation = forceSimulation(nodes)
@@ -36,7 +38,7 @@
 				)
 				.strength(yStrength)
 		)
-		.force("collide", forceCollide(r + 2.5))
+		.force("collide", forceCollide(highlightRadius + 1))
 		.stop();
 
 	$: {
@@ -93,10 +95,10 @@
 				<circle
 					class:animation={animation !== false}
 					style={`fill: none; stroke: ${getColor(node)}`}
-					stroke-width="1"
+					stroke-width={1}
 					cx={0}
 					cy={0}
-					r={r + 2}
+					r={highlightRadius}
 				/>
 			{/if}
 		</g>
