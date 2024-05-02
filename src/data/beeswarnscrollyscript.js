@@ -47,8 +47,21 @@ const dataRegionMeansPerDecade = tableWithId
     .objects();
 
 
+const dataMedianPerDecade = tableWithId
+    .groupby(["decade"])
+    .select(aq.not("value"))
+    .rollup({
+        value: aq.op.median("orgValue")
+    })
+    .derive({
+        id: aq.op.row_number()
+    })
+    .objects();
+
+
 export default {
     components: [
+        BeeswarmForceApplied,
         BeeswarmForceApplied,
         BeeswarmForceApplied,
     ],
@@ -56,7 +69,38 @@ export default {
         {
             layers: [
                 {
-                    key: "country",
+                    visible: true,
+                    key: "id",
+                    data: data,
+                    groupby: "decade",
+                    componentIndex: 1,
+                    radius: 1,
+                    animation: false,
+                    layout: "row"
+                },
+                {
+                    visible: true,
+                    key: "id",
+                    highlightIds: dataMedianPerDecade.map(d => d.id),
+                    data: dataMedianPerDecade,
+                    groupby: "decade",
+                    componentIndex: 2,
+                    radius: 4,
+                    animation: false,
+                    layout: "row",
+                    highlightColor: "#fff"
+                },
+
+            ],
+            description: {
+                title: `World GINI Distribution`,
+                text: "group by decade"
+            }
+        },
+        {
+            layers: [
+                {
+                    key: "id",
                     visible: true,
                     // highlightIds: data.filter((d) => d.decade === 2020 && d.region === "Africa").map(d => d.id),
                     highlightIds: [],
@@ -96,10 +140,6 @@ export default {
                 text: "highlight Africa"
             }
         },
-
-
-
-
         {
             layers: [
                 {
