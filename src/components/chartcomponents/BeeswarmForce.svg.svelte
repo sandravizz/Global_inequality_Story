@@ -21,7 +21,10 @@
 
 	const getRow = (node) => $zDomain.indexOf($z(node)) + 1;
 
+	let renderNodes = [];
+
 	$: simulation = forceSimulation(nodes)
+		.restart()
 		.force(
 			"x",
 			forceX()
@@ -39,26 +42,8 @@
 				.strength(yStrength)
 		)
 		.force("collide", forceCollide(highlightRadius + 1))
-		.stop();
-
-	$: {
-		if (animation) {
-			for (
-				let i = 0,
-					n = Math.ceil(
-						Math.log(simulation.alphaMin()) /
-							Math.log(1 - simulation.alphaDecay())
-					);
-				i < n;
-				++i
-			) {
-				simulation.tick();
-			}
-		} else {
-			// skip to last step of simulation
-			simulation.tick(300);
-		}
-	}
+		.stop()
+		.tick(300);
 
 	$: getColor = (node) => {
 		if (highlightIds) {
@@ -73,41 +58,29 @@
 				: $zGet(node);
 		}
 	};
+
+	$: renderNodes = simulation.nodes();
 </script>
 
 <g class="bee-group">
-	{#each simulation.nodes() as node (nodeKey ? node[nodeKey] : node.id)}
-		<g
-			class:animation={animation !== false}
-			transform="translate({node.x} {node.y})"
-		>
+	{#each renderNodes as node (nodeKey ? node[nodeKey] : node.id)}
+		<g class:animation={true} transform="translate({node.x} {node.y})">
 			<circle
-				class:animation={animation !== false}
-				class:noAnimation={!animation}
+				class:animation={true}
+				class:noAnimation={false}
 				style={`fill: ${getColor(node)}`}
 				stroke-width="0"
 				cx={0}
 				cy={0}
-				{r}
+				r={highlightIds && highlightIds.includes(node.id) ? highlightRadius : r}
 			/>
-
-			{#if highlightIds && highlightIds.includes(node.id)}
-				<circle
-					class:animation={animation !== false}
-					style={`fill: none; stroke: ${getColor(node)}`}
-					stroke-width={1}
-					cx={0}
-					cy={0}
-					r={highlightRadius}
-				/>
-			{/if}
 		</g>
 	{/each}
 </g>
 
 <style>
 	.animation {
-		transition: all 0.7s;
+		transition: all 1s;
 	}
 
 	.noAnimation {

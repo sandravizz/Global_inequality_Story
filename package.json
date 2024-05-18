@@ -43,6 +43,7 @@
 	"browserslist": "> 0.5%, last 4 versions, not ie <= 11, not ie_mob <= 11",
 	"dependencies": {
 		"@fontsource/lato": "^5.0.21",
-		"arquero": "^5.4.0"
+		"arquero": "^5.4.0",
+		"d3-svg-annotation": "^2.5.1"
 	}
 }

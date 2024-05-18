@@ -19,6 +19,7 @@
 			component.visible = false;
 			component.animation = true;
 			component.layout = null;
+			component.annotations = [];
 		});
 
 	// set all the components with new values
@@ -34,6 +35,7 @@
 			component.key = layer.key;
 			component.layout = layer.layout;
 			component.groupby = layer.groupby;
+			component.annotations = layer.annotations;
 		});
 </script>
 
