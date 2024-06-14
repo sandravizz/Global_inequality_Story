@@ -1,12 +1,9 @@
 <script>
 	import { Html, LayerCake, ScaledSvg } from "layercake";
 	import { group } from "d3";
-
 	import MultiLine from "../../components/chartcomponents/MultiLine.svg.svelte";
 	import AxisX from "./(components)/AxisX.html.svelte";
-
 	import Label from "./(components)/Label.svelte";
-
 	import data from "$data/gini_income.csv";
 
 	const formattedData = data.map((d) => ({ ...d, value: +d.value }));
@@ -52,8 +49,8 @@
 		</Html>
 
 		<Html>
-			<div class="axisLabel" style="top: 8px;">Full equality</div>
-			<div class="axisLabel" style="bottom: 8px;">Full inequality</div>
+			<div class="axisLabel" style="top: 10px;">Full equality</div>
+			<!-- <div class="axisLabel" style="bottom: 8px;">Full inequality</div> -->
 			<AxisX />
 		</Html>
 	</LayerCake>
@@ -75,7 +72,7 @@
 
 	.axisLabel {
 		position: absolute;
-		left: 8px;
+		left: 10px;
 		opacity: 0.8;
 	}
 </style>
