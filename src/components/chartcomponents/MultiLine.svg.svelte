@@ -10,7 +10,7 @@
 	export let stroke = "#fff";
 	export let strokeWidth = 1;
 	export let strokeOpacity = 1;
-	export let highlightData;
+	export let fill = "none";
 
 	// Generate the line generator
 	const lineGenerator = line()
@@ -22,13 +22,14 @@
 </script>
 
 <g class="line-group">
-	{#each highlightData ?? $data as group}
+	{#each $data as group}
 		<path
 			class="path-line"
 			d={lineGenerator(group.values)}
 			{stroke}
 			stroke-opacity={strokeOpacity}
 			stroke-width={strokeWidth}
+			{fill}
 		/>
 	{/each}
 </g>
@@ -38,5 +39,6 @@
 		fill: none;
 		stroke-linejoin: round;
 		stroke-linecap: round;
+		transition: all 0.3s;
 	}
 </style>
