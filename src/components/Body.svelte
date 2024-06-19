@@ -1,8 +1,9 @@
 <script>
 	// import Tooltip from "../Tooltip.html.svelte";
-	import GiniScrolly from "./Gini.Scrolly.svelte";
-	import giniSrollyScript from "$data/beeswarnscrollyscript";
-	import { base } from "$app/paths";
+	import Scroller from "./story/ScrollyEngine.svelte";
+
+	// TODO: read from import
+	import storyscript from "$data/storyscript";
 </script>
 
 <div id="main">
@@ -33,11 +34,6 @@
 			and citizens alike as we work toward a more equitable future.
 		</p>
 
-		<figure>
-			<img src="{base}/assets/health-wealth.jpeg" />
-			<figcaption>Maybe some other charts could go here?</figcaption>
-		</figure>
-
 		<h2>Gini coefficient</h2>
 		<p>
 			The Gini coefficient is a measure of inequality used to quantify how
@@ -61,7 +57,7 @@
 			wealth concentration.
 		</p>
 
-		<GiniScrolly script={giniSrollyScript} />
+		<Scroller {storyscript} />
 
 		<h2>The Global Debate on Finance Capitalism</h2>
 		<p>

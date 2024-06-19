@@ -1,7 +1,7 @@
 <script>
 	import { onMount, onDestroy } from "svelte";
 	import { tweened } from "svelte/motion";
-	import TooltipCell from "./TooltipCell.html.svelte";
+	import TooltipCell from "../TooltipCell.html.svelte";
 
 	let tooltipEl;
 	let bgEl;
