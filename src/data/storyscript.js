@@ -124,7 +124,7 @@ export default {
 				}
 			],
 			description: {
-				title: `World GINI Distribution`,
+				title: `Asia and Europe`,
 				text: "group by region, filter by 2010"
 			}
 		}

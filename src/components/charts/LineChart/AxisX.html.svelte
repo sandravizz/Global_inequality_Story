@@ -25,7 +25,7 @@
 	.gridline,
 	.baseline {
 		position: absolute;
-		bottom: 5%;
+		bottom: 10%;
 	}
 	.axis {
 		width: 100%;
@@ -35,18 +35,18 @@
 		font-size: 0.8em;
 	}
 
-	.tick .text {
+	.text {
 		color: #fff;
-		opacity: 0.8;
+		opacity: 0.5;
 		position: relative;
 		white-space: nowrap;
 		transform: translateX(-50%);
 	}
 
 	.tick .line {
-		height: 10px;
+		height: 5px;
 		background-color: #fff;
 		opacity: 0.8;
-		width: 1px;
+		width: 0.5px;
 	}
 </style>
