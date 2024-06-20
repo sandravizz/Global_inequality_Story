@@ -1,7 +1,3 @@
-<!--
-	@component
-	Generates an SVG multi-series line chart. It expects your data to be an array of objects, each with a `values` key that is an array of data objects.
- -->
 <script>
 	import { getContext } from "svelte";
 	import { line } from "d3-shape";

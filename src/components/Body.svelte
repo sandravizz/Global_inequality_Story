@@ -1,9 +1,6 @@
 <script>
-	// import Tooltip from "../Tooltip.html.svelte";
 	import Scroller from "./story/ScrollyEngine.svelte";
-
-	// TODO: read from import
-	import storyscript from "$data/storyscript";
+	import storyscript from "./story/storyscript.js";
 </script>
 
 <div id="main">

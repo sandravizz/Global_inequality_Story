@@ -1,7 +1,3 @@
-<!--
-  @component
-  Generates an HTML x-axis, useful for server-side rendered charts.  This component is also configured to detect if your x-scale is an ordinal scale. If so, it will place the markers in the middle of the bandwidth.
- -->
 <script>
 	import { ticks } from "d3";
 	import { getContext } from "svelte";
