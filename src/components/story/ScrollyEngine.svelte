@@ -1,5 +1,6 @@
 <script>
 	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
+
 	export let storyscript = [];
 
 	let innerWidth;

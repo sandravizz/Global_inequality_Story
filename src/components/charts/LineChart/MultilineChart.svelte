@@ -28,7 +28,6 @@
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
 	{#if data && width}
-		<!-- TODO: make yDomain is reversed using LayerCake functionality and not manually -->
 		<LayerCake
 			{width}
 			{height}

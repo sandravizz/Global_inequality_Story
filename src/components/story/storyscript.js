@@ -1,8 +1,8 @@
 import { group } from "d3";
 import MultilineChart from "$components/charts/LineChart/MultilineChart.svelte";
-import data from "$data/gini_income.csv";
+import data from "$data/data_all.csv";
 
-const formattedData = data.map((d) => ({ ...d, value: +d.value }));
+const formattedData = data.map((d) => ({ ...d, value: +d.gini_pretaxes }));
 
 const groupedByCountry = group(formattedData, (d) => d.country).entries();
 const renderData = Array.from(groupedByCountry, ([key, value]) => ({
