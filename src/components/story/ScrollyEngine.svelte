@@ -13,7 +13,6 @@
 	$: {
 		if (chartComponents.length) {
 			const step = storyscript.steps[stepIndex];
-			console.log("step has changed", step);
 			const { charts } = step;
 
 			// update components in step
@@ -36,8 +35,11 @@
 <svelte:window bind:innerWidth bind:innerHeight />
 
 <section id="scrolly">
-	<div class="container">
-		<div class="chart-container" class:twoColumn={innerWidth >= 1000}>
+	<div class="container" class:fullWidth={storyscript.layout === "fullwidth"}>
+		<div
+			class="chart-container"
+			class:twoColumn={innerWidth >= 1000 && storyscript.layout !== "fullwidth"}
+		>
 			<div
 				class="chart"
 				class:sticky={stepIndex < storyscript.steps.length}
@@ -90,6 +92,10 @@
 		position: relative;
 	}
 
+	.fullWidth .chart-container {
+		width: 100%;
+	}
+
 	.twoColumn {
 		flex-direction: row-reverse;
 		max-width: 1200px;
@@ -99,6 +105,8 @@
 
 	.chart {
 		position: relative;
+		height: 100vh;
+		width: 100%;
 	}
 
 	.chartComponent {
@@ -110,14 +118,20 @@
 	}
 
 	.step {
-		border: 1px solid red;
+		height: 100vh;
+		width: 100%;
+		background: none;
+		z-index: 2;
+		position: relative;
 	}
 
-	.chart,
-	.step {
-		height: 100vh;
-		display: flex;
-		align-items: center;
+	.steps {
+		margin-top: 50vh;
+		padding: 24px;
+	}
+
+	.step:last-of-type {
+		height: 150vh;
 	}
 
 	.sticky {
@@ -133,48 +147,27 @@
 		z-index: 1;
 	}
 
-	.step {
-		background: none;
-		z-index: 2;
-		position: relative;
-		width: 50%;
-	}
-
-	.chart,
-	.step {
-		width: 100%;
-	}
-
-	.step:first-of-type {
-		margin-top: 0vh;
-	}
-
-	.step:last-of-type {
-		height: 200vh;
-	}
-
-	.step .contentwrapper {
-		padding: 24px 0;
-		width: 100%;
+	.contentwrapper {
 		position: relative;
 	}
 
-	.step .contentbackground {
+	.contentbackground {
 		background-color: var(--color-background);
-		opacity: 0.8;
+		opacity: 0.4;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		top: -16px;
+		bottom: -16px;
+		left: -16px;
+		right: -16px;
 		z-index: 1;
 		margin-left: calc(50% - 50vw);
 		margin-right: calc(50% - 50vw);
 	}
 
-	.step .content {
+	.content {
 		z-index: 2;
 		position: relative;
+		-webkit-text-stroke: 0.2px #fff;
 	}
 
 	/* Full-width layout for wide screens */
@@ -189,26 +182,23 @@
 			margin-right: calc(-50vw + 50%);
 		}
 
-		.chart,
-		.steps {
+		.chart {
+			padding-left: 8px;
 			width: 50%;
 		}
 
-		.chart {
-			padding-left: 8px;
+		.fullWidth .chart {
+			width: 100%;
 		}
 
-		.step {
-			display: block;
-			padding-right: 8px;
+		.steps {
+			width: 50%;
+			padding: 0;
 		}
 
-		.step:first-of-type {
-			margin-top: 36.5vh;
-		}
-
-		.step:last-of-type {
-			height: 63.5vh;
+		.fullWidth .steps {
+			width: 40%;
+			margin-left: 10%;
 		}
 
 		.step .contentbackground {
