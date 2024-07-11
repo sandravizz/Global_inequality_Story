@@ -12,7 +12,7 @@ const renderData = Array.from(groupedByCountry, ([key, value]) => ({
 }));
 
 export default {
-	layout: "fullwidth",
+	layout: "wide",
 	components: [MultilineChart, MultilineChart, MultilineChart, MultilineChart],
 	steps: [
 		{

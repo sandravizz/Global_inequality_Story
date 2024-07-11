@@ -34,8 +34,11 @@
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-<section id="scrolly">
-	<div class="container" class:fullWidth={storyscript.layout === "fullwidth"}>
+<section
+	class:fullWidth={storyscript.layout === "fullwidth"}
+	class:wide={storyscript.layout === "wide"}
+>
+	<div class="container">
 		<div
 			class="chart-container"
 			class:twoColumn={innerWidth >= 1000 && storyscript.layout !== "fullwidth"}
@@ -80,6 +83,21 @@
 </section>
 
 <style>
+	section {
+		max-width: 50rem;
+		padding: 0 16px;
+		margin: 0 auto;
+	}
+
+	section.fullWidth {
+		max-width: none;
+		padding: 0;
+	}
+
+	section.wide {
+		max-width: 70rem;
+	}
+
 	.container {
 		position: relative;
 	}
@@ -88,20 +106,20 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		max-width: 1200px;
 		position: relative;
 	}
 
 	.fullWidth .chart-container {
 		width: 100%;
+		max-width: none;
 	}
 
-	.twoColumn {
+	/* .twoColumn {
 		flex-direction: row-reverse;
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
-	}
+	} */
 
 	.chart {
 		position: relative;
@@ -127,7 +145,6 @@
 
 	.steps {
 		margin-top: 50vh;
-		padding: 24px;
 	}
 
 	.step:last-of-type {
@@ -149,6 +166,7 @@
 
 	.contentwrapper {
 		position: relative;
+		padding: 16px;
 	}
 
 	.contentbackground {
@@ -159,41 +177,25 @@
 		bottom: -16px;
 		left: -16px;
 		right: -16px;
-		z-index: 1;
-		margin-left: calc(50% - 50vw);
-		margin-right: calc(50% - 50vw);
 	}
 
 	.content {
-		z-index: 2;
 		position: relative;
+		z-index: 2;
 		-webkit-text-stroke: 0.2px #fff;
 	}
 
-	/* Full-width layout for wide screens */
-	@media (min-width: 1000px) {
-		.container {
-			margin: 0 32px;
-		}
-
-		#scrolly {
-			width: 100vw;
-			margin-left: calc(-50vw + 50%);
-			margin-right: calc(-50vw + 50%);
+	@media (min-width: 900px) {
+		.fullWidth .container {
+			margin: 0;
 		}
 
 		.chart {
 			padding-left: 8px;
-			width: 50%;
 		}
 
 		.fullWidth .chart {
 			width: 100%;
-		}
-
-		.steps {
-			width: 50%;
-			padding: 0;
 		}
 
 		.fullWidth .steps {
@@ -201,9 +203,16 @@
 			margin-left: 10%;
 		}
 
-		.step .contentbackground {
+		.wide .contentwrapper {
+			position: relative;
+			margin: auto;
+			max-width: 50rem;
+		}
+
+		.contentbackground {
 			margin-left: auto;
 			margin-right: auto;
+			z-index: 1;
 		}
 	}
 </style>
