@@ -56,8 +56,8 @@
 			{/if}
 
 			<Html>
-				<div class="axisLabel" style="top: 8px;">Full equality</div>
-				<div class="axisLabel" style="bottom: 58px;">Full inequality</div>
+				<div class="axisLabel" style="top: 0; right: 0; ">Completely equal</div>
+				<hr class="dotted" />
 				<AxisX />
 			</Html>
 		</LayerCake>
@@ -65,9 +65,14 @@
 </div>
 
 <style>
+	.dotted {
+		border-width: 0;
+		border-top: 1px dashed var(--chart-color-lowlight);
+	}
+
 	.axisLabel {
 		font-size: 12px;
 		position: absolute;
-		opacity: 0.8;
+		color: var(--chart-color-lowlight);
 	}
 </style>

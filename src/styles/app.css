@@ -2,14 +2,14 @@
 @import "reset.css";
 
 :root {
-	--color-background: #0F0140;
-	--category-blue: #4477AA;
-	--category-red: #EE6677;
+	--color-background: #0f0140;
+	--category-blue: #4477aa;
+	--category-red: #ee6677;
 	--category-green: #228833;
-	--category-yellow: #CCBB44;
-	--category-cyan: #66CCEE;
-	--category-purple: #AA3377;
-	--category-gray: #BBBBBB;
+	--category-yellow: #ccbb44;
+	--category-cyan: #66ccee;
+	--category-purple: #aa3377;
+	--category-gray: #bbbbbb;
 	--color-black: #000000;
 	--color-white: #ffffff;
 	--color-gray-50: #f7f7f7;
@@ -47,7 +47,7 @@
 	--96px: 6rem;
 	--112px: 7rem;
 	--128px: 8rem;
-  }
+}
 
 :root {
 	--z-bottom: -100;
@@ -73,10 +73,10 @@
 	--1s: 1ms;
 }
 
-
 /* chart styling */
 :root {
 	--chart-lowlight: #263973;
+	--chart-color-lowlight: #6e7496;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

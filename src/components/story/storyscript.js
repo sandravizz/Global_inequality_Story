@@ -30,8 +30,7 @@ export default {
 				}
 			],
 			description: {
-				title: `World GINI Distribution`,
-				text: "group by region, filter by 2010"
+				title: `World GINI Distribution`
 			}
 		},
 		{
@@ -42,7 +41,7 @@ export default {
 					data: renderData,
 					options: {
 						stroke: "#fff",
-						strokeOpacity: 0.6,
+						strokeOpacity: 0.3,
 						strokeWidth: 0.5
 					}
 				},
@@ -56,17 +55,17 @@ export default {
 					},
 					annotations: [
 						{
-							x: "1995",
+							x: "1998",
 							z: "US",
-							dy: -24,
+							dy: -32,
 							text: "Global average"
 						}
 					]
 				}
 			],
 			description: {
-				title: `World GINI Distribution`,
-				text: "group by region, filter by 2010"
+				title: `Global average`,
+				text: "(faked... using US as a proxy for global average... have not calculated the global average yet)"
 			}
 		},
 		{
@@ -77,20 +76,42 @@ export default {
 					data: renderData,
 					options: {
 						stroke: "#fff",
-						strokeOpacity: 0.6,
+						strokeOpacity: 0.05,
 						strokeWidth: 0.5
 					}
 				},
 
 				{
 					key: "country",
+					componentIndex: 1,
+					data: renderData.filter((d) => ["US"].includes(d.country)),
+					options: {
+						stroke: "red",
+						strokeWidth: 2,
+						strokeOpacity: 0.8
+					}
+				},
+
+				{
+					key: "country",
 					componentIndex: 2,
+					data: renderData.filter((d) => d.region === "Europe"),
+					options: {
+						stroke: "white",
+						strokeOpacity: 0.3,
+						strokeWidth: 1
+					}
+				},
+
+				{
+					key: "country",
+					componentIndex: 3,
 					data: renderData.filter((d) =>
 						["SE", "DE", "NL"].includes(d.country)
 					),
 					options: {
-						stroke: "lightblue",
-						strokeWidth: 2
+						stroke: "white",
+						strokeWidth: 3
 					},
 					annotations: [
 						{
@@ -112,21 +133,11 @@ export default {
 							text: "Netherlands"
 						}
 					]
-				},
-
-				{
-					key: "country",
-					componentIndex: 3,
-					data: renderData.filter((d) => d.region === "Asia"),
-					options: {
-						stroke: "pink",
-						strokeWidth: 2
-					}
 				}
 			],
 			description: {
-				title: `Asia and Europe`,
-				text: "group by region, filter by 2010"
+				title: `Europe`,
+				text: "All countries in Europe are more equal than the global average."
 			}
 		}
 	]

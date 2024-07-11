@@ -4,45 +4,60 @@
 
 	const { xScale } = getContext("LayerCake");
 
-	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 5);
+	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 4);
 </script>
 
-{#each tickVals as tick, i (tick)}
-	<div class="tick" style="left:{$xScale(tick)}px;">
-		<div class="line" />
-		<div class="text">{tick}</div>
-	</div>
-{/each}
+<div class="axis">
+	{#each tickVals as tick, i (tick)}
+		<div
+			class="tick"
+			style="left:{$xScale(tick)}px;"
+			class:moveRight={tick === $xScale.domain()[0]}
+			class:moveLeft={tick === $xScale.domain()[1]}
+		>
+			<div class="line" />
+			<div class="text">{tick}</div>
+		</div>
+	{/each}
+</div>
 
 <style>
-	.axis,
-	.tick,
-	.tick-mark,
-	.gridline,
-	.baseline {
-		position: absolute;
-		bottom: 10%;
-	}
 	.axis {
+		position: absolute;
+		bottom: 0;
 		width: 100%;
-		height: 100%;
 	}
+
+	hr {
+		border-width: 0;
+		border-bottom: 1px solid var(--chart-color-lowlight);
+	}
+
 	.tick {
+		position: absolute;
+		display: inline-block;
 		font-size: 0.8em;
+		width: 0;
 	}
 
 	.text {
-		color: #fff;
-		opacity: 0.5;
-		position: relative;
+		position: absolute;
+		color: var(--chart-color-lowlight);
 		white-space: nowrap;
 		transform: translateX(-50%);
 	}
 
+	.moveRight .text {
+		transform: none;
+	}
+
+	.moveLeft .text {
+		transform: translateX(-100%);
+	}
+
 	.tick .line {
-		height: 5px;
-		background-color: #fff;
-		opacity: 0.8;
+		height: 0.8em;
+		background-color: var(--chart-color-lowlight);
 		width: 0.5px;
 	}
 </style>
