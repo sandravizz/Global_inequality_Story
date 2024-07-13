@@ -2,6 +2,7 @@
 	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
 
 	export let storyscript = [];
+	export let layout;
 
 	let innerWidth;
 	let innerHeight;
@@ -35,13 +36,13 @@
 <svelte:window bind:innerWidth bind:innerHeight />
 
 <section
-	class:fullWidth={storyscript.layout === "fullwidth"}
-	class:wide={storyscript.layout === "wide"}
+	class:fullWidth={layout === "fullwidth"}
+	class:wide={layout === "wide"}
 >
 	<div class="container">
 		<div
 			class="chart-container"
-			class:twoColumn={innerWidth >= 1000 && storyscript.layout !== "fullwidth"}
+			class:twoColumn={innerWidth >= 1000 && layout !== "fullwidth"}
 		>
 			<div
 				class="chart"

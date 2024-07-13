@@ -1,12 +1,20 @@
-
 body {
 	background-color: var(--color-background);
-	color: #D5F2F2;
+	color: #d5f2f2;
 	line-height: 1.6;
-	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
+	font-feature-settings:
+		"kern" 1,
+		"onum" 0,
+		"liga" 0,
+		"tnum" 1;
 	text-rendering: optimizeLegibility;
 	word-wrap: break-word;
 	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	scrollbar-color: #d5f2f2 transparent;
+	scrollbar-width: thin;
 }
 
 h1,
@@ -37,7 +45,8 @@ video {
 	height: auto;
 }
 
-input, textarea {
+input,
+textarea {
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: var(--color-input-bg, whitesmoke);
@@ -190,7 +199,8 @@ select {
 	background-size: auto 50%;
 }
 
-ol, ul {
+ol,
+ul {
 	padding-left: 16px;
 }
 
@@ -217,21 +227,23 @@ ol, ul {
 	height: 1px;
 	overflow: hidden;
 	position: absolute;
-	white-space: nowrap; 
+	white-space: nowrap;
 	width: 1px;
 }
 
 .text-outline {
 	--stroke-width: 1px;
 	--stroke-width-n: calc(var(--stroke-width) * -1);
-	text-shadow: var(--stroke-width-n) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
+	text-shadow:
+		var(--stroke-width-n) var(--stroke-width-n) 0
+			var(--color-text-outline, #fff),
 		0 var(--stroke-width-n) 0 var(--color-text-outline, #fff),
 		var(--stroke-width) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
 		var(--stroke-width) 0 0 var(--color-text-outline, #fff),
 		var(--stroke-width) var(--stroke-width) 0 var(--color-text-outline, #fff),
 		0 var(--stroke-width) 0 var(--color-text-outline, #fff),
 		var(--stroke-width-n) var(--stroke-width) 0 var(--color-text-outline, #fff),
-		var(--stroke-width-n) 0 0 var(--color-text-outline, #fff); 
+		var(--stroke-width-n) 0 0 var(--color-text-outline, #fff);
 }
 
 /* desktop (mouse-enabled device) */
@@ -242,7 +254,7 @@ ol, ul {
 	input[type="submit"]:hover,
 	input[type="reset"]:hover {
 		background: var(--color-button-hover, lightgray);
-	}	
+	}
 
 	button:disabled:hover,
 	a[role="button"]:disabled:hover,

@@ -81,6 +81,60 @@
 	</p>
 </section>
 
+<Scroller {storyscript} layout="wide" />
+
+<section>
+	<h2>The Global Debate on Finance Capitalism</h2>
+	<p>
+		There has been a wave of neoliberal policies implemented worldwide beginning
+		in the 1970s. Policies like deregulation, privatisation and the withdrawing
+		of the state from social protection and welfare delivery became a common
+		trend across different countries. Probably for the first time in economic
+		history in the USA, the share of the national income of the top 1% fell from
+		the 16% of pre-World War II rate, to less than 8% in the post-war era and
+		stayed at the same level for almost three decades (Harvey, 2005). However,
+		by the beginning of the 1970s a combination of slowing economic growth, the
+		breakdown of the Bretton Woods system of fixed exchange rates, ‘stagflation’
+		and high unemployment put severe strains on state budgets. ‘Keynesian
+		compromise’ appeared to have reached its limits and other alternatives to
+		overcome the emerging crisis were called on. For its proponents, the moment
+		of neoliberalism had arrived. The Austro-German Marxist theoretician was the
+		first to introduce the term ‘finance capitalism’ and warned of the dangers
+		associated with concentration of capital and the transformation of
+		competitive capitalism into monopolistic finance capi- talism, thus
+		anticipating the process of contemporary financialisation. In the latter, he
+		writes of financialisation as ‘a prolonged split between the divergent real
+		and financial economies’
+	</p>
+</section>
+
+<Scroller {storyscript} layout="fullwidth" />
+
+<section>
+	<h2>The Global Debate on Finance Capitalism</h2>
+	<p>
+		There has been a wave of neoliberal policies implemented worldwide beginning
+		in the 1970s. Policies like deregulation, privatisation and the withdrawing
+		of the state from social protection and welfare delivery became a common
+		trend across different countries. Probably for the first time in economic
+		history in the USA, the share of the national income of the top 1% fell from
+		the 16% of pre-World War II rate, to less than 8% in the post-war era and
+		stayed at the same level for almost three decades (Harvey, 2005). However,
+		by the beginning of the 1970s a combination of slowing economic growth, the
+		breakdown of the Bretton Woods system of fixed exchange rates, ‘stagflation’
+		and high unemployment put severe strains on state budgets. ‘Keynesian
+		compromise’ appeared to have reached its limits and other alternatives to
+		overcome the emerging crisis were called on. For its proponents, the moment
+		of neoliberalism had arrived. The Austro-German Marxist theoretician was the
+		first to introduce the term ‘finance capitalism’ and warned of the dangers
+		associated with concentration of capital and the transformation of
+		competitive capitalism into monopolistic finance capi- talism, thus
+		anticipating the process of contemporary financialisation. In the latter, he
+		writes of financialisation as ‘a prolonged split between the divergent real
+		and financial economies’
+	</p>
+</section>
+
 <style>
 	section {
 		max-width: 50rem;

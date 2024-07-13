@@ -12,7 +12,6 @@ const renderData = Array.from(groupedByCountry, ([key, value]) => ({
 }));
 
 export default {
-	layout: "wide",
 	components: [MultilineChart, MultilineChart, MultilineChart, MultilineChart],
 	steps: [
 		{
@@ -61,6 +60,18 @@ export default {
 							text: "Global average"
 						}
 					]
+				},
+				{
+					key: "country",
+					componentIndex: 3,
+					data: renderData.filter((d) =>
+						["SE", "DE", "NL"].includes(d.country)
+					),
+					options: {
+						stroke: "white",
+						strokeWidth: 0,
+						strokeOpacity: 0
+					}
 				}
 			],
 			description: {
@@ -76,7 +87,7 @@ export default {
 					data: renderData,
 					options: {
 						stroke: "#fff",
-						strokeOpacity: 0.05,
+						strokeOpacity: 0,
 						strokeWidth: 0.5
 					}
 				},
@@ -98,8 +109,8 @@ export default {
 					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
 						stroke: "white",
-						strokeOpacity: 0.3,
-						strokeWidth: 1
+						strokeOpacity: 0.5,
+						strokeWidth: 0.5
 					}
 				},
 
@@ -138,6 +149,79 @@ export default {
 			description: {
 				title: `Europe`,
 				text: "All countries in Europe are more equal than the global average."
+			}
+		},
+
+		{
+			charts: [
+				{
+					key: "country",
+					componentIndex: 0,
+					data: renderData,
+					options: {
+						stroke: "#fff",
+						strokeOpacity: 0,
+						strokeWidth: 0.5
+					}
+				},
+
+				{
+					key: "country",
+					componentIndex: 1,
+					data: renderData.filter((d) => ["US"].includes(d.country)),
+					options: {
+						stroke: "red",
+						strokeWidth: 2,
+						strokeOpacity: 0.8
+					}
+				},
+
+				{
+					key: "country",
+					componentIndex: 2,
+					data: renderData.filter((d) => d.region === "Asia"),
+					options: {
+						stroke: "white",
+						strokeOpacity: 0.5,
+						strokeWidth: 0.5
+					}
+				},
+
+				{
+					key: "country",
+					componentIndex: 3,
+					data: renderData.filter((d) =>
+						["CN", "JP", "IN"].includes(d.country)
+					),
+					options: {
+						stroke: "white",
+						strokeWidth: 3
+					},
+					annotations: [
+						{
+							x: "2010",
+							z: "IN",
+							dy: 8,
+							text: "India"
+						},
+						{
+							x: "2012",
+							z: "JP",
+							dy: -32,
+							text: "Japan"
+						},
+						{
+							x: "2014",
+							z: "CN",
+							dy: 0,
+							text: "China"
+						}
+					]
+				}
+			],
+			description: {
+				title: `Asia`,
+				text: "While in Asia the story is more complex..."
 			}
 		}
 	]
