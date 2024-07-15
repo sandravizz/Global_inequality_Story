@@ -1,10 +1,12 @@
 <script>
+	import Intro from "./story/Intro.svelte";
 	import Scroller from "./story/ScrollyEngine.svelte";
 	import storyscript from "./story/storyscript.js";
 </script>
 
+<Intro />
+
 <section>
-	<h1>Global inequality</h1>
 	<p>
 		Income inequality is one of the most persistent global issues we face today.
 		Across the world, income distribution varies widely from country to country,
