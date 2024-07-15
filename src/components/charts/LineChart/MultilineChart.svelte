@@ -37,6 +37,7 @@
 			flatData={data.flatMap((d) => d.values)}
 			{data}
 			yDomain={[1, 0]}
+			custom={{ annotations: annotations }}
 		>
 			<Svg>
 				<MultiLine {...options} />
@@ -45,6 +46,7 @@
 			{#if annotations}
 				<Html>
 					{#each annotations as annotation}
+						{console.log("annoations-each", annotations) || ""}
 						<Label
 							xValue={annotation.x}
 							zValue={annotation.z}

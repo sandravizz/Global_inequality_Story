@@ -1,24 +1,29 @@
 <script>
 	import { getContext } from "svelte";
 
-	export let xValue;
-	export let zValue;
-	export let text;
-	export let dy = 0;
+	const { flatData, x, z, xGet, yGet, custom } = getContext("LayerCake");
 
-	const { flatData, x, z, xGet, yGet } = getContext("LayerCake");
-
-	const data = $flatData.find((d) => $x(d) === xValue && $z(d) === zValue);
+	const getAnnotationData = (xValue, zValue) => {
+		return $flatData.find((d) => $x(d) === xValue && $z(d) === zValue);
+	};
 </script>
 
-<div class="label" style="left: {$xGet(data)}px; top:{$yGet(data) + dy}px">
-	{text}
-</div>
+{#each $custom.annotations as { x: xValue, z: zValue, text, dy }}
+	<div
+		class="label"
+		style="
+			left: {$xGet(getAnnotationData(xValue, zValue))}px; 
+			top:{$yGet(getAnnotationData(xValue, zValue)) + dy}px"
+	>
+		{text}
+	</div>
+{/each}
 
 <style>
 	.label {
 		position: absolute;
 		font-weight: bold;
 		letter-spacing: -0.5px;
+		transition: all 0.8s;
 	}
 </style>

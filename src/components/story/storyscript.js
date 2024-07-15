@@ -207,7 +207,7 @@ export default {
 						{
 							x: "2012",
 							z: "JP",
-							dy: -32,
+							dy: -28,
 							text: "Japan"
 						},
 						{

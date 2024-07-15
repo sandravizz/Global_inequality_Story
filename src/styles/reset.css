@@ -9,11 +9,10 @@ body {
 		"tnum" 1;
 	text-rendering: optimizeLegibility;
 	word-wrap: break-word;
-	-webkit-tap-highlight-color: transparent;
 }
 
 html {
-	scrollbar-color: #d5f2f2 transparent;
+	scrollbar-color: #d5f2f2 rgba(255, 255, 255, 0.05);
 	scrollbar-width: thin;
 }
 
