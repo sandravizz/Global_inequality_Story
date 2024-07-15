@@ -7,9 +7,7 @@
 	onMount(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				console.log("observer", entry);
 				if (entry.isIntersecting) {
-					console.log("intersecting");
 					animate = true;
 					observer.disconnect(); // Stop observing once the animation starts
 				}
