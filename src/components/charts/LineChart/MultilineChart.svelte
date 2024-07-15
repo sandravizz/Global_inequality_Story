@@ -46,13 +46,7 @@
 			{#if annotations}
 				<Html>
 					{#each annotations as annotation}
-						{console.log("annoations-each", annotations) || ""}
-						<Label
-							xValue={annotation.x}
-							zValue={annotation.z}
-							dy={annotation.dy}
-							text={annotation.text}
-						/>
+						<Label />
 					{/each}
 				</Html>
 			{/if}
