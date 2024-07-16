@@ -24,7 +24,15 @@
 <footer>
 	<div bind:this={element} class="content">
 		<div class="faded">Made by</div>
-		<div><span class:animate>&nbsp;Sandra and Patrick</span></div>
+		<div>
+			<span class:animate
+				>&nbsp;<a href="https://www.sandraviz.com/" target="_blank">Sandra</a>
+				and
+				<a href="https://www.linkedin.com/in/patrickwojda/" target="_blank"
+					>Patrick</a
+				></span
+			>
+		</div>
 	</div>
 
 	<div class="credits" class:animate>
@@ -32,9 +40,21 @@
 		<div>Research and analysis: Sandra</div>
 		<div>Frontend development: Patrick</div>
 	</div>
+
+	<div class="right">
+		<img src="/assets/patrick.png" alt="patrick" />
+	</div>
+
+	<div class="left">
+		<img src="/assets/sandra.png" alt="sandra" />
+	</div>
 </footer>
 
 <style>
+	a {
+		color: #d5f2f2;
+	}
+
 	footer {
 		position: relative;
 		height: 100vh;
@@ -116,5 +136,35 @@
 		animation: fadein;
 		animation-duration: 6s;
 		opacity: 0.6;
+	}
+
+	.right {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		overflow: hidden;
+		max-width: calc(50% - 24px);
+	}
+
+	.left {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		overflow: hidden;
+		max-width: calc(50% - 24px);
+	}
+
+	.right img {
+		width: 100%;
+		opacity: 0.6;
+		transform: translateX(33%);
+	}
+
+	.left img {
+		width: 100%;
+		opacity: 0.6;
+		transform: translateX(-33%);
 	}
 </style>
