@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "reset.css";
+@import "fonts.css";
 
 :root {
 	--color-background: #0f0140;

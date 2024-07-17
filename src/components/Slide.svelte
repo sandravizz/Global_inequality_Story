@@ -28,15 +28,27 @@
 	$: show && (current = -1);
 	$: current === -1 && setTimeout(nextFilter, 300);
 
-	let randomX = 0,
-		randomY = 0,
-		zoom = 1;
+	let randomImgX = 0,
+		randomImgY = 0,
+		randomImgScale = 1,
+		randomTextX = 0,
+		randomTextY = 0,
+		randomTextScale = 1;
+
 	$: if (show) {
-		randomX =
+		// random offsets for image
+		randomImgX =
 			current !== filters.length - 1 ? getRandomNumberInRange(-25, 25) : 0;
-		randomY =
+		randomImgY =
 			current !== filters.length - 1 ? getRandomNumberInRange(-25, 25) : 0;
-		zoom = current !== filters.length - 1 ? 1 + Math.random() : 1;
+		randomImgScale = current !== filters.length - 1 ? 1 + Math.random() : 1;
+
+		// random offsets for text
+		randomTextX =
+			current !== filters.length - 1 ? getRandomNumberInRange(-10, 10) : 0;
+		randomTextY =
+			current !== filters.length - 1 ? getRandomNumberInRange(-10, 10) : 0;
+		randomTextScale = current !== filters.length - 1 ? 1 + Math.random() : 1;
 	}
 </script>
 
@@ -47,14 +59,25 @@
 	class:hide
 	style="filter: {filters[current]}"
 >
-	<h1>{text}</h1>
+	<h1
+		style="
+        top: {50 + randomTextY}%; 
+        left: {50 + randomTextX}%; 
+        transform: translate(-50%, -66%) scale({randomTextScale})"
+	>
+		{text}
+	</h1>
 	<img
 		{src}
 		alt={text}
 		style="
-            object-position: {50 + randomX}% {50 + randomY}%; 
-            transform: scale({zoom});"
+            object-position: {50 + randomImgX}% {50 + randomImgY}%; 
+            transform: scale({randomImgScale});"
 	/>
+	<div class="hint">
+		<div>scroll down</div>
+		<div class="gg-chevron-down" />
+	</div>
 </div>
 
 <style>
@@ -86,14 +109,14 @@
 
 	h1 {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -66%);
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: #fff;
 		text-wrap: nowrap;
 		z-index: 1;
+		transition: all 30ms;
+		font-size: 24px;
+		font-family: "Syncopate";
 	}
 
 	@keyframes fadeout {
@@ -118,5 +141,55 @@
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
+	}
+
+	@media (min-width: 900px) {
+		h1 {
+			font-size: 80px;
+		}
+	}
+
+	.hint {
+		z-index: 100;
+		position: absolute;
+		bottom: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		opacity: 0.8;
+	}
+
+	.hint > div {
+		margin-top: -6px;
+		font-size: 0.9em;
+	}
+
+	.gg-chevron-down {
+		transform: scale(1.8);
+		color: #d5f2f2;
+
+		box-sizing: border-box;
+		position: relative;
+		display: block;
+		width: 22px;
+		height: 22px;
+		border: 2px solid transparent;
+		border-radius: 100px;
+	}
+
+	.gg-chevron-down::after {
+		content: "";
+		display: block;
+		box-sizing: border-box;
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-bottom: 1.5px solid;
+		border-right: 1.5px solid;
+		transform: rotate(45deg);
+		left: 4px;
+		top: 2px;
 	}
 </style>

@@ -1,10 +1,7 @@
 <script>
-	import Intro from "./story/intro/Intro.svelte";
 	import Scroller from "./story/ScrollyEngine.svelte";
 	import storyscript from "./story/storyscript.js";
 </script>
-
-<Intro />
 
 <section style="margin-top: 16px">
 	<p>
