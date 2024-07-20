@@ -1,11 +1,15 @@
 <script>
+	import { gsap } from "gsap";
+
 	export let src;
 	export let text;
+	export let hide;
+	export let show;
 	export let isVisible = false;
-	export let hide = false;
-	export let show = false;
 
-	function getRandomNumberInRange(min, max) {
+	let textEl, imgEl, slideEl;
+
+	function randomInRange(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
@@ -17,63 +21,55 @@
 		"none"
 	];
 
-	let current;
-	function nextFilter() {
-		if (current < filters.length - 1) {
-			current += 1;
-			setTimeout(nextFilter, 300);
+	$: {
+		if (show || hide) {
+			const timeline = gsap.timeline();
+			const offset = show ? 1 : 0;
+			if (show) {
+				timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+			}
+			if (hide) {
+				timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+			}
+
+			for (let i = 0; i <= filters.length; i++) {
+				timeline.set(
+					slideEl,
+					{ filter: filters[i], duration: 0.2 },
+					i * 0.2 + offset
+				);
+
+				timeline.set(
+					textEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-40, 40),
+						y: i === filters.length ? 0 : randomInRange(-40, 40),
+						scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
+						duration: 0.2
+					},
+					i * 0.2 + offset
+				);
+
+				timeline.set(
+					imgEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-10, 10),
+						y: i === filters.length ? 0 : randomInRange(-10, 10),
+						scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
+						duration: 0.2
+					},
+					i * 0.2 + offset
+				);
+			}
 		}
-	}
-
-	$: show && (current = -1);
-	$: current === -1 && setTimeout(nextFilter, 300);
-
-	let randomImgX = 0,
-		randomImgY = 0,
-		randomImgScale = 1,
-		randomTextX = 0,
-		randomTextY = 0,
-		randomTextScale = 1;
-
-	$: if (show) {
-		// random offsets for image
-		randomImgX =
-			current !== filters.length - 1 ? getRandomNumberInRange(-25, 25) : 0;
-		randomImgY =
-			current !== filters.length - 1 ? getRandomNumberInRange(-25, 25) : 0;
-		randomImgScale = current !== filters.length - 1 ? 1 + Math.random() : 1;
-
-		// random offsets for text
-		randomTextX =
-			current !== filters.length - 1 ? getRandomNumberInRange(-10, 10) : 0;
-		randomTextY =
-			current !== filters.length - 1 ? getRandomNumberInRange(-10, 10) : 0;
-		randomTextScale = current !== filters.length - 1 ? 1 + Math.random() : 1;
 	}
 </script>
 
-<div
-	class="slide"
-	class:visible={isVisible}
-	class:show
-	class:hide
-	style="filter: {filters[current]}"
->
-	<h1
-		style="
-        top: {50 + randomTextY}%; 
-        left: {50 + randomTextX}%; 
-        transform: translate(-50%, -66%) scale({randomTextScale})"
-	>
+<div bind:this={slideEl} class="slide" class:isVisible>
+	<h1 bind:this={textEl}>
 		{text}
 	</h1>
-	<img
-		{src}
-		alt={text}
-		style="
-            object-position: {50 + randomImgX}% {50 + randomImgY}%; 
-            transform: scale({randomImgScale});"
-	/>
+	<img bind:this={imgEl} {src} alt={text} />
 	<div class="hint">
 		<div>scroll down</div>
 		<div class="gg-chevron-down" />
@@ -81,19 +77,8 @@
 </div>
 
 <style>
-	.slide.visible {
+	.slide.isVisible {
 		opacity: 1;
-	}
-	.hide {
-		animation-name: fadeout;
-		animation-duration: 2s;
-		animation-fill-mode: forwards; /* Ensures the slide stays hidden after animation */
-	}
-
-	.show {
-		animation-name: fadein;
-		animation-duration: 2s;
-		animation-fill-mode: forwards; /* Ensures the slide stays visible after animation */
 	}
 
 	.slide {
@@ -105,47 +90,36 @@
 		box-sizing: border-box;
 		opacity: 0;
 		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	h1 {
-		position: absolute;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-fill-color: rgba(0, 0, 0, 0);
 		-webkit-text-stroke-color: #fff;
+		-webkit-text-stroke-width: 1px;
 		text-wrap: nowrap;
 		z-index: 1;
-		transition: all 30ms;
 		font-size: 24px;
-		font-family: "Syncopate";
-	}
-
-	@keyframes fadeout {
-		from {
-			opacity: 1;
-		}
-		to {
-			opacity: 0;
-		}
-	}
-
-	@keyframes fadein {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
+		font-family: "Syncopate", sans-serif;
+		line-height: normal;
+		text-transform: uppercase;
 	}
 
 	img {
+		position: absolute;
+		top: 0;
+		left: 0;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
+		object-position: 50% 50%;
 	}
 
-	@media (min-width: 900px) {
+	@media (min-width: 500px) {
 		h1 {
-			font-size: 80px;
+			font-size: 6vw;
 		}
 	}
 

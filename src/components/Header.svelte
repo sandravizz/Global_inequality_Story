@@ -1,10 +1,10 @@
 <script>
 	import Slide from "./Slide.svelte";
 
-	let slideIndex = 0;
+	let slideIndex = undefined;
 
 	const switchBlock = () => {
-		if (slideIndex === 0) {
+		if (slideIndex === 0 || slideIndex === undefined) {
 			slideIndex = 1;
 		} else {
 			slideIndex = 0;
@@ -18,9 +18,9 @@
 	<Slide
 		src="/assets/1.png"
 		text="Global inequality"
+		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
+		show={slideIndex !== undefined ? slideIndex === 0 : null}
 		isVisible={true}
-		hide={slideIndex !== 0}
-		show={slideIndex === 0}
 	/>
 	<Slide
 		src="/assets/2.jpg"

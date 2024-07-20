@@ -107,8 +107,6 @@
 	</p>
 </section>
 
-<Scroller {storyscript} layout="fullwidth" />
-
 <section>
 	<h2>The Global Debate on Finance Capitalism</h2>
 	<p>

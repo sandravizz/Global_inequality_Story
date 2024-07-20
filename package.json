@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@fontsource/lato": "^5.0.21",
 		"arquero": "^5.4.0",
-		"d3-svg-annotation": "^2.5.1"
+		"d3-svg-annotation": "^2.5.1",
+		"gsap": "^3.12.5"
 	}
 }
