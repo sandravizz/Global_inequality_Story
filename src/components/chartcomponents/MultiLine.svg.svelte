@@ -6,7 +6,6 @@
 	export let stroke = "#fff";
 	export let strokeWidth = 1;
 	export let strokeOpacity = 1;
-	export let fill = "none";
 
 	// Generate the line generator
 	const lineGenerator = line()
@@ -18,14 +17,14 @@
 </script>
 
 <g class="line-group">
-	{#each $data as group}
+	{#each $data as group, i}
 		<path
 			class="path-line"
 			d={lineGenerator(group.values)}
-			{stroke}
+			stroke={Array.isArray(stroke) ? stroke[i] : stroke}
 			stroke-opacity={strokeOpacity}
 			stroke-width={strokeWidth}
-			{fill}
+			fill="none"
 		/>
 	{/each}
 </g>

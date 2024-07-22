@@ -1,6 +1,7 @@
 <script>
 	import Scroller from "./story/ScrollyEngine.svelte";
 	import storyscript from "./story/storyscript.js";
+	import differencescript from "./story/differencescript.js";
 </script>
 
 <section style="margin-top: 16px">
@@ -53,7 +54,7 @@
 	</p>
 </section>
 
-<Scroller {storyscript} />
+<Scroller storyscript={differencescript} layout="wide" />
 
 <section>
 	<h2>The Global Debate on Finance Capitalism</h2>
