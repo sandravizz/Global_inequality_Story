@@ -71,7 +71,7 @@
 								<div class="content">
 									<h3>{step.description.title}</h3>
 									{#if step.description.text}
-										<p>{step.description.text}</p>
+										<p>{@html step.description.text}</p>
 									{/if}
 								</div>
 							</div>

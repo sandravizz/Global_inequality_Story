@@ -30,8 +30,9 @@ export default {
 				}
 			],
 			description: {
-				title: `Difference chart`,
-				text: "Step 1"
+				title: `Some countries have small differences`,
+				text: `This is <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>Sweden</span> 
+						and this is  <span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>Finland</span>`
 			}
 		},
 		{
@@ -50,8 +51,10 @@ export default {
 				}
 			],
 			description: {
-				title: `Difference chart`,
-				text: "Step 2"
+				title: `while others have large differences`,
+				text: `<span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>India</span> 
+						is always better than <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>Sweden</span>. 
+						This is a fact!`
 			}
 		},
 		{
@@ -70,8 +73,10 @@ export default {
 				}
 			],
 			description: {
-				title: `Difference chart`,
-				text: "Step 3"
+				title: "and some some have large differences that shrink over time",
+				text: `But when it comes to <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>USA</span> 
+				and <span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>Russia</span> they switch places
+				many times.`
 			}
 		}
 	]

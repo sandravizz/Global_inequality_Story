@@ -1,16 +1,13 @@
 <script>
-	import { getContext } from "svelte";
-
-	const { data } = getContext("LayerCake");
-
 	export let stroke = "#fff";
+	export let legends = [];
 </script>
 
 <div class="legend">
-	{#each $data as group, i}
+	{#each legends as legend, i}
 		<div class="label">
 			<div class="dot" style="background-color: {stroke[i]}" />
-			<div style="color: {stroke[i]}">{group.country}</div>
+			<div style="color: {stroke[i]}">{legend}</div>
 		</div>
 	{/each}
 </div>
