@@ -35,18 +35,9 @@
 		</div>
 	</div>
 
-	<div class="credits" class:animate>
-		<div>Design and visualisations: Sandra and Patrick</div>
-		<div>Research and analysis: Sandra</div>
-		<div>Frontend development: Patrick</div>
-	</div>
-
-	<div class="right">
-		<img src="/assets/patrick.png" alt="patrick" />
-	</div>
-
-	<div class="left">
-		<img src="/assets/sandra.png" alt="sandra" />
+	<div class="people">
+		<img class="left" src="/assets/sandra.png" alt="sandra" />
+		<img class="right" src="/assets/patrick.png" alt="patrick" />
 	</div>
 </footer>
 
@@ -85,21 +76,6 @@
 		}
 	}
 
-	@keyframes fadein {
-		0% {
-			opacity: 0;
-		}
-		33% {
-			opacity: 0;
-		}
-		66% {
-			opacity: 0.6;
-		}
-		100% {
-			opacity: 0.6;
-		}
-	}
-
 	.content {
 		position: absolute;
 		text-align: center;
@@ -107,15 +83,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-	}
-
-	.credits {
-		position: absolute;
-		text-align: center;
-		left: 50%;
-		bottom: 25%;
-		transform: translate(-50%, -50%);
-		opacity: 0;
 	}
 
 	span {
@@ -132,39 +99,28 @@
 		animation-duration: 6s;
 	}
 
-	.credits.animate {
-		animation: fadein;
-		animation-duration: 6s;
-		opacity: 0.6;
-	}
-
-	.right {
+	.people {
 		position: absolute;
-		right: 0;
 		top: 50%;
-		transform: translateY(-50%);
-		overflow: hidden;
-		max-width: calc(50% - 24px);
-	}
-
-	.left {
-		position: absolute;
 		left: 0;
-		top: 50%;
+		right: 0;
 		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-between;
 		overflow: hidden;
-		max-width: calc(50% - 24px);
 	}
 
-	.right img {
-		width: 100%;
-		opacity: 0.6;
-		transform: translateX(33%);
+	.people img {
+		height: 33vw;
+		max-height: 50vh;
+		opacity: 0.8;
 	}
 
-	.left img {
-		width: 100%;
-		opacity: 0.6;
-		transform: translateX(-33%);
+	.people img.right {
+		transform: translateX(40%);
+	}
+
+	.people img.left {
+		transform: translateX(-40%);
 	}
 </style>
