@@ -83,6 +83,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		user-select: none;
 	}
 
 	span {
@@ -108,6 +109,8 @@
 		display: flex;
 		justify-content: space-between;
 		overflow: hidden;
+		pointer-events: none;
+		user-select: none;
 	}
 
 	.people img {
