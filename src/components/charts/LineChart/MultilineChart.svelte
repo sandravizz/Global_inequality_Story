@@ -22,8 +22,6 @@
 			annotations = chart.annotations;
 		}
 	}
-
-	$: console.log("width", width);
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
