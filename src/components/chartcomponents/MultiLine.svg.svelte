@@ -13,21 +13,23 @@
 		.y((d) => $yGet(d))
 		.curve(curveMonotoneX);
 
-	const { data, xGet, yGet } = getContext("LayerCake");
+	const { data, xGet, yGet, width } = getContext("LayerCake");
 </script>
 
-<g class="line-group">
-	{#each $data as group, i}
-		<path
-			class="path-line"
-			d={lineGenerator(group.values)}
-			stroke={Array.isArray(stroke) ? stroke[i] : stroke}
-			stroke-opacity={strokeOpacity}
-			stroke-width={strokeWidth}
-			fill="none"
-		/>
-	{/each}
-</g>
+{#key $width}
+	<g class="line-group">
+		{#each $data as group, i}
+			<path
+				class="path-line"
+				d={lineGenerator(group.values)}
+				stroke={Array.isArray(stroke) ? stroke[i] : stroke}
+				stroke-opacity={strokeOpacity}
+				stroke-width={strokeWidth}
+				fill="none"
+			/>
+		{/each}
+	</g>
+{/key}
 
 <style>
 	.path-line {

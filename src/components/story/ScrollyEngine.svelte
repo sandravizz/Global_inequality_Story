@@ -49,17 +49,15 @@
 				class:sticky={stepIndex < storyscript.steps.length}
 				class:bottom={stepIndex >= storyscript.steps.length}
 			>
-				{#if innerWidth}
-					{#each storyscript.components as component, i}
-						<div class="chartComponent">
-							<svelte:component
-								this={component}
-								bind:this={chartComponents[i]}
-								data={[]}
-							/>
-						</div>
-					{/each}
-				{/if}
+				{#each storyscript.components as component, i}
+					<div class="chartComponent">
+						<svelte:component
+							this={component}
+							bind:this={chartComponents[i]}
+							data={[]}
+						/>
+					</div>
+				{/each}
 			</div>
 
 			<div class="steps">

@@ -12,18 +12,18 @@
 	const height = 600;
 	let width;
 
-	let key;
 	let data;
 	let options;
 	let annotations;
 	$: {
 		if (chart) {
-			key = chart.key;
 			data = chart.data;
 			options = chart.options ?? {};
 			annotations = chart.annotations;
 		}
 	}
+
+	$: console.log("width", width);
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
