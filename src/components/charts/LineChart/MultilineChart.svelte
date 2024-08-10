@@ -4,7 +4,7 @@
 	import { LayerCake, Svg, Html } from "layercake";
 
 	import MultiLine from "$components/chartcomponents/MultiLine.svg.svelte";
-	import Label from "./Label.svelte";
+	import Annotation from "$components/chartcomponents/Annotation.html.svelte";
 	import AxisX from "./AxisX.html.svelte";
 
 	export let chart;
@@ -43,15 +43,11 @@
 
 			{#if annotations}
 				<Html>
-					{#each annotations as annotation}
-						<Label />
-					{/each}
+					<Annotation />
 				</Html>
 			{/if}
 
 			<Html>
-				<div class="axisLabel" style="top: 0; right: 0; ">Completely equal</div>
-				<hr class="dotted" />
 				<AxisX />
 			</Html>
 		</LayerCake>

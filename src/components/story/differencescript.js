@@ -26,7 +26,18 @@ export default {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
 						strokeWidth: 2
-					}
+					},
+					annotations: [
+						{
+							y: 0,
+							text: "Full equality"
+						},
+						{
+							y: 1,
+							dy: -22,
+							text: "Full inequality"
+						}
+					]
 				}
 			],
 			description: {
@@ -47,7 +58,21 @@ export default {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
 						strokeWidth: 2
-					}
+					},
+					annotations: [
+						{
+							x: "2009",
+							text: "Financial crisis"
+						},
+						{
+							x: "2019",
+							text: "Covid"
+						},
+						{
+							x: "1989",
+							text: "Fall of Berlin wall"
+						}
+					]
 				}
 			],
 			description: {

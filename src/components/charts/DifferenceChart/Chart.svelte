@@ -7,6 +7,7 @@
 	import ClipPath from "$components/chartcomponents/ClipPath.svg.svelte";
 	import Legend from "./Legend.html.svelte";
 	import AxisX from "../LineChart/AxisX.html.svelte";
+	import Annotation from "$components/chartcomponents//Annotation.html.svelte";
 
 	export let chart;
 
@@ -44,6 +45,7 @@
 			flatData={data.flatMap((d) => d.values)}
 			{data}
 			yDomain={[1, 0]}
+			custom={{ annotations: annotations }}
 		>
 			<Svg>
 				<ClipPath {...options} />
@@ -54,6 +56,12 @@
 				<Legend {...options} />
 				<AxisX {...options} />
 			</Html>
+
+			{#if annotations}
+				<Html>
+					<Annotation />
+				</Html>
+			{/if}
 		</LayerCake>
 	{/if}
 </div>

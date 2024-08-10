@@ -25,7 +25,18 @@ export default {
 						strokeOpacity: 1,
 						strokeWidth: 0.5,
 						fill: "#fff"
-					}
+					},
+					annotations: [
+						{
+							y: 0,
+							text: "Full equality"
+						},
+						{
+							y: 1,
+							dy: -22,
+							text: "Full inequality"
+						}
+					]
 				}
 			],
 			description: {
@@ -58,6 +69,18 @@ export default {
 							z: "US",
 							dy: -32,
 							text: "Global average"
+						},
+						{
+							x: "2009",
+							text: "Financial crisis"
+						},
+						{
+							x: "2019",
+							text: "Covid"
+						},
+						{
+							x: "1989",
+							text: "Fall of Berlin wall"
 						}
 					]
 				},
