@@ -40,7 +40,8 @@ export default {
 				}
 			],
 			description: {
-				title: `World GINI Distribution`
+				title: `World GINI Distribution`,
+				text: "hello"
 			}
 		},
 		{
