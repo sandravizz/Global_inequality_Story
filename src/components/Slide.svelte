@@ -2,7 +2,8 @@
 	import { gsap } from "gsap";
 
 	export let src;
-	export let text;
+	export let title;
+	export let subtitle;
 	export let hide;
 	export let show;
 	export let isVisible = false;
@@ -21,56 +22,62 @@
 		"none"
 	];
 
-	// $: {
-	// 	if (show || hide) {
-	// 		const timeline = gsap.timeline();
-	// 		const offset = show ? 1 : 0;
-	// 		if (show) {
-	// 			timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
-	// 		}
-	// 		if (hide) {
-	// 			timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
-	// 		}
+	$: {
+		if (show || hide) {
+			const timeline = gsap.timeline();
+			const offset = show ? 1 : 0;
+			if (show) {
+				timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+			}
+			if (hide) {
+				timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+			}
 
-	// 		for (let i = 0; i <= filters.length; i++) {
-	// 			timeline.set(
-	// 				slideEl,
-	// 				{ filter: filters[i], duration: 0.2 },
-	// 				i * 0.2 + offset
-	// 			);
+			for (let i = 0; i <= filters.length; i++) {
+				timeline.set(
+					slideEl,
+					{ filter: filters[i], duration: 0.2 },
+					i * 0.2 + offset
+				);
 
-	// 			timeline.set(
-	// 				textEl,
-	// 				{
-	// 					x: i === filters.length ? 0 : randomInRange(-40, 40),
-	// 					y: i === filters.length ? 0 : randomInRange(-40, 40),
-	// 					scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
-	// 					duration: 0.2
-	// 				},
-	// 				i * 0.2 + offset
-	// 			);
+				timeline.set(
+					textEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-40, 40),
+						y: i === filters.length ? 0 : randomInRange(-40, 40),
+						scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
+						duration: 0.2
+					},
+					i * 0.2 + offset
+				);
 
-	// 			timeline.set(
-	// 				imgEl,
-	// 				{
-	// 					x: i === filters.length ? 0 : randomInRange(-10, 10),
-	// 					y: i === filters.length ? 0 : randomInRange(-10, 10),
-	// 					scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
-	// 					duration: 0.2
-	// 				},
-	// 				i * 0.2 + offset
-	// 			);
-	// 		}
-	// 	}
-	// }
+				timeline.set(
+					imgEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-10, 10),
+						y: i === filters.length ? 0 : randomInRange(-10, 10),
+						scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
+						duration: 0.2
+					},
+					i * 0.2 + offset
+				);
+			}
+		}
+	}
 </script>
 
 <div bind:this={slideEl} class="slide" class:isVisible>
-	<h1 bind:this={textEl}>
-		{text}
-	</h1>
-	<h3>Hello I'm a subtitle</h3>
-	<img bind:this={imgEl} {src} alt={text} />
+	<div class="textcontainer" bind:this={textEl}>
+		<h1>
+			{title}
+		</h1>
+		{#if subtitle}
+			<h3>
+				{subtitle}
+			</h3>
+		{/if}
+	</div>
+	<img bind:this={imgEl} {src} alt={title} />
 	<div class="hint">
 		<div>scroll down</div>
 		<div class="gg-chevron-down" />
@@ -96,27 +103,32 @@
 		align-items: center;
 	}
 
+	.textcontainer {
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	h1 {
 		-webkit-text-fill-color: rgba(0, 0, 0, 0);
 		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-width: 2px;
 		text-wrap: nowrap;
-		z-index: 1;
-		font-size: 6vw;
+		font-size: 24px;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
 	}
 
 	h3 {
-		-webkit-text-fill-color: #fff;
-		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 0.5px;
-		text-wrap: nowrap;
-		z-index: 1;
-		font-size: 1vw;
-		font-family: "Montserrat Alternates2", sans-serif;
+		margin: 0;
+		padding: 0;
+		font-family: "Syncopate", sans-serif;
 		line-height: normal;
+		opacity: 0.8;
 	}
 
 	img {
@@ -129,12 +141,11 @@
 		object-position: 50% 50%;
 	}
 
-	/* 
 	@media (min-width: 500px) {
 		h1 {
 			font-size: 6vw;
 		}
-	} */
+	}
 
 	.hint {
 		z-index: 100;
@@ -145,7 +156,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: "Montserrat Alternates3", sans-serif;
 		opacity: 0.8;
 	}
 
@@ -155,14 +165,15 @@
 	}
 
 	.gg-chevron-down {
-		transform: scale(1.4);
+		transform: scale(1.8);
 		color: #d5f2f2;
+
 		box-sizing: border-box;
 		position: relative;
 		display: block;
-		width: 20px;
-		height: 20px;
-		border: 1px solid transparent;
+		width: 22px;
+		height: 22px;
+		border: 2px solid transparent;
 		border-radius: 100px;
 	}
 
