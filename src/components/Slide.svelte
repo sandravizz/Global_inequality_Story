@@ -69,9 +69,7 @@
 	<h1 bind:this={textEl}>
 		{text}
 	</h1>
-	<h3 bind:this={textEl}>
-		{text}
-	</h3>
+	<h3>Hello I'm a subtitle</h3>
 	<img bind:this={imgEl} {src} alt={text} />
 	<div class="hint">
 		<div>scroll down</div>
@@ -104,22 +102,21 @@
 		-webkit-text-stroke-width: 3px;
 		text-wrap: nowrap;
 		z-index: 1;
-		font-size: 24px;
+		font-size: 6vw;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
 	}
 
 	h3 {
-		-webkit-text-fill-color: rgba(0, 0, 0, 0);
+		-webkit-text-fill-color: #fff;
 		-webkit-text-stroke-color: #fff;
 		-webkit-text-stroke-width: 0.5px;
 		text-wrap: nowrap;
 		z-index: 1;
-		font-size: 12px;
-		font-family: "Syncopate", sans-serif;
+		font-size: 1vw;
+		font-family: "Montserrat Alternates2", sans-serif;
 		line-height: normal;
-		text-transform: uppercase;
 	}
 
 	img {
@@ -132,11 +129,12 @@
 		object-position: 50% 50%;
 	}
 
+	/* 
 	@media (min-width: 500px) {
 		h1 {
 			font-size: 6vw;
 		}
-	}
+	} */
 
 	.hint {
 		z-index: 100;
@@ -147,6 +145,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		font-family: "Montserrat Alternates3", sans-serif;
 		opacity: 0.8;
 	}
 
@@ -156,15 +155,14 @@
 	}
 
 	.gg-chevron-down {
-		transform: scale(1.8);
+		transform: scale(1.4);
 		color: #d5f2f2;
-
 		box-sizing: border-box;
 		position: relative;
 		display: block;
-		width: 22px;
-		height: 22px;
-		border: 2px solid transparent;
+		width: 20px;
+		height: 20px;
+		border: 1px solid transparent;
 		border-radius: 100px;
 	}
 
