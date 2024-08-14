@@ -17,7 +17,7 @@
 <div class="wrapper">
 	<Slide
 		src="/assets/1.png"
-		title="Global capital"
+		title="Global/international capital"
 		subtitle="is ruthless"
 		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
 		show={slideIndex !== undefined ? slideIndex === 0 : null}
