@@ -3,32 +3,10 @@
 @import "fonts.css";
 
 :root {
-	--color-background: #0f0140;
-	--category-blue: #4477aa;
-	--category-red: #ee6677;
-	--category-green: #228833;
-	--category-yellow: #ccbb44;
-	--category-cyan: #66ccee;
-	--category-purple: #aa3377;
-	--category-gray: #bbbbbb;
-	--color-black: #000000;
-	--color-white: #ffffff;
-	--color-gray-50: #f7f7f7;
-	--color-gray-100: #efefef;
-	--color-gray-200: #dfdfdf;
-	--color-gray-300: #cacaca;
-	--color-gray-400: #a8a8a8;
-	--color-gray-500: #878787;
-	--color-gray-600: #6d6d6d;
-	--color-gray-700: #4e4e4e;
-	--color-gray-800: #373737;
-	--color-gray-900: #262626;
-	--color-gray-1000: #191919;
-	--color-purple: #a239ca;
-	--color-blue: #4717f6;
-	--color-green: #34a29e;
-	--color-red: #ff533d;
-	--color-yellow: #e5e338;
+	--color-background:#020100ff;
+
+
+
 	--12px: 0.75rem;
 	--14px: 0.875rem;
 	--16px: 1rem;

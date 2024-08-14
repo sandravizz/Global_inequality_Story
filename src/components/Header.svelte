@@ -11,21 +11,21 @@
 		}
 	};
 
-	setInterval(switchBlock, 6000);
+	setInterval(switchBlock, 10000);
 </script>
 
 <div class="wrapper">
 	<Slide
 		src="/assets/1.png"
-		title="Global capital"
-		subtitle="is ruthless"
+		title="Global income"
+		subtitle="Analysis of global income inequality between 1980 - 2023"
 		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
 		show={slideIndex !== undefined ? slideIndex === 0 : null}
 		isVisible={true}
 	/>
 	<Slide
 		src="/assets/2.png"
-		title="Global inequality"
+		title="Inequality"
 		subtitle="is bad"
 		hide={slideIndex !== 1}
 		show={slideIndex === 1}

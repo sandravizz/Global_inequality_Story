@@ -21,10 +21,10 @@ export default {
 					componentIndex: 0,
 					data: renderData,
 					options: {
-						stroke: "#fff",
+						stroke: "#d5f2f2",
 						strokeOpacity: 1,
 						strokeWidth: 0.5,
-						fill: "#fff"
+						fill: "#d5f2f2"
 					},
 					annotations: [
 						{
@@ -51,7 +51,7 @@ export default {
 					componentIndex: 0,
 					data: renderData,
 					options: {
-						stroke: "#fff",
+						stroke: "#d5f2f2",
 						strokeOpacity: 0.3,
 						strokeWidth: 0.5
 					}
@@ -183,7 +183,7 @@ export default {
 					componentIndex: 0,
 					data: renderData,
 					options: {
-						stroke: "#fff",
+						stroke: "#d5f2f2",
 						strokeOpacity: 0,
 						strokeWidth: 0.5
 					}
