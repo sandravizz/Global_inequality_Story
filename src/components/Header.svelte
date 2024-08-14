@@ -17,7 +17,7 @@
 <div class="wrapper">
 	<Slide
 		src="/assets/1.png"
-		title="Global yuhu income"
+		title="Global income"
 		subtitle="Analysis of global income inequality between 1980 - 2023"
 		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
 		show={slideIndex !== undefined ? slideIndex === 0 : null}
@@ -26,7 +26,6 @@
 	<Slide
 		src="/assets/2.png"
 		title="Inequality"
-		subtitle="is bad"
 		hide={slideIndex !== 1}
 		show={slideIndex === 1}
 	/>
