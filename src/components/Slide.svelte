@@ -22,48 +22,50 @@
 		"none"
 	];
 
-	$: {
-		if (show || hide) {
-			const timeline = gsap.timeline();
-			const offset = show ? 1 : 0;
-			if (show) {
-				timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
-			}
-			if (hide) {
-				timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
-			}
+	console.log(filters);
 
-			for (let i = 0; i <= filters.length; i++) {
-				timeline.set(
-					slideEl,
-					{ filter: filters[i], duration: 0.2 },
-					i * 0.2 + offset
-				);
+	// $: {
+	// 	if (show || hide) {
+	// 		const timeline = gsap.timeline();
+	// 		const offset = show ? 1 : 0;
+	// 		if (show) {
+	// 			timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+	// 		}
+	// 		if (hide) {
+	// 			timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+	// 		}
 
-				timeline.set(
-					textEl,
-					{
-						x: i === filters.length ? 0 : randomInRange(-40, 40),
-						y: i === filters.length ? 0 : randomInRange(-40, 40),
-						scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
-						duration: 0.2
-					},
-					i * 0.2 + offset
-				);
+	// 		for (let i = 0; i <= filters.length; i++) {
+	// 			timeline.set(
+	// 				slideEl,
+	// 				{ filter: filters[i], duration: 0.2 },
+	// 				i * 0.2 + offset
+	// 			);
 
-				timeline.set(
-					imgEl,
-					{
-						x: i === filters.length ? 0 : randomInRange(-10, 10),
-						y: i === filters.length ? 0 : randomInRange(-10, 10),
-						scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
-						duration: 0.2
-					},
-					i * 0.2 + offset
-				);
-			}
-		}
-	}
+	// 			timeline.set(
+	// 				textEl,
+	// 				{
+	// 					x: i === filters.length ? 0 : randomInRange(-40, 40),
+	// 					y: i === filters.length ? 0 : randomInRange(-40, 40),
+	// 					scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
+	// 					duration: 0.8
+	// 				},
+	// 				i * 0.2 + offset
+	// 			);
+
+	// 			timeline.set(
+	// 				imgEl,
+	// 				{
+	// 					x: i === filters.length ? 0 : randomInRange(-10, 10),
+	// 					y: i === filters.length ? 0 : randomInRange(-10, 10),
+	// 					scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
+	// 					duration: 0.8
+	// 				},
+	// 				i * 0.2 + offset
+	// 			);
+	// 		}
+	// 	}
+	// }
 </script>
 
 <div bind:this={slideEl} class="slide" class:isVisible>
@@ -112,23 +114,25 @@
 
 	h1 {
 		-webkit-text-fill-color: rgba(0, 0, 0, 0);
-		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #d5f2f2;
+		-webkit-text-stroke-width: 3px;
 		text-wrap: nowrap;
-		font-size: 24px;
+		font-size: 6vw;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
 		margin: 0;
 		padding: 0;
+		opacity: 0.7;
 	}
 
 	h3 {
 		margin: 0;
 		padding: 0;
-		font-family: "Syncopate", sans-serif;
+		font-size: 1.5vw;
+		font-family: "Montserrat Alternates2", sans-serif;
 		line-height: normal;
-		opacity: 0.8;
+		opacity: 0.7;
 	}
 
 	img {
@@ -141,22 +145,23 @@
 		object-position: 50% 50%;
 	}
 
-	@media (min-width: 500px) {
+	/* @media (min-width: 500px) {
 		h1 {
 			font-size: 6vw;
 		}
-	}
+	} */
 
 	.hint {
 		z-index: 100;
 		position: absolute;
-		bottom: 16px;
+		bottom: 20px;
 		left: 50%;
+		font-family: "Montserrat Alternates2", sans-serif;
 		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		opacity: 0.8;
+		opacity: 1;
 	}
 
 	.hint > div {
@@ -167,7 +172,6 @@
 	.gg-chevron-down {
 		transform: scale(1.8);
 		color: #d5f2f2;
-
 		box-sizing: border-box;
 		position: relative;
 		display: block;

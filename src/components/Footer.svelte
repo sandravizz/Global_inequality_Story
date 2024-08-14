@@ -47,6 +47,7 @@
 	}
 
 	footer {
+		font-family: "Montserrat Alternates1", sans-serif;
 		position: relative;
 		height: 100vh;
 	}
