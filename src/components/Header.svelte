@@ -17,14 +17,14 @@
 <div class="wrapper">
 	<Slide
 		src="/assets/1.png"
-		text="Global capital"
+		text="Global income"
 		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
 		show={slideIndex !== undefined ? slideIndex === 0 : null}
 		isVisible={true}
 	/>
 	<Slide
 		src="/assets/2.png"
-		text="Global inequality"
+		text="Inequality"
 		hide={slideIndex !== 1}
 		show={slideIndex === 1}
 	/>

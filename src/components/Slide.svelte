@@ -21,54 +21,57 @@
 		"none"
 	];
 
-	$: {
-		if (show || hide) {
-			const timeline = gsap.timeline();
-			const offset = show ? 1 : 0;
-			if (show) {
-				timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
-			}
-			if (hide) {
-				timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
-			}
+	// $: {
+	// 	if (show || hide) {
+	// 		const timeline = gsap.timeline();
+	// 		const offset = show ? 1 : 0;
+	// 		if (show) {
+	// 			timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+	// 		}
+	// 		if (hide) {
+	// 			timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+	// 		}
 
-			for (let i = 0; i <= filters.length; i++) {
-				timeline.set(
-					slideEl,
-					{ filter: filters[i], duration: 0.2 },
-					i * 0.2 + offset
-				);
+	// 		for (let i = 0; i <= filters.length; i++) {
+	// 			timeline.set(
+	// 				slideEl,
+	// 				{ filter: filters[i], duration: 0.2 },
+	// 				i * 0.2 + offset
+	// 			);
 
-				timeline.set(
-					textEl,
-					{
-						x: i === filters.length ? 0 : randomInRange(-40, 40),
-						y: i === filters.length ? 0 : randomInRange(-40, 40),
-						scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
-						duration: 0.2
-					},
-					i * 0.2 + offset
-				);
+	// 			timeline.set(
+	// 				textEl,
+	// 				{
+	// 					x: i === filters.length ? 0 : randomInRange(-40, 40),
+	// 					y: i === filters.length ? 0 : randomInRange(-40, 40),
+	// 					scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
+	// 					duration: 0.2
+	// 				},
+	// 				i * 0.2 + offset
+	// 			);
 
-				timeline.set(
-					imgEl,
-					{
-						x: i === filters.length ? 0 : randomInRange(-10, 10),
-						y: i === filters.length ? 0 : randomInRange(-10, 10),
-						scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
-						duration: 0.2
-					},
-					i * 0.2 + offset
-				);
-			}
-		}
-	}
+	// 			timeline.set(
+	// 				imgEl,
+	// 				{
+	// 					x: i === filters.length ? 0 : randomInRange(-10, 10),
+	// 					y: i === filters.length ? 0 : randomInRange(-10, 10),
+	// 					scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
+	// 					duration: 0.2
+	// 				},
+	// 				i * 0.2 + offset
+	// 			);
+	// 		}
+	// 	}
+	// }
 </script>
 
 <div bind:this={slideEl} class="slide" class:isVisible>
 	<h1 bind:this={textEl}>
 		{text}
 	</h1>
+	<h3 bind:this={textEl}>
+		{text}
+	</h3>
 	<img bind:this={imgEl} {src} alt={text} />
 	<div class="hint">
 		<div>scroll down</div>
@@ -98,10 +101,22 @@
 	h1 {
 		-webkit-text-fill-color: rgba(0, 0, 0, 0);
 		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-width: 3px;
 		text-wrap: nowrap;
 		z-index: 1;
 		font-size: 24px;
+		font-family: "Syncopate", sans-serif;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		-webkit-text-fill-color: rgba(0, 0, 0, 0);
+		-webkit-text-stroke-color: #fff;
+		-webkit-text-stroke-width: 0.5px;
+		text-wrap: nowrap;
+		z-index: 1;
+		font-size: 12px;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
