@@ -2,7 +2,8 @@
 	import { gsap } from "gsap";
 
 	export let src;
-	export let text;
+	export let title;
+	export let subtitle;
 	export let hide;
 	export let show;
 	export let isVisible = false;
@@ -66,10 +67,17 @@
 </script>
 
 <div bind:this={slideEl} class="slide" class:isVisible>
-	<h1 bind:this={textEl}>
-		{text}
-	</h1>
-	<img bind:this={imgEl} {src} alt={text} />
+	<div class="textcontainer" bind:this={textEl}>
+		<h1>
+			{title}
+		</h1>
+		{#if subtitle}
+			<h3>
+				{subtitle}
+			</h3>
+		{/if}
+	</div>
+	<img bind:this={imgEl} {src} alt={title} />
 	<div class="hint">
 		<div>scroll down</div>
 		<div class="gg-chevron-down" />
@@ -95,16 +103,32 @@
 		align-items: center;
 	}
 
+	.textcontainer {
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	h1 {
 		-webkit-text-fill-color: rgba(0, 0, 0, 0);
 		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-width: 2px;
 		text-wrap: nowrap;
-		z-index: 1;
 		font-size: 24px;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+	}
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		font-family: "Syncopate", sans-serif;
+		line-height: normal;
+		opacity: 0.8;
 	}
 
 	img {
