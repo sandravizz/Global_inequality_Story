@@ -10,7 +10,7 @@
 		reached a level of efficiency which would provide enough to feed the world.
 		Then why are so many people living and dying in poverty? These are the
 		observations and questions that motivated us to create this project on
-		global economic inquality.
+		global income inquality.
 	</p>
 
 	<p class="article">
