@@ -110,7 +110,7 @@
 		font-size: 1vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		hyphens: auto;
-		opacity: 0.7;
+		opacity: 0.9;
 		text-align: justify;
 	}
 
@@ -125,4 +125,16 @@
 --cerulean: #247285ff;
 --pakistan-green: #113C1Eff;
 --dark-green-2: #112A16ff; */
+
+	/* CSS HEX
+--hot-pink: #FE5DBAff;
+--rose-pink: #E95BBAff;
+--lavender-pink: #F9ACDBff;
+--dark-green: #022121ff;
+--sky-magenta: #C35BACff;
+--black: #020909ff;
+--hot-pink-2: #FF6DB7ff;
+--persian-pink: #FC7EC2ff;
+--charcoal: #213D4Fff;
+--english-violet: #4A496Aff; */
 </style>

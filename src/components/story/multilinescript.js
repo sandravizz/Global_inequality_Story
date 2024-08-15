@@ -61,7 +61,7 @@ export default {
 					componentIndex: 1,
 					data: renderData.filter((d) => ["US"].includes(d.country)),
 					options: {
-						stroke: "red",
+						stroke: "#FE5DBA",
 						strokeWidth: 4
 					},
 					annotations: [
@@ -121,7 +121,7 @@ export default {
 					componentIndex: 1,
 					data: renderData.filter((d) => ["US"].includes(d.country)),
 					options: {
-						stroke: "red",
+						stroke: "#FE5DBAff",
 						strokeWidth: 2,
 						strokeOpacity: 0.8
 					}

@@ -16,7 +16,7 @@
 
 	const filters = [
 		"hue-rotate(90deg)",
-		"grayscale(80%)",
+		// "grayscale(80%)",
 		"contrast(140%)",
 		"sepia(73%) saturate(200%) hue-rotate(288deg) contrast(110%) blur(5px)",
 		"none"
@@ -24,48 +24,48 @@
 
 	console.log(filters);
 
-	// $: {
-	// 	if (show || hide) {
-	// 		const timeline = gsap.timeline();
-	// 		const offset = show ? 1 : 0;
-	// 		if (show) {
-	// 			timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
-	// 		}
-	// 		if (hide) {
-	// 			timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
-	// 		}
+	$: {
+		if (show || hide) {
+			const timeline = gsap.timeline();
+			const offset = show ? 1 : 0;
+			if (show) {
+				timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+			}
+			if (hide) {
+				timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+			}
 
-	// 		for (let i = 0; i <= filters.length; i++) {
-	// 			timeline.set(
-	// 				slideEl,
-	// 				{ filter: filters[i], duration: 0.2 },
-	// 				i * 0.2 + offset
-	// 			);
+			for (let i = 0; i <= filters.length; i++) {
+				timeline.set(
+					slideEl,
+					{ filter: filters[i], duration: 0.2 },
+					i * 0.2 + offset
+				);
 
-	// 			timeline.set(
-	// 				textEl,
-	// 				{
-	// 					x: i === filters.length ? 0 : randomInRange(-40, 40),
-	// 					y: i === filters.length ? 0 : randomInRange(-40, 40),
-	// 					scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
-	// 					duration: 0.8
-	// 				},
-	// 				i * 0.2 + offset
-	// 			);
+				timeline.set(
+					textEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-40, 40),
+						y: i === filters.length ? 0 : randomInRange(-40, 40),
+						scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
+						duration: 0.8
+					},
+					i * 0.2 + offset
+				);
 
-	// 			timeline.set(
-	// 				imgEl,
-	// 				{
-	// 					x: i === filters.length ? 0 : randomInRange(-10, 10),
-	// 					y: i === filters.length ? 0 : randomInRange(-10, 10),
-	// 					scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
-	// 					duration: 0.8
-	// 				},
-	// 				i * 0.2 + offset
-	// 			);
-	// 		}
-	// 	}
-	// }
+				timeline.set(
+					imgEl,
+					{
+						x: i === filters.length ? 0 : randomInRange(-10, 10),
+						y: i === filters.length ? 0 : randomInRange(-10, 10),
+						scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
+						duration: 0.8
+					},
+					i * 0.2 + offset
+				);
+			}
+		}
+	}
 </script>
 
 <div bind:this={slideEl} class="slide" class:isVisible>
@@ -117,11 +117,11 @@
 		-webkit-text-stroke-color: #d5f2f2;
 		-webkit-text-stroke-width: 3px;
 		text-wrap: nowrap;
-		font-size: 6vw;
+		font-size: 5.9vw;
 		font-family: "Syncopate", sans-serif;
 		line-height: normal;
 		text-transform: uppercase;
-		margin: 0;
+		margin: 0 20 0 0;
 		padding: 0;
 		opacity: 0.7;
 	}
