@@ -6,24 +6,11 @@
 
 <section style="margin-top: 16px">
 	<p class="article">
-		The world production is so high as it has never been before. We, as humanity
-		itself have reached a level of efficiency that if equally distributed and
-		despite the world population being nealry 8 Billion, every person could have
-		enough to live if equally distributed. On the hand we see people, countries
-		falling apart struggeling to live and survive. The world is more than ever
-		intercorrelated.
-	</p>
-
-	<p class="article">
-		From the documantry - Treat labor as a cost not an asset. - Wall street vs
-		main street. - What we see over time and it is fundamental to understand why
-		ineqaulity is worsen is that the share that is made in the whole economy is
-		going less and less to the workers the wage-share and more and more to those
-		that own capital. That is essentially about power. youre a millionair in
-		waiting, just focusing on run up the hill. More uniqual more social
-		unmobility. People have the moeny to make sure they stay at the top. The
-		economoy is more and more productive but the gains of it are going into the
-		hands of very small number of people.
+		World production is so high as it has never been before. Humanity itself has
+		reached a level of efficiency which would provide enough to feed the world.
+		Then why are so many people living and dying in poverty? These are the
+		observations and questions that motivated us to create this project on
+		global economic inquality.
 	</p>
 
 	<p class="article">
@@ -78,6 +65,17 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
+	<p class="article">
+		From the documantry - Treat labor as a cost not an asset. - Wall street vs
+		main street. - What we see over time and it is fundamental to understand why
+		ineqaulity is worsen is that the share that is made in the whole economy is
+		going less and less to the workers the wage-share and more and more to those
+		that own capital. That is essentially about power. youre a millionair in
+		waiting, just focusing on run up the hill. More uniqual more social
+		unmobility. People have the moeny to make sure they stay at the top. The
+		economoy is more and more productive but the gains of it are going into the
+		hands of very small number of people.
+	</p>
 	<h3>The Global Debate on Finance Capitalism</h3>
 	<p class="article">
 		There has been a wave of neoliberal policies implemented worldwide beginning
