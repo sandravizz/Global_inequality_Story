@@ -1,5 +1,5 @@
 <script>
-	import "@fontsource/lato";
+	import "@fontsource/Montserrat Alternates1";
 	import "$styles/app.css";
 	import Header from "$components/Header.svelte";
 	import Footer from "$components/Footer.svelte";
@@ -11,6 +11,6 @@
 
 <style>
 	:global(html) {
-		font-family: "Lato", sans-serif;
+		font-family: "Montserrat Alternates1", sans-serif;
 	}
 </style>
