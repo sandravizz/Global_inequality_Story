@@ -4,6 +4,7 @@
 	export let src;
 	export let title;
 	export let subtitle;
+	export let subtitle2;
 	export let hide;
 	export let show;
 	export let isVisible = false;
@@ -78,6 +79,11 @@
 				{subtitle}
 			</h3>
 		{/if}
+		{#if subtitle2}
+			<p class="article">
+				{subtitle2}
+			</p>
+			<p></p>{/if}
 	</div>
 	<img bind:this={imgEl} {src} alt={title} />
 	<div class="hint">
@@ -129,11 +135,19 @@
 	h3 {
 		margin: 0;
 		padding: 0;
-		font-size: 1.5vw;
+		font-size: 1.7vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		-webkit-text-stroke-color: #d5f2f2;
 		line-height: normal;
 		opacity: 0.7;
+	}
+
+	.article {
+		font-size: 1vw;
+		font-family: "Montserrat Alternates2", sans-serif;
+		hyphens: auto;
+		opacity: 0.9;
+		text-align: justify;
 	}
 
 	img {

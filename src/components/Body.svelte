@@ -6,6 +6,27 @@
 
 <section style="margin-top: 16px">
 	<p class="article">
+		The world production is so high as it has never been before. We, as humanity
+		itself have reached a level of efficiency that if equally distributed and
+		despite the world population being nealry 8 Billion, every person could have
+		enough to live if equally distributed. On the hand we see people, countries
+		falling apart struggeling to live and survive. The world is more than ever
+		intercorrelated.
+	</p>
+
+	<p class="article">
+		From the documantry - Treat labor as a cost not an asset. - Wall street vs
+		main street. - What we see over time and it is fundamental to understand why
+		ineqaulity is worsen is that the share that is made in the whole economy is
+		going less and less to the workers the wage-share and more and more to those
+		that own capital. That is essentially about power. youre a millionair in
+		waiting, just focusing on run up the hill. More uniqual more social
+		unmobility. People have the moeny to make sure they stay at the top. The
+		economoy is more and more productive but the gains of it are going into the
+		hands of very small number of people.
+	</p>
+
+	<p class="article">
 		Income inequality is one of the most persistent global issues we face today.
 		Across the world, income distribution varies widely from country to country,
 		and the impact of this inequality is significant. When wealth becomes
@@ -81,6 +102,20 @@
 	</p>
 </section>
 
+<section>
+	<h5>Data source</h5>
+
+	<p class="footer">
+		Income data was sourced from the <a
+			target="_blank"
+			href="http://freecodecamp.org">World Inequality Database</a
+		> (WID). It aims to provide open and convenient access to the most extensive
+		available database on the historical evolution of the world distribution of income
+		and wealth, both within countries and between countries. The WID combines different
+		data sources: national accounts, survey data, fiscal data, and wealth rankings.
+	</p>
+</section>
+
 <style>
 	section {
 		max-width: 50rem;
@@ -106,12 +141,30 @@
 		font-family: "Montserrat Alternates2", sans-serif;
 	}
 
+	h5 {
+		line-height: 2;
+		font-size: 0.8vw;
+		font-family: "Montserrat Alternates3", sans-serif;
+		margin: 0;
+	}
+
 	.article {
 		font-size: 1vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		hyphens: auto;
 		opacity: 0.9;
 		text-align: justify;
+	}
+
+	.footer {
+		margin: 0;
+		font-size: 0.8vw;
+		font-family: "Montserrat Alternates2", sans-serif;
+		opacity: 1;
+	}
+
+	a {
+		color: #d5f2f2;
 	}
 
 	/* CSS HEX */
