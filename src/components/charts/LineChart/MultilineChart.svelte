@@ -55,14 +55,16 @@
 </div>
 
 <style>
-	.dotted {
+	/* What is this? */
+	/* .dotted {
 		border-width: 0;
-		border-top: 1px dashed var(--chart-color-lowlight);
-	}
+		border-top: 10px dashed var(--chart-color-lowlight);
+	} */
 
-	.axisLabel {
-		font-size: 12px;
+	/* What is this? */
+	/* .axisLabel {
+		font-size: 0px;
 		position: absolute;
-		color: var(--chart-color-lowlight);
-	}
+		color: red;
+	} */
 </style>

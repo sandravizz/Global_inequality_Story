@@ -23,7 +23,7 @@ export default {
 					options: {
 						stroke: "#d5f2f2",
 						strokeOpacity: 1,
-						strokeWidth: 0.5,
+						strokeWidth: 0.4,
 						fill: "#d5f2f2"
 					},
 					annotations: [
