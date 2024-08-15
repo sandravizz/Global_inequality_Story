@@ -4,7 +4,7 @@
 
 	const { xScale } = getContext("LayerCake");
 
-	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 4);
+	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 6);
 </script>
 
 <div class="axis">
@@ -30,34 +30,35 @@
 
 	hr {
 		border-width: 0;
-		border-bottom: 1px solid var(--chart-color-lowlight);
+		border-bottom: 1px solid #d5f2f2;
 	}
 
 	.tick {
 		position: absolute;
 		display: inline-block;
-		font-size: 0.8em;
+		font-size: 0.6em;
 		width: 0;
 	}
 
 	.text {
 		position: absolute;
-		color: var(--chart-color-lowlight);
+		color: #d5f2f2;
+		opacity: 0.7;
 		white-space: nowrap;
 		transform: translateX(-50%);
 	}
 
 	.moveRight .text {
 		transform: none;
+		color: #d5f2f2;
 	}
 
 	.moveLeft .text {
 		transform: translateX(-100%);
+		color: #d5f2f2;
 	}
 
-	.tick .line {
+	.line {
 		height: 0.8em;
-		background-color: var(--chart-color-lowlight);
-		width: 0.5px;
 	}
 </style>
