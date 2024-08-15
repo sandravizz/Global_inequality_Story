@@ -220,7 +220,6 @@
 		-webkit-text-fill-color: rgba(0, 0, 0, 0);
 		-webkit-text-stroke-color: #fff;
 		-webkit-text-stroke-width: 1px;
-		text-wrap: nowrap;
 		z-index: 1;
 		font-size: 30px;
 		font-family: "Syncopate", sans-serif;
