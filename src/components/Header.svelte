@@ -18,7 +18,7 @@
 	<Slide
 		src="/assets/1.png"
 		title="Global inequality"
-		subtitle="Analysis of global income inequality between 1980 - 2023"
+		subtitle="Analysis of global income inequality 1980 - 2023"
 		subtitle2=" by Sandra Becker and Patrick Wojda 09/2024"
 		hide={slideIndex !== undefined ? slideIndex !== 0 : null}
 		show={slideIndex !== undefined ? slideIndex === 0 : null}
