@@ -16,7 +16,7 @@
 			<div
 				class="label absolute"
 				style="
-			left: {$xGet(getAnnotationData(xValue, zValue))}px; 
+			left:{$xGet(getAnnotationData(xValue, zValue))}px; 
 			top:{$yGet(getAnnotationData(xValue, zValue)) + dy}px"
 			>
 				{text}
@@ -48,10 +48,10 @@
 				>
 					{text}
 				</div>
-				<hr
+				<!-- <hr
 					class="absolute lowlight dotted"
 					style="top: {$yScale(yValue)}px; left: 0; right:0; "
-				/>
+				/> -->
 			{/if}
 		{/if}
 	{/each}
@@ -67,28 +67,28 @@
 	}
 
 	.lowlight {
-		color: var(--chart-color-lowlight);
+		color: #d5f2f2;
 	}
 
 	.label {
-		font-weight: bold;
 		letter-spacing: -0.5px;
 		transition: all 0.8s;
-	}
-
-	.sm {
-		font-size: smaller;
+		font-size: 1vw;
+		font-family: "Montserrat Alternates2", sans-serif;
+		opacity: 0.7;
 	}
 
 	.dotted {
-		border-width: 0;
-		border-top: 0.5px dashed var(--chart-color-highlight);
+		height: 0.5px;
+		color: #d5f2f2;
+		opacity: 0.3;
 	}
 
 	.xLine {
 		border-width: 0;
-		border-left: 0.5px dashed var(--chart-color-highlight);
+		border-left: 0.1px dashed #d5f2f2;
 		top: -8px;
 		bottom: 0;
+		opacity: 0.3;
 	}
 </style>

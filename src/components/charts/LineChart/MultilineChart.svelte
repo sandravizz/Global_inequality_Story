@@ -53,18 +53,3 @@
 		</LayerCake>
 	{/if}
 </div>
-
-<style>
-	/* What is this? */
-	/* .dotted {
-		border-width: 0;
-		border-top: 10px dashed var(--chart-color-lowlight);
-	} */
-
-	/* What is this? */
-	/* .axisLabel {
-		font-size: 0px;
-		position: absolute;
-		color: red;
-	} */
-</style>

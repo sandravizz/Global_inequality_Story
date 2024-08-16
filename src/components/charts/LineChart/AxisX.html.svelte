@@ -4,7 +4,7 @@
 
 	const { xScale } = getContext("LayerCake");
 
-	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 6);
+	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 4);
 </script>
 
 <div class="axis">

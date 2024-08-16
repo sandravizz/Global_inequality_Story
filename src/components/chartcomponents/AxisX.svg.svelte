@@ -6,15 +6,15 @@
 	export let tickMarks = false;
 	export let baseline = false;
 	export let snapTicks = false;
-	export let yTick = 16;
+	export let yTick = 5;
 	export let formatTick = (d) => d;
 	export let ticks = undefined;
 
 	$: tickVals = Array.isArray(ticks)
 		? ticks
 		: typeof ticks === "function"
-		? ticks($xScale.ticks())
-		: $xScale.ticks(ticks);
+			? ticks($xScale.ticks())
+			: $xScale.ticks(ticks);
 
 	const textAnchor = (i) => {
 		if (snapTicks === true) {
@@ -61,11 +61,11 @@
 	.tick {
 		font-size: 0.725em;
 		font-weight: 200;
-		fill: #D5F2F2;
+		fill: #d5f2f2;
 	}
 
 	line {
-		stroke: #D5F2F2;
+		stroke: #d5f2f2;
 		stroke-dasharray: 2;
 	}
 
