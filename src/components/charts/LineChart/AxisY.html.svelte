@@ -2,18 +2,18 @@
 	import { ticks } from "d3";
 	import { getContext } from "svelte";
 
-	const { xScale } = getContext("LayerCake");
+	const { yScale } = getContext("LayerCake");
 
-	$: tickVals = ticks($xScale.domain()[0], $xScale.domain()[1], 4);
+	$: tickVals = ticks($yScale.domain()[1], $yScale.domain()[0], 4);
 </script>
 
 <div class="axis">
 	{#each tickVals as tick, i (tick)}
 		<div
 			class="tick"
-			style="left:{$xScale(tick)}px;"
-			class:moveRight={tick === $xScale.domain()[0]}
-			class:moveLeft={tick === $xScale.domain()[1]}
+			style="bottom:{$yScale(tick)}px;"
+			class:moveTop={tick === $yScale.domain()[0]}
+			class:moveBottom={tick === $yScale.domain()[1]}
 		>
 			<div class="line" />
 			<div class="text">{tick}</div>
@@ -44,12 +44,12 @@
 		transform: translateX(-50%);
 	}
 
-	.moveRight .text {
+	.momoveBottom .text {
 		transform: none;
 		color: #d5f2f2;
 	}
 
-	.moveLeft .text {
+	.moveTop .text {
 		transform: translateX(-100%);
 		color: #d5f2f2;
 	}

@@ -32,20 +32,15 @@ export default {
 					data: renderData,
 					options: {
 						stroke: "#d5f2f2",
-						strokeOpacity: 1,
+						strokeOpacity: 0.7,
 						strokeWidth: 0.4,
 						fill: "#d5f2f2"
 					},
 					annotations: [
 						{
 							y: 0,
-							dy: 10,
-							text: "Gini 0 | Equality"
-						},
-						{
-							y: 1,
-							dy: -25,
-							text: "Gini 1 | Inequality"
+							dy: -1,
+							text: " = Complete equality, which means that every income group earns the same."
 						}
 					]
 				},
@@ -60,49 +55,7 @@ export default {
 				}
 			],
 			description: {
-				title: `4 Decades of analysis`,
-				text: "Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
-			}
-		},
-		//The 2. step is to introduce the global average line as a flat line.
-		{
-			charts: [
-				{
-					key: "country",
-					componentIndex: 0,
-					data: renderData,
-					options: {
-						stroke: "#d5f2f2",
-						strokeOpacity: 0.8,
-						strokeWidth: 0.4
-					},
-					annotations: [
-						{
-							x: "2009",
-							text: "Financial crisis"
-						},
-						{
-							x: "2019",
-							text: "Covid"
-						},
-						{
-							x: "1989",
-							text: "Fall of Berlin wall"
-						}
-					]
-				},
-				{
-					key: "country",
-					componentIndex: 1,
-					data: renderData.filter((d) => ["US"].includes(d.country)),
-					options: {
-						stroke: "#FE5DBA",
-						strokeWidth: 0
-					}
-				}
-			],
-			description: {
-				title: `World GINI Distribution`,
+				title: `Gini from 1980 to 2023`,
 				text: "Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
 			}
 		},
@@ -129,22 +82,9 @@ export default {
 					},
 					annotations: [
 						{
-							x: "1998",
-							z: "US",
-							dy: -32,
-							text: "Global average"
-						},
-						{
-							x: "2009",
-							text: "Financial crisis"
-						},
-						{
-							x: "2019",
-							text: "Covid"
-						},
-						{
-							x: "1989",
-							text: "Fall of Berlin wall"
+							y: 0,
+							dy: -1,
+							text: " = Complete equality, which means that every income group earns the same."
 						}
 					]
 				},

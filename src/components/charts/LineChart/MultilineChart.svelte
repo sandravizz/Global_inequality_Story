@@ -6,6 +6,7 @@
 	import MultiLine from "$components/chartcomponents/MultiLine.svg.svelte";
 	import Annotation from "$components/chartcomponents/Annotation.html.svelte";
 	import AxisX from "./AxisX.html.svelte";
+	import AxisY from "./AxisY.html.svelte";
 
 	export let chart;
 
@@ -49,6 +50,7 @@
 
 			<Html>
 				<AxisX />
+				<AxisY />
 			</Html>
 		</LayerCake>
 	{/if}
