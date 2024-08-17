@@ -165,24 +165,26 @@
 		color: #d5f2f2;
 	}
 
-	/* --cornflower-blue: #7190FEff;
---caribbean-current: #226566ff;
---brunswick-green: #224E3Bff;
---chefchaouen-blue: #4C8FFEff;
---brunswick-green-2: #1E574Dff;
---dark-green: #142605ff;
---night: #081604ff;
---cerulean: #247285ff;
---pakistan-green: #113C1Eff;
---dark-green-2: #112A16ff; 
---hot-pink: #FE5DBAff;
---rose-pink: #E95BBAff;
---lavender-pink: #F9ACDBff;
---dark-green: #022121ff;
---sky-magenta: #C35BACff;
---black: #020909ff;
---hot-pink-2: #FF6DB7ff;
---persian-pink: #FC7EC2ff;
---charcoal: #213D4Fff;
---english-violet: #4A496Aff;  */
+	:root {
+		--cornflower-blue: #7190feff;
+		--caribbean-current: #226566ff;
+		--brunswick-green: #224e3bff;
+		--chefchaouen-blue: #4c8ffeff;
+		--brunswick-green-2: #1e574dff;
+		--dark-green: #142605ff;
+		--night: #081604ff;
+		--cerulean: #247285ff;
+		--pakistan-green: #113c1eff;
+		--dark-green-2: #112a16ff;
+		--hot-pink: #fe5dbaff;
+		--rose-pink: #e95bbaff;
+		--lavender-pink: #f9acdbff;
+		--dark-green: #022121ff;
+		--sky-magenta: #c35bacff;
+		--black: #020909ff;
+		--hot-pink-2: #ff6db7ff;
+		--persian-pink: #fc7ec2ff;
+		--charcoal: #213d4fff;
+		--english-violet: #4a496aff;
+	}
 </style>

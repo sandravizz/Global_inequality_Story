@@ -65,6 +65,3 @@
 		</LayerCake>
 	{/if}
 </div>
-
-<style>
-</style>

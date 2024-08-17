@@ -39,7 +39,7 @@
 		font-size: 0.7vw;
 		position: absolute;
 		color: #d5f2f2;
-		opacity: 0.3;
+		opacity: 0.4;
 		white-space: nowrap;
 		transform: translateX(-50%);
 	}

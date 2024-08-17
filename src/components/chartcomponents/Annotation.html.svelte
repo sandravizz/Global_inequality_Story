@@ -75,7 +75,7 @@
 		transition: all 0.8s;
 		font-size: 0.8vw;
 		font-family: "Montserrat Alternates2", sans-serif;
-		opacity: 0.3;
+		opacity: 0.5;
 	}
 
 	.label {

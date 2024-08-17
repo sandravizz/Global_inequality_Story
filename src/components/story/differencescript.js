@@ -26,18 +26,7 @@ export default {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
 						strokeWidth: 2
-					},
-					annotations: [
-						{
-							y: 0,
-							text: "Full equality"
-						},
-						{
-							y: 1,
-							dy: -22,
-							text: "Full inequality"
-						}
-					]
+					}
 				}
 			],
 			description: {
