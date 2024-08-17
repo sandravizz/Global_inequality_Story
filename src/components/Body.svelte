@@ -166,16 +166,21 @@
 	}
 
 	:root {
+		--brunswick-green: #184b39ff;
+		--dark-green: #13270bff;
+		--cornflower-blue: #748ffeff;
+		--pakistan-green: #203f21ff;
+		--cerulean: #307fa3ff;
+		--jordy-blue: #99b9f8ff;
+		--caribbean-current: #1f6e7dff;
 		--cornflower-blue: #7190feff;
 		--caribbean-current: #226566ff;
 		--brunswick-green: #224e3bff;
 		--chefchaouen-blue: #4c8ffeff;
-		--brunswick-green-2: #1e574dff;
 		--dark-green: #142605ff;
 		--night: #081604ff;
 		--cerulean: #247285ff;
 		--pakistan-green: #113c1eff;
-		--dark-green-2: #112a16ff;
 		--hot-pink: #fe5dbaff;
 		--rose-pink: #e95bbaff;
 		--lavender-pink: #f9acdbff;

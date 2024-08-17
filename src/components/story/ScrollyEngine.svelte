@@ -67,7 +67,7 @@
 							<div class="contentwrapper">
 								<div class="contentbackground" />
 								<div class="content">
-									<h3>{step.description.title}</h3>
+									<h4>{step.description.title}</h4>
 									{#if step.description.text}
 										<p>{@html step.description.text}</p>
 									{/if}
@@ -84,7 +84,7 @@
 <style>
 	section {
 		max-width: 50rem;
-		padding: 0 16px;
+		padding: 0 0px;
 		margin: 0 auto;
 	}
 
@@ -143,7 +143,7 @@
 	}
 
 	.steps {
-		margin-top: 50vh;
+		margin-top: 10vh;
 	}
 
 	.step:last-of-type {
@@ -165,23 +165,32 @@
 
 	.contentwrapper {
 		position: relative;
-		padding: 16px;
+		padding: 10px;
 	}
 
 	.contentbackground {
 		background-color: var(--color-background);
-		opacity: 0.4;
+		opacity: 0.5;
 		position: absolute;
-		top: -16px;
-		bottom: -16px;
-		left: -16px;
-		right: -16px;
+		top: -10px;
+		bottom: -10px;
+		left: -20px;
+		right: -20px;
 	}
 
 	.content {
 		position: relative;
 		z-index: 2;
-		-webkit-text-stroke: 0.2px #fff;
+	}
+
+	.step .content h4 {
+		-webkit-text-fill-color: var(--color-background);
+		-webkit-text-stroke-color: #d5f2f2;
+		-webkit-text-stroke-width: 0.9px;
+		font-size: 28px;
+		font-family: "Syncopate", sans-serif;
+		line-height: 1.4;
+		text-transform: uppercase;
 	}
 
 	@media (min-width: 900px) {
@@ -207,23 +216,5 @@
 			margin: auto;
 			max-width: 50rem;
 		}
-
-		.contentbackground {
-			margin-left: auto;
-			margin-right: auto;
-			z-index: 1;
-		}
-	}
-
-	.step .content h3 {
-		font-family: Syncopate;
-		-webkit-text-fill-color: rgba(0, 0, 0, 0);
-		-webkit-text-stroke-color: #fff;
-		-webkit-text-stroke-width: 1px;
-		z-index: 1;
-		font-size: 30px;
-		font-family: "Syncopate", sans-serif;
-		line-height: normal;
-		text-transform: uppercase;
 	}
 </style>
