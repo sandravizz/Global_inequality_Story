@@ -35,7 +35,7 @@
 			z="country"
 			flatData={data.flatMap((d) => d.values)}
 			{data}
-			yDomain={[1, 0]}
+			yDomain={[0, 1]}
 			custom={{ annotations: annotations }}
 		>
 			<Svg>

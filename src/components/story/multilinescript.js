@@ -115,7 +115,7 @@ export default {
 			],
 			description: {
 				title: `Global flat line`,
-				text: "sdvosvspdvvsdd egnerºffdnºp dfvndfpbndfp ddpmfbdfºb dfpbdmppn rfbnfdvndfºv dfmbvpfbnp ´dfvbmdf´bv <span style='background: #7190feff; color: #d5f2f2; padding: 2px 4px; margin: 0 2px;'>Global average</span>   Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
+				text: "sdvosvspdvvsdd egnerºffdnºp dfvndfpbndfp ddpmfbdfºb dfpbdmppn rfbnfdvndfºv dfmbvpfbnp ´dfvbmdf´bv <span style='background: #7190feff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 2px 4px; margin: 0 2px;'>Global average</span>   Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
 			}
 		},
 		//3. Europe.

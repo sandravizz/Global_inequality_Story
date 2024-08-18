@@ -90,7 +90,7 @@
 
 	section.fullWidth {
 		max-width: none;
-		padding: 0;
+		padding: 20px;
 	}
 
 	section.wide {
