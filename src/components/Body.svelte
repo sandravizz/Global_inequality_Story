@@ -101,16 +101,29 @@
 </section>
 
 <section>
-	<h5>Data source</h5>
+	<h5>Data</h5>
 
 	<p class="footer">
 		Income data was sourced from the <a
 			target="_blank"
-			href="http://freecodecamp.org">World Inequality Database</a
+			href="https://wid.world/wid-world/">World Inequality Database</a
 		> (WID). It aims to provide open and convenient access to the most extensive
 		available database on the historical evolution of the world distribution of income
 		and wealth, both within countries and between countries. The WID combines different
 		data sources: national accounts, survey data, fiscal data, and wealth rankings.
+	</p>
+
+	<p class="footer">
+		<a
+			target="_blank"
+			href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
+			>Pretax income</a
+		> corresponds to income after the operation of social insurance systems, but
+		before other types of redistribution. It is equal to factor income, plus pension
+		benefits (17% of national income on average) and unemployment and disability
+		benefits (1.7%), minus the social contributions that pay for them. Contributions
+		and transfers are generally observed in survey data and can therefore be directly
+		removed from or added to individual factor incomes.
 	</p>
 </section>
 
@@ -140,6 +153,7 @@
 	}
 
 	h5 {
+		margin: 0 0 10px;
 		line-height: 2;
 		font-size: 0.8vw;
 		font-family: "Montserrat Alternates3", sans-serif;
@@ -155,10 +169,13 @@
 	}
 
 	.footer {
-		margin: 0;
+		margin: 0 0 6px;
 		font-size: 0.8vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		opacity: 1;
+		hyphens: auto;
+		opacity: 0.9;
+		text-align: justify;
 	}
 
 	a {
