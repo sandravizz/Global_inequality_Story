@@ -23,7 +23,7 @@ export default {
 		MultilineChart
 	],
 	steps: [
-		//1. Chart intro
+		//1. Chart introduction
 		{
 			charts: [
 				{
@@ -47,7 +47,7 @@ export default {
 				{
 					key: "country",
 					componentIndex: 1,
-					data: renderData.filter((d) => ["US"].includes(d.country)),
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
 					options: {
 						stroke: "#7190feff",
 						strokeWidth: 0
@@ -73,6 +73,11 @@ export default {
 					},
 					annotations: [
 						{
+							y: 0,
+							dy: -1,
+							text: " = Complete equality, which means that every income group earns the same."
+						},
+						{
 							x: "2009",
 							text: "Financial crisis"
 						},
@@ -89,22 +94,24 @@ export default {
 				{
 					key: "country",
 					componentIndex: 1,
-					data: renderData.filter((d) => ["US"].includes(d.country)),
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
 					options: {
 						stroke: "#7190feff",
-						strokeWidth: 3
-					},
-					annotations: [
-						{
-							y: 0,
-							dy: -1,
-							text: " = Complete equality, which means that every income group earns the same."
-						}
-					]
+						strokeWidth: 4
+					}
 				},
 				{
 					key: "country",
 					componentIndex: 2,
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
+					options: {
+						stroke: "#7190feff",
+						strokeWidth: 0
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 3,
 					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
 						stroke: "#226566ff",
@@ -118,7 +125,7 @@ export default {
 				text: "sdvosvspdvvsdd egnerºffdnºp dfvndfpbndfp ddpmfbdfºb dfpbdmppn rfbnfdvndfºv dfmbvpfbnp ´dfvbmdf´bv <span style='background: #7190feff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 0 4px;'> Global average </span>  Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
 			}
 		},
-		//3. Europe.
+		//3. Global vs. European average
 		{
 			charts: [
 				{
@@ -131,6 +138,11 @@ export default {
 						strokeWidth: 0.4
 					},
 					annotations: [
+						{
+							y: 0,
+							dy: -1,
+							text: " = Complete equality, which means that every income group earns the same."
+						},
 						{
 							x: "2009",
 							text: "Financial crisis"
@@ -148,22 +160,90 @@ export default {
 				{
 					key: "country",
 					componentIndex: 1,
-					data: renderData.filter((d) => ["US"].includes(d.country)),
+					data: renderData.filter((d) => ["QE"].includes(d.country)),
+					options: {
+						stroke: "#226566ff",
+						strokeWidth: 4
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 2,
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
 					options: {
 						stroke: "#7190feff",
-						strokeWidth: 3
+						strokeWidth: 4
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 3,
+					data: renderData.filter((d) => d.region === "Europe"),
+					options: {
+						stroke: "#226566ff",
+						strokeWidth: 0,
+						strokeOpacity: 1
+					}
+				}
+			],
+			description: {
+				title: `Europe most equal`,
+				text: "Let's have   <span style='background: #7190feff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 0 2px;'> Global average </span> a look at the last <span style='background: #226566ff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 0 4px;'> European countries </span>  4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
+			}
+		},
+		//4. Global, European average and European countries
+		{
+			charts: [
+				{
+					key: "country",
+					componentIndex: 0,
+					data: renderData,
+					options: {
+						stroke: "#d5f2f2",
+						strokeOpacity: 0.4,
+						strokeWidth: 0.4
 					},
 					annotations: [
 						{
 							y: 0,
 							dy: -1,
 							text: " = Complete equality, which means that every income group earns the same."
+						},
+						{
+							x: "2009",
+							text: "Financial crisis"
+						},
+						{
+							x: "2019",
+							text: "Covid"
+						},
+						{
+							x: "1989",
+							text: "Fall of Berlin wall"
 						}
 					]
 				},
 				{
 					key: "country",
+					componentIndex: 1,
+					data: renderData.filter((d) => ["QE"].includes(d.country)),
+					options: {
+						stroke: "#226566ff",
+						strokeWidth: 4
+					}
+				},
+				{
+					key: "country",
 					componentIndex: 2,
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
+					options: {
+						stroke: "#7190feff",
+						strokeWidth: 4
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 3,
 					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
 						stroke: "#226566ff",
