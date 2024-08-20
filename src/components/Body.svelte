@@ -6,37 +6,20 @@
 
 <section style="margin-top: 16px">
 	<p class="article">
-		World production is so high as it has never been before. Humanity itself has
-		reached a level of efficiency which would provide enough to feed the world.
-		Then why are so many people living and dying in poverty? These are the
+		<a
+			target="_blank"
+			href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
+			>World production
+		</a> is so high as it has never been before. Humanity itself has reached a level
+		of efficiency which could feed the world. Then why are so many people still living
+		and dying in poverty?
+	</p>
+
+	<p class="article">
+		On the other hand in more and more countries facisim is again! on the rise.
+		Extreme inquality leads to frustration, fear and anger. These are
 		observations and questions that motivated us to create this project on
 		global income inquality.
-	</p>
-
-	<p class="article">
-		Income inequality is one of the most persistent global issues we face today.
-		Across the world, income distribution varies widely from country to country,
-		and the impact of this inequality is significant. When wealth becomes
-		concentrated in the hands of a few, it can lead to economic instability,
-		recession, and depression. This occurs because too much national income is
-		diverted from the broader economy and accumulates among a small group of
-		people.
-	</p>
-
-	<p class="article">
-		Moreover, rising inequality empowers affluent countries, global
-		corporations, and even wealthy individuals to shape global rules and
-		resource allocation in their favor. With greater bargaining power, they are
-		able to secure a larger share of global economic growth, reinforcing their
-		position and further tilting international agreements and policies to their
-		advantage. This dynamic perpetuates global inequality, as noted by
-		philosopher Thomas Pogge in 2007.
-	</p>
-	<p class="article">
-		Ultimately, studying income inequality provides insight into the political
-		economy of modern capitalism and sheds light on the direction in which our
-		world is headed. Understanding these trends is crucial for policymakers and
-		citizens alike as we work toward a more equitable future.
 	</p>
 </section>
 
@@ -126,6 +109,32 @@
 		removed from or added to individual factor incomes.
 	</p>
 </section>
+
+<!-- <p class="article">
+		Income inequality is one of the most persistent global issues we face today.
+		Across the world, income distribution varies widely from country to country,
+		and the impact of this inequality is significant. When wealth becomes
+		concentrated in the hands of a few, it can lead to economic instability,
+		recession, and depression. This occurs because too much national income is
+		diverted from the broader economy and accumulates among a small group of
+		people.
+	</p> -->
+
+<!-- <p class="article">
+		Moreover, rising inequality empowers affluent countries, global
+		corporations, and even wealthy individuals to shape global rules and
+		resource allocation in their favor. With greater bargaining power, they are
+		able to secure a larger share of global economic growth, reinforcing their
+		position and further tilting international agreements and policies to their
+		advantage. This dynamic perpetuates global inequality, as noted by
+		philosopher Thomas Pogge in 2007.
+	</p>
+	<p class="article">
+		Ultimately, studying income inequality provides insight into the political
+		economy of modern capitalism and sheds light on the direction in which our
+		world is headed. Understanding these trends is crucial for policymakers and
+		citizens alike as we work toward a more equitable future.
+	</p> -->
 
 <style>
 	section {
