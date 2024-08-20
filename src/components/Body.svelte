@@ -21,6 +21,25 @@
 		observations and questions that motivated us to create this project on
 		global income inquality.
 	</p>
+
+	<p class="article">
+		In recent years, globalization and growing inequality have met a strong
+		backlash in many places, manifested by the rise of autocrats, xenophobia,
+		and social instability. The turbulence has fundamentally transformed
+		politics. The major divide is no longer between capitalism versus socialism
+		or right versus left, but between those who see globalization as an
+		opportunity and those who see it as an existential threat. Surveying the
+		scene, Donald Trump offered a pithy prognosis to the United Nations General
+		Assembly: “The future does not belong to globalists. The future belongs to
+		patriots.” Making a nation great again may not address the key issues, but
+		his forecast still points to the uneasy position that countries occupy
+		within a globally connected world. Nation- states remain fundamental to
+		capitalist-driven globalization. They delimit and preserve the opportunities
+		that companies and individuals profit from, whether by exploiting cost
+		differentials or trading on comparative advantages. More crucially, they
+		furnish the legal backing and regulations that markets require to operate—a
+		(the goldan passprt)
+	</p>
 </section>
 
 <Scroller storyscript={multilinescript} layout="wide" />
