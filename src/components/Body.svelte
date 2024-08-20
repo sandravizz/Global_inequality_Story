@@ -155,7 +155,7 @@
 	h5 {
 		margin: 0 0 10px;
 		line-height: 2;
-		font-size: 0.8vw;
+		font-size: 0.75vw;
 		font-family: "Montserrat Alternates3", sans-serif;
 		margin: 0;
 	}
@@ -169,8 +169,8 @@
 	}
 
 	.footer {
-		margin: 0 0 6px;
-		font-size: 0.8vw;
+		margin: 0 0 4px;
+		font-size: 0.75vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		opacity: 1;
 		hyphens: auto;
