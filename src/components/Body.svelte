@@ -67,16 +67,17 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
+	<h3>Capital in the 21 Century</h3>
 	<p class="article">
-		From the documantry - Treat labor as a cost not an asset. - Wall street vs
-		main street. - What we see over time and it is fundamental to understand why
-		ineqaulity is worsen is that the share that is made in the whole economy is
-		going less and less to the workers the wage-share and more and more to those
-		that own capital. That is essentially about power. youre a millionair in
-		waiting, just focusing on run up the hill. More uniqual more social
-		unmobility. People have the moeny to make sure they stay at the top. The
-		economoy is more and more productive but the gains of it are going into the
-		hands of very small number of people.
+		Treat labor as a cost not an asset. - Wall street vs main street. - What we
+		see over time and it is fundamental to understand why ineqaulity is worsen
+		is that the share that is made in the whole economy is going less and less
+		to the workers the wage-share and more and more to those that own capital.
+		That is essentially about power. - You're a millionair in waiting, just
+		focusing on run up the hill. More unequal means more social immobility. -
+		People have the moeny to make sure they stay at the top. - The economoy is
+		more and more productive but the gains of it are going into the hands of a
+		very small number of people.
 	</p>
 	<h3>The Global Debate on Finance Capitalism</h3>
 	<p class="article">
@@ -86,19 +87,19 @@
 		trend across different countries. Probably for the first time in economic
 		history in the USA, the share of the national income of the top 1% fell from
 		the 16% of pre-World War II rate, to less than 8% in the post-war era and
-		stayed at the same level for almost three decades (Harvey, 2005). However,
-		by the beginning of the 1970s a combination of slowing economic growth, the
-		breakdown of the Bretton Woods system of fixed exchange rates, ‘stagflation’
-		and high unemployment put severe strains on state budgets. ‘Keynesian
-		compromise’ appeared to have reached its limits and other alternatives to
-		overcome the emerging crisis were called on. For its proponents, the moment
-		of neoliberalism had arrived. The Austro-German Marxist theoretician was the
-		first to introduce the term ‘finance capitalism’ and warned of the dangers
+		stayed at the same level for almost three decades. However, by the beginning
+		of the 1970s a combination of slowing economic growth, the breakdown of the
+		Bretton Woods system of fixed exchange rates, stagflation and high
+		unemployment put severe strains on state budgets. Keynesian compromise
+		appeared to have reached its limits and other alternatives to overcome the
+		emerging crisis were called on. For its proponents, the moment of
+		neoliberalism had arrived. The Austro-German Marxist theoretician was the
+		first to introduce the term finance capitalism and warned of the dangers
 		associated with concentration of capital and the transformation of
-		competitive capitalism into monopolistic finance capi- talism, thus
+		competitive capitalism into monopolistic finance capitalism, thus
 		anticipating the process of contemporary financialisation. In the latter, he
-		writes of financialisation as ‘a prolonged split between the divergent real
-		and financial economies’
+		writes of financialisation as a prolonged split between the divergent real
+		and financial economies.
 	</p>
 </section>
 
