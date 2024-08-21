@@ -4,20 +4,29 @@
 
 	const { yScale } = getContext("LayerCake");
 
-	$: tickVals = ticks($yScale.domain()[1], $yScale.domain()[0], 4);
+	$: tickVals = ticks($yScale.domain()[0], $yScale.domain()[1], 4);
+	$: yMax = $yScale.domain()[1];
+	$: yMin = $yScale.domain()[0];
+
+	const formatter = new Intl.NumberFormat("en-US", {
+		minimumFractionDigits: 0,
+		maximumFractionDigits: 1
+	});
 </script>
 
 <div class="axis">
-	{#each tickVals as tick, i (tick)}
-		<div
-			class="tick"
-			style="bottom:{$yScale(tick)}px;"
-			class:moveTop={tick === $yScale.domain()[0]}
-			class:moveBottom={tick === $yScale.domain()[1]}
-		>
-			<div class="line" />
-			<div class="text">{tick}</div>
-		</div>
+	{#each tickVals as tick (tick)}
+		{#if yMax - tick !== yMin}
+			<div
+				class="tick"
+				style="bottom:{$yScale(tick)}px;"
+				class:moveTop={tick === $yScale.domain()[0]}
+				class:moveBottom={tick === $yScale.domain()[1]}
+			>
+				<div class="line" />
+				<div class="text">{formatter.format(yMax - tick)}</div>
+			</div>
+		{/if}
 	{/each}
 </div>
 
@@ -41,7 +50,7 @@
 		color: #d5f2f2;
 		opacity: 0.4;
 		white-space: nowrap;
-		transform: translateX(-50%);
+		transform: translateX(calc(-100% - 8px));
 	}
 
 	.momoveBottom .text {

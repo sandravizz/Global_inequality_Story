@@ -37,6 +37,7 @@
 			{data}
 			yDomain={[0, 1]}
 			custom={{ annotations: annotations }}
+			padding={{ left: 24, right: 8 }}
 		>
 			<Svg>
 				<MultiLine {...options} />
