@@ -56,7 +56,7 @@ export default {
 			],
 			description: {
 				title: `Gini by country 1980 - 2023`,
-				text: "Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
+				text: "The most commonly used measurement for economic inequality is the Gini index, where 0 means complete equality, everyone has the same and 1 indicates complete inequality, one person has everything. In this line chart the basis for the Gini index is pretax income.  We look at the development over last 4 decades on a country level, meaning every line represents the development of one country."
 			}
 		},
 		//2. Global average
@@ -121,8 +121,8 @@ export default {
 				}
 			],
 			description: {
-				title: `Global flat line`,
-				text: "sdvosvspdvvsdd egnerºffdnºp dfvndfpbndfp ddpmfbdfºb dfpbdmppn rfbnfdvndfºv dfmbvpfbnp ´dfvbmdf´bv <span style='background: #7190feff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 0 4px;'> Global average </span>  Let's have a look at the last 4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
+				title: `One flat line ?`,
+				text: "Looking at the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span>we see a line rather flat meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🌎🤓"
 			}
 		},
 		//3. Global vs. European average
@@ -247,7 +247,7 @@ export default {
 					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
 						stroke: "#fe5dbaff",
-						strokeWidth: 0.8,
+						strokeWidth: 0.5,
 						strokeOpacity: 1
 					}
 				}
