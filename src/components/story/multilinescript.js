@@ -39,8 +39,8 @@ export default {
 					annotations: [
 						{
 							y: 0,
-							dy: -1,
-							text: " = Complete equality, which means that every income group earns the same."
+							dy: -18,
+							text: "  >  Complete inequality"
 						}
 					]
 				},
@@ -74,8 +74,8 @@ export default {
 					annotations: [
 						{
 							y: 0,
-							dy: -1,
-							text: " = Complete equality, which means that every income group earns the same."
+							dy: -18,
+							text: "  >  Complete inequality"
 						},
 						{
 							x: "2009",
@@ -140,8 +140,8 @@ export default {
 					annotations: [
 						{
 							y: 0,
-							dy: -1,
-							text: " = Complete equality, which means that every income group earns the same."
+							dy: -18,
+							text: "  >  Complete inequality"
 						},
 						{
 							x: "2009",
@@ -206,8 +206,8 @@ export default {
 					annotations: [
 						{
 							y: 0,
-							dy: -1,
-							text: " = Complete equality, which means that every income group earns the same."
+							dy: -18,
+							text: "  >  Complete inequality"
 						},
 						{
 							x: "2009",

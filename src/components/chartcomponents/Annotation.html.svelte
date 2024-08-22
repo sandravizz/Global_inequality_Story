@@ -44,7 +44,7 @@
 				<!-- y line annotation -->
 				<div
 					class="label1 absolute sm lowlight"
-					style="top: {$yScale(yValue) + dy}px; left: 0; "
+					style="bottom: {$yScale(yValue) + dy}px; left: 0; "
 				>
 					{text}
 				</div>
@@ -75,7 +75,7 @@
 		transition: all 0.8s;
 		font-size: 0.8vw;
 		font-family: "Montserrat Alternates2", sans-serif;
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 	.label {
@@ -83,7 +83,7 @@
 		transition: all 0.8s;
 		font-size: 1vw;
 		font-family: "Montserrat Alternates2", sans-serif;
-		opacity: 0.7;
+		opacity: 1;
 	}
 
 	.dotted {
