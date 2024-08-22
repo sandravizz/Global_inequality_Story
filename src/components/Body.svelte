@@ -77,7 +77,24 @@
 		focusing on run up the hill. More unequal means more social immobility. -
 		People have the moeny to make sure they stay at the top. - The economoy is
 		more and more productive but the gains of it are going into the hands of a
-		very small number of people.
+		very small number of people. - its not about people, who are rich, but the
+		experience of being relativly better of than someone seems to affect
+		everyone or would affect everyone in the same way. We translate experience
+		and perceptions of being better of than other materially to being better
+		than others. The mind makes that translation it seems.
+		https://www.youtube.com/watch?v=Pg5QFOuMoN8 Together, these studies suggest
+		that past exposure to income inequality may be linked to lower well-being in
+		adulthood due to financial contingency of self-worth.
+		https://www.tandfonline.com/doi/abs/10.1080/15298868.2020.1796777 Dr. Piff's
+		manuscript, “Shifting Attributions for Poverty Motivates Opposition to
+		Inequality and Enhances Egalitarianism,” was published in Nature Human
+		Behavior and won the 2020 Dean's Award for Inclusionary Excellence. Drawing
+		on a total sample of 34,442 individuals, he finds that attributing poverty
+		to situational forces is associated with greater concern about inequality,
+		preference for egalitarian policies and inequality-reducing behavior. One of
+		the studies demonstrates that a 10-minute poverty simulation can increase
+		compassion for the poor and equality-enhancing values up to five months
+		later.
 	</p>
 	<h3>The Global Debate on Finance Capitalism</h3>
 	<p class="article">
