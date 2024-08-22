@@ -3,7 +3,8 @@
 @import "fonts.css";
 
 :root {
-	--color-background:#020100ff;
+	--color-background: #020100ff;
+	--color-chart-axis: #b9d4d3;
 }
 
 :root {
@@ -16,7 +17,6 @@
 	--font-form: var(--sans);
 	--1s: 1ms;
 }
-
 
 @media screen and (prefers-reduced-motion: no-preference) {
 	:root {

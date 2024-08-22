@@ -1,12 +1,12 @@
 1. fix axis
 
    - opacity
-   - gap between tick label and series lines
+     DONE - gap between tick label and series lines
 
 2. y-axis
 
-   - values on the y axis are inverted OR the series that should be inverted
-   - should start on 0 and end at 1
+DONE - values on the y axis are inverted OR the series that should be inverted
+DONE - should start on 0 and end at 1
 
 3. annotations
 
