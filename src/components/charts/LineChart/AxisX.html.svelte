@@ -38,20 +38,17 @@
 		font-family: "Montserrat Alternates1", sans-serif;
 		font-size: 0.7vw;
 		position: absolute;
-		color: #d5f2f2;
-		opacity: 0.4;
+		color: var(--color-chart-axis);
 		white-space: nowrap;
 		transform: translateX(-50%);
 	}
 
 	.moveRight .text {
 		transform: none;
-		color: #d5f2f2;
 	}
 
 	.moveLeft .text {
 		transform: translateX(-100%);
-		color: #d5f2f2;
 	}
 
 	.line {
