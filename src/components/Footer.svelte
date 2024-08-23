@@ -121,10 +121,10 @@
 	}
 
 	.people img.right {
-		transform: translateX(40%);
+		transform: translateX(30%);
 	}
 
 	.people img.left {
-		transform: translateX(-40%);
+		transform: translateX(-30%);
 	}
 </style>

@@ -12,7 +12,7 @@ const renderData = Array.from(groupedByCountry, ([key, value]) => ({
 }));
 
 // console.log(groupedByCountry);
-// console.log(renderData);
+console.log(renderData);
 
 export default {
 	components: [
