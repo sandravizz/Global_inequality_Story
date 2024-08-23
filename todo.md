@@ -1,7 +1,7 @@
 1. fix axis
 
-   - opacity
-     DONE - gap between tick label and series lines
+DONE - opacity
+DONE - gap between tick label and series lines
 
 2. y-axis
 

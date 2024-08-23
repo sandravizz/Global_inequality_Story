@@ -2,6 +2,8 @@
 	import Scroller from "./story/ScrollyEngine.svelte";
 	import multilinescript from "./story/multilinescript.js";
 	import differencescript from "./story/differencescript.js";
+
+	let collapsed = true;
 </script>
 
 <section style="margin-top: 16px">
@@ -121,30 +123,48 @@
 </section>
 
 <section>
-	<h5>Data</h5>
+	<div class:collapsed>
+		<h5>Methodology</h5>
 
-	<p class="footer">
-		Income data was sourced from the <a
-			target="_blank"
-			href="https://wid.world/wid-world/">World Inequality Database</a
-		> (WID). It aims to provide open and convenient access to the most extensive
-		available database on the historical evolution of the world distribution of income
-		and wealth, both within countries and between countries. The WID combines different
-		data sources: national accounts, survey data, fiscal data, and wealth rankings.
-	</p>
+		<p class="footer">
+			Income data was sourced from the <a
+				target="_blank"
+				href="https://wid.world/wid-world/">World Inequality Database</a
+			> (WID). It aims to provide open and convenient access to the most extensive
+			available database on the historical evolution of the world distribution of
+			income and wealth, both within countries and between countries. The WID combines
+			different data sources: national accounts, survey data, fiscal data, and wealth
+			rankings.
+		</p>
 
-	<p class="footer">
-		<a
-			target="_blank"
-			href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
-			>Pretax income</a
-		> corresponds to income after the operation of social insurance systems, but
-		before other types of redistribution. It is equal to factor income, plus pension
-		benefits (17% of national income on average) and unemployment and disability
-		benefits (1.7%), minus the social contributions that pay for them. Contributions
-		and transfers are generally observed in survey data and can therefore be directly
-		removed from or added to individual factor incomes.
-	</p>
+		<p class="footer">
+			<a
+				target="_blank"
+				href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
+				>Pretax income</a
+			> corresponds to income after the operation of social insurance systems, but
+			before other types of redistribution. It is equal to factor income, plus pension
+			benefits (17% of national income on average) and unemployment and disability
+			benefits (1.7%), minus the social contributions that pay for them. Contributions
+			and transfers are generally observed in survey data and can therefore be directly
+			removed from or added to individual factor incomes.
+		</p>
+
+		{#if collapsed}
+			<div class="fade" />
+		{/if}
+	</div>
+
+	{#if collapsed}
+		<div
+			class="expand"
+			role="button"
+			tabindex="0"
+			on:click={() => (collapsed = false)}
+		>
+			Read more
+		</div>
+	{/if}
 </section>
 
 <!-- <p class="article">
@@ -215,13 +235,41 @@
 	}
 
 	.footer {
-		margin: 0 0 4px;
+		margin-bottom: 4px;
 		font-size: 0.75vw;
 		font-family: "Montserrat Alternates2", sans-serif;
 		opacity: 1;
 		hyphens: auto;
 		opacity: 0.9;
 		text-align: justify;
+	}
+
+	.collapsed {
+		max-height: calc(0.75vw * 8);
+		overflow: hidden;
+		position: relative;
+	}
+
+	.fade {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 50%;
+		background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			var(--color-background)
+		);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.expand {
+		text-align: center;
+		cursor: pointer;
+		font-size: 0.75vw;
+		margin-top: 16px;
 	}
 
 	a {
