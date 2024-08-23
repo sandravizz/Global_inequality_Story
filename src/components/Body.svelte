@@ -23,103 +23,20 @@
 		observations and questions that motivated us to create this project on
 		global income inquality.
 	</p>
-
-	<p class="article">
-		In recent years, globalization and growing inequality have met a strong
-		backlash in many places, manifested by the rise of autocrats, xenophobia,
-		and social instability. The turbulence has fundamentally transformed
-		politics. The major divide is no longer between capitalism versus socialism
-		or right versus left, but between those who see globalization as an
-		opportunity and those who see it as an existential threat. Surveying the
-		scene, Donald Trump offered a pithy prognosis to the United Nations General
-		Assembly: “The future does not belong to globalists. The future belongs to
-		patriots.” Making a nation great again may not address the key issues, but
-		his forecast still points to the uneasy position that countries occupy
-		within a globally connected world. Nation- states remain fundamental to
-		capitalist-driven globalization. They delimit and preserve the opportunities
-		that companies and individuals profit from, whether by exploiting cost
-		differentials or trading on comparative advantages. More crucially, they
-		furnish the legal backing and regulations that markets require to operate—a
-		(the goldan passprt)
-	</p>
 </section>
 
 <Scroller storyscript={multilinescript} layout="wide" />
 
 <section>
-	<h3>Gini coefficient</h3>
-	<p class="article">
-		The Gini coefficient is a measure of inequality used to quantify how evenly
-		income or wealth is distributed within a society. Named after the Italian
-		statistician Corrado Gini, it is a number between 0 and 1, where a Gini
-		coefficient of 0 means perfect equality, everyone has the same income or
-		wealth, and a Gini coefficient of 1 indicates perfect inequality, one person
-		has all the income or wealth, while everyone else has none.
-	</p>
-	<p class="article">
-		The Gini coefficient is calculated by comparing the expected income gap
-		between any two randomly selected people to twice the mean income. While the
-		Gini coefficient is widely used to measure income inequality, it has
-		limitations. It doesn't show the specific causes of inequality or account
-		for the distribution's structure, and it may not capture extreme wealth
-		concentration.
-	</p>
+	<h3>xxx</h3>
+	<p class="article"></p>
 </section>
 
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-	<h3>Capital in the 21 Century</h3>
-	<p class="article">
-		Treat labor as a cost not an asset. - Wall street vs main street. - What we
-		see over time and it is fundamental to understand why ineqaulity is worsen
-		is that the share that is made in the whole economy is going less and less
-		to the workers the wage-share and more and more to those that own capital.
-		That is essentially about power. - You're a millionair in waiting, just
-		focusing on run up the hill. More unequal means more social immobility. -
-		People have the moeny to make sure they stay at the top. - The economoy is
-		more and more productive but the gains of it are going into the hands of a
-		very small number of people. - its not about people, who are rich, but the
-		experience of being relativly better of than someone seems to affect
-		everyone or would affect everyone in the same way. We translate experience
-		and perceptions of being better of than other materially to being better
-		than others. The mind makes that translation it seems.
-		https://www.youtube.com/watch?v=Pg5QFOuMoN8 Together, these studies suggest
-		that past exposure to income inequality may be linked to lower well-being in
-		adulthood due to financial contingency of self-worth.
-		https://www.tandfonline.com/doi/abs/10.1080/15298868.2020.1796777 Dr. Piff's
-		manuscript, “Shifting Attributions for Poverty Motivates Opposition to
-		Inequality and Enhances Egalitarianism,” was published in Nature Human
-		Behavior and won the 2020 Dean's Award for Inclusionary Excellence. Drawing
-		on a total sample of 34,442 individuals, he finds that attributing poverty
-		to situational forces is associated with greater concern about inequality,
-		preference for egalitarian policies and inequality-reducing behavior. One of
-		the studies demonstrates that a 10-minute poverty simulation can increase
-		compassion for the poor and equality-enhancing values up to five months
-		later.
-	</p>
-	<h3>The Global Debate on Finance Capitalism</h3>
-	<p class="article">
-		There has been a wave of neoliberal policies implemented worldwide beginning
-		in the 1970s. Policies like deregulation, privatisation and the withdrawing
-		of the state from social protection and welfare delivery became a common
-		trend across different countries. Probably for the first time in economic
-		history in the USA, the share of the national income of the top 1% fell from
-		the 16% of pre-World War II rate, to less than 8% in the post-war era and
-		stayed at the same level for almost three decades. However, by the beginning
-		of the 1970s a combination of slowing economic growth, the breakdown of the
-		Bretton Woods system of fixed exchange rates, stagflation and high
-		unemployment put severe strains on state budgets. Keynesian compromise
-		appeared to have reached its limits and other alternatives to overcome the
-		emerging crisis were called on. For its proponents, the moment of
-		neoliberalism had arrived. The Austro-German Marxist theoretician was the
-		first to introduce the term finance capitalism and warned of the dangers
-		associated with concentration of capital and the transformation of
-		competitive capitalism into monopolistic finance capitalism, thus
-		anticipating the process of contemporary financialisation. In the latter, he
-		writes of financialisation as a prolonged split between the divergent real
-		and financial economies.
-	</p>
+	<h3>xxx</h3>
+	<p class="article"></p>
 </section>
 
 <section>
@@ -166,32 +83,6 @@
 		</div>
 	{/if}
 </section>
-
-<!-- <p class="article">
-		Income inequality is one of the most persistent global issues we face today.
-		Across the world, income distribution varies widely from country to country,
-		and the impact of this inequality is significant. When wealth becomes
-		concentrated in the hands of a few, it can lead to economic instability,
-		recession, and depression. This occurs because too much national income is
-		diverted from the broader economy and accumulates among a small group of
-		people.
-	</p> -->
-
-<!-- <p class="article">
-		Moreover, rising inequality empowers affluent countries, global
-		corporations, and even wealthy individuals to shape global rules and
-		resource allocation in their favor. With greater bargaining power, they are
-		able to secure a larger share of global economic growth, reinforcing their
-		position and further tilting international agreements and policies to their
-		advantage. This dynamic perpetuates global inequality, as noted by
-		philosopher Thomas Pogge in 2007.
-	</p>
-	<p class="article">
-		Ultimately, studying income inequality provides insight into the political
-		economy of modern capitalism and sheds light on the direction in which our
-		world is headed. Understanding these trends is crucial for policymakers and
-		citizens alike as we work toward a more equitable future.
-	</p> -->
 
 <style>
 	section {
