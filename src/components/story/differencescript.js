@@ -1,15 +1,25 @@
-import { group } from "d3";
 import DifferenceChart from "$components/charts/DifferenceChart/Chart.svelte";
-import data from "$data/data_all.csv";
+import data from "$data/data_diff.csv";
 
-const formattedData = data.map((d) => ({ ...d, value: +d.gini_pretaxes }));
+const countryCodes = ["US", "SE", "DE"];
 
-const groupedByCountry = group(formattedData, (d) => d.country).entries();
-const renderData = Array.from(groupedByCountry, ([key, value]) => ({
-	country: key,
-	region: value[0].region,
-	values: value.map((item) => ({ ...item }))
-}));
+const renderData = countryCodes.flatMap((countryCode) => {
+	const countryData = data.filter((d) => d.country === countryCode);
+	return [
+		{
+			country: countryCode,
+			type: "lowest50",
+			values: countryData.map((d) => ({ year: d.year, value: +d.lowest_50 }))
+		},
+		{
+			country: countryCode,
+			type: "highest10",
+			values: countryData.map((d) => ({ year: d.year, value: +d.highest_10 }))
+		}
+	];
+});
+
+console.log(renderData);
 
 export default {
 	components: [DifferenceChart],
@@ -19,9 +29,7 @@ export default {
 				{
 					key: "country",
 					componentIndex: 0,
-					data: renderData.filter(
-						(d) => d.country === "DK" || d.country === "FI"
-					),
+					data: renderData.filter((d) => d.country === "US"),
 					options: {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
@@ -30,9 +38,12 @@ export default {
 				}
 			],
 			description: {
-				title: `Some countries have small differences`,
-				text: `This is <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>Sweden</span> 
-						and this is  <span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>Finland</span>`
+				title: `The income gap grows`,
+				text: `The USA is a good case where the 
+						<span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>top 10%</span> 
+						have massively increased their portion of the total wealth compared to the 
+						<span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px; white-space: nowrap;'>lower 50%</span>
+						of the population.`
 			}
 		},
 		{
@@ -40,9 +51,7 @@ export default {
 				{
 					key: "country",
 					componentIndex: 0,
-					data: renderData.filter(
-						(d) => d.country === "SE" || d.country === "IN"
-					),
+					data: renderData.filter((d) => d.country === "SE"),
 					options: {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
@@ -50,47 +59,65 @@ export default {
 					},
 					annotations: [
 						{
+							x: "1990",
+							text: "Housing bubble"
+						},
+						{
+							x: "2000",
+							text: "Dot-com bubble"
+						},
+						{
 							x: "2009",
-							text: "Financial crisis"
-						},
-						{
-							x: "2019",
-							text: "Covid"
-						},
-						{
-							x: "1989",
-							text: "Fall of Berlin wall"
+							text: "Global financial crisis"
 						}
 					]
 				}
 			],
 			description: {
-				title: `while others have large differences`,
-				text: `<span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>India</span> 
-						is always better than <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>Sweden</span>. 
-						This is a fact!`
+				title: `The financial effects`,
+				text: `In Sweden the 
+						<span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>top 10%</span> 
+						have switched places with the 
+						<span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>lower 50%</span>
+						during the housinig and banking crisis of 1990-1994, the dot-com bubble of 2000 and the global financial crisis of 2009.`
 			}
 		},
+
 		{
 			charts: [
 				{
 					key: "country",
 					componentIndex: 0,
-					data: renderData.filter(
-						(d) => d.country === "US" || d.country === "RU"
-					),
+					data: renderData.filter((d) => d.country === "DE"),
 					options: {
 						stroke: ["#ff4d4d", "#4da6ff"],
 						strokeOpacity: 1,
 						strokeWidth: 2
-					}
+					},
+					annotations: [
+						{
+							x: "1989",
+							text: "Fall of Berlin wall"
+						},
+						{
+							x: "2004",
+							text: "What happend here?"
+						},
+						{
+							x: "2019",
+							text: "Covid"
+						}
+					]
 				}
 			],
 			description: {
-				title: "and some some have large differences that shrink over time",
-				text: `But when it comes to <span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>USA</span> 
-				and <span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>Russia</span> they switch places
-				many times.`
+				title: `Political effects`,
+				text: `Germany saw a COVID effect with large spending to keep people working. Here the difference between the
+						<span style='background: #ff4d4d; color: #fff; padding: 2px 4px; margin: 0 2px;'>top 10%</span> 
+						and the
+						<span style='background: #4da6ff; color: #fff; padding: 2px 4px; margin: 0 2px;'>lower 50%</span>
+						have decresed since the pandemic. The same, but smaller happend after the re-unification of East and West Germany in the 1990s
+						after the fall of the Berlin wall.`
 			}
 		}
 	]

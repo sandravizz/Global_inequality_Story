@@ -10,8 +10,8 @@
 	import Annotation from "$components/chartcomponents//Annotation.html.svelte";
 
 	export let chart;
+	export let height = 500;
 
-	const height = 600;
 	let width;
 
 	let key;

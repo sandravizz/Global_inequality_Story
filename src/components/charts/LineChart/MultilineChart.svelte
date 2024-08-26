@@ -9,8 +9,8 @@
 	import AxisY from "./AxisY.html.svelte";
 
 	export let chart;
+	export let height = 500;
 
-	const height = 600;
 	let width;
 
 	let data;
