@@ -16,9 +16,10 @@ DONE - should start on 0 and end at 1
 
    - fix boldness
    - https://stackoverflow.com/questions/2436749/how-to-add-multiple-font-files-for-the-same-font
-   - use one font-failimy name
+   - use one font-family name
 
 5. data for the difference chart
-   - use data_all2.csv
-   - variable highest_10, lowest_50
-   - group by country, ie: dk_highest_10, dk_lowest_50
+
+DONE - use data_all2.csv
+DONE - variable highest_10, lowest_50
+DONE - group by country, ie: dk_highest_10, dk_lowest_50
