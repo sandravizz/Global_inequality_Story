@@ -32,7 +32,7 @@
 	<p class="article"></p>
 </section>
 
-<Scroller storyscript={differencescript} layout="wide" />
+<!-- <Scroller storyscript={differencescript} layout="wide" /> -->
 
 <section>
 	<h3>xxx</h3>

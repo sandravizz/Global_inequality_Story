@@ -12,9 +12,6 @@ const renderData = Array.from(groupedByCountry, ([key, value]) => ({
 	values: value.map((item) => ({ ...item }))
 }));
 
-// console.log(groupedByCountry);
-// console.log(renderData);
-
 export default {
 	components: [
 		MultilineChart,
@@ -106,16 +103,16 @@ export default {
 					componentIndex: 2,
 					data: renderData.filter((d) => ["WO"].includes(d.country)),
 					options: {
-						stroke: "#7190feff",
+						stroke: "#F7885E",
 						strokeWidth: 0
 					}
 				},
 				{
 					key: "country",
 					componentIndex: 3,
-					data: renderData.filter((d) => d.region2 === "Western Europe"),
+					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
-						stroke: "#fe5dbaff",
+						stroke: "#F7885E",
 						strokeWidth: 0,
 						strokeOpacity: 1
 					}
@@ -123,7 +120,7 @@ export default {
 			],
 			description: {
 				title: `One flat line ?`,
-				text: "Looking at the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span>we see a line rather flat meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🌎🤓"
+				text: "Looking at the <span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span> we see a line rather flat meaning that there hasn’t been much change on this aggregated. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓 🌎"
 			}
 		},
 		//3. Global vs. European average
@@ -163,7 +160,7 @@ export default {
 					componentIndex: 1,
 					data: renderData.filter((d) => ["QE"].includes(d.country)),
 					options: {
-						stroke: "#fe5dbaff",
+						stroke: "#F7885E",
 						strokeWidth: 4
 					}
 				},
@@ -179,20 +176,20 @@ export default {
 				{
 					key: "country",
 					componentIndex: 3,
-					data: renderData.filter((d) => d.region2 === "Western Europe"),
+					data: renderData.filter((d) => ["QE"].includes(d.country)),
 					options: {
-						stroke: "#fe5dbaff",
+						stroke: "#F7885E",
 						strokeWidth: 0,
 						strokeOpacity: 1
 					}
 				}
 			],
 			description: {
-				title: `Europe most equal`,
-				text: "The region with lowest inequality is and was <span style='background: #020100ff; color: #fe5dbaff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe</span> Even though we can identify especially after the fall of the Soviet Union a slight trend towards ineqaulity."
+				title: `🇪🇺 Europe most equal`,
+				text: "The region with the lowest inequality, far below the <span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span> is and was <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span>. Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality. "
 			}
 		},
-		//4. Global, European average and European countries
+		//4. European countries
 		{
 			charts: [
 				{
@@ -229,8 +226,8 @@ export default {
 					componentIndex: 1,
 					data: renderData.filter((d) => ["QE"].includes(d.country)),
 					options: {
-						stroke: "#fe5dbaff",
-						strokeWidth: 4
+						stroke: "#F7885E",
+						strokeWidth: 0
 					}
 				},
 				{
@@ -239,97 +236,128 @@ export default {
 					data: renderData.filter((d) => ["WO"].includes(d.country)),
 					options: {
 						stroke: "#7190feff",
-						strokeWidth: 4
+						strokeWidth: 0
 					}
 				},
 				{
 					key: "country",
 					componentIndex: 3,
-					data: renderData.filter((d) => d.region2 === "Western Europe"),
+					data: renderData.filter((d) => d.region === "Europe"),
 					options: {
-						stroke: "#fe5dbaff",
-						strokeWidth: 0.5,
+						stroke: "#F7885E",
+						strokeWidth: 0.8,
 						strokeOpacity: 1
 					}
 				}
 			],
 			description: {
-				title: `Norway most equal country`,
-				text: "Let's have a look at the last <span style='background:  #7190feff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 0 4px;'> Norway </span>  4 decades of economical development in the world. The Gini coefficient is a measure of inequality used to quantify how evenly income or wealth is distributed within a society. Named after the Italian statistician Corrado Gini, it is a number between 0 and 1, where a Gini coefficient of 0 means perfect equality, everyone has the same income or wealth, and a Gini coefficient of 1 indicates perfect inequality, one person has all the income or wealth, while everyone else has none."
+				title: `European countries ...`,
+				text: ""
+			}
+		},
+		//5. USA vs. Europe
+		{
+			charts: [
+				{
+					key: "country",
+					componentIndex: 0,
+					data: renderData,
+					options: {
+						stroke: "#d5f2f2",
+						strokeOpacity: 0.4,
+						strokeWidth: 0.4
+					},
+					annotations: [
+						{
+							y: 0,
+							dy: -18,
+							text: "  >  Complete inequality"
+						},
+						{
+							x: "2009",
+							text: "Financial crisis"
+						},
+						{
+							x: "2019",
+							text: "Covid"
+						},
+						{
+							x: "1989",
+							text: "Fall of Berlin wall"
+						}
+					]
+				},
+				{
+					key: "country",
+					componentIndex: 1,
+					data: renderData.filter((d) => ["QE"].includes(d.country)),
+					options: {
+						stroke: "#F7885E",
+						strokeWidth: 0
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 2,
+					data: renderData.filter((d) => ["WO"].includes(d.country)),
+					options: {
+						stroke: "#7190feff",
+						strokeWidth: 0
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 3,
+					data: renderData.filter((d) => d.region === "Europe"),
+					options: {
+						stroke: "#F7885E",
+						strokeWidth: 0.4,
+						strokeOpacity: 1
+					}
+				},
+				{
+					key: "country",
+					componentIndex: 4,
+					data: renderData.filter((d) =>
+						[
+							// "UZ",
+							// "UA",
+							// "AZ",
+							// "AM",
+							// "MM",
+							// "KA",
+							"US"
+							// "SE",
+							// "DK",
+							// "CR",
+							// "CZ",
+							// "HU",
+							// "BT",
+							// "MV",
+							// "CI",
+							// "IE",
+							// "RU"
+						].includes(d.country)
+					),
+					options: {
+						stroke: "#99F75E",
+						strokeWidth: 4
+					},
+					annotations: [
+						{
+							x: "2022",
+							z: "US",
+							dy: -10,
+							dx: 10,
+							text: "🇺🇸"
+						}
+					]
+				}
+			],
+			description: {
+				title: `USA towards ineqaulity `,
+				text: "Income distribution was similar to <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span> standards in the 80s but through the last 4 decades the <span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span> has become more unequal currently reached the highest level. In particular the COVID years had an impact on the labor inequality."
 			}
 		}
-		//The fourth step introduces all lines that made up the global average.
-		// {
-		// 	charts: [
-		// 		{
-		// 			key: "country",
-		// 			componentIndex: 0,
-		// 			data: renderData,
-		// 			options: {
-		// 				stroke: "#d5f2f2",
-		// 				strokeOpacity: 0,
-		// 				strokeWidth: 0.5
-		// 			}
-		// 		},
-
-		// 		{
-		// 			key: "country",
-		// 			componentIndex: 1,
-		// 			data: renderData.filter((d) => ["US"].includes(d.country)),
-		// 			options: {
-		// 				stroke: "red",
-		// 				strokeWidth: 2,
-		// 				strokeOpacity: 0.8
-		// 			}
-		// 		},
-
-		// 		{
-		// 			key: "country",
-		// 			componentIndex: 2,
-		// 			data: renderData.filter((d) => d.region === "Asia"),
-		// 			options: {
-		// 				stroke: "white",
-		// 				strokeOpacity: 0.5,
-		// 				strokeWidth: 0.5
-		// 			}
-		// 		},
-
-		// 		{
-		// 			key: "country",
-		// 			componentIndex: 3,
-		// 			data: renderData.filter((d) =>
-		// 				["CN", "JP", "IN"].includes(d.country)
-		// 			),
-		// 			options: {
-		// 				stroke: "white",
-		// 				strokeWidth: 0
-		// 			},
-		// 			annotations: [
-		// 				{
-		// 					x: "2010",
-		// 					z: "IN",
-		// 					dy: 8,
-		// 					text: "India"
-		// 				},
-		// 				{
-		// 					x: "2012",
-		// 					z: "JP",
-		// 					dy: -28,
-		// 					text: "Japan"
-		// 				},
-		// 				{
-		// 					x: "2014",
-		// 					z: "CN",
-		// 					dy: 0,
-		// 					text: "China"
-		// 				}
-		// 			]
-		// 		}
-		// 	],
-		// 	description: {
-		// 		title: `Asia`,
-		// 		text: "While in Asia the story is more complex..."
-		// 	}
-		// }
 	]
 };

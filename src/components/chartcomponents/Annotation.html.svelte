@@ -16,7 +16,7 @@
 			<div
 				class="label absolute"
 				style="
-			left:{$xGet(getAnnotationData(xValue, zValue))}px; 
+			left:{$xGet(getAnnotationData(xValue, zValue)) + dx}px; 
 			top:{$yGet(getAnnotationData(xValue, zValue)) + dy}px"
 			>
 				{text}
