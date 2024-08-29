@@ -1,16 +1,16 @@
 {
-	"kit": {
-		"alias": {
-			"$actions/*": "./src/actions/*",
-			"$components/*": "./src/components/*",
-			"$data/*": "./src/data/*",
-			"$routes/*": "./src/routes/*",
-			"$stores/*": "./src/stores/*",
-			"$styles/*": "./src/styles/*",
-			"$svg/*": "./src/svg/*"
-		}
-	},
-	"include": ["src/**/*.js", "src/**/*.svelte"],
-	"exclude": ["tasks/*.js"],
-	"extends": "./.svelte-kit/tsconfig.json"
+  "kit": {
+    "alias": {
+      "$actions/*": "./src/actions/*",
+      "$components/*": "./src/components/*",
+      "$data/*": "./src/data/*",
+      "$routes/*": "./src/routes/*",
+      "$stores/*": "./src/stores/*",
+      "$styles/*": "./src/styles/*",
+      "$svg/*": "./src/svg/*"
+    }
+  },
+  "include": ["src/**/*.js", "src/**/*.svelte"],
+  "exclude": ["tasks/*.js"],
+  "extends": "./.svelte-kit/tsconfig.json"
 }

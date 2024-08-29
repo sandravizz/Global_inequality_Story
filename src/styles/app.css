@@ -3,42 +3,42 @@
 @import "fonts.css";
 
 :root {
-	--color-background: #020100ff;
-	--color-chart-axis: #b9d4d3;
+  --color-background: #020100ff;
+  --color-chart-axis: #b9d4d3;
 }
 
 :root {
-	--z-bottom: -100;
-	--z-middle: 0;
-	--z-top: 100;
-	--z-overlay: 1000;
-	--border-radius: 2px;
-	--font-body: var(--serif);
-	--font-form: var(--sans);
-	--1s: 1ms;
+  --z-bottom: -100;
+  --z-middle: 0;
+  --z-top: 100;
+  --z-overlay: 1000;
+  --border-radius: 2px;
+  --font-body: var(--serif);
+  --font-form: var(--sans);
+  --1s: 1ms;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-	:root {
-		--1s: 1s;
-	}
+  :root {
+    --1s: 1s;
+  }
 }
 
 h1 {
-	font-size: var(--56px, 56px);
+  font-size: var(--56px, 56px);
 }
 h2 {
-	font-size: var(--36px, 36px);
+  font-size: var(--36px, 36px);
 }
 h3 {
-	font-size: var(--28px, 28px);
+  font-size: var(--28px, 28px);
 }
 h4 {
-	font-size: var(--24px, 24px);
+  font-size: var(--24px, 24px);
 }
 h5 {
-	font-size: var(--22px, 22px);
+  font-size: var(--22px, 22px);
 }
 h6 {
-	font-size: var(--20px, 20px);
+  font-size: var(--20px, 20px);
 }

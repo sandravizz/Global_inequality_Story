@@ -1,221 +1,211 @@
 <script>
-	import Scrolly from "$components/chartcomponents/Scrolly.svelte";
+  import Scrolly from "$components/chartcomponents/Scrolly.svelte";
 
-	export let storyscript = [];
-	export let layout;
+  export let storyscript = [];
+  export let layout;
 
-	let innerWidth;
-	let innerHeight;
-	let stepIndex = 0;
-	$: stepIndex = stepIndex ?? 0;
+  let innerWidth;
+  let innerHeight;
+  let stepIndex = 0;
+  $: stepIndex = stepIndex ?? 0;
 
-	$: chartComponents = [];
+  $: chartComponents = [];
 
-	$: {
-		if (chartComponents.length) {
-			const step = storyscript.steps[stepIndex];
-			const { charts } = step;
+  $: {
+    if (chartComponents.length) {
+      const step = storyscript.steps[stepIndex];
+      const { charts } = step;
 
-			// update components in step
-			charts.forEach((chart) => {
-				const component = chartComponents[chart.componentIndex];
-				component.chart = chart;
-			});
+      // update components in step
+      charts.forEach((chart) => {
+        const component = chartComponents[chart.componentIndex];
+        component.chart = chart;
+      });
 
-			// reset component not in step
-			const componentIndexs = step.charts.map((d) => d.componentIndex);
-			chartComponents.forEach((component, i) => {
-				if (!componentIndexs.includes(i)) {
-					component.chart = {};
-				}
-			});
-		}
-	}
+      // reset component not in step
+      const componentIndexs = step.charts.map((d) => d.componentIndex);
+      chartComponents.forEach((component, i) => {
+        if (!componentIndexs.includes(i)) {
+          component.chart = {};
+        }
+      });
+    }
+  }
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
 <section
-	class:fullWidth={layout === "fullwidth"}
-	class:wide={layout === "wide"}
+  class:fullWidth={layout === "fullwidth"}
+  class:wide={layout === "wide"}
 >
-	<div class="container">
-		<div
-			class="chart-container"
-			class:twoColumn={innerWidth >= 1000 && layout !== "fullwidth"}
-		>
-			<div
-				class="chart"
-				class:sticky={stepIndex < storyscript.steps.length}
-				class:bottom={stepIndex >= storyscript.steps.length}
-			>
-				{#each storyscript.components as component, i}
-					<div class="chartComponent">
-						<svelte:component
-							this={component}
-							bind:this={chartComponents[i]}
-							data={[]}
-						/>
-					</div>
-				{/each}
-			</div>
+  <div class="container">
+    <div class="chart-container">
+      <div
+        class="chart"
+        class:sticky={stepIndex < storyscript.steps.length}
+        class:bottom={stepIndex >= storyscript.steps.length}
+      >
+        {#each storyscript.components as component, i}
+          <div class="chartComponent">
+            <svelte:component
+              this={component}
+              bind:this={chartComponents[i]}
+              data={[]}
+            />
+          </div>
+        {/each}
+      </div>
 
-			<div class="steps">
-				<Scrolly bind:value={stepIndex} top={innerHeight / 2}>
-					{#each storyscript.steps as step, i}
-						<div class="step" class:active={stepIndex === i}>
-							<div class="contentwrapper">
-								<div class="contentbackground" />
-								<div class="content">
-									<h4>{step.description.title}</h4>
-									{#if step.description.text}
-										<p>{@html step.description.text}</p>
-									{/if}
-								</div>
-							</div>
-						</div>
-					{/each}
-				</Scrolly>
-			</div>
-		</div>
-	</div>
+      <div class="steps">
+        <Scrolly bind:value={stepIndex} top={innerHeight / 2}>
+          {#each storyscript.steps as step, i}
+            <div class="step" class:active={stepIndex === i}>
+              <div class="contentwrapper">
+                <div class="contentbackground" />
+                <div class="content">
+                  <h4>{step.description.title}</h4>
+                  {#if step.description.text}
+                    <p>{@html step.description.text}</p>
+                  {/if}
+                </div>
+              </div>
+            </div>
+          {/each}
+        </Scrolly>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
-	section {
-		max-width: 50rem;
-		padding: 0 0px;
-		margin: 0 auto;
-	}
+  section {
+    max-width: 50rem;
+    padding: 0 0px;
+    margin: 0 auto;
+  }
 
-	section.fullWidth {
-		max-width: none;
-		padding: 20px;
-	}
+  section.fullWidth {
+    max-width: none;
+    padding: 20px;
+  }
 
-	section.wide {
-		max-width: 70rem;
-	}
+  section.wide {
+    max-width: 70rem;
+  }
 
-	.container {
-		position: relative;
-	}
+  .container {
+    position: relative;
+  }
 
-	.chart-container {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		position: relative;
-	}
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
 
-	.fullWidth .chart-container {
-		width: 100%;
-		max-width: none;
-	}
+  .fullWidth .chart-container {
+    width: 100%;
+    max-width: none;
+  }
 
-	/* .twoColumn {
-		flex-direction: row-reverse;
-		max-width: 1200px;
-		margin-left: auto;
-		margin-right: auto;
-	} */
+  .chart {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
 
-	.chart {
-		position: relative;
-		height: 100vh;
-		width: 100%;
-	}
+  .chartComponent {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+  }
 
-	.chartComponent {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		left: 0;
-		right: 0;
-	}
+  .step {
+    height: 100vh;
+    width: 100%;
+    background: none;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 33vh;
+  }
 
-	.step {
-		height: 100vh;
-		width: 100%;
-		background: none;
-		z-index: 2;
-		position: relative;
-		margin-bottom: 33vh;
-	}
+  .steps {
+    margin-top: 10vh;
+  }
 
-	.steps {
-		margin-top: 10vh;
-	}
+  .step:last-of-type {
+    height: 150vh;
+  }
 
-	.step:last-of-type {
-		height: 150vh;
-	}
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 
-	.sticky {
-		position: sticky;
-		top: 0;
-		z-index: 1;
-	}
+  .bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    z-index: 1;
+  }
 
-	.bottom {
-		position: absolute;
-		top: auto;
-		bottom: 0;
-		z-index: 1;
-	}
+  .contentwrapper {
+    position: relative;
+    padding: 10px;
+  }
 
-	.contentwrapper {
-		position: relative;
-		padding: 10px;
-	}
+  .contentbackground {
+    background-color: var(--color-background);
+    opacity: 0.5;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -20px;
+    right: -20px;
+  }
 
-	.contentbackground {
-		background-color: var(--color-background);
-		opacity: 0.5;
-		position: absolute;
-		top: -10px;
-		bottom: -10px;
-		left: -20px;
-		right: -20px;
-	}
+  .content {
+    position: relative;
+    z-index: 2;
+  }
 
-	.content {
-		position: relative;
-		z-index: 2;
-	}
+  .step .content h4 {
+    -webkit-text-fill-color: var(--color-background);
+    -webkit-text-stroke-color: #d5f2f2;
+    -webkit-text-stroke-width: 0.9px;
+    font-size: 28px;
+    font-family: "Syncopate", sans-serif;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
 
-	.step .content h4 {
-		-webkit-text-fill-color: var(--color-background);
-		-webkit-text-stroke-color: #d5f2f2;
-		-webkit-text-stroke-width: 0.9px;
-		font-size: 28px;
-		font-family: "Syncopate", sans-serif;
-		line-height: 1.4;
-		text-transform: uppercase;
-	}
+  @media (min-width: 900px) {
+    .fullWidth .container {
+      margin: 0;
+    }
 
-	@media (min-width: 900px) {
-		.fullWidth .container {
-			margin: 0;
-		}
+    .chart {
+      padding-left: 8px;
+    }
 
-		.chart {
-			padding-left: 8px;
-		}
+    .fullWidth .chart {
+      width: 100%;
+    }
 
-		.fullWidth .chart {
-			width: 100%;
-		}
+    .fullWidth .steps {
+      width: 40%;
+      margin-left: 10%;
+    }
 
-		.fullWidth .steps {
-			width: 40%;
-			margin-left: 10%;
-		}
-
-		.wide .contentwrapper {
-			position: relative;
-			margin: auto;
-			max-width: 50rem;
-		}
-	}
+    .wide .contentwrapper {
+      position: relative;
+      margin: auto;
+      max-width: 50rem;
+    }
+  }
 </style>
