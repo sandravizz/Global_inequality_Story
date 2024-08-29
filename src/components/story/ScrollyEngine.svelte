@@ -140,6 +140,7 @@
 		background: none;
 		z-index: 2;
 		position: relative;
+		margin-bottom: 33vh;
 	}
 
 	.steps {

@@ -19,8 +19,6 @@ const renderData = countryCodes.flatMap((countryCode) => {
 	];
 });
 
-console.log(renderData);
-
 export default {
 	components: [DifferenceChart],
 	steps: [
