@@ -1,17 +1,16 @@
 <script>
+	import { gsap } from "gsap";
+
 	import Slide from "./Slide.svelte";
 
 	let slideIndex = undefined;
 
-	const switchBlock = () => {
-		if (slideIndex === 0 || slideIndex === undefined) {
-			slideIndex = 1;
-		} else {
-			slideIndex = 0;
-		}
-	};
+	const setSlideIndex = (val) => (slideIndex = val);
 
-	setInterval(switchBlock, 10000);
+	// use gsap to call slides
+	const tl = gsap.timeline();
+	tl.call(setSlideIndex, [1], 5);
+	tl.call(setSlideIndex, [0], 10);
 </script>
 
 <div class="wrapper">
