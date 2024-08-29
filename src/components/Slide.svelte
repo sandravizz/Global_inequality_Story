@@ -71,18 +71,22 @@
     <h1>
       {title}
     </h1>
+
     {#if subtitle}
       <h3>
         {subtitle}
       </h3>
     {/if}
+
     {#if subtitle2}
       <p class="article">
         {subtitle2}
       </p>
-      <p></p>{/if}
+    {/if}
   </div>
+
   <img bind:this={imgEl} {src} alt={title} />
+
   <div class="hint">
     <div>scroll down</div>
     <div class="gg-chevron-down" />

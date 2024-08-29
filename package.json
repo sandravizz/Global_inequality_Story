@@ -32,7 +32,6 @@
     "prettier-plugin-svelte": "^3.2.2",
     "rollup": "^4.13.0",
     "rollup-plugin-svg": "^2.0.0",
-    "style-dictionary": "^3.9.2",
     "svelte": "^4.2.12",
     "svelte-copy": "^1.4.1",
     "svelte-preprocess": "^5.1.3",
