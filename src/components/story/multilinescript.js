@@ -185,7 +185,7 @@ export default {
         },
       ],
       description: {
-        title: `🇪🇺 Europe most equal`,
+        title: `Europe most equal`,
         text: "The region with the lowest inequality, far below the <span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span> is and was <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span>. Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality. ",
       },
     },
