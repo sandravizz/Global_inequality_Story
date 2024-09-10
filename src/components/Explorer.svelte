@@ -6,8 +6,6 @@
   import differenceData from "$data/data_diff.csv";
   import lineData from "$data/data_all.csv";
 
-  console.log("--> Explorer");
-
   // countries data
   const wid_countries = new Map(
     differenceData.map((d) => [d.country, d.shortname]),
@@ -15,8 +13,6 @@
 
   const countries = [];
   wid_countries.forEach((k, v) => countries.push({ country: v, shortname: k }));
-
-  console.log(countries);
 
   let country = "US";
 

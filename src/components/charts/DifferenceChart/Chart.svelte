@@ -49,7 +49,7 @@
     >
       <Svg>
         <ClipPath {...options} />
-        <MultiLine {...options} />
+        <MultiLine {...options} {height} />
       </Svg>
 
       <Html>
