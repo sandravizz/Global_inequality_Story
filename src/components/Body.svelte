@@ -2,6 +2,7 @@
   import Scroller from "./story/ScrollyEngine.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
+  import Explorer from "./Explorer.svelte";
 
   let collapsed = true;
 </script>
@@ -40,8 +41,14 @@
 </section>
 
 <section>
+  <h3>Explore the data</h3>
+
+  <Explorer />
+</section>
+
+<section>
   <div class:collapsed>
-    <h5>Methodology</h5>
+    <h3>Methodology</h3>
 
     <p class="footer">
       Income data was sourced from the <a
@@ -181,5 +188,9 @@
     --persian-pink: #fc7ec2ff;
     --charcoal: #213d4fff;
     --english-violet: #4a496aff;
+  }
+
+  .wide {
+    max-width: 70rem;
   }
 </style>

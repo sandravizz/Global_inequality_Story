@@ -58,7 +58,6 @@ textarea {
 }
 
 button,
-select,
 a[role="button"],
 input[type="submit"],
 input[type="reset"],
@@ -91,8 +90,7 @@ select {
 input[type="button"],
 input[type="range"],
 input[type="submit"],
-input[type="reset"],
-select {
+input[type="reset"] {
   display: inline-block;
 }
 
@@ -116,7 +114,6 @@ button:focus,
 a:focus,
 a[role="button"]:focus,
 input:focus,
-select:focus,
 textarea:focus {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
@@ -126,7 +123,6 @@ button:focus:not(:focus-visible),
 a:focus:not(:focus-visible),
 a[role="button"]:focus:not(:focus-visible),
 input:focus:not(:focus-visible),
-select:focus:not(:focus-visible),
 textarea:focus:not(:focus-visible) {
   outline: 2px solid transparent;
 }
@@ -134,7 +130,6 @@ textarea:focus:not(:focus-visible) {
 button:disabled,
 a[role="button"]:disabled,
 input:disabled,
-select:disabled,
 textarea:disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -186,16 +181,37 @@ tfoot {
 ::-moz-selection {
   background-color: var(--color-selection, lightgray);
 }
+
 ::selection {
   background-color: var(--color-selection, lightgray);
 }
 
 select {
-  padding-right: 24px;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
-  background-position: right 8px center;
+  display: inline-block;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  background-color: rgba(55, 65, 81, 0.6);
+  margin-bottom: 4px;
+  padding-right: 2.5rem;
+
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right .75rem center;
   background-repeat: no-repeat;
-  background-size: auto 50%;
+  background-size: .75em .75em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  appearance: none;
+  border-color: rgba(55, 65, 81, 1);
+}
+
+select:focus {
+  outline: 1px solid rgba(166, 171, 178, 0.4);
+  outline-offset: 2px;
 }
 
 ol,
@@ -234,8 +250,7 @@ ul {
   --stroke-width: 1px;
   --stroke-width-n: calc(var(--stroke-width) * -1);
   text-shadow:
-    var(--stroke-width-n) var(--stroke-width-n) 0
-      var(--color-text-outline, #fff),
+    var(--stroke-width-n) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     0 var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) 0 0 var(--color-text-outline, #fff),
@@ -247,6 +262,7 @@ ul {
 
 /* desktop (mouse-enabled device) */
 @media (hover: hover) and (pointer: fine) {
+
   button:hover,
   a[role="button"]:hover,
   input[type="button"]:hover,
