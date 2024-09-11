@@ -1,6 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { area, curveMonotoneX } from "d3";
+  import { v4 as uuidv4 } from "uuid";
 
   const { data, xGet, yGet, yScale, width } = getContext("LayerCake");
 
@@ -10,7 +11,7 @@
   $: above = area()
     .x($xGet)
     .y0(() => $yScale.range()[0])
-    .y1($yGet)
+    .y1((d) => $yGet(d))
     .curve(curveMonotoneX);
 
   $: below = area()
@@ -18,16 +19,20 @@
     .y0(() => $yScale.range()[1])
     .y1($yGet)
     .curve(curveMonotoneX);
+
+  // needs to be unique for each instance of the component
+  const idAbove = uuidv4();
+  const idBelow = uuidv4();
 </script>
 
 {#key $width}
   <g class="difference">
     <g class="clips">
-      <clipPath id="above">
+      <clipPath id={idAbove}>
         <path d={below($data[0].values)} stroke-width={strokeWidth} />
       </clipPath>
 
-      <clipPath id="below">
+      <clipPath id={idBelow}>
         <path d={below($data[1].values)} stroke-width={strokeWidth} />
       </clipPath>
     </g>
@@ -37,13 +42,14 @@
         d={above($data[1].values)}
         fill-opacity="0.3"
         fill={stroke[1]}
-        clip-path="url(#above)"
+        clip-path="url(#{idAbove})"
       />
+
       <path
         d={above($data[0].values)}
         fill-opacity="0.3"
         fill={stroke[0]}
-        clip-path="url(#below)"
+        clip-path="url(#{idBelow})"
       />
     </g>
   </g>

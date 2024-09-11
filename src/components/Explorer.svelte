@@ -66,21 +66,22 @@
   </select>
 </div>
 
-{#if country}
-  <div class="container">
-    <div>GINI index</div>
-    <div>
-      <div>Share of total income</div>
-      <div class="subheader">
-        <span style="background-color:#ff4d4d;">Top 10%</span>
-        vs
-        <span style="background-color:#4da6ff; ">bottom 50%</span>
-      </div>
+<div class="container header">
+  <div>GINI index</div>
+  <div>
+    <div>Share of total income</div>
+    <div class="subheader">
+      <span style="background-color:#ff4d4d;">Top 10%</span>
+      vs
+      <span style="background-color:#4da6ff; ">bottom 50%</span>
     </div>
   </div>
+</div>
 
+{#if country}
   <div class="container">
     <div class="stacked">
+      <div class="colheader">GINI index</div>
       <div>
         <MultilineChart
           height={300}
@@ -112,19 +113,28 @@
       </div>
     </div>
     <div>
-      <Chart
-        height={300}
-        chart={{
-          key: "country",
-          componentIndex: 0,
-          data: renderDifferenceData,
-          options: {
-            stroke: ["#ff4d4d", "#4da6ff"],
-            strokeOpacity: 1,
-            strokeWidth: 2,
-          },
-        }}
-      />
+      <div class="colheader">
+        <div>Share of total income</div>
+        <div class="subheader">
+          <span style="background-color:#ff4d4d;">Top 10%</span>
+          vs
+          <span style="background-color:#4da6ff; ">bottom 50%</span>
+        </div>
+      </div>
+      <div>
+        <Chart
+          chart={{
+            key: "country",
+            componentIndex: 0,
+            data: renderDifferenceData,
+            options: {
+              stroke: ["#ff4d4d", "#4da6ff"],
+              strokeOpacity: 1,
+              strokeWidth: 2,
+            },
+          }}
+        />
+      </div>
     </div>
   </div>
 {/if}
@@ -147,9 +157,33 @@
     width: 50%;
   }
 
+  .colheader {
+    display: none;
+  }
+
+  @media (max-width: 499px) {
+    .container {
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .container > div {
+      width: 100%;
+      height: 300px;
+    }
+
+    .header {
+      display: none;
+    }
+
+    .colheader {
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+
   .stacked {
     position: relative;
-    height: 300px;
   }
 
   .stacked div {
