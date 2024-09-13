@@ -34,11 +34,6 @@
       >
     </div>
   </div>
-
-  <div class="people">
-    <img class="left" src="/assets/sandra.png" alt="sandra" />
-    <img class="right" src="/assets/patrick.png" alt="patrick" />
-  </div>
 </footer>
 
 <style>
@@ -99,32 +94,5 @@
     animation: slidein;
     margin-left: 0;
     animation-duration: 6s;
-  }
-
-  .people {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    pointer-events: none;
-    user-select: none;
-  }
-
-  .people img {
-    height: 33vw;
-    max-height: 50vh;
-    opacity: 0.8;
-  }
-
-  .people img.right {
-    transform: translateX(30%);
-  }
-
-  .people img.left {
-    transform: translateX(-30%);
   }
 </style>

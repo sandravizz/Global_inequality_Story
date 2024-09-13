@@ -123,6 +123,7 @@
       </div>
       <div>
         <Chart
+          height={300}
           chart={{
             key: "country",
             componentIndex: 0,
