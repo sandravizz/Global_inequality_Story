@@ -11,6 +11,8 @@
     differenceData.map((d) => [d.country, d.shortname]),
   );
 
+  console.log(wid_countries);
+
   const countries = [];
   wid_countries.forEach((k, v) => countries.push({ country: v, shortname: k }));
 
@@ -91,7 +93,37 @@
             data: renderLineData,
             options: {
               strokeWidth: 0.5,
-              strokeOpacity: 0.2,
+              strokeOpacity: 0.1,
+            },
+          }}
+        />
+      </div>
+      <div>
+        <MultilineChart
+          height={300}
+          chart={{
+            key: "country",
+            componentIndex: 0,
+            data: renderLineData.filter((d) => d.region === "Europe"),
+            options: {
+              stroke: "red",
+              strokeOpacity: 0.4,
+              strokeWidth: 0.7,
+            },
+          }}
+        />
+      </div>
+      <div>
+        <MultilineChart
+          height={300}
+          chart={{
+            key: "country",
+            componentIndex: 0,
+            data: renderLineData.filter((d) => d.country === "DE"),
+            options: {
+              stroke: "steelblue",
+              strokeOpacity: 1,
+              strokeWidth: 3,
             },
           }}
         />
