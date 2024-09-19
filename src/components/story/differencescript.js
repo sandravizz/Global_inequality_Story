@@ -1,6 +1,12 @@
 import DifferenceChart from "$components/charts/DifferenceChart/Chart.svelte";
 import data from "$data/data_diff.csv";
 
+const formatter = new Intl.NumberFormat('en-US', {
+  style: 'percent',
+});
+
+const yTickFormatter = (val) => formatter.format(val)
+
 const countryCodes = ["US", "SE", "DE"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
@@ -29,9 +35,10 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "US"),
           options: {
-            stroke: ["#ff4d4d", "#4da6ff"],
+            stroke: ["#4da6ff", "#ff4d4d",],
             strokeOpacity: 1,
             strokeWidth: 2,
+            yTickFormat: yTickFormatter
           },
         },
       ],
@@ -51,9 +58,10 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "SE"),
           options: {
-            stroke: ["#ff4d4d", "#4da6ff"],
+            stroke: ["#4da6ff", "#ff4d4d",],
             strokeOpacity: 1,
             strokeWidth: 2,
+            yLabelFormat: yTickFormatter
           },
           annotations: [
             {
@@ -88,9 +96,10 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "DE"),
           options: {
-            stroke: ["#ff4d4d", "#4da6ff"],
+            stroke: ["#4da6ff", "#ff4d4d",],
             strokeOpacity: 1,
             strokeWidth: 2,
+            yLabelFormat: yTickFormatter
           },
           annotations: [
             {

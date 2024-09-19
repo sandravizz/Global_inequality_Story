@@ -37,7 +37,7 @@
       {data}
       yDomain={[0, 1]}
       custom={{ annotations: annotations }}
-      padding={{ left: 24, right: 8 }}
+      padding={{ left: 24 }}
     >
       <Svg>
         <MultiLine {...options} />
@@ -51,7 +51,7 @@
 
       <Html>
         <AxisX />
-        <AxisY />
+        <AxisY tickFormat={options.yTickFormat} />
       </Html>
     </LayerCake>
   {/if}

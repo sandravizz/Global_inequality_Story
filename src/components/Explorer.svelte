@@ -1,17 +1,29 @@
 <script>
-  import { group, sort } from "d3";
+  import { group } from "d3";
 
   import Chart from "./charts/DifferenceChart/Chart.svelte";
   import MultilineChart from "./charts/LineChart/MultilineChart.svelte";
   import differenceData from "$data/data_diff.csv";
   import lineData from "$data/data_all.csv";
 
+  // tick formatters
+  const formatterPercent = new Intl.NumberFormat("en-US", {
+    style: "percent",
+  });
+
+  const yTickFormatterPercent = (val) => formatterPercent.format(val);
+
+  const formatterNum = new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 1,
+  });
+
+  const yTickFormatterNum = (val) => formatterNum.format(val);
+
   // countries data
   const wid_countries = new Map(
     differenceData.map((d) => [d.country, d.shortname]),
   );
-
-  console.log(wid_countries);
 
   const countries = [];
   wid_countries.forEach((k, v) => countries.push({ country: v, shortname: k }));
@@ -85,6 +97,7 @@
     <div class="stacked">
       <div class="colheader">GINI index</div>
       <div>
+        <!-- all the country lines -->
         <MultilineChart
           height={300}
           chart={{
@@ -94,11 +107,13 @@
             options: {
               strokeWidth: 0.5,
               strokeOpacity: 0.1,
+              yTickFormat: yTickFormatterNum,
             },
           }}
         />
       </div>
       <div>
+        <!-- region lines -->
         <MultilineChart
           height={300}
           chart={{
@@ -109,26 +124,13 @@
               stroke: "red",
               strokeOpacity: 0.4,
               strokeWidth: 0.7,
+              yTickFormat: yTickFormatterNum,
             },
           }}
         />
       </div>
       <div>
-        <MultilineChart
-          height={300}
-          chart={{
-            key: "country",
-            componentIndex: 0,
-            data: renderLineData.filter((d) => d.country === "DE"),
-            options: {
-              stroke: "steelblue",
-              strokeOpacity: 1,
-              strokeWidth: 3,
-            },
-          }}
-        />
-      </div>
-      <div>
+        <!-- selected country line -->
         <MultilineChart
           height={300}
           chart={{
@@ -139,6 +141,7 @@
               stroke: "red",
               strokeOpacity: 1,
               strokeWidth: 4,
+              yTickFormat: yTickFormatterNum,
             },
           }}
         />
@@ -161,9 +164,10 @@
             componentIndex: 0,
             data: renderDifferenceData,
             options: {
-              stroke: ["#ff4d4d", "#4da6ff"],
+              stroke: ["#4da6ff", "#ff4d4d"],
               strokeOpacity: 1,
               strokeWidth: 2,
+              yTickFormat: yTickFormatterPercent,
             },
           }}
         />

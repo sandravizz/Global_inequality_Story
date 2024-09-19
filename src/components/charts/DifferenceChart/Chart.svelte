@@ -6,7 +6,8 @@
   import MultiLine from "$components/chartcomponents/MultiLine.svg.svelte";
   import ClipPath from "$components/chartcomponents/ClipPath.svg.svelte";
   import Legend from "./Legend.html.svelte";
-  import AxisX from "../LineChart/AxisX.html.svelte";
+  import AxisX from "$components/charts/LineChart/AxisX.html.svelte";
+  import AxisY from "$components/charts/LineChart/AxisY.html.svelte";
   import Annotation from "$components/chartcomponents//Annotation.html.svelte";
 
   export let chart;
@@ -44,7 +45,8 @@
       z="country"
       flatData={data.flatMap((d) => d.values)}
       {data}
-      yDomain={[1, 0]}
+      padding={{ left: 28 }}
+      yDomain={[0, 1]}
       custom={{ annotations: annotations }}
     >
       <Svg>
@@ -55,6 +57,7 @@
       <Html>
         <Legend {...options} />
         <AxisX {...options} />
+        <AxisY tickFormat={options.yTickFormat} />
       </Html>
 
       {#if annotations}

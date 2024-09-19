@@ -2,16 +2,13 @@
   import { ticks } from "d3";
   import { getContext } from "svelte";
 
+  export let tickFormat = (val) => val;
+
   const { yScale } = getContext("LayerCake");
 
   $: tickVals = ticks($yScale.domain()[0], $yScale.domain()[1], 4);
   $: yMax = $yScale.domain()[1];
   $: yMin = $yScale.domain()[0];
-
-  const formatter = new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 1,
-  });
 </script>
 
 <div class="axis">
@@ -24,7 +21,7 @@
         class:moveBottom={tick === $yScale.domain()[1]}
       >
         <div class="line" />
-        <div class="text">{formatter.format(yMax - tick)}</div>
+        <div class="text">{tickFormat(yMax - tick)}</div>
       </div>
     {/if}
   {/each}
