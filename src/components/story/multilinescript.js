@@ -17,7 +17,7 @@ const formatter = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
-const yTickFormatter = val => formatter.format(val)
+const yTickFormatter = (val) => formatter.format(val);
 
 export default {
   components: [
@@ -40,7 +40,7 @@ export default {
             strokeOpacity: 0.7,
             strokeWidth: 0.4,
             fill: "#d5f2f2",
-            yTickFormat: yTickFormatter
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -57,8 +57,7 @@ export default {
           options: {
             stroke: "#7190feff",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
       ],
@@ -78,8 +77,7 @@ export default {
             stroke: "#d5f2f2",
             strokeOpacity: 0.5,
             strokeWidth: 0.4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -108,8 +106,7 @@ export default {
           options: {
             stroke: "#7190feff",
             strokeWidth: 4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -119,8 +116,7 @@ export default {
           options: {
             stroke: "#F7885E",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -131,8 +127,7 @@ export default {
             stroke: "#F7885E",
             strokeWidth: 0,
             strokeOpacity: 1,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
       ],
@@ -152,8 +147,7 @@ export default {
             stroke: "#d5f2f2",
             strokeOpacity: 0.4,
             strokeWidth: 0.4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -182,8 +176,7 @@ export default {
           options: {
             stroke: "#F7885E",
             strokeWidth: 4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -193,8 +186,7 @@ export default {
           options: {
             stroke: "#7190feff",
             strokeWidth: 4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -205,8 +197,7 @@ export default {
             stroke: "#F7885E",
             strokeWidth: 0,
             strokeOpacity: 1,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
       ],
@@ -226,8 +217,7 @@ export default {
             stroke: "#d5f2f2",
             strokeOpacity: 0.4,
             strokeWidth: 0.4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -256,8 +246,7 @@ export default {
           options: {
             stroke: "#F7885E",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -267,8 +256,7 @@ export default {
           options: {
             stroke: "#7190feff",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -279,8 +267,7 @@ export default {
             stroke: "#F7885E",
             strokeWidth: 0.8,
             strokeOpacity: 1,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
       ],
@@ -300,8 +287,7 @@ export default {
             stroke: "#d5f2f2",
             strokeOpacity: 0.4,
             strokeWidth: 0.4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -330,8 +316,7 @@ export default {
           options: {
             stroke: "#F7885E",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -341,8 +326,7 @@ export default {
           options: {
             stroke: "#7190feff",
             strokeWidth: 0,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -353,8 +337,7 @@ export default {
             stroke: "#F7885E",
             strokeWidth: 0.4,
             strokeOpacity: 1,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
         },
         {
@@ -384,8 +367,7 @@ export default {
           options: {
             stroke: "#99F75E",
             strokeWidth: 4,
-            yTickFormat: yTickFormatter
-
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
