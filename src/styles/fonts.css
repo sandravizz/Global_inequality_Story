@@ -1,19 +1,11 @@
 @font-face {
-  font-family: "Syncopate";
-  src: url("/assets/Syncopate-Bold.ttf") format("truetype");
+  font-family: 'Syncopate';
+  src: url('/assets/Syncopate-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Montserrat Alternates1";
-  src: url("/assets/MontserratAlternate1.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat Alternates2";
-  src: url("/assets/MontserratAlternate2.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat Alternates3";
-  src: url("/assets/MontserratAlternate3.ttf") format("truetype");
+  font-family: 'Montserrat Alternates';
+  src: url('/assets/MontserratAlternate1.ttf') format('truetype'),
+    url('/assets/MontserratAlternate2.ttf') format('truetype'),
+    url('/assets/MontserratAlternate3.ttf') format('truetype');
 }

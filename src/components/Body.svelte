@@ -99,21 +99,17 @@
   }
 
   h3 {
-    line-height: 1.1;
-    font-size: 1.2vw;
     font-family: "Montserrat Alternates2", sans-serif;
   }
 
   h5 {
     margin: 0 0 10px;
     line-height: 2;
-    font-size: 0.75vw;
     font-family: "Montserrat Alternates3", sans-serif;
     margin: 0;
   }
 
   .article {
-    font-size: 1vw;
     font-family: "Montserrat Alternates2", sans-serif;
     hyphens: auto;
     opacity: 0.9;
@@ -122,8 +118,6 @@
 
   .footer {
     margin-bottom: 4px;
-    font-size: 0.75vw;
-    font-family: "Montserrat Alternates2", sans-serif;
     opacity: 1;
     hyphens: auto;
     opacity: 0.9;
@@ -131,7 +125,7 @@
   }
 
   .collapsed {
-    max-height: calc(0.75vw * 8);
+    max-height: calc(1rem * 8);
     overflow: hidden;
     position: relative;
   }
@@ -154,7 +148,6 @@
   .expand {
     text-align: center;
     cursor: pointer;
-    font-size: 0.75vw;
     margin-top: 16px;
   }
 

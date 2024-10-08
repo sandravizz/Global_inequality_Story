@@ -124,9 +124,6 @@
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
     text-wrap: nowrap;
-    font-size: 5.9vw;
-    font-family: "Syncopate", sans-serif;
-    line-height: normal;
     text-transform: uppercase;
     margin: 0 20 0 0;
     padding: 0;
@@ -136,16 +133,12 @@
   h3 {
     margin: 0;
     padding: 0;
-    font-size: 1.7vw;
-    font-family: "Montserrat Alternates2", sans-serif;
     -webkit-text-stroke-color: #d5f2f2;
     line-height: normal;
     opacity: 0.7;
   }
 
   .article {
-    font-size: 1vw;
-    font-family: "Montserrat Alternates2", sans-serif;
     hyphens: auto;
     opacity: 0.9;
     text-align: justify;
@@ -161,18 +154,11 @@
     object-position: 50% 50%;
   }
 
-  /* @media (min-width: 500px) {
-		h1 {
-			font-size: 6vw;
-		}
-	} */
-
   .hint {
     z-index: 100;
     position: absolute;
     bottom: 20px;
     left: 50%;
-    font-family: "Montserrat Alternates2", sans-serif;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;

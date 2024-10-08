@@ -75,7 +75,7 @@
   .content {
     position: absolute;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -86,7 +86,7 @@
     position: relative;
     font-weight: bold;
     margin-left: -500px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     top: 4px;
   }
 

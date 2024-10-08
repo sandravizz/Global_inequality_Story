@@ -201,7 +201,7 @@ select {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75rem 0.75rem;
   padding-right: 2.5rem;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -250,8 +250,7 @@ ul {
   --stroke-width: 1px;
   --stroke-width-n: calc(var(--stroke-width) * -1);
   text-shadow:
-    var(--stroke-width-n) var(--stroke-width-n) 0
-      var(--color-text-outline, #fff),
+    var(--stroke-width-n) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     0 var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) 0 0 var(--color-text-outline, #fff),
@@ -263,6 +262,7 @@ ul {
 
 /* desktop (mouse-enabled device) */
 @media (hover: hover) and (pointer: fine) {
+
   button:hover,
   a[role="button"]:hover,
   input[type="button"]:hover,

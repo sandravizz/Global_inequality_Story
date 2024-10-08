@@ -232,7 +232,7 @@
   }
 
   .subheader {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   .subheader span {

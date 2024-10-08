@@ -9,6 +9,8 @@
   $: tickVals = ticks($yScale.domain()[0], $yScale.domain()[1], 4);
   $: yMax = $yScale.domain()[1];
   $: yMin = $yScale.domain()[0];
+
+  $: console.log(yMax, yMax, tickVals, tickFormat);
 </script>
 
 <div class="axis">
@@ -21,7 +23,9 @@
         class:moveBottom={tick === $yScale.domain()[1]}
       >
         <div class="line" />
-        <div class="text">{tickFormat(yMax - tick)}</div>
+        <div class="text">
+          {tickFormat ? tickFormat(yMax - tick) : yMax - tick}
+        </div>
       </div>
     {/if}
   {/each}
@@ -38,15 +42,15 @@
     position: absolute;
     display: inline-block;
     width: 0;
+    font-size: 0.7rem;
   }
 
   .text {
-    font-family: "Montserrat Alternates1", sans-serif;
-    font-size: 0.7vw;
     position: absolute;
     color: var(--color-chart-axis);
     white-space: nowrap;
     transform: translateX(calc(-100% - 8px));
+    font-size: 0.7rem;
   }
 
   .moveTop .text {
@@ -54,6 +58,6 @@
   }
 
   .line {
-    height: 0.8em;
+    height: 0.7rem;
   }
 </style>

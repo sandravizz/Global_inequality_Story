@@ -43,7 +43,7 @@
       {#if yValue !== undefined}
         <!-- y line annotation -->
         <div
-          class="label1 absolute sm lowlight"
+          class="label absolute sm lowlight"
           style="bottom: {$yScale(yValue) + dy}px; left: 0; "
         >
           {text}
@@ -70,20 +70,11 @@
     color: #d5f2f2;
   }
 
-  .label1 {
-    letter-spacing: -0.5px;
-    transition: all 0.8s;
-    font-size: 0.8vw;
-    font-family: "Montserrat Alternates2", sans-serif;
-    opacity: 1;
-  }
-
   .label {
     letter-spacing: -0.5px;
     transition: all 0.8s;
-    font-size: 1vw;
-    font-family: "Montserrat Alternates2", sans-serif;
     opacity: 1;
+    font-size: 0.8em;
   }
 
   .xLine {

@@ -1,4 +1,4 @@
-/* @import "normalize.css"; */
+@import "normalize.css";
 @import "reset.css";
 @import "fonts.css";
 
@@ -26,19 +26,42 @@
 
 h1 {
   font-size: var(--56px, 56px);
+
 }
+
 h2 {
   font-size: var(--36px, 36px);
 }
+
 h3 {
   font-size: var(--28px, 28px);
 }
+
 h4 {
   font-size: var(--24px, 24px);
 }
+
 h5 {
   font-size: var(--22px, 22px);
 }
+
 h6 {
   font-size: var(--20px, 20px);
+}
+
+/* font */
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: clamp(0.75rem, 0.693vw + 0.571rem, 1.125rem);
+  line-height: clamp(1.125rem, 0.624vw + 0.964rem, 1.463rem);
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Syncopate", sans-serif;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 2rem;
 }

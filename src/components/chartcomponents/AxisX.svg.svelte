@@ -59,7 +59,7 @@
 
 <style>
   .tick {
-    font-size: 0.725em;
+    font-size: 0.7rem;
     font-weight: 200;
     fill: #d5f2f2;
   }

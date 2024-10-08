@@ -19,9 +19,9 @@
   }
 
   .dot {
-    width: 0.66em;
-    height: 0.66em;
-    border-radius: 0.33em;
+    width: 0.66rem;
+    height: 0.66rem;
+    border-radius: 0.33rem;
   }
 
   .label {

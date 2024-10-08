@@ -32,15 +32,15 @@
     position: absolute;
     display: inline-block;
     width: 0;
+    font-size: 0.8rem;
   }
 
   .text {
-    font-family: "Montserrat Alternates1", sans-serif;
-    font-size: 0.7vw;
     position: absolute;
     color: var(--color-chart-axis);
     white-space: nowrap;
     transform: translateX(-50%);
+    font-size: 0.8rem;
   }
 
   .moveRight .text {
@@ -52,6 +52,6 @@
   }
 
   .line {
-    height: 0.8em;
+    height: 0.8rem;
   }
 </style>

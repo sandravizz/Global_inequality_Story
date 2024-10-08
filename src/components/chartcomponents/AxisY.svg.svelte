@@ -46,7 +46,7 @@
 
 <style>
   .tick {
-    font-size: 0.725em;
+    font-size: 0.7rem;
     font-weight: 200;
   }
 
