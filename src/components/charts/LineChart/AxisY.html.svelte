@@ -9,8 +9,6 @@
   $: tickVals = ticks($yScale.domain()[0], $yScale.domain()[1], 4);
   $: yMax = $yScale.domain()[1];
   $: yMin = $yScale.domain()[0];
-
-  $: console.log(yMax, yMax, tickVals, tickFormat);
 </script>
 
 <div class="axis">
