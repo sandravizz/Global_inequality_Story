@@ -179,10 +179,6 @@
     font-size: 1.5rem;
   }
 
-  .tooltip__content-meta {
-    margin: 0;
-  }
-
   .tooltip__content-desc {
     margin: auto 0 0 0;
   }

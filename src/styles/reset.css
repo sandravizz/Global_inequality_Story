@@ -250,7 +250,8 @@ ul {
   --stroke-width: 1px;
   --stroke-width-n: calc(var(--stroke-width) * -1);
   text-shadow:
-    var(--stroke-width-n) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
+    var(--stroke-width-n) var(--stroke-width-n) 0
+      var(--color-text-outline, #fff),
     0 var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
     var(--stroke-width) 0 0 var(--color-text-outline, #fff),
@@ -262,7 +263,6 @@ ul {
 
 /* desktop (mouse-enabled device) */
 @media (hover: hover) and (pointer: fine) {
-
   button:hover,
   a[role="button"]:hover,
   input[type="button"]:hover,

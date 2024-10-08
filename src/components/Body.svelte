@@ -102,13 +102,6 @@
     font-family: "Montserrat Alternates2", sans-serif;
   }
 
-  h5 {
-    margin: 0 0 10px;
-    line-height: 2;
-    font-family: "Montserrat Alternates3", sans-serif;
-    margin: 0;
-  }
-
   .article {
     font-family: "Montserrat Alternates2", sans-serif;
     hyphens: auto;
@@ -181,9 +174,5 @@
     --persian-pink: #fc7ec2ff;
     --charcoal: #213d4fff;
     --english-violet: #4a496aff;
-  }
-
-  .wide {
-    max-width: 70rem;
   }
 </style>
