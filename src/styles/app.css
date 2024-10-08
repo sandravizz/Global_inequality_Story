@@ -24,30 +24,6 @@
   }
 }
 
-h1 {
-  font-size: var(--56px, 56px);
-}
-
-h2 {
-  font-size: var(--36px, 36px);
-}
-
-h3 {
-  font-size: var(--28px, 28px);
-}
-
-h4 {
-  font-size: var(--24px, 24px);
-}
-
-h5 {
-  font-size: var(--22px, 22px);
-}
-
-h6 {
-  font-size: var(--20px, 20px);
-}
-
 /* font */
 body {
   font-family: "Montserrat Alternates", sans-serif;
@@ -56,7 +32,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-family: "Syncopate", sans-serif;
   line-height: normal;
 }

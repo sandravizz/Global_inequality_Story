@@ -17,15 +17,14 @@
   <Slide
     src="/assets/1.png"
     title="Global inequality"
-    subtitle="Analysis of global income inequality 1980 - 2023"
     hide={slideIndex !== undefined ? slideIndex !== 0 : null}
     show={slideIndex !== undefined ? slideIndex === 0 : null}
     isVisible={true}
   />
 
   <Slide
-    src="/assets/2.png"
-    title=""
+    src="/assets/2.jpeg"
+    title="Global inequality"
     hide={slideIndex !== 1}
     show={slideIndex === 1}
   />
