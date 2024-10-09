@@ -128,11 +128,7 @@
     left: 0;
     right: 0;
     top: 50%;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      var(--color-background)
-    );
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), √);
     background-size: cover;
     background-position: center;
   }
@@ -149,33 +145,5 @@
 
   section.wide {
     max-width: 70rem;
-  }
-
-  :root {
-    --brunswick-green: #184b39ff;
-    --dark-green: #13270bff;
-    --cornflower-blue: #748ffeff;
-    --pakistan-green: #203f21ff;
-    --cerulean: #307fa3ff;
-    --jordy-blue: #99b9f8ff;
-    --caribbean-current: #1f6e7dff;
-    --cornflower-blue: #7190feff;
-    --caribbean-current: #226566ff;
-    --brunswick-green: #224e3bff;
-    --chefchaouen-blue: #4c8ffeff;
-    --dark-green: #142605ff;
-    --night: #081604ff;
-    --cerulean: #247285ff;
-    --pakistan-green: #113c1eff;
-    --hot-pink: #fe5dbaff;
-    --rose-pink: #e95bbaff;
-    --lavender-pink: #f9acdbff;
-    --dark-green: #022121ff;
-    --sky-magenta: #c35bacff;
-    --black: #020909ff;
-    --hot-pink-2: #ff6db7ff;
-    --persian-pink: #fc7ec2ff;
-    --charcoal: #213d4fff;
-    --english-violet: #4a496aff;
   }
 </style>

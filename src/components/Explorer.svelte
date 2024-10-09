@@ -164,11 +164,13 @@
       <div>
         <h1>Share of total income</h1>
         <h2>
-          <span style="background-color:#ff4d4d;color: #fff;font-weight: bold;"
+          <span
+            style="background-color:rgba(255,77,77,0.7);color: #fff;font-weight: bold;"
             >Top 10%</span
           >
           vs
-          <span style="background-color:#4da6ff;;color: #fff;font-weight: bold;"
+          <span
+            style="background-color:rgba(77,166,255,0.7);color: #fff;font-weight: bold;"
             >bottom 50%</span
           >
         </h2>
