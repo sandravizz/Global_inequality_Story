@@ -15,7 +15,6 @@
       class:moveRight={tick === $xScale.domain()[0]}
       class:moveLeft={tick === $xScale.domain()[1]}
     >
-      <div class="line" />
       <div class="text">{tick}</div>
     </div>
   {/each}
@@ -32,7 +31,6 @@
     position: absolute;
     display: inline-block;
     width: 0;
-    font-size: 0.8rem;
   }
 
   .text {
@@ -40,7 +38,7 @@
     color: var(--color-chart-axis);
     white-space: nowrap;
     transform: translateX(-50%);
-    font-size: 0.8rem;
+    font-size: var(--font-size-xs);
   }
 
   .moveRight .text {
@@ -49,9 +47,5 @@
 
   .moveLeft .text {
     transform: translateX(-100%);
-  }
-
-  .line {
-    height: 0.8rem;
   }
 </style>

@@ -49,12 +49,19 @@
 
   .faded {
     opacity: 0.6;
+    margin-top: calc(var(--font-size-md) * 0.25);
+  }
+
+  .content {
+    display: flex;
+    height: calc(var(--font-size-md) * 2);
+    font-size: var(--font-size-md);
   }
 
   .content div {
-    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    align-items: center;
   }
 
   @keyframes slidein {
@@ -75,7 +82,6 @@
   .content {
     position: absolute;
     text-align: center;
-    font-size: 1.3rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -86,7 +92,6 @@
     position: relative;
     font-weight: bold;
     margin-left: -500px;
-    font-size: 1.5rem;
     top: 4px;
   }
 

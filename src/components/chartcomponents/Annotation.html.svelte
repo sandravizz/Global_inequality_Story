@@ -74,7 +74,7 @@
     letter-spacing: -0.5px;
     transition: all 0.8s;
     opacity: 1;
-    font-size: 0.8em;
+    font-size: var(--font-size-md);
   }
 
   .xLine {

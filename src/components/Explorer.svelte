@@ -3,6 +3,7 @@
 
   import Chart from "./charts/DifferenceChart/Chart.svelte";
   import MultilineChart from "./charts/LineChart/MultilineChart.svelte";
+
   import differenceData from "$data/data_diff.csv";
   import lineData from "$data/data_all.csv";
 
@@ -69,6 +70,7 @@
   };
 
   $: renderDifferenceData = filterDifferenceData(country, differenceData);
+  $: region = renderLineData.find((d) => [country].includes(d.country)).region2;
 </script>
 
 <div class="filter">
@@ -80,81 +82,96 @@
   </select>
 </div>
 
-<div class="container header">
-  <div>GINI index</div>
-  <div>
-    <div>Share of total income</div>
-    <div class="subheader">
-      <span style="background-color:#ff4d4d;">Top 10%</span>
-      vs
-      <span style="background-color:#4da6ff; ">bottom 50%</span>
-    </div>
-  </div>
-</div>
-
 {#if country}
   <div class="container">
-    <div class="stacked">
-      <div class="colheader">GINI index</div>
-      <div>
-        <!-- all the country lines -->
-        <MultilineChart
-          height={300}
-          chart={{
-            key: "country",
-            componentIndex: 0,
-            data: renderLineData,
-            options: {
-              strokeWidth: 0.5,
-              strokeOpacity: 0.1,
-              yTickFormat: yTickFormatterNum,
-            },
-          }}
-        />
-      </div>
-      <div>
-        <!-- region lines -->
-        <MultilineChart
-          height={300}
-          chart={{
-            key: "country",
-            componentIndex: 0,
-            data: renderLineData.filter((d) => d.region === "Europe"),
-            options: {
-              stroke: "red",
-              strokeOpacity: 0.4,
-              strokeWidth: 0.7,
-              yTickFormat: yTickFormatterNum,
-            },
-          }}
-        />
-      </div>
-      <div>
-        <!-- selected country line -->
-        <MultilineChart
-          height={300}
-          chart={{
-            key: "country",
-            componentIndex: 0,
-            data: renderLineData.filter((d) => [country].includes(d.country)),
-            options: {
-              stroke: "red",
-              strokeOpacity: 1,
-              strokeWidth: 4,
-              yTickFormat: yTickFormatterNum,
-            },
-          }}
-        />
+    <div>
+      <h1>GINI index</h1>
+      <h2>Including {region}</h2>
+      <div class="stacked" style="height: 300px">
+        <div>
+          <!-- all the country lines -->
+          <MultilineChart
+            height={300}
+            chart={{
+              key: "country",
+              componentIndex: 0,
+              data: renderLineData,
+              options: {
+                stroke: "#4c4c4c",
+                strokeWidth: 0.5,
+                strokeOpacity: 0.6,
+                yTickFormat: yTickFormatterNum,
+              },
+            }}
+          />
+        </div>
+        <div>
+          <!-- region lines -->
+          <MultilineChart
+            height={300}
+            chart={{
+              key: "country",
+              componentIndex: 0,
+              data: renderLineData.filter((d) => d.region2 === region),
+              options: {
+                stroke: "#ff4d4d",
+                strokeOpacity: 1,
+                strokeWidth: 0.5,
+                yTickFormat: yTickFormatterNum,
+              },
+            }}
+          />
+        </div>
+
+        <div>
+          <!-- selected country line -->
+          <MultilineChart
+            height={300}
+            chart={{
+              key: "country",
+              componentIndex: 0,
+              data: renderLineData.filter((d) => [country].includes(d.country)),
+              options: {
+                stroke: "var(--color-background)",
+                strokeOpacity: 0.5,
+                strokeWidth: 12,
+                yTickFormat: yTickFormatterNum,
+              },
+            }}
+          />
+        </div>
+
+        <div>
+          <!-- selected country line -->
+          <MultilineChart
+            height={300}
+            chart={{
+              key: "country",
+              componentIndex: 0,
+              data: renderLineData.filter((d) => [country].includes(d.country)),
+              options: {
+                stroke: "red",
+                strokeOpacity: 1,
+                strokeWidth: 4,
+                yTickFormat: yTickFormatterNum,
+              },
+            }}
+          />
+        </div>
       </div>
     </div>
     <div>
-      <div class="colheader">
-        <div>Share of total income</div>
-        <div class="subheader">
-          <span style="background-color:#ff4d4d;">Top 10%</span>
+      <div>
+        <h1>Share of total income</h1>
+        <h2>
+          <span style="background-color:#ff4d4d;color: #fff;font-weight: bold;"
+            >Top 10%</span
+          >
           vs
-          <span style="background-color:#4da6ff; ">bottom 50%</span>
-        </div>
+          <span style="background-color:#4da6ff;;color: #fff;font-weight: bold;"
+            >bottom 50%</span
+          >
+        </h2>
       </div>
       <div>
         <Chart
@@ -166,7 +183,7 @@
             options: {
               stroke: ["#4da6ff", "#ff4d4d"],
               strokeOpacity: 1,
-              strokeWidth: 2,
+              strokeWidth: 3,
               yTickFormat: yTickFormatterPercent,
             },
           }}
@@ -184,9 +201,13 @@
     margin-bottom: 24px;
   }
 
+  .filter > div {
+    margin-top: -5px;
+  }
+
   .container {
     display: flex;
-    gap: 16px;
+    gap: 48px;
     margin-bottom: 16px;
   }
 
@@ -194,28 +215,13 @@
     width: 50%;
   }
 
-  .colheader {
-    display: none;
-  }
-
   @media (max-width: 499px) {
     .container {
       flex-direction: column;
-      gap: 48px;
     }
 
     .container > div {
       width: 100%;
-      height: 300px;
-    }
-
-    .header {
-      display: none;
-    }
-
-    .colheader {
-      display: block;
-      margin-bottom: 4px;
     }
   }
 
@@ -231,13 +237,20 @@
     bottom: 0;
   }
 
-  .subheader {
-    font-size: 0.8rem;
-  }
-
-  .subheader span {
+  h2 span {
     border-radius: 2px;
     padding: 2px 4px;
     color: #fff;
+  }
+
+  h1 {
+    font-size: var(--font-size-md);
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 4px;
+    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
   }
 </style>

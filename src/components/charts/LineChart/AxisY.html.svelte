@@ -20,7 +20,6 @@
         class:moveTop={tick === $yScale.domain()[0]}
         class:moveBottom={tick === $yScale.domain()[1]}
       >
-        <div class="line" />
         <div class="text">
           {tickFormat ? tickFormat(yMax - tick) : yMax - tick}
         </div>
@@ -40,7 +39,6 @@
     position: absolute;
     display: inline-block;
     width: 0;
-    font-size: 0.7rem;
   }
 
   .text {
@@ -48,14 +46,10 @@
     color: var(--color-chart-axis);
     white-space: nowrap;
     transform: translateX(calc(-100% - 8px));
-    font-size: 0.7rem;
+    font-size: var(--font-size-xs);
   }
 
   .moveTop .text {
     transform: translateX(-100%);
-  }
-
-  .line {
-    height: 0.7rem;
   }
 </style>

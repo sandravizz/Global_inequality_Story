@@ -61,7 +61,7 @@ export default {
             stroke: ["#4da6ff", "#ff4d4d"],
             strokeOpacity: 1,
             strokeWidth: 2,
-            yLabelFormat: yTickFormatter,
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {
@@ -99,7 +99,7 @@ export default {
             stroke: ["#4da6ff", "#ff4d4d"],
             strokeOpacity: 1,
             strokeWidth: 2,
-            yLabelFormat: yTickFormatter,
+            yTickFormat: yTickFormatter,
           },
           annotations: [
             {

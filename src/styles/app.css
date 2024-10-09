@@ -18,6 +18,29 @@
   --1s: 1ms;
 }
 
+
+/* typography */
+:root {
+  /* fluid base */
+  --base-min-font-size: 0.75rem;
+  --base-max-font-size: 1.125rem;
+  --base-min-line-height: 1.125rem;
+  --base-max-line-height: 1.463rem;
+
+
+  /* font families */
+  --font-family-impact: "Syncopate", sans-serif;
+  --font-family-base: "Montserrat Alternates", sans-serif;
+
+  /* font sizes */
+  --font-size-xl: 6rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.8rem;
+  --font-size-xs: 0.7rem;
+
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   :root {
     --1s: 1s;
@@ -26,17 +49,7 @@
 
 /* font */
 body {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: clamp(0.75rem, 0.693vw + 0.571rem, 1.125rem);
-  line-height: clamp(1.125rem, 0.624vw + 0.964rem, 1.463rem);
-}
-
-h1 {
-  font-size: 6rem;
-  font-family: "Syncopate", sans-serif;
-  line-height: normal;
-}
-
-h3 {
-  font-size: 2rem;
+  font-family: var(--font-family-base);
+  font-size: clamp(var(--base-min-font-size), 0.693vw + 0.571rem, var(--base-max-font-size));
+  line-height: clamp(var(--base-min-font-size), 0.624vw + 0.964rem, var(--base-max-line-height));
 }

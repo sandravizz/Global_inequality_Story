@@ -101,8 +101,9 @@
   .chart-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 32px);
     position: relative;
+    margin: 0 16px;
   }
 
   .fullWidth .chart-container {
@@ -178,9 +179,8 @@
     -webkit-text-fill-color: var(--color-background);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 0.9px;
-    font-size: 28px;
-    font-family: "Syncopate", sans-serif;
-    line-height: 1.4;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-family-impact);
     text-transform: uppercase;
   }
 
@@ -205,7 +205,6 @@
     .wide .contentwrapper {
       position: relative;
       margin: auto;
-      max-width: 50rem;
     }
   }
 </style>

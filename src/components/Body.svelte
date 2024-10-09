@@ -40,7 +40,7 @@
   <p class="article"></p>
 </section>
 
-<section>
+<section class="wide">
   <h3>Explore the data</h3>
 
   <Explorer />
@@ -100,21 +100,20 @@
 
   h3 {
     font-family: "Montserrat Alternates2", sans-serif;
+    font-size: var(--font-size-md);
   }
 
   .article {
     font-family: "Montserrat Alternates2", sans-serif;
     hyphens: auto;
-    opacity: 0.9;
     text-align: justify;
   }
 
   .footer {
     margin-bottom: 4px;
-    opacity: 1;
     hyphens: auto;
-    opacity: 0.9;
     text-align: justify;
+    font-size: var(--font-size-sm);
   }
 
   .collapsed {
@@ -146,6 +145,10 @@
 
   a {
     color: #d5f2f2;
+  }
+
+  section.wide {
+    max-width: 70rem;
   }
 
   :root {

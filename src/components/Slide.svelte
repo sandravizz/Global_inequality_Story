@@ -73,9 +73,9 @@
     </h1>
 
     {#if subtitle}
-      <h3>
+      <h2>
         {subtitle}
-      </h3>
+      </h2>
     {/if}
 
     {#if subtitle2}
@@ -168,7 +168,8 @@
 
   .hint > div {
     margin-top: -6px;
-    font-size: 0.9em;
+    font-size: var(--font-size-md);
+    font-weight: bold;
   }
 
   .gg-chevron-down {
@@ -195,5 +196,14 @@
     transform: rotate(45deg);
     left: 4px;
     top: 2px;
+  }
+
+  h1 {
+    font-family: var(--font-family-impact);
+    font-size: var(--font-size-xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-lg);
   }
 </style>

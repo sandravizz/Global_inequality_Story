@@ -25,6 +25,26 @@
   const idBelow = uuidv4();
 </script>
 
+<pattern
+  id="pattern-0"
+  width="4"
+  height="4"
+  patternUnits="userSpaceOnUse"
+  patternTransform="rotate(45)"
+>
+  <rect class="area-stripe" width="1" height="4" fill={stroke[0]}></rect>
+</pattern>
+
+<pattern
+  id="pattern-1"
+  width="4"
+  height="4"
+  patternUnits="userSpaceOnUse"
+  patternTransform="rotate(45)"
+>
+  <rect class="area-stripe" width="1" height="4" fill={stroke[1]}></rect>
+</pattern>
+
 {#key $width}
   <g class="difference">
     <g class="clips">
@@ -40,15 +60,15 @@
     <g class="paths">
       <path
         d={above($data[1].values)}
-        fill-opacity="0.3"
-        fill={stroke[1]}
+        fill-opacity="0.4"
+        fill={"url(#pattern-1)"}
         clip-path="url(#{idAbove})"
       />
 
       <path
         d={above($data[0].values)}
-        fill-opacity="0.3"
-        fill={stroke[0]}
+        fill-opacity="0.4"
+        fill={"url(#pattern-0)"}
         clip-path="url(#{idBelow})"
       />
     </g>
