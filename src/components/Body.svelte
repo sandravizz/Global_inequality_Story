@@ -2,7 +2,7 @@
   import Scroller from "./story/ScrollyEngine.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
-  import Explorer from "./Explorer.svelte";
+  // import Explorer from "./Explorer.svelte";
 
   let collapsed = true;
 </script>
@@ -49,7 +49,7 @@
 <section class="wide">
   <h3  class="text-big">Explore the data</h3>
 
-  <Explorer />
+  <!-- <Explorer /> -->
 </section>
 
 <section>

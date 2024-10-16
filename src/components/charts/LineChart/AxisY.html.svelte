@@ -42,6 +42,7 @@
   }
 
   .text {
+    font-family: "Montserrat Alternates1", sans-serif;
     position: absolute;
     color: var(--color-chart-axis);
     white-space: nowrap;

@@ -12,6 +12,7 @@
 {#key $width}
   {#each $custom.annotations as { x: xValue, y: yValue, z: zValue, text, dy = 0, dx = 0 }}
     {#if xValue && zValue && text}
+
       <!-- point annotation -->
       <div
         class="label absolute"
@@ -30,9 +31,10 @@
       </div>
     {:else}
       {#if xValue !== undefined}
+
         <!-- x line annotation -->
         <div
-          class="label absolute sm middle lowlight"
+          class="label absolute middle lowlight"
           style="left: {$xScale(xValue) + dx}px; top: -32px;"
         >
           {text}
@@ -41,17 +43,14 @@
       {/if}
 
       {#if yValue !== undefined}
+
         <!-- y line annotation -->
         <div
-          class="label absolute sm lowlight"
-          style="bottom: {$yScale(yValue) + dy}px; left: 0; "
+          class="label2 absolute lowlight"
+          style="bottom: {$yScale(yValue) + dy - 5.5}px; left: 0; "
         >
           {text}
         </div>
-        <!-- <hr
-					class="absolute lowlight dotted"
-					style="top: {$yScale(yValue)}px; left: 0; right:0; "
-				/> -->
       {/if}
     {/if}
   {/each}
@@ -67,19 +66,28 @@
   }
 
   .lowlight {
-    color: #d5f2f2;
+    color: var(--color-chart-axis);
   }
 
   .label {
+    font-family: "Montserrat Alternates2", sans-serif;
     letter-spacing: -0.5px;
     transition: all 0.8s;
     opacity: 1;
     font-size: var(--font-size-md);
   }
 
+  .label2 {
+    font-family: "Montserrat Alternates1", sans-serif;
+    letter-spacing: -0.5px;
+    transition: all 0.8s;
+    opacity: 1;
+    font-size: var(--font-size-xs);
+  }
+
   .xLine {
     border-width: 0;
-    border-left: 0.1px dashed #d5f2f2;
+    border-left: 0.1px dashed var(--color-chart-axis);
     top: -8px;
     bottom: 0;
     opacity: 0.3;

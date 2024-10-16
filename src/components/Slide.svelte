@@ -199,7 +199,7 @@
   }
 
   h1 {
-    font-family: var(--font-family-impact);
+    font-family:   "Syncopate";
     font-size: var(--font-size-xl);
   }
 

@@ -66,7 +66,7 @@
                 <div class="content">
                   <h4>{step.description.title}</h4>
                   {#if step.description.text}
-                    <p>{@html step.description.text}</p>
+                    <p class = "text-medium">{@html step.description.text}</p>
                   {/if}
                 </div>
               </div>
@@ -157,6 +157,8 @@
 
   .contentwrapper {
     position: relative;
+    width: 70%;
+    margin: 0 auto;
     padding: 10px;
   }
 
@@ -180,9 +182,10 @@
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 0.9px;
     font-size: var(--font-size-lg);
-    font-family: var(--font-family-impact);
+    font-family: "Syncopate";
     text-transform: uppercase;
   }
+
 
   @media (min-width: 900px) {
     .fullWidth .container {
