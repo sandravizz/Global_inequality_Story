@@ -2,6 +2,42 @@
 @import "reset.css";
 @import "fonts.css";
 
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+.text-big {
+  font-family: "Montserrat Alternates2", sans-serif;
+  hyphens: auto;
+  line-height: 1.15;
+  text-align: justify;
+}
+
+.text-medium {
+  font-family: "Montserrat Alternates2", sans-serif;
+  font-size: var(--font-size-md);
+  line-height: 1.15;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.text-small {
+  font-family: "Montserrat Alternates1", sans-serif;
+  font-size: var(--font-size-sm);
+  margin-bottom: 4px;
+  line-height: 1.15;
+  hyphens: auto;
+  text-align: justify;
+}
+
+a {
+  color: #d5f2f2;
+}
+
 :root {
   --color-background: #020100ff;
   --color-chart-axis: #b9d4d3;
@@ -18,7 +54,6 @@
   --1s: 1ms;
 }
 
-
 /* typography */
 :root {
   /* fluid base */
@@ -26,7 +61,6 @@
   --base-max-font-size: 1.125rem;
   --base-min-line-height: 1.125rem;
   --base-max-line-height: 1.463rem;
-
 
   /* font families */
   --font-family-impact: "Syncopate", sans-serif;

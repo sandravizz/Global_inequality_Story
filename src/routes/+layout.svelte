@@ -9,8 +9,8 @@
 <main id="content"><slot /></main>
 <Footer />
 
-<style>
+<!-- <style>
   :global(html) {
     font-family: "Montserrat Alternates1", sans-serif;
   }
-</style>
+</style> -->

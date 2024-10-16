@@ -8,7 +8,7 @@
 </script>
 
 <section style="margin-top: 16px">
-  <p class="article">
+  <p class="text-medium">
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
@@ -18,7 +18,7 @@
     and dying in poverty?
   </p>
 
-  <p class="article">
+  <p class="text-medium">
     On the other hand in more and more countries facisim is again! on the rise.
     Extreme inquality leads to frustration, fear and anger. These are
     observations and questions that motivated us to create this project on
@@ -29,28 +29,34 @@
 <Scroller storyscript={multilinescript} layout="wide" />
 
 <section>
-  <h3>xxx</h3>
-  <p class="article"></p>
+  <h3 class="text-big">Hello hello</h3>
+  <p class="text-medium">  On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.</p>
 </section>
 
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-  <h3>xxx</h3>
-  <p class="article"></p>
+  <h3 class="text-big">Hello hello</h3>
+  <p class="text-medium">  On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.</p>
 </section>
 
 <section class="wide">
-  <h3>Explore the data</h3>
+  <h3  class="text-big">Explore the data</h3>
 
   <Explorer />
 </section>
 
 <section>
-  <div class:collapsed>
-    <h3>Methodology</h3>
+  <!-- <div class:collapsed> -->
+    <p class="text-small">Methodology</p>
 
-    <p class="footer">
+    <p class="text-small">
       Income data was sourced from the <a
         target="_blank"
         href="https://wid.world/wid-world/">World Inequality Database</a
@@ -61,7 +67,7 @@
       rankings.
     </p>
 
-    <p class="footer">
+    <p class="text-small">
       <a
         target="_blank"
         href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
@@ -74,12 +80,12 @@
       removed from or added to individual factor incomes.
     </p>
 
-    {#if collapsed}
+    <!-- {#if collapsed}
       <div class="fade" />
     {/if}
-  </div>
+  </div> -->
 
-  {#if collapsed}
+  <!-- {#if collapsed}
     <div
       class="expand"
       role="button"
@@ -88,7 +94,7 @@
     >
       Read more
     </div>
-  {/if}
+  {/if} -->
 </section>
 
 <style>
@@ -98,31 +104,17 @@
     margin: 0 auto;
   }
 
-  h3 {
-    font-family: "Montserrat Alternates2", sans-serif;
-    font-size: var(--font-size-md);
+  section.wide {
+    max-width: 70rem;
   }
 
-  .article {
-    font-family: "Montserrat Alternates2", sans-serif;
-    hyphens: auto;
-    text-align: justify;
-  }
-
-  .footer {
-    margin-bottom: 4px;
-    hyphens: auto;
-    text-align: justify;
-    font-size: var(--font-size-sm);
-  }
-
-  .collapsed {
+  /* .collapsed {
     max-height: calc(1rem * 8);
     overflow: hidden;
     position: relative;
-  }
+  } */
 
-  .fade {
+  /* .fade {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -131,19 +123,12 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), √);
     background-size: cover;
     background-position: center;
-  }
+  } */
 
-  .expand {
+  /* .expand {
     text-align: center;
     cursor: pointer;
     margin-top: 16px;
-  }
+  } */
 
-  a {
-    color: #d5f2f2;
-  }
-
-  section.wide {
-    max-width: 70rem;
-  }
 </style>
