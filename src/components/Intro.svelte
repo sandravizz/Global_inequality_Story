@@ -151,7 +151,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
 
 h1 {
   font-size: var(--step-0); 
