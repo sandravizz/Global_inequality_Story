@@ -2,7 +2,7 @@
   import { gsap } from "gsap";
   import { base } from "$app/paths";
 
-  import Slide from "./Slide.svelte";
+  import Slide from "./Intro.svelte";
 
   let slideIndex = undefined;
 

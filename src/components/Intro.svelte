@@ -3,8 +3,6 @@
 
   export let src;
   export let title;
-  export let subtitle;
-  export let subtitle2;
   export let hide;
   export let show;
   export let isVisible = false;
@@ -71,19 +69,7 @@
     <h1>
       {title}
     </h1>
-
-    {#if subtitle}
-      <h2>
-        {subtitle}
-      </h2>
-    {/if}
-
-    {#if subtitle2}
-      <p class="article">
-        {subtitle2}
-      </p>
-    {/if}
-  </div>
+</div>
 
   <img bind:this={imgEl} {src} alt={title} />
 
@@ -94,6 +80,7 @@
 </div>
 
 <style>
+
   .slide.isVisible {
     opacity: 1;
   }
@@ -128,20 +115,8 @@
     margin: 0 20 0 0;
     padding: 0;
     opacity: 0.7;
-  }
-
-  h3 {
-    margin: 0;
-    padding: 0;
-    -webkit-text-stroke-color: #d5f2f2;
-    line-height: normal;
-    opacity: 0.7;
-  }
-
-  .article {
-    hyphens: auto;
-    opacity: 0.9;
-    text-align: justify;
+    font-family:"Syncopate";
+    font-size: var(--font-size-xl);
   }
 
   img {
@@ -196,14 +171,5 @@
     transform: rotate(45deg);
     left: 4px;
     top: 2px;
-  }
-
-  h1 {
-    font-family:   "Syncopate";
-    font-size: var(--font-size-xl);
-  }
-
-  h2 {
-    font-size: var(--font-size-lg);
   }
 </style>
