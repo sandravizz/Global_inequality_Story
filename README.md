@@ -12,4 +12,6 @@ Made with :green_heart: [Sandra](https://www.sandraviz.com) and [Patrick](https:
 
 #### Credits
 
+Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in the building the webpage especially with Svelte.
+
 Our project is based on [starter template](https://github.com/the-pudding/svelte-starter) from the pudding.
