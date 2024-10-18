@@ -1,8 +1,8 @@
 <script>
   import { group } from "d3";
 
-  import Chart from "./charts/DifferenceChart/Chart.svelte";
-  import MultilineChart from "./charts/LineChart/MultilineChart.svelte";
+  import Chart from "./charts/DifferenceChart.svelte";
+  import MultilineChart from "./charts/MultilineChart.svelte";
 
   import differenceData from "$data/data_diff.csv";
   import lineData from "$data/data_all.csv";

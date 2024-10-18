@@ -1,5 +1,5 @@
 import { group } from "d3";
-import MultilineChart from "$components/charts/LineChart/MultilineChart.svelte";
+import MultilineChart from "$components/charts/MultilineChart/Chart.svelte";
 import data from "$data/data_all.csv";
 
 const formattedData = data.map((d) => ({ ...d, value: +d.gini_pretaxes }));

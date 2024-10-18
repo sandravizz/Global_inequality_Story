@@ -1,4 +1,4 @@
-import DifferenceChart from "$components/charts/DifferenceChart/Chart.svelte";
+import DifferenceChart from "$components/charts/DifferenceChart.svelte";
 import data from "$data/data_diff.csv";
 
 const formatter = new Intl.NumberFormat("en-US", {

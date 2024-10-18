@@ -1,5 +1,5 @@
 <script>
-  import Scrolly from "$components/chartcomponents/Scrolly.svelte";
+  import Scrolly from "$components/story/Scrolly.svelte";
 
   export let storyscript = [];
   export let layout;

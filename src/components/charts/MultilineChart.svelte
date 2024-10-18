@@ -3,10 +3,10 @@
 <script>
   import { LayerCake, Svg, Html } from "layercake";
 
-  import MultiLine from "$components/chartcomponents/MultiLine.svg.svelte";
-  import Annotation from "$components/chartcomponents/Annotation.html.svelte";
-  import AxisX from "./AxisX.html.svelte";
-  import AxisY from "./AxisY.html.svelte";
+  import MultiLine from "$components/charts/Line.svelte";
+  import Annotation from "$components/charts/Annotation.svelte";
+  import AxisX from "$components/charts/AxisX.svelte";
+  import AxisY from "$components/charts/AxisY.svelte";
 
   export let chart;
   export let height = 500;

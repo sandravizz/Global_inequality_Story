@@ -7,7 +7,6 @@
   export let strokeWidth = 1;
   export let strokeOpacity = 1;
 
-  // Generate the line generator
   const lineGenerator = line()
     .x((d) => $xGet(d))
     .y((d) => $yGet(d))
