@@ -121,7 +121,8 @@
     padding: 0;
     opacity: 0.7;
     font-family:"Syncopate";
-    font-size: var(--font-size-xl);
+    font-size: var(--step-7); 
+
   }
 
   .hint {
@@ -135,5 +136,30 @@
     align-items: center;
     opacity: 1;
   }
+
+/*--------------------------------------*/
+/* Screen stylings */
+/*--------------------------------------*/
+
+@media screen and (max-width: 900px) {
+
+h1 {
+  font-size: var(--step-5); 
+  -webkit-text-stroke-width: 2.5px;
+}
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+h1 {
+  font-size: var(--step-0); 
+  -webkit-text-stroke-width: 1px;
+}
+
+}
+
+
 
 </style>
