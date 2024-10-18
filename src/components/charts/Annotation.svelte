@@ -47,7 +47,7 @@
         <!-- y axis annotation -->
         <div
           class="label2 absolute lowlight"
-          style="bottom: {$yScale(yValue) + dy - 5.5}px; left: 5px; "
+          style="bottom: {$yScale(yValue) + dy}px; left: 5px; "
         >
           {text}
         </div>

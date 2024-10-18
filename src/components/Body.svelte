@@ -47,8 +47,7 @@
 </section>
 
 <section class="wide">
-  <h3  class="text-big">Explore the data</h3>
-
+  <!-- <h3  class="text-big">Explore the data</h3> -->
   <!-- <Explorer /> -->
 </section>
 
@@ -79,22 +78,6 @@
       and transfers are generally observed in survey data and can therefore be directly
       removed from or added to individual factor incomes.
     </p>
-
-    <!-- {#if collapsed}
-      <div class="fade" />
-    {/if}
-  </div> -->
-
-  <!-- {#if collapsed}
-    <div
-      class="expand"
-      role="button"
-      tabindex="0"
-      on:click={() => (collapsed = false)}
-    >
-      Read more
-    </div>
-  {/if} -->
 </section>
 
 <style>
@@ -107,28 +90,4 @@
   section.wide {
     max-width: 70rem;
   }
-
-  /* .collapsed {
-    max-height: calc(1rem * 8);
-    overflow: hidden;
-    position: relative;
-  } */
-
-  /* .fade {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 50%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), √);
-    background-size: cover;
-    background-position: center;
-  } */
-
-  /* .expand {
-    text-align: center;
-    cursor: pointer;
-    margin-top: 16px;
-  } */
-
 </style>

@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "fonts.css";
 
+/* general */
 body {
   margin: 0;
 }
@@ -10,6 +11,11 @@ main {
   display: block;
 }
 
+a {
+  color: #d5f2f2;
+}
+
+/* text */
 .text-big {
   font-family: "Montserrat Alternates2", sans-serif;
   hyphens: auto;
@@ -34,44 +40,10 @@ main {
   text-align: left;
 }
 
-a {
-  color: #d5f2f2;
-}
-
+/* colors */
 :root {
   --color-background: #020100ff;
   --color-chart-axis: #b9d4d3;
-}
-
-:root {
-  --z-bottom: -100;
-  --z-middle: 0;
-  --z-top: 100;
-  --z-overlay: 1000;
-  --border-radius: 2px;
-  --font-body: var(--serif);
-  --font-form: var(--sans);
-  --1s: 1ms;
-}
-
-/* typography */
-:root {
-  /* fluid base */
-  --base-min-font-size: 0.75rem;
-  --base-max-font-size: 1.125rem;
-  --base-min-line-height: 1.125rem;
-  --base-max-line-height: 1.463rem;
-
-  /* font sizes */
-  --font-size-xl: 6rem;
-  --font-size-lg: 2rem;
-  --font-size-md: 1rem;
-  --font-size-sm: 0.8rem;
-  --font-size-xs: 0.7rem;
-}
-
-/* colors */
-:root {
   --jordy-blue: #99b9f8ff;
   --cornflower-blue: #7190feff;
   --caribbean-current: #226566ff;
@@ -91,15 +63,32 @@ a {
   --english-violet: #4a496aff;
 }
 
+/* typography */
+:root {
+  /* fluid base */
+  --base-min-font-size: 0.75rem;
+  --base-max-font-size: 1.125rem;
+  --base-min-line-height: 1.125rem;
+  --base-max-line-height: 1.463rem;
+  /* font sizes */
+  --font-size-xl: 6rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.8rem;
+  --font-size-xs: 0.7rem;
+}
+
+:root {
+  --z-bottom: -100;
+  --z-middle: 0;
+  --z-top: 100;
+  --z-overlay: 1000;
+  --border-radius: 2px;
+  --1s: 1ms;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   :root {
     --1s: 1s;
   }
-}
-
-/* font */
-body {
-  font-family: var(--font-family-base);
-  font-size: clamp(var(--base-min-font-size), 0.693vw + 0.571rem, var(--base-max-font-size));
-  line-height: clamp(var(--base-min-font-size), 0.624vw + 0.964rem, var(--base-max-line-height));
 }

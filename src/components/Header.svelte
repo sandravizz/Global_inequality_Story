@@ -1,21 +1,18 @@
 <script>
   import { gsap } from "gsap";
   import { base } from "$app/paths";
-
-  import Slide from "./Intro.svelte";
+  import Intro from "./Intro.svelte";
 
   let slideIndex = undefined;
-
   const setSlideIndex = (val) => (slideIndex = val);
 
-  // use gsap to call slides
   const tl = gsap.timeline();
-  tl.call(setSlideIndex, [1], 5); // switch to second slide (index 1) after 5s
-  tl.call(setSlideIndex, [0], 10); // switch to first slide (index 0) after 10s
+  tl.call(setSlideIndex, [1], 5);  
+  tl.call(setSlideIndex, [0], 10); 
 </script>
 
 <div class="wrapper">
-  <Slide
+  <Intro
     src="{base}/assets/1.png"
     title="Global inequality"
     hide={slideIndex !== undefined ? slideIndex !== 0 : null}
@@ -23,7 +20,7 @@
     isVisible={true}
   />
 
-  <Slide
+  <Intro
     src="{base}/assets/2.jpeg"
     title="Global inequality"
     hide={slideIndex !== 1}

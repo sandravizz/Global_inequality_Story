@@ -70,13 +70,8 @@
       {title}
     </h1>
 </div>
-
   <img bind:this={imgEl} {src} alt={title} />
-
-  <div class="hint">
-    <div>scroll down</div>
-    <div class="gg-chevron-down" />
-  </div>
+  <div class="hint text-small">scroll down</div>
 </div>
 
 <style>
@@ -99,6 +94,16 @@
     align-items: center;
   }
 
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
   .textcontainer {
     z-index: 1;
     display: flex;
@@ -119,16 +124,6 @@
     font-size: var(--font-size-xl);
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-  }
-
   .hint {
     z-index: 100;
     position: absolute;
@@ -141,35 +136,4 @@
     opacity: 1;
   }
 
-  .hint > div {
-    margin-top: -6px;
-    font-size: var(--font-size-md);
-    font-weight: bold;
-  }
-
-  .gg-chevron-down {
-    transform: scale(1.8);
-    color: #d5f2f2;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 22px;
-    height: 22px;
-    border: 2px solid transparent;
-    border-radius: 100px;
-  }
-
-  .gg-chevron-down::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-bottom: 1.5px solid;
-    border-right: 1.5px solid;
-    transform: rotate(45deg);
-    left: 4px;
-    top: 2px;
-  }
 </style>
