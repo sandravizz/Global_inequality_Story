@@ -141,7 +141,7 @@
 /* Screen stylings */
 /*--------------------------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1440px) {
 
 h1 {
   font-size: var(--step-5); 
@@ -151,10 +151,36 @@ h1 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
 
 h1 {
-  font-size: var(--step-0); 
+  font-size: var(--step-4); 
+  -webkit-text-stroke-width: 2px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+h1 {
+  font-size: var(--step-3); 
+  -webkit-text-stroke-width: 1.5px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+h1 {
+  font-size: var(--step-2); 
+  -webkit-text-stroke-width: 1px;
+}
+
+}
+@media screen and (max-width: 380px) {
+
+h1 {
+  font-size: var(--step-1); 
   -webkit-text-stroke-width: 1px;
 }
 
