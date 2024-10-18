@@ -1,5 +1,6 @@
 <script>
   import { gsap } from "gsap";
+  import { base } from "$app/paths";
 
   import Slide from "./Slide.svelte";
 
@@ -15,7 +16,7 @@
 
 <div class="wrapper">
   <Slide
-    src="/assets/1.png"
+    src="{base}/assets/1.png"
     title="Global inequality"
     hide={slideIndex !== undefined ? slideIndex !== 0 : null}
     show={slideIndex !== undefined ? slideIndex === 0 : null}
@@ -23,7 +24,7 @@
   />
 
   <Slide
-    src="/assets/2.jpeg"
+    src="{base}/assets/2.jpeg"
     title="Global inequality"
     hide={slideIndex !== 1}
     show={slideIndex === 1}

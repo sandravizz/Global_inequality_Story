@@ -13,7 +13,7 @@
   {#each $custom.annotations as { x: xValue, y: yValue, z: zValue, text, dy = 0, dx = 0 }}
     {#if xValue && zValue && text}
 
-      <!-- point annotation -->
+      <!-- Inside chart annotation -->
       <div
         class="label absolute"
         style="
@@ -32,7 +32,7 @@
     {:else}
       {#if xValue !== undefined}
 
-        <!-- x line annotation -->
+        <!-- x axis annotation -->
         <div
           class="label absolute middle lowlight"
           style="left: {$xScale(xValue) + dx}px; top: -32px;"
@@ -44,10 +44,10 @@
 
       {#if yValue !== undefined}
 
-        <!-- y line annotation -->
+        <!-- y axis annotation -->
         <div
           class="label2 absolute lowlight"
-          style="bottom: {$yScale(yValue) + dy - 5.5}px; left: 0; "
+          style="bottom: {$yScale(yValue) + dy - 5.5}px; left: 5px; "
         >
           {text}
         </div>

@@ -1,5 +1,5 @@
 <script>
-  import Scroller from "./story/ScrollyEngine.svelte";
+  import Scroller from "./story/Scroller.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
   // import Explorer from "./Explorer.svelte";

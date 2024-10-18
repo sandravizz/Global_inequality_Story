@@ -40,6 +40,25 @@ export default {
             strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
+          annotations: [
+            {
+              y: 0,
+              dy: -18,
+              text: " =  National Income",
+            },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "1989",
+              text: "Fall of Berlin wall",
+            },
+          ],
         },
       ],
       description: {
@@ -63,20 +82,6 @@ export default {
             strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "1990",
-              text: "Housing bubble",
-            },
-            {
-              x: "2000",
-              text: "Dot-com bubble",
-            },
-            {
-              x: "2009",
-              text: "Global financial crisis",
-            },
-          ],
         },
       ],
       description: {

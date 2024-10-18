@@ -46,7 +46,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  >  Complete inequality",
+              text: "  =  Complete inequality",
             },
           ],
         },
@@ -83,7 +83,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  >  Complete inequality",
+              text: "  =  Complete inequality",
             },
             {
               x: "2009",
@@ -153,7 +153,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  >  Complete inequality",
+              text: "  =  Complete inequality",
             },
             {
               x: "2009",
@@ -223,7 +223,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  >  Complete inequality",
+              text: "  =  Complete inequality",
             },
             {
               x: "2009",
@@ -293,7 +293,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  >  Complete inequality",
+              text: "  =  Complete inequality",
             },
             {
               x: "2009",
