@@ -121,8 +121,7 @@
     padding: 0;
     opacity: 0.7;
     font-family:"Syncopate";
-    font-size: var(--step-7); 
-
+    font-size: var(--step-7);
   }
 
   .hint {
@@ -141,7 +140,7 @@
 /* Screen stylings */
 /*--------------------------------------*/
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
 
 h1 {
   font-size: var(--step-5); 
