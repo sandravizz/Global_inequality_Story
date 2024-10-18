@@ -7,7 +7,7 @@
   let collapsed = true;
 </script>
 
-<section style="margin-top: 16px">
+<section style="margin: 50px auto">
   <p class="text-medium">
     <a
       target="_blank"
@@ -26,17 +26,33 @@
   </p>
 </section>
 
-<Scroller storyscript={multilinescript} layout="wide" />
+<div style="margin-top: calc((-100vh + 500px)/2); margin-bottom: calc((-100vh + 500px)/2);">
+  <Scroller storyscript={multilinescript} layout="wide" />
+</div>
 
-<section>
+<section  style="margin: 80px auto 100px auto">
   <h3 class="text-big">Hello hello</h3>
   <p class="text-medium">  On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
+    Extreme inquality leads to frustration, fear and anger. These are
+    observations and questions that motivated us to create this project on
+    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
     Extreme inquality leads to frustration, fear and anger. These are
     observations and questions that motivated us to create this project on
     global income inquality.</p>
 </section>
 
-<Scroller storyscript={differencescript} layout="wide" />
+<div style="margin-top: calc((-100vh + 500px)/2)">
+  <Scroller storyscript={differencescript} layout="wide" />
+</div>
 
 <section>
   <h3 class="text-big">Hello hello</h3>

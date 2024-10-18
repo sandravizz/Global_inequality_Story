@@ -16,13 +16,11 @@
       const step = storyscript.steps[stepIndex];
       const { charts } = step;
 
-      // update components in step
       charts.forEach((chart) => {
         const component = chartComponents[chart.componentIndex];
         component.chart = chart;
       });
 
-      // reset component not in step
       const componentIndexs = step.charts.map((d) => d.componentIndex);
       chartComponents.forEach((component, i) => {
         if (!componentIndexs.includes(i)) {
