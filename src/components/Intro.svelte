@@ -66,7 +66,7 @@
 
 <div bind:this={slideEl} class="slide" class:isVisible>
   <div class="textcontainer" bind:this={textEl}>
-    <h1>
+    <h1 class="title">
       {title}
     </h1>
 </div>
@@ -111,7 +111,7 @@
     align-items: center;
   }
 
-  h1 {
+.title {
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
@@ -142,49 +142,47 @@
 
 @media screen and (max-width: 1400px) {
 
-h1 {
-  font-size: var(--step-5); 
-  -webkit-text-stroke-width: 2.5px;
+.title {
+    font-size: var(--step-5); 
+    -webkit-text-stroke-width: 2.5px;
+  }
+  
 }
-
-}
-
-
+  
 @media screen and (max-width: 780px) {
-
-h1 {
-  font-size: var(--step-4); 
-  -webkit-text-stroke-width: 2px;
+  
+.title {
+    font-size: var(--step-4); 
+    -webkit-text-stroke-width: 2px;
+  }
+  
 }
-
-}
-
+  
 @media screen and (max-width: 600px) {
-
-h1 {
-  font-size: var(--step-3); 
-  -webkit-text-stroke-width: 1.5px;
+  
+.title {
+    font-size: var(--step-3); 
+    -webkit-text-stroke-width: 1.5px;
+  }
+  
 }
-
-}
-
+  
 @media screen and (max-width: 480px) {
-
-h1 {
-  font-size: var(--step-2); 
-  -webkit-text-stroke-width: 1px;
+  
+.title {
+    font-size: var(--step-2); 
+    -webkit-text-stroke-width: 1px;
+  }
+  
 }
 
-}
 @media screen and (max-width: 380px) {
-
-h1 {
-  font-size: var(--step-1); 
-  -webkit-text-stroke-width: 1px;
+  
+.title {
+    font-size: var(--step-1); 
+    -webkit-text-stroke-width: 1px;
+  }
+  
 }
-
-}
-
-
 
 </style>

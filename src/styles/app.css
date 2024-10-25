@@ -15,33 +15,10 @@ a {
   color: #d5f2f2;
 }
 
-/* text */
-.text-big {
-  font-family: "Montserrat Alternates2", sans-serif;
-  hyphens: auto;
-  font-size: var(--step-1);
-  line-height: 1.15;
-  text-align: left;
-}
+/*--------------------------------------*/
+/* Colour */
+/*--------------------------------------*/
 
-.text-medium {
-  font-family: "Montserrat Alternates2", sans-serif;
-  font-size: var(--step--1);
-  line-height: 1.6;
-  hyphens: auto;
-  text-align: left;
-}
-
-.text-small {
-  font-family: "Montserrat Alternates1", sans-serif;
-  font-size: var(--step--2);
-  margin-bottom: 4px;
-  line-height: 1.4;
-  hyphens: auto;
-  text-align: left;
-}
-
-/* colors */
 :root {
   --color-background: #020100ff;
   --color-chart-axis: #b9d4d3;
@@ -69,6 +46,10 @@ a {
 /*--------------------------------------*/
 
 :root {
+  --step--6: clamp(0.3277rem, 0.3938rem + -0.0854vw, 0.3768rem);
+  --step--5: clamp(0.4096rem, 0.4669rem + -0.0739vw, 0.4521rem);
+  --step--4: clamp(0.512rem, 0.5532rem + -0.0531vw, 0.5425rem);
+  --step--3: clamp(0.64rem, 0.6549rem + -0.0192vw, 0.651rem);
   --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
   --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
   --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
@@ -82,6 +63,122 @@ a {
   --step-8: clamp(4.8373rem, 3.9283rem + 4.5448vw, 7.4506rem);
   --step-9: clamp(5.8048rem, 4.5844rem + 6.1017vw, 9.3132rem);
 }
+
+/*--------------------------------------*/
+/* Text versions */
+/*--------------------------------------*/
+
+.text-big {
+  font-family: "Montserrat Alternates2", sans-serif;
+  hyphens: auto;
+  font-size: var(--step-1);
+  line-height: 1.15;
+  text-align: left;
+}
+
+.text-medium {
+  font-family: "Montserrat Alternates2", sans-serif;
+  font-size: var(--step--1);
+  line-height: 1.6;
+  hyphens: auto;
+  text-align: left;
+}
+
+.text-small {
+  font-family: "Montserrat Alternates1", sans-serif;
+  font-size: var(--step--2);
+  margin-bottom: 4px;
+  line-height: 1.4;
+  hyphens: auto;
+  text-align: left;
+}
+
+/*--------------------------------------*/
+/* Screen stylings */
+/*--------------------------------------*/
+
+@media screen and (max-width: 1400px) {
+
+  .text-big {
+      font-size: var(--step-1); 
+    }
+
+  .text-medium {
+      font-size: var(--step--1); 
+    }
+
+  .text-small {
+      font-size: var(--step--2); 
+    }
+    
+  }
+    
+@media screen and (max-width: 780px) {
+    
+  .text-big {
+      font-size: var(--step-0); 
+    }
+
+  .text-medium {
+      font-size: var(--step--2); 
+    }
+
+  .text-small {
+      font-size: var(--step--3); 
+    }
+    
+  }
+    
+@media screen and (max-width: 600px) {
+    
+  .text-big {
+      font-size: var(--step--1); 
+    }
+
+  .text-medium {
+      font-size: var(--step--3); 
+    }
+
+  .text-small {
+      font-size: var(--step--4); 
+    }
+    
+  }
+    
+@media screen and (max-width: 480px) {
+    
+  .text-big {
+      font-size: var(--step--2); 
+    }
+
+  .text-medium {
+      font-size: var(--step--4); 
+    }
+
+  .text-small {
+      font-size: var(--step--5); 
+    }
+    
+  }
+  
+@media screen and (max-width: 380px) {
+    
+  .text-big {
+      font-size: var(--step-2); 
+    }
+
+  .text-medium {
+      font-size: var(--step--4); 
+    }
+
+  .text-small {
+      font-size: var(--step--5); 
+    }
+    
+  }
+
+
+
 
 /* typography */
 :root {
