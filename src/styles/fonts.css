@@ -8,16 +8,12 @@
   src: url("/assets/MontserratAlternate1.ttf") format("truetype");
  };
 
- @font-face {
+@font-face {
   font-family: "Montserrat Alternates2";
   src: url("/assets/MontserratAlternate2.ttf") format("truetype");
  };
 
- @font-face {
+@font-face {
   font-family: "Montserrat Alternates3";
   src: url("/assets/MontserratAlternate3.ttf") format("truetype");
  };
-   
-
-
-

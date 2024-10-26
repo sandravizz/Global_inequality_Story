@@ -106,20 +106,6 @@ export default {
             strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
-            },
-            {
-              x: "2004",
-              text: "What happend here?",
-            },
-            {
-              x: "2019",
-              text: "Covid",
-            },
-          ],
         },
       ],
       description: {

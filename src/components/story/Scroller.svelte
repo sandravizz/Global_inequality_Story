@@ -179,10 +179,46 @@
     -webkit-text-fill-color: var(--color-background);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 0.9px;
-    font-size: var(--font-size-lg);
+    font-size: var(--step-2);
     font-family: "Syncopate";
     text-transform: uppercase;
   }
+
+
+@media screen and (max-width: 1400px) {
+  .step .content h4 {
+      font-size: var(--step-2); 
+    }   
+}
+    
+@media screen and (max-width: 780px) {    
+  .step .content h4 {
+    font-size: var(--step-2); 
+  }   
+}
+    
+@media screen and (max-width: 600px) {    
+  .step .content h4 {
+    font-size: var(--step-1); 
+  }  
+}
+    
+@media screen and (max-width: 480px) {   
+  .step .content h4 {
+      font-size: var(--step-1); 
+    }  
+}
+  
+@media screen and (max-width: 380px) {    
+  .step .content h4 {
+      font-size: var(--step-0); 
+    }   
+}
+
+
+
+
+
 
 
   @media (min-width: 900px) {
