@@ -8,10 +8,14 @@ Something isn't going well in current, modern, western world. Democraties fail, 
 
 ![alt text](<static/assets/Scrollytelling d3js and sevelte 2.png>)
 
-Made with :green_heart: [Sandra](https://www.sandraviz.com) and [Patrick](https://www.linkedin.com/in/patrickwojda/)
+---
+
+Made with :green_heart: by [Sandra](https://www.sandraviz.com) and [Patrick](https://www.linkedin.com/in/patrickwojda/).
+
+I am available for freelance data visualization work. Please [contact me](https://www.upwork.com/freelancers/~01385aaac85d3fbba5) in case you would like me to help you with my experience and expertise or [connect](https://www.linkedin.com/in/sandradataviz/) with me.
 
 #### Credits
 
-Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in the building the webpage especially with Svelte.
-
 Our project is based on [starter template](https://github.com/the-pudding/svelte-starter) from the pudding.
+
+Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in the building the webpage especially with Svelte.
