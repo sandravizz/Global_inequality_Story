@@ -15,7 +15,7 @@
       class:moveRight={tick === $xScale.domain()[0]}
       class:moveLeft={tick === $xScale.domain()[1]}
     >
-      <div class="text">{tick}</div>
+      <div class="text-small">{tick}</div>
     </div>
   {/each}
 </div>
@@ -33,20 +33,17 @@
     width: 0;
   }
 
-  .text {
-    font-family: "Montserrat Alternates1", sans-serif;
+  .text-small {
     position: absolute;
-    color: var(--color-chart-axis);
     white-space: nowrap;
     transform: translateX(-50%);
-    font-size: var(--font-size-xs);
   }
 
-  .moveRight .text {
+  .moveRight .text-small {
     transform: none;
   }
 
-  .moveLeft .text {
+  .moveLeft .text-small {
     transform: translateX(-100%);
   }
 </style>

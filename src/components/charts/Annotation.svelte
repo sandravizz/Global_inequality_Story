@@ -15,7 +15,7 @@
 
       <!-- Inside chart annotation -->
       <div
-        class="label absolute"
+        class=" text-small absolute"
         style="
 			left:{$xGet(getAnnotationData(xValue, zValue)) + dx}px; 
 			top:{$yGet(getAnnotationData(xValue, zValue)) + dy}px"
@@ -24,7 +24,7 @@
       </div>
     {:else if xValue !== undefined && yValue !== undefined}
       <div
-        class="label absolute middle lowlight"
+        class="text-small absolute middle"
         style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)}px;"
       >
         {text}
@@ -34,7 +34,7 @@
 
         <!-- x axis annotation -->
         <div
-          class="label absolute middle lowlight"
+          class="text-small absolute middle"
           style="left: {$xScale(xValue) + dx}px; top: -32px;"
         >
           {text}
@@ -46,8 +46,8 @@
 
         <!-- y axis annotation -->
         <div
-          class="label2 absolute lowlight"
-          style="bottom: {$yScale(yValue) + dy}px; left: 5px; "
+          class="text-small"
+          style="bottom: {$yScale(yValue) + dy}px; left: 3px; "
         >
           {text}
         </div>
@@ -65,24 +65,10 @@
     transform: translateX(-50%);
   }
 
-  .lowlight {
-    color: var(--color-chart-axis);
-  }
-
-  .label {
-    font-family: "Montserrat Alternates2", sans-serif;
+  .text-small {
     letter-spacing: -0.5px;
     transition: all 0.8s;
     opacity: 1;
-    font-size: var(--font-size-md);
-  }
-
-  .label2 {
-    font-family: "Montserrat Alternates1", sans-serif;
-    letter-spacing: -0.5px;
-    transition: all 0.8s;
-    opacity: 1;
-    font-size: var(--font-size-xs);
   }
 
   .xLine {

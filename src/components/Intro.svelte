@@ -170,7 +170,7 @@
 @media screen and (max-width: 480px) {
   
 .title {
-    font-size: var(--step-2); 
+    font-size: var(--step-1); 
     -webkit-text-stroke-width: 1px;
   }
   
@@ -179,7 +179,7 @@
 @media screen and (max-width: 380px) {
   
 .title {
-    font-size: var(--step-1); 
+    font-size: var(--step-0); 
     -webkit-text-stroke-width: 1px;
   }
   

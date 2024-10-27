@@ -2,7 +2,6 @@
   import Scroller from "./story/Scroller.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
-  // import Explorer from "./Explorer.svelte";
 
   let collapsed = true;
 </script>
@@ -62,13 +61,7 @@
     global income inquality.</p>
 </section>
 
-<section class="wide">
-  <!-- <h3  class="text-big">Explore the data</h3> -->
-  <!-- <Explorer /> -->
-</section>
-
 <section>
-  <!-- <div class:collapsed> -->
     <p class="text-small">Methodology</p>
 
     <p class="text-small">

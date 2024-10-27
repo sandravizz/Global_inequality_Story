@@ -20,7 +20,7 @@
         class:moveTop={tick === $yScale.domain()[0]}
         class:moveBottom={tick === $yScale.domain()[1]}
       >
-        <div class="text">
+        <div class="text-small">
           {tickFormat ? tickFormat(yMax - tick) : yMax - tick}
         </div>
       </div>
@@ -41,16 +41,13 @@
     width: 0;
   }
 
-  .text {
-    font-family: "Montserrat Alternates1", sans-serif;
+  .text-small {
     position: absolute;
-    color: var(--color-chart-axis);
     white-space: nowrap;
-    transform: translateX(calc(-100% - 8px));
-    font-size: var(--font-size-xs);
+    transform: translateX(calc(-100% - 10px));
   }
 
-  .moveTop .text {
+  .moveTop .text-small {
     transform: translateX(-100%);
   }
 </style>
