@@ -39,11 +39,11 @@
 >
   <div class="container">
     <div class="chart-container">
-      <div
-        class="chart"
+
+      <div class="chart"
         class:sticky={stepIndex < storyscript.steps.length}
-        class:bottom={stepIndex >= storyscript.steps.length}
-      >
+        class:bottom={stepIndex >= storyscript.steps.length}>
+        
         {#each storyscript.components as component, i}
           <div class="chartComponent">
             <svelte:component
@@ -53,6 +53,7 @@
             />
           </div>
         {/each}
+        
       </div>
 
       <div class="steps">
