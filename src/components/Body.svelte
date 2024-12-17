@@ -29,24 +29,9 @@
   <Scroller storyscript={multilinescript} layout="wide" />
 </div>
 
-<section  style="margin: 80px auto 100px auto">
-  <h3 class="text-big">Hello hello</h3>
-  <p class="text-medium">  On the other hand in more and more countries facisim is again! on the rise.
-    Extreme inquality leads to frustration, fear and anger. These are
-    observations and questions that motivated us to create this project on
-    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
-    Extreme inquality leads to frustration, fear and anger. These are
-    observations and questions that motivated us to create this project on
-    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
-    Extreme inquality leads to frustration, fear and anger. These are
-    observations and questions that motivated us to create this project on
-    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
-    Extreme inquality leads to frustration, fear and anger. These are
-    observations and questions that motivated us to create this project on
-    global income inquality.On the other hand in more and more countries facisim is again! on the rise.
-    Extreme inquality leads to frustration, fear and anger. These are
-    observations and questions that motivated us to create this project on
-    global income inquality.</p>
+<section  style="margin: 80px auto 10px auto">
+  <h3 class="text-big"></h3>
+  <p class="text-medium"></p>
 </section>
 
 <!-- <div style="margin-top: calc((-100vh + 500px)/2)">
@@ -62,9 +47,7 @@
 </section> -->
 
 <section>
-    <p class="text-small">Methodology</p>
-
-    <p class="text-small">
+    <p class="text-small">Methodology <br>
       Income data was sourced from the <a
         target="_blank"
         href="https://wid.world/wid-world/">World Inequality Database</a
@@ -73,19 +56,17 @@
       income and wealth, both within countries and between countries. The WID combines
       different data sources: national accounts, survey data, fiscal data, and wealth
       rankings.
-    </p>
-
-    <p class="text-small">
       <a
         target="_blank"
         href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
         >Pretax income</a
       > corresponds to income after the operation of social insurance systems, but
-      before other types of redistribution. It is equal to factor income, plus pension
-      benefits (17% of national income on average) and unemployment and disability
-      benefits (1.7%), minus the social contributions that pay for them. Contributions
-      and transfers are generally observed in survey data and can therefore be directly
-      removed from or added to individual factor incomes.
+      before other types of redistribution. 
+      <a
+        target="_blank"
+        href="https://observablehq.com/@sandraviz/global-inequality"
+        >All data notebook</a
+      > includes all charts. The story above includes a selection of highlighted countries and region. In this notebook someone finds the complete EDA, meaning the visual analysis of all countries and region. It was the pre-work this storyline.  
     </p>
 </section>
 

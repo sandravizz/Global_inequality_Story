@@ -62,8 +62,8 @@ export default {
         },
       ],
       description: {
-        title: `Gini by country 1980 - 2023`,
-        text: "The most commonly used measurement for economic inequality is the Gini index, where 0 means complete equality, everyone has the same and 1 indicates complete inequality, one person has everything. In this line chart the basis for the Gini index is pretax income. We look at the development over last 4 decades on a country level, meaning every line represents the development of one country.",
+        title: `Gini by country 1980 to 2023`,
+        text: "The most commonly used measurement for economic inequality is the Gini index, which varies from 0 = complete equality to 1 = complete inequality. In this line chart we look at the development over the last 4 decades on a country level, meaning each line represents a country.",
       },
     },
     //2. Global average
@@ -133,7 +133,7 @@ export default {
       ],
       description: {
         title: `One flat line ?`,
-        text: "Looking at the <span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span> we see a line rather flat meaning that there hasn’t been much change on this aggregated. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓 🌎",
+        text: "Looking at the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Global average</span>we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓 🌎",
       },
     },
     //3. Global vs. European average
@@ -203,7 +203,7 @@ export default {
       ],
       description: {
         title: `Europe most equal`,
-        text: "The region with the lowest inequality, far below the <span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Global average</span> is and was <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span>. Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality. ",
+        text: "The region with the lowest inequality, far below the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Global average</span>is<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
     //4. European countries
@@ -272,8 +272,8 @@ export default {
         },
       ],
       description: {
-        title: `European countries ...`,
-        text: "",
+        title: `European countries vary`,
+        text: "When decomposing the<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
       },
     },
     //5. USA vs. Europe
@@ -382,7 +382,7 @@ export default {
       ],
       description: {
         title: `USA towards ineqaulity `,
-        text: "Income distribution was similar to <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span> standards in the 80s but through the last 4 decades the <span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span> has become more unequal currently reached the highest level. In particular the COVID years had an impact on the labor inequality.",
+        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
   ],

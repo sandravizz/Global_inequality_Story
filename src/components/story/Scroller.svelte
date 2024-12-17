@@ -162,8 +162,9 @@
   }
 
   .contentbackground {
+    border-radius: 30px;
     background-color: var(--color-background);
-    opacity: 0.5;
+    opacity: 0.85;
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -179,12 +180,14 @@
   .step .content h4 {
     -webkit-text-fill-color: var(--color-background);
     -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-width: 0.8px;
+    line-height: 30px;
+    letter-spacing: -1.2px;
+    word-spacing: 4px;
     font-size: var(--step-2);
     font-family: "Syncopate";
     text-transform: uppercase;
   }
-
 
 @media screen and (max-width: 1400px) {
   .step .content h4 {
@@ -213,16 +216,11 @@
 @media screen and (max-width: 380px) {    
   .step .content h4 {
       font-size: var(--step-0); 
+      white-space: nowrap;
     }   
 }
 
-
-
-
-
-
-
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
     .fullWidth .container {
       margin: 0;
     }
@@ -245,4 +243,5 @@
       margin: auto;
     }
   }
+
 </style>

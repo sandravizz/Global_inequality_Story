@@ -115,11 +115,13 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
+    letter-spacing: -1.4px;
+    word-spacing: 40px;
     text-wrap: nowrap;
     text-transform: uppercase;
     margin: 0 20 0 0;
     padding: 0;
-    opacity: 0.7;
+    opacity: 0.9;
     font-family:"Syncopate";
     font-size: var(--step-7);
   }
@@ -144,7 +146,9 @@
 
 .title {
     font-size: var(--step-5); 
-    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: -1.2px;
+    word-spacing: 30px;
   }
   
 }
