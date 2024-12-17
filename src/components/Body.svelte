@@ -49,17 +49,17 @@
     global income inquality.</p>
 </section>
 
-<div style="margin-top: calc((-100vh + 500px)/2)">
+<!-- <div style="margin-top: calc((-100vh + 500px)/2)">
   <Scroller storyscript={differencescript} layout="wide" />
-</div>
+</div> -->
 
-<section>
+<!-- <section>
   <h3 class="text-big">Hello hello</h3>
   <p class="text-medium">  On the other hand in more and more countries facisim is again! on the rise.
     Extreme inquality leads to frustration, fear and anger. These are
     observations and questions that motivated us to create this project on
     global income inquality.</p>
-</section>
+</section> -->
 
 <section>
     <p class="text-small">Methodology</p>
