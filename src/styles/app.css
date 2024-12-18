@@ -15,9 +15,10 @@ main {
 }
 
 a {
-	text-decoration: none;
 	color: var(--color-link);
 	outline: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }
 
 a:hover,
@@ -25,7 +26,6 @@ a:focus {
 	color: var(--color-link-hover);
   outline: none;
 }
-
 
 /*--------------------------------------*/
 /* Colour */

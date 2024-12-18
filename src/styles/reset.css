@@ -31,11 +31,6 @@ mark {
   padding: 0 4px;
 }
 
-a {
-  color: var(--color-link, blue);
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-}
 
 img,
 video {

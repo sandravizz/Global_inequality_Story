@@ -216,7 +216,6 @@
 @media screen and (max-width: 380px) {    
   .step .content h4 {
       font-size: var(--step-0); 
-      white-space: nowrap;
     }   
 }
 
