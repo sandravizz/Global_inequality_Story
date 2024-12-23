@@ -18,7 +18,7 @@ a {
 	color: var(--color-link);
 	outline: none;
   text-decoration-line: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 0.3px;
 }
 
 a:hover,
@@ -106,6 +106,22 @@ a:focus {
   line-height: 1.6;
   hyphens: auto;
   text-align: left;
+}
+
+.heading {
+  margin-top: 24px;
+  position: relative;
+  font-weight: bold;
+  &::before {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    content: ' ';
+    display: block;
+    background-color: white;
+    width: 120px;
+    height: 1px;
+  }
 }
 
 /*--------------------------------------*/

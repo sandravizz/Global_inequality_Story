@@ -31,7 +31,6 @@
 
 <section  style="margin: 80px auto 10px auto">
   <h3 class="text-big"></h3>
-  <p class="text-medium"></p>
 </section>
 
 <!-- <div style="margin-top: calc((-100vh + 500px)/2)">

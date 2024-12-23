@@ -21,23 +21,25 @@
   ];
 
   $: {
+
     if (show || hide) {
       const timeline = gsap.timeline();
       const offset = show ? 1 : 0;
       if (show) {
-        timeline.to(slideEl, { opacity: 1, duration: 1 }, 0.8);
+        timeline.to(slideEl, { opacity: 1, duration: 1.5 }, 0.5);
       }
       if (hide) {
-        timeline.to(slideEl, { opacity: 0, duration: 1 }, 0.8);
+        timeline.to(slideEl, { opacity: 0, duration: 1.5 }, 0.5);
       }
 
       for (let i = 0; i <= filters.length; i++) {
+       //the whole slide 
         timeline.set(
           slideEl,
           { filter: filters[i], duration: 0.2 },
           i * 0.2 + offset,
         );
-
+      //the text
         timeline.set(
           textEl,
           {
@@ -48,7 +50,7 @@
           },
           i * 0.2 + offset,
         );
-
+        //the image
         timeline.set(
           imgEl,
           {
@@ -76,11 +78,11 @@
 
 <style>
 
-  .slide.isVisible {
+.slide.isVisible {
     opacity: 1;
   }
 
-  .slide {
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +96,7 @@
     align-items: center;
   }
 
-  img {
+img {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,7 +106,7 @@
     object-position: 50% 50%;
   }
 
-  .textcontainer {
+.textcontainer {
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -116,7 +118,7 @@
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
     letter-spacing: -1.4px;
-    word-spacing: 40px;
+    word-spacing: 30px;
     text-wrap: nowrap;
     text-transform: uppercase;
     margin: 0 20 0 0;
@@ -126,7 +128,7 @@
     font-size: var(--step-7);
   }
 
-  .hint {
+.hint {
     z-index: 100;
     position: absolute;
     bottom: 20px;
@@ -145,10 +147,10 @@
 @media screen and (max-width: 1400px) {
 
 .title {
-    font-size: var(--step-5); 
+    font-size: var(--step-6); 
     -webkit-text-stroke-width: 2px;
     letter-spacing: -1.2px;
-    word-spacing: 30px;
+    word-spacing: 20px;
   }
   
 }
@@ -157,7 +159,8 @@
   
 .title {
     font-size: var(--step-4); 
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1.9px;
+    word-spacing: 20px;
   }
   
 }
@@ -166,7 +169,8 @@
   
 .title {
     font-size: var(--step-3); 
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 1.4px;
+    word-spacing: 15px;
   }
   
 }
@@ -174,17 +178,19 @@
 @media screen and (max-width: 480px) {
   
 .title {
-    font-size: var(--step-1); 
-    -webkit-text-stroke-width: 1px;
+    font-size: var(--step-2); 
+    -webkit-text-stroke-width: 1.1px;
+    word-spacing: 15px;
   }
-  
+
 }
 
 @media screen and (max-width: 380px) {
   
 .title {
-    font-size: var(--step-0); 
-    -webkit-text-stroke-width: 1px;
+    font-size: var(--step-1); 
+    -webkit-text-stroke-width: 0.9px;
+    word-spacing: 10px;
   }
   
 }
