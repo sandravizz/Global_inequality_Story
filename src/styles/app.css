@@ -109,20 +109,20 @@ a:focus {
 }
 
 .heading {
-  margin-top: 24px;
-  position: relative;
-  font-weight: bold;
-  &::before {
-    position: absolute;
-    top: -24px;
-    left: 0;
-    content: ' ';
-    display: block;
-    background-color: white;
-    width: 120px;
-    height: 1px;
+    margin-top: 24px;
+    position: relative;
+    font-weight: bold;
+    &::before {
+      position: absolute;
+      top: -24px;
+      left: 0;
+      content: ' ';
+      display: block;
+      background-color: white;
+      width: 120px;
+      height: 1px;
+    }
   }
-}
 
 /*--------------------------------------*/
 /* Screen stylings */

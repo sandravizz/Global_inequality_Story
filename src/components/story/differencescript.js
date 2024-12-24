@@ -40,20 +40,6 @@ export default {
             strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "Covid",
-            },
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
-            },
-          ],
         },
       ],
       description: {
