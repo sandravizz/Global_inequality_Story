@@ -3,19 +3,19 @@
 <script>
   import { LayerCake, Svg, Html } from "layercake";
 
-  import MultiLine from "$components/charts/Line.svelte";
-  import Annotation from "$components/charts/Annotation.svelte";
+  import Line from "$components/charts/Line.svelte";
   import AxisX from "$components/charts/AxisX.svelte";
   import AxisY from "$components/charts/AxisY.svelte";
+  import Annotation from "$components/charts/Annotation.svelte";
 
   export let chart;
   export let height = 500;
 
   let width;
-
   let data;
   let options;
   let annotations;
+
   $: {
     if (chart) {
       data = chart.data;
@@ -26,7 +26,9 @@
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
+ 
   {#if data && width}
+
     <LayerCake
       {width}
       {height}
@@ -39,8 +41,9 @@
       custom={{ annotations: annotations }}
       padding={{ left: 24 }}
     >
+
       <Svg>
-        <MultiLine {...options} />
+        <Line {...options} />
       </Svg>
 
       {#if annotations}
@@ -53,6 +56,9 @@
         <AxisX />
         <AxisY tickFormat={options.yTickFormat} />
       </Html>
+
     </LayerCake>
+
   {/if}
+  
 </div>

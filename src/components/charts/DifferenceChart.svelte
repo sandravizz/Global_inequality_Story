@@ -3,23 +3,21 @@
 <script>
   import { LayerCake, Svg, Html } from "layercake";
 
-
-  import ClipPath from "$components/charts/ClipPath.svelte";
-  import Legend from"$components/charts/Legend.svelte";
+  import Line from "$components/charts/Line.svelte";
   import AxisX from "$components/charts/AxisX.svelte";
   import AxisY from "$components/charts/AxisY.svelte";
   import Annotation from "$components/charts/Annotation.svelte";
-  import MultiLine from "$components/charts/Line.svelte";
+  import ClipPath from "$components/charts/ClipPath.svelte";
 
   export let chart;
   export let height = 500;
 
   let width;
-
   let key;
   let data;
   let options;
   let annotations;
+
   $: {
     if (chart) {
       key = chart.key;
@@ -37,7 +35,9 @@
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
+
   {#if data && width}
+
     <LayerCake
       {width}
       {height}
@@ -50,13 +50,13 @@
       yDomain={[0, 1]}
       custom={{ annotations: annotations }}
     >
+
       <Svg>
         <ClipPath {...options} />
-        <MultiLine {...options} {height} />
+        <Line {...options} {height} />
       </Svg>
 
       <Html>
-        <Legend {...options} />
         <AxisX {...options} />
         <AxisY tickFormat={options.yTickFormat} />
       </Html>
@@ -66,6 +66,9 @@
           <Annotation />
         </Html>
       {/if}
+
     </LayerCake>
+
   {/if}
+
 </div>
