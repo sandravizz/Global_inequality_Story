@@ -343,27 +343,7 @@ export default {
         {
           key: "country",
           componentIndex: 4,
-          data: renderData.filter((d) =>
-            [
-              // "UZ",
-              // "UA",
-              // "AZ",
-              // "AM",
-              // "MM",
-              // "KA",
-              "US",
-              // "SE",
-              // "DK",
-              // "CR",
-              // "CZ",
-              // "HU",
-              // "BT",
-              // "MV",
-              // "CI",
-              // "IE",
-              // "RU"
-            ].includes(d.country),
-          ),
+          data: renderData.filter((d) => ["US"].includes(d.country)),
           options: {
             stroke: "#99F75E",
             strokeWidth: 4,
@@ -382,7 +362,7 @@ export default {
       ],
       description: {
         title: `USA towards ineqaulity `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "The <span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span> was similar to<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
   ],

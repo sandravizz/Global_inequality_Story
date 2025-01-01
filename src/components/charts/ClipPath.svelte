@@ -30,7 +30,7 @@
   width="4"
   height="4"
   patternUnits="userSpaceOnUse"
-  patternTransform="rotate(45)"
+  patternTransform="rotate(0)"
 >
   <rect class="area-stripe" width="1" height="4" fill={stroke[0]}></rect>
 </pattern>
@@ -40,9 +40,9 @@
   width="4"
   height="4"
   patternUnits="userSpaceOnUse"
-  patternTransform="rotate(45)"
+  patternTransform="rotate(90)"
 >
-  <rect class="area-stripe" width="1" height="4" fill={stroke[1]}></rect>
+  <rect class="area-stripe" width="4" height="4" fill={stroke[1]}></rect>
 </pattern>
 
 {#key $width}
@@ -60,14 +60,14 @@
     <g class="paths">
       <path
         d={above($data[1].values)}
-        fill-opacity="0.4"
+        fill-opacity="0.55"
         fill={"url(#pattern-1)"}
         clip-path="url(#{idAbove})"
       />
 
       <path
         d={above($data[0].values)}
-        fill-opacity="0.4"
+        fill-opacity="0.55"
         fill={"url(#pattern-0)"}
         clip-path="url(#{idBelow})"
       />

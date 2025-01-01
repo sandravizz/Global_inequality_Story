@@ -3,7 +3,7 @@
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
 
-  let collapsed = true;
+  // let collapsed = true;
 </script>
 
 <section style="margin: 50px auto">
@@ -16,7 +16,6 @@
     of efficiency which could feed the world. Then why are so many people still living
     and dying in poverty?
   </p>
-
   <p class="text-medium">
     On the other hand in more and more countries facisim is again! on the rise.
     Extreme inquality leads to frustration, fear and anger. These are
