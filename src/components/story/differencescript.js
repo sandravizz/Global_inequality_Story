@@ -62,8 +62,8 @@ export default {
         },
       ],
       description: {
-        title: `One flat line ?`,
-        text: "Looking at the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Global average</span>we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. Since 1980, domestic inequality has grown, but inter-national inequality started to decline thanks to fast growth in the large so-called emerging economies. These two effects balance each other out so that in past few decades, global inequality has been basically stable, albeit at a very high level. So let’s investigate by decomposing the world. 🤓 🌎",
+        title: `10% richest vs. 50% poorest`,
+        text: "The upper line represents the income share of the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>10 richest %. The lower line represents the income share of the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>poorest 50%.",
       },
     },
     {

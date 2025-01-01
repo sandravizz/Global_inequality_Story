@@ -6,7 +6,7 @@
   const { data, xGet, yGet, yScale, width } = getContext("LayerCake");
 
   export let stroke = "#fff";
-  export let strokeWidth = 1;
+  export let strokeWidth = 3.5;
 
   $: above = area()
     .x($xGet)
@@ -60,14 +60,14 @@
     <g class="paths">
       <path
         d={above($data[1].values)}
-        fill-opacity="0.55"
+        fill-opacity="0.3"
         fill={"url(#pattern-1)"}
         clip-path="url(#{idAbove})"
       />
 
       <path
         d={above($data[0].values)}
-        fill-opacity="0.55"
+        fill-opacity="0.3"
         fill={"url(#pattern-0)"}
         clip-path="url(#{idBelow})"
       />
