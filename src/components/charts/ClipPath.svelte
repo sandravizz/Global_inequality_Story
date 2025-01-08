@@ -60,14 +60,14 @@
     <g class="paths">
       <path
         d={above($data[1].values)}
-        fill-opacity="0.3"
+        fill-opacity="0.1"
         fill={"url(#pattern-1)"}
         clip-path="url(#{idAbove})"
       />
 
       <path
         d={above($data[0].values)}
-        fill-opacity="0.3"
+        fill-opacity="1"
         fill={"url(#pattern-0)"}
         clip-path="url(#{idBelow})"
       />
@@ -78,6 +78,6 @@
 <style>
   .clips path,
   .paths path {
-    transition: all 0.8s;
+    transition: all 0.7s;
   }
 </style>

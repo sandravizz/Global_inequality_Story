@@ -32,25 +32,29 @@ a:focus {
 /*--------------------------------------*/
 
 :root {
-  --color-background: #020100ff;
+  --color-background: #020100;
   --color-chart-axis: #b9d4d3;
-  --jordy-blue: #99b9f8ff;
-  --cornflower-blue: #7190feff;
-  --caribbean-current: #226566ff;
-  --brunswick-green: #224e3bff;
-  --color-link-hover: #4c8ffeff;
-  --night: #081604ff;
-  --cerulean: #247285ff;
-  --pakistan-green: #113c1eff;
-  --hot-pink: #fe5dbaff;
-  --lavender-pink: #f9acdbff;
-  --dark-green: #022121ff;
+  --color-global: #d5f2f2; 
+  --color-europe: #F7885E; 
+  --color-usa: #99F75E; 
+  --color-asia: #0CBFF5; 
+  --color-south-america:#F5EF62;
+  --color-africa: #F562EB; 
+  --color-link-hover: #4c8ffe; 
+}
+
+:root {
+  --lavender-pink: #f9acdb;
   --sky-magenta: #c35bacff;
-  --black: #020909ff;
   --hot-pink-2: #ff6db7ff;
-  --persian-pink: #fc7ec2ff;
-  --charcoal: #213d4fff;
-  --english-violet: #4a496aff;
+  --persian-pink: #fc7ec2;
+  --jordy-blue: #99b9f8;
+  --caribbean-current: #226566;
+  --brunswick-green: #224e3b;
+  --cerulean: #247285;
+  --pakistan-green: #113c1e;
+  --charcoal: #213d4f;
+  --english-violet: #4a496a;
 }
 
 /*--------------------------------------*/

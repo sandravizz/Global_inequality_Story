@@ -35,9 +35,9 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "WO"),
           options: {
-            stroke: ["#7190feff", "#7190feff"],
+            stroke: ["#d5f2f2", "#d5f2f2"],
             strokeOpacity: 1,
-            strokeWidth: 1.5,
+            strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
           annotations: [
@@ -63,7 +63,7 @@ export default {
       ],
       description: {
         title: `10% richest vs. 50% poorest`,
-        text: "The upper line represents the income share of the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>10 richest %. The lower line represents the income share of the<span style='background: #020100ff; color: #7190feff; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>poorest 50%.",
+        text: "The upper line represents the income share of the<span style='background: #020100ff; color:#d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>10 richest %. The lower line represents the income share of the<span style='background: #020100ff; color:#d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>poorest 50%.",
       },
     },
     {
@@ -81,7 +81,7 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
+              dy: 2,
               text: "= National income",
             },
             {

@@ -2,8 +2,6 @@
   import Scroller from "./story/Scroller.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
-
-  // let collapsed = true;
 </script>
 
 <section style="margin: 50px auto">
