@@ -5,7 +5,6 @@
 </script>
 
 <section style="margin: 50px auto">
-  <img src="/assets/Musk_dollars.png" width="250"/>
   <p class="text-medium">
     <a
       target="_blank"
@@ -31,13 +30,6 @@
 <div style="margin-top: calc((-100vh + 500px)/2); margin-bottom: calc((-100vh + 500px)/2);">
   <Scroller storyscript={multilinescript} layout="wide" />
 </div>
-
-<section style="margin: 50px auto">
-  <p class="text-medium">
-    The data and analysis presented here are based on the work of more than 100 researchers over four years, located on all continents, contributing to the World Inequality Database (WID.world), maintained by the World Inequality Lab. This vast network collaborates with statistical institutions, tax authorities, universities and international organizations, to harmonize, analyze and disseminate comparable international inequality data. 
-    This allows to present systematic data on inequality at the global level and to analyze how it has evolved over time. Global income inequality has always been very great, reflecting the persistence of a world economic system that is extremely hierarchical both between countries and within them.
-  </p>
-</section>
 
 <div style="margin-top: calc((-100vh + 500px)/2); margin-bottom: calc((-100vh + 500px)/2);">
   <Scroller storyscript={differencescript} layout="wide" />

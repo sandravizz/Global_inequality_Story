@@ -39,7 +39,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0,
             strokeWidth: 0,
             fill: "#d5f2f2",
@@ -49,7 +49,19 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-36%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 6em;' /></div>",
+              text: "<div style='transform: translateY(-41%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 9em;' /></div>",
+            },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
             },
           ],
         },
@@ -58,7 +70,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -81,7 +93,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0,
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
@@ -101,8 +113,61 @@ export default {
               text: "Covid",
             },
             {
-              x: "1989",
-              text: "Fall of Berlin wall",
+              x: "2001",
+              text: "Internet Bubble",
+            },
+          ],
+        },
+        {
+          key: "country",
+          componentIndex: 1,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "var(--color-global)",
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+        },
+      ],
+      description: {
+        title: `One flat line ?`,
+        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
+      },
+    },
+
+    // --------------------------------------
+    //3. Global average all countries
+    // --------------------------------------
+
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData,
+          options: {
+            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            strokeOpacity: 0.4,
+            strokeWidth: 0.8,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
             },
           ],
         },
@@ -121,7 +186,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -131,7 +196,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Europe"),
           options: {
-            stroke: "var(--color-global)", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -139,7 +204,7 @@ export default {
         },
       ],
       description: {
-        title: `One flat line ?`,
+        title: `Average can be misleading`,
         text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
@@ -163,21 +228,21 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
+            },
           ],
         },
         {
@@ -237,21 +302,21 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
+            },
           ],
         },
         {
@@ -311,21 +376,21 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
+            },
           ],
         },
         {
@@ -404,21 +469,21 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
+            },
           ],
         },
         {
@@ -497,21 +562,21 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "2001",
+              text: "Internet Bubble",
+            },
           ],
         },
         {
@@ -609,8 +674,8 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2009",
@@ -621,8 +686,8 @@ export default {
               text: "Covid",
             },
             {
-              x: "1989",
-              text: "Fall of Berlin wall",
+              x: "2001",
+              text: "Internet Bubble",
             },
           ],
         },
@@ -693,8 +758,8 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2009",
@@ -705,8 +770,8 @@ export default {
               text: "Covid",
             },
             {
-              x: "1989",
-              text: "Fall of Berlin wall",
+              x: "2001",
+              text: "Internet Bubble",
             },
           ],
         },
