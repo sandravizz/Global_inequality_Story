@@ -49,7 +49,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-41%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 9em;' /></div>",
+              text: "<div style='transform: translateY(-41%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/musk.png' style='display: inline-block; width: 9em;' /></div>",
             },
             {
               x: "2009",
