@@ -49,7 +49,7 @@
           class="text-small"
           style="bottom: {$yScale(yValue) + dy}px; left: 3px; "
         >
-          {text}
+          {@html text}
         </div>
       {/if}
     {/if}

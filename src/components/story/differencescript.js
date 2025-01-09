@@ -42,21 +42,11 @@ export default {
           },
           annotations: [
             {
-              y: 0,
-              dy: -18,
-              text: "= National income",
-            },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "Covid",
-            },
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
+              x: "2000",
+              y: "0.5419",
+              dy: -10,
+              dx: 10,
+              text: "🇺dfkbdfnbpdfbnpdfbndfº",
             },
           ],
         },

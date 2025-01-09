@@ -25,6 +25,7 @@ export default {
     MultilineChart,
     MultilineChart,
     MultilineChart,
+    MultilineChart,
   ],
   steps: [
     // --------------------------------------
@@ -39,16 +40,16 @@ export default {
           data: renderData,
           options: {
             stroke: "#d5f2f2", //  --color-global: #d5f2f2;
-            strokeOpacity: 0.7,
-            strokeWidth: 0.4,
-            fill: "#d5f2f2", //  --color-global: #d5f2f2;
+            strokeOpacity: 0,
+            strokeWidth: 0,
+            fill: "#d5f2f2",
             yTickFormat: yTickFormatter,
           },
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality ",
+              dy: -5,
+              text: "<div style='transform: translateY(-36%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 6em;' /></div>",
             },
           ],
         },
@@ -81,28 +82,28 @@ export default {
           data: renderData,
           options: {
             stroke: "#d5f2f2", //  --color-global: #d5f2f2;
-            strokeOpacity: 0.4,
-            strokeWidth: 0.3,
+            strokeOpacity: 0,
+            strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
+              dy: -5,
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='/assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            // {
-            //   x: "2009",
-            //   text: "Financial crisis",
-            // },
-            // {
-            //   x: "2019",
-            //   text: "Covid",
-            // },
-            // {
-            //   x: "1989",
-            //   text: "Fall of Berlin wall",
-            // },
+            {
+              x: "2009",
+              text: "Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "Covid",
+            },
+            {
+              x: "1989",
+              text: "Fall of Berlin wall",
+            },
           ],
         },
         {
@@ -130,7 +131,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Europe"),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-global)", //   --color-europe: #F7885E;
             strokeWidth: 0,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -139,7 +140,7 @@ export default {
       ],
       description: {
         title: `One flat line ?`,
-        text: "Looking at the<span style='background: #020100; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. Since 1980, domestic inequality has grown, but inter-national inequality started to decline thanks to fast growth in the large so-called emerging economies. These two effects balance each other out so that in past few decades, global inequality has been basically stable, albeit at a very high level. So let’s investigate by decomposing the world. 🤓",
+        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
 
@@ -184,7 +185,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -406,18 +407,111 @@ export default {
               dy: -18,
               text: "  =  Complete inequality",
             },
+            // {
+            //   x: "2009",
+            //   text: "Financial crisis",
+            // },
+            // {
+            //   x: "2019",
+            //   text: "Covid",
+            // },
+            // {
+            //   x: "1989",
+            //   text: "Fall of Berlin wall",
+            // },
+          ],
+        },
+        {
+          key: "country",
+          componentIndex: 1,
+          data: renderData.filter((d) => ["QE"].includes(d.country)),
+          options: {
+            stroke: "#F7885E", //   --color-europe: #F7885E;
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 2,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 3,
+          data: renderData.filter((d) => d.region2 === "South America"),
+          options: {
+            stroke: "#F5EF62", // --color-south-america:#F5EF62;
+            strokeWidth: 0.6,
+            strokeOpacity: 1,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 4,
+          data: renderData.filter((d) => ["US"].includes(d.country)),
+          options: {
+            stroke: "#99F75E", // --color-usa: #99F75E;
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2022",
+              z: "US",
+              dy: -10,
+              dx: 10,
+              text: "🇺🇸",
             },
+          ],
+        },
+      ],
+      description: {
+        title: `USA inline with South America `,
+        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+      },
+    },
+
+    // --------------------------------------
+    // 6. USA - Mexico
+    // --------------------------------------
+
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData,
+          options: {
+            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            strokeOpacity: 0.4,
+            strokeWidth: 0.3,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
             {
-              x: "2019",
-              text: "Covid",
+              y: 0,
+              dy: -18,
+              text: "  =  Complete inequality",
             },
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
-            },
+            // {
+            //   x: "2009",
+            //   text: "Financial crisis",
+            // },
+            // {
+            //   x: "2019",
+            //   text: "Covid",
+            // },
+            // {
+            //   x: "1989",
+            //   text: "Fall of Berlin wall",
+            // },
           ],
         },
         {
@@ -454,6 +548,25 @@ export default {
         {
           key: "country",
           componentIndex: 4,
+          data: renderData.filter((d) => ["MX"].includes(d.country)),
+          options: {
+            stroke: "#F5EF62", // --color-south-america:#F5EF62;
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2022",
+              z: "MX",
+              dy: -10,
+              dx: 10,
+              text: "🇲🇽",
+            },
+          ],
+        },
+        {
+          key: "country",
+          componentIndex: 5,
           data: renderData.filter((d) => ["US"].includes(d.country)),
           options: {
             stroke: "#99F75E", // --color-usa: #99F75E;
@@ -472,100 +585,7 @@ export default {
         },
       ],
       description: {
-        title: `USA towards ineqaulity `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
-      },
-    },
-
-    // --------------------------------------
-    // 6. South America - Mexico
-    // --------------------------------------
-
-    {
-      charts: [
-        {
-          key: "country",
-          componentIndex: 0,
-          data: renderData,
-          options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
-            strokeOpacity: 0.4,
-            strokeWidth: 0.3,
-            yTickFormat: yTickFormatter,
-          },
-          annotations: [
-            {
-              y: 0,
-              dy: -18,
-              text: "  =  Complete inequality",
-            },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "Covid",
-            },
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
-            },
-          ],
-        },
-        {
-          key: "country",
-          componentIndex: 1,
-          data: renderData.filter((d) => ["QE"].includes(d.country)),
-          options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
-            strokeWidth: 0,
-            yTickFormat: yTickFormatter,
-          },
-        },
-        {
-          key: "country",
-          componentIndex: 2,
-          data: renderData.filter((d) => ["WO"].includes(d.country)),
-          options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
-            strokeWidth: 0,
-            yTickFormat: yTickFormatter,
-          },
-        },
-        {
-          key: "country",
-          componentIndex: 3,
-          data: renderData.filter((d) => d.region2 === "South America"),
-          options: {
-            stroke: "#F5EF62", // --color-south-america:#F5EF62;
-            strokeWidth: 0,
-            strokeOpacity: 1,
-            yTickFormat: yTickFormatter,
-          },
-        },
-        {
-          key: "country",
-          componentIndex: 4,
-          data: renderData.filter((d) => ["MX"].includes(d.country)),
-          options: {
-            stroke: "#F5EF62", // --color-south-america:#F5EF62;
-            strokeWidth: 4,
-            yTickFormat: yTickFormatter,
-          },
-          annotations: [
-            {
-              x: "2022",
-              z: "MX",
-              dy: -10,
-              dx: 10,
-              text: "🇲🇽",
-            },
-          ],
-        },
-      ],
-      description: {
-        title: `USA towards ineqaulity `,
+        title: `Mexico with extrem inquality `,
         text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },

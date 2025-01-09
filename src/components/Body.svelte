@@ -5,6 +5,7 @@
 </script>
 
 <section style="margin: 50px auto">
+  <img src="/assets/Musk_dollars.png" width="250"/>
   <p class="text-medium">
     <a
       target="_blank"
@@ -14,6 +15,7 @@
     of efficiency which could feed the world. Then why are so many people still living
     and dying in poverty?
   </p>
+
   <p class="text-medium">
     On the other hand in more and more countries facisim is again! on the rise.
     Extreme inquality leads to frustration, fear and anger. These are

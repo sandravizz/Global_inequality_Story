@@ -114,6 +114,14 @@ a:focus {
     }
   }
 
+.highlight {
+    background: #020100; 
+    font-family: Montserrat Alternates3; 
+    padding: 3px 3px 3px 3px; 
+    margin: 2px 2px;
+}
+
+
 /*--------------------------------------*/
 /* Screen stylings */
 /*--------------------------------------*/
