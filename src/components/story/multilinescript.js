@@ -42,14 +42,14 @@ export default {
             stroke: "var(--color-global)",
             strokeOpacity: 0,
             strokeWidth: 0,
-            fill: "#d5f2f2",
+            fill: "var(--color-global)",
             yTickFormat: yTickFormatter,
           },
           annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-41%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 9em;' /></div>",
+              text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 7em;' /></div>",
             },
             {
               x: "2009",
@@ -58,10 +58,6 @@ export default {
             {
               x: "2019",
               text: "Covid",
-            },
-            {
-              x: "2001",
-              text: "Internet Bubble",
             },
           ],
         },
@@ -112,10 +108,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -130,7 +122,7 @@ export default {
         },
       ],
       description: {
-        title: `One flat line ?`,
+        title: `One flat line`,
         text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
@@ -146,7 +138,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.8,
             yTickFormat: yTickFormatter,
@@ -165,10 +157,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -176,7 +164,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -205,7 +193,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading`,
-        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
+        text: "",
       },
     },
 
@@ -220,7 +208,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -238,10 +226,6 @@ export default {
             {
               x: "2019",
               text: "Covid",
-            },
-            {
-              x: "2001",
-              text: "Internet Bubble",
             },
           ],
         },
@@ -260,7 +244,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -270,7 +254,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //    --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -279,7 +263,7 @@ export default {
       ],
       description: {
         title: `Europe most equal`,
-        text: "The region with the lowest inequality, far below the<span style='background: #020100ff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>average is<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
+        text: "The region with the lowest inequality, far below the<span style='background: #020100ff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Global 🌎</span>average is<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
 
@@ -294,7 +278,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2",
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -313,10 +297,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -324,7 +304,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -334,7 +314,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -344,7 +324,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Europe"),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0.8,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -352,8 +332,8 @@ export default {
         },
       ],
       description: {
-        title: `European countries vary`,
-        text: "When decomposing the<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
+        title: `All European countries low`,
+        text: "When decomposing the<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
       },
     },
 
@@ -368,7 +348,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -387,10 +367,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -398,7 +374,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -408,7 +384,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -418,7 +394,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Europe"),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0.6,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -429,7 +405,7 @@ export default {
           componentIndex: 4,
           data: renderData.filter((d) => ["US"].includes(d.country)),
           options: {
-            stroke: "#99F75E", // --color-usa: #99F75E;
+            stroke: "var(--color-usa)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -445,7 +421,7 @@ export default {
         },
       ],
       description: {
-        title: `USA towards ineqaulity `,
+        title: `USA towards ineqaulity`,
         text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
@@ -480,10 +456,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -491,7 +463,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -501,7 +473,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -511,7 +483,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region2 === "South America"),
           options: {
-            stroke: "#F5EF62", // --color-south-america:#F5EF62;
+            stroke: "var(--color-south-america)",
             strokeWidth: 0.6,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -522,7 +494,7 @@ export default {
           componentIndex: 4,
           data: renderData.filter((d) => ["US"].includes(d.country)),
           options: {
-            stroke: "#99F75E", // --color-usa: #99F75E;
+            stroke: "var(--color-usa)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -539,7 +511,7 @@ export default {
       ],
       description: {
         title: `USA inline with South America `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>is today rather similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South American</span>inequality standards.",
       },
     },
 
@@ -554,7 +526,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -573,10 +545,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -584,7 +552,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -594,7 +562,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -604,7 +572,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region2 === "South America"),
           options: {
-            stroke: "#F5EF62", // --color-south-america:#F5EF62;
+            stroke: "var(--color-south-america)",
             strokeWidth: 0.4,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -615,7 +583,7 @@ export default {
           componentIndex: 4,
           data: renderData.filter((d) => ["MX"].includes(d.country)),
           options: {
-            stroke: "#F5EF62", // --color-south-america:#F5EF62;
+            stroke: "var(--color-south-america)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -634,7 +602,7 @@ export default {
           componentIndex: 5,
           data: renderData.filter((d) => ["US"].includes(d.country)),
           options: {
-            stroke: "#99F75E", // --color-usa: #99F75E;
+            stroke: "var(--color-usa)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -651,7 +619,7 @@ export default {
       ],
       description: {
         title: `Mexico with extrem inquality `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span><span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Mexico</span>",
       },
     },
 
@@ -666,7 +634,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -685,10 +653,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -696,7 +660,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -706,7 +670,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -716,7 +680,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Asia"),
           options: {
-            stroke: "#0CBFF5", // --color-asia: #0CBFF5;
+            stroke: "var(--color-aisa)",
             strokeWidth: 0,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -727,7 +691,7 @@ export default {
           componentIndex: 4,
           data: renderData.filter((d) => ["CH", "IN"].includes(d.country)),
           options: {
-            stroke: "#0CBFF5", // --color-asia: #0CBFF5;
+            stroke: "var(--color-asia)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
@@ -735,7 +699,7 @@ export default {
       ],
       description: {
         title: `In Asia...`,
-        text: "The<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>China</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>China</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span><span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
 
@@ -750,7 +714,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -769,10 +733,6 @@ export default {
               x: "2019",
               text: "Covid",
             },
-            {
-              x: "2001",
-              text: "Internet Bubble",
-            },
           ],
         },
         {
@@ -780,7 +740,7 @@ export default {
           componentIndex: 1,
           data: renderData.filter((d) => ["QE"].includes(d.country)),
           options: {
-            stroke: "#F7885E", //   --color-europe: #F7885E;
+            stroke: "var(--color-europe)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -790,7 +750,7 @@ export default {
           componentIndex: 2,
           data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "#d5f2f2", //   --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -800,7 +760,7 @@ export default {
           componentIndex: 3,
           data: renderData.filter((d) => d.region === "Africa"),
           options: {
-            stroke: "#F562EB", // --color-africa: #F562EB;
+            stroke: "var(--color-africa)",
             strokeWidth: 0.5,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
@@ -811,7 +771,7 @@ export default {
           componentIndex: 4,
           data: renderData.filter((d) => ["SA"].includes(d.country)),
           options: {
-            stroke: "#F562EB", // --color-africa: #F562EB;
+            stroke: "var(--color-africa)",
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
@@ -819,7 +779,7 @@ export default {
       ],
       description: {
         title: `In Africa...`,
-        text: "The<span style='background: #020100; color:#F562EB; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Africa</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "In<span style='background: #020100; color:#F562EB; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Africa</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
   ],

@@ -46,7 +46,7 @@ export default {
               y: "0.5419",
               dy: -10,
               dx: 10,
-              text: "🇺dfkbdfnbpdfbnpdfbndfº",
+              text: "10% richest",
             },
           ],
         },
