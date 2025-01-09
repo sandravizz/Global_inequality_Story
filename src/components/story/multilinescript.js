@@ -48,7 +48,7 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "  =  Complete inequality",
+              text: "  =  Complete inequality ",
             },
           ],
         },
@@ -165,18 +165,18 @@ export default {
               dy: -18,
               text: "  =  Complete inequality",
             },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "Covid",
-            },
-            {
-              x: "1989",
-              text: "Fall of Berlin wall",
-            },
+            // {
+            //   x: "2009",
+            //   text: "Financial crisis",
+            // },
+            // {
+            //   x: "2019",
+            //   text: "Covid",
+            // },
+            // {
+            //   x: "1989",
+            //   text: "Fall of Berlin wall",
+            // },
           ],
         },
         {
@@ -353,7 +353,7 @@ export default {
           data: renderData.filter((d) => d.region === "Europe"),
           options: {
             stroke: "#F7885E", //   --color-europe: #F7885E;
-            strokeWidth: 0.4,
+            strokeWidth: 0.6,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
           },
