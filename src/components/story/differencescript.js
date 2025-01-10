@@ -28,6 +28,9 @@ const renderData = countryCodes.flatMap((countryCode) => {
 export default {
   components: [DifferenceChart],
   steps: [
+    // --------------------------------------
+    // 1. Global
+    // --------------------------------------
     {
       charts: [
         {
@@ -35,27 +38,42 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "WO"),
           options: {
-            stroke: ["#d5f2f2", "#d5f2f2"],
+            stroke: ["var(--color-global)", "var(--color-global)"],
             strokeOpacity: 1,
             strokeWidth: 2,
             yTickFormat: yTickFormatter,
           },
           annotations: [
             {
-              x: "2000",
-              y: "0.5419",
+              x: "2019",
+              y: "0.58",
               dy: -10,
               dx: 10,
               text: "10% richest",
+            },
+            {
+              x: "2019",
+              y: "0.13",
+              dy: -10,
+              dx: 10,
+              text: "50% poorest",
+            },
+            {
+              y: 0,
+              dy: 2,
+              text: "= Global income",
             },
           ],
         },
       ],
       description: {
-        title: `10% richest vs. 50% poorest`,
-        text: "The upper line represents the income share of the<span style='background: #020100ff; color:#d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>10 richest %. The lower line represents the income share of the<span style='background: #020100ff; color:#d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>global 🌎</span>poorest 50%.",
+        title: `Gap between rich and poor`,
+        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>poorest 50%.",
       },
     },
+    // --------------------------------------
+    // 1. Europe
+    // --------------------------------------
     {
       charts: [
         {
@@ -63,7 +81,7 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "QE"),
           options: {
-            stroke: ["#F7885E", "#F7885E"],
+            stroke: ["var(--color-europe)", "var(--color-europe)"],
             strokeOpacity: 1,
             strokeWidth: 1.5,
             yTickFormat: yTickFormatter,
@@ -72,24 +90,19 @@ export default {
             {
               y: 0,
               dy: 2,
-              text: "= National income",
-            },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "COVID",
+              text: "= European income",
             },
           ],
         },
       ],
       description: {
         title: `Smallest gap in Europe`,
-        text: "In<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+        text: "In<span class ='highlight' style='color:var(--color-europe)'>Europe</span>deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
       },
     },
+    // --------------------------------------
+    // 1. Global
+    // --------------------------------------
     {
       charts: [
         {
@@ -97,7 +110,7 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "SE"),
           options: {
-            stroke: ["#F7885E", "#F7885E"],
+            stroke: ["var(--color-europe)", "var(--color-europe)"],
             strokeOpacity: 1,
             strokeWidth: 1.5,
             yTickFormat: yTickFormatter,
@@ -106,24 +119,19 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "= National income",
-            },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "COVID",
+              text: "- Swedish income",
             },
           ],
         },
       ],
       description: {
         title: `Sweden had a reverse ratio`,
-        text: "While inequalities have risen in <span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Sweden</span> since the 1980s. Sweden is one of the least unequal countries in terms of income in Europe and the world, with the top 10% of the population earning just over 30% of total national income and the bottom 50% earning almost 24% of national income. ",
+        text: "While inequalities have risen in Europe since the 1980s.<span class ='highlight' style='color:var(--color-europe)'>Sweden</span>is one of the least unequal countries in terms of income in Europe and the world, with the top 10% of the population earning just over 30% of total national income and the bottom 50% earning almost 24% of national income. ",
       },
     },
+    // --------------------------------------
+    // 1. Global
+    // --------------------------------------
     {
       charts: [
         {
@@ -131,7 +139,7 @@ export default {
           componentIndex: 0,
           data: renderData.filter((d) => d.country === "US"),
           options: {
-            stroke: ["#99F75E", "#99F75E"],
+            stroke: ["var(--color-usa)", "var(--color-usa)"],
             strokeOpacity: 1,
             strokeWidth: 1.5,
             yTickFormat: yTickFormatter,
@@ -140,26 +148,14 @@ export default {
             {
               y: 0,
               dy: -18,
-              text: "= National income",
-            },
-            {
-              x: "2009",
-              text: "Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "COVID",
-            },
-            {
-              x: "2001",
-              text: "Dot.com bubble",
+              text: "- USA income",
             },
           ],
         },
       ],
       description: {
-        title: `US back to historical highs`,
-        text: "Income inequality in the<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>US</span>is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+        title: `USA with historical highs`,
+        text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
       },
     },
   ],

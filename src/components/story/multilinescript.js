@@ -123,7 +123,7 @@ export default {
       ],
       description: {
         title: `One flat line`,
-        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
+        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
 
@@ -193,7 +193,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading`,
-        text: "",
+        text: "<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>",
       },
     },
 
@@ -263,7 +263,7 @@ export default {
       ],
       description: {
         title: `Europe most equal`,
-        text: "The region with the lowest inequality, far below the<span style='background: #020100ff; color: #d5f2f2; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Global 🌎</span>average is<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
+        text: "The region with the lowest inequality, far below the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
 
@@ -333,7 +333,7 @@ export default {
       ],
       description: {
         title: `All European countries low`,
-        text: "When decomposing the<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
+        text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
       },
     },
 
@@ -421,8 +421,8 @@ export default {
         },
       ],
       description: {
-        title: `USA towards ineqaulity`,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>was similar to<span style='background: #020100ff; color: #F7885E; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        title: `USA towards inequality`,
+        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span>was similar to<span style='background: #020100ff; color:var(--color-europe); font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
 
@@ -437,7 +437,7 @@ export default {
           componentIndex: 0,
           data: renderData,
           options: {
-            stroke: "#d5f2f2", //  --color-global: #d5f2f2;
+            stroke: "var(--color-global)",
             strokeOpacity: 0.4,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
@@ -511,7 +511,7 @@ export default {
       ],
       description: {
         title: `USA inline with South America `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span>is today rather similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South American</span>inequality standards.",
+        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span>is today rather similar to<span class ='highlight' style='color:var(--color-south-america)'>South America</span>inequality standards.",
       },
     },
 
@@ -619,7 +619,7 @@ export default {
       ],
       description: {
         title: `Mexico with extrem inquality `,
-        text: "The<span style='background: #020100ff; color:#99F75E; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>USA</span><span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>Mexico</span>",
+        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span><span class ='highlight' style='color:var(--color-south-america)'>Mexico</span>",
       },
     },
 
@@ -698,8 +698,8 @@ export default {
         },
       ],
       description: {
-        title: `In Asia...`,
-        text: "<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>China</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span><span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        title: `In Asia`,
+        text: "<span class ='highlight' style='color:var(--color-asia)'>China</span>,<span class ='highlight' style='color:var(--color-asia)'>Japan</span><span class ='highlight' style='color:var(--color-south-america)'>South America</span>and<span class ='highlight' style='color:var(--color-asia)'>India</span>",
       },
     },
 
@@ -779,7 +779,7 @@ export default {
       ],
       description: {
         title: `In Africa...`,
-        text: "In<span style='background: #020100; color:#F562EB; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Africa</span>,<span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>Japan</span>was similar to<span style='background: #020100ff; color: #F5EF62; font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>South America</span> and <span style='background: #020100ff; color:#0CBFF5; font-family: Montserrat Alternates3; padding: 4px 4px 4px 4px; margin: 2px 2px;'>India</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
+        text: "In<span class ='highlight' style='color:var(--color-africa)'>Africa</span>",
       },
     },
   ],

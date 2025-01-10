@@ -28,18 +28,18 @@ a:focus {
 }
 
 /*--------------------------------------*/
-/* Colour */
+/* Colours */
 /*--------------------------------------*/
 
 :root {
   --color-background: #020100;
   --color-chart-axis: #b9d4d3;
   --color-global: #d5f2f2; 
-  --color-europe: #F7885E; 
-  --color-usa: #99F75E; 
-  --color-asia: #0CBFF5; 
-  --color-south-america:#F5EF62;
-  --color-africa: #F562EB; 
+  --color-europe:  #0CBFF5; 
+  --color-usa: #F5EF62 ; 
+  --color-asia:#99F75E ; 
+  --color-south-america:#ff00c4 ;
+  --color-africa: #F7885E; 
   --color-link-hover: #4c8ffe; 
 }
 
