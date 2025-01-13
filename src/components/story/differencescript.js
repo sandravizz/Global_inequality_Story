@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-const countryCodes = ["WO", "QE", "US", "DE", "FR", "SE"];
+const countryCodes = ["WO", "QE", "US", "DE", "FR", "SE", "MX"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
   const countryData = data.filter((d) => d.country === countryCode);
@@ -45,18 +45,18 @@ export default {
           },
           annotations: [
             {
-              x: "2019",
-              y: "0.58",
+              x: "2017",
+              y: "0.5",
               dy: -10,
               dx: 10,
-              text: "10% richest",
+              text: "10% richest owned 40% of national income",
             },
             {
-              x: "2019",
-              y: "0.13",
+              x: "2017",
+              y: "0.17",
               dy: -10,
               dx: 10,
-              text: "50% poorest",
+              text: "50% poorest owned 40% of national income",
             },
             {
               y: 0,
@@ -68,11 +68,11 @@ export default {
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>poorest 50%.",
+        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>poorest 50%. The global bottom 50% income share remains historically low despite growth in the emerging world in the past decades.",
       },
     },
     // --------------------------------------
-    // 1. Europe
+    // 2. Europe
     // --------------------------------------
     {
       charts: [
@@ -88,6 +88,20 @@ export default {
           },
           annotations: [
             {
+              x: "2017",
+              y: "0.5",
+              dy: -10,
+              dx: 10,
+              text: "10% richest owned 40% of national income",
+            },
+            {
+              x: "2017",
+              y: "0.17",
+              dy: -10,
+              dx: 10,
+              text: "50% poorest owned 40% of national income",
+            },
+            {
               y: 0,
               dy: 2,
               text: "= European income",
@@ -101,7 +115,7 @@ export default {
       },
     },
     // --------------------------------------
-    // 1. Global
+    // 3. Sweden
     // --------------------------------------
     {
       charts: [
@@ -117,6 +131,20 @@ export default {
           },
           annotations: [
             {
+              x: "2017",
+              y: "0.5",
+              dy: -10,
+              dx: 10,
+              text: "10% richest owned 40% of national income",
+            },
+            {
+              x: "2017",
+              y: "0.17",
+              dy: -10,
+              dx: 10,
+              text: "50% poorest owned 40% of national income",
+            },
+            {
               y: 0,
               dy: -18,
               text: "- Swedish income",
@@ -130,7 +158,7 @@ export default {
       },
     },
     // --------------------------------------
-    // 1. Global
+    // 4. USA
     // --------------------------------------
     {
       charts: [
@@ -150,12 +178,71 @@ export default {
               dy: -18,
               text: "- USA income",
             },
+            {
+              x: "2017",
+              y: "0.5",
+              dy: -10,
+              dx: 10,
+              text: "10% richest owned 40% of national income",
+            },
+            {
+              x: "2017",
+              y: "0.17",
+              dy: -10,
+              dx: 10,
+              text: "50% poorest owned 40% of national income",
+            },
           ],
         },
       ],
       description: {
         title: `USA with historical highs`,
         text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+      },
+    },
+
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "MX"),
+          options: {
+            stroke: [
+              "var(--color-south-america)",
+              "var(--color-south-america)",
+            ],
+            strokeOpacity: 1,
+            strokeWidth: 1.5,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              y: 0,
+              dy: -18,
+              text: "- Mexico income",
+            },
+            {
+              x: "2017",
+              y: "0.5",
+              dy: -10,
+              dx: 10,
+              text: "10% richest owned 40% of national income",
+            },
+            {
+              x: "2017",
+              y: "0.17",
+              fill: "red",
+              dy: -10,
+              dx: 10,
+              text: "50% poorest owned 40% of national income",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `USA with historical highs`,
+        text: "Income inequality in the <span class ='highlight' style='color:var(--color-south-america)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
       },
     },
   ],

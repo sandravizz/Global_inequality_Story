@@ -31,7 +31,6 @@ export default {
     // --------------------------------------
     // 1. Chart introduction
     // --------------------------------------
-
     {
       charts: [
         {
@@ -52,12 +51,12 @@ export default {
               text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 7em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -77,11 +76,9 @@ export default {
         text: "The most commonly used measurement for economic inequality is the Gini index, which varies from 0 = complete equality to 1 = complete inequality. In this line chart we look at the development over the last 4 decades on a country level, meaning each line represents a country.",
       },
     },
-
     // --------------------------------------
     //2. Global average
     // --------------------------------------
-
     {
       charts: [
         {
@@ -98,15 +95,15 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 7em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -126,11 +123,9 @@ export default {
         text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
-
     // --------------------------------------
     //3. Global average all countries
     // --------------------------------------
-
     {
       charts: [
         {
@@ -150,12 +145,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -196,11 +191,9 @@ export default {
         text: "<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>",
       },
     },
-
     // --------------------------------------
     // 3. Global vs. European average
     // --------------------------------------
-
     {
       charts: [
         {
@@ -220,12 +213,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -266,11 +259,9 @@ export default {
         text: "The region with the lowest inequality, far below the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially after the fall of the Soviet Union a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
-
     // --------------------------------------
     // 4. European countries
     // --------------------------------------
-
     {
       charts: [
         {
@@ -290,12 +281,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -336,11 +327,9 @@ export default {
         text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
       },
     },
-
     // --------------------------------------
     // 5. USA vs. Europe
     // --------------------------------------
-
     {
       charts: [
         {
@@ -360,12 +349,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -425,11 +414,9 @@ export default {
         text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span>was similar to<span style='background: #020100ff; color:var(--color-europe); font-family: Montserrat Alternates3; padding: 3px 3px 3px 3px; margin: 2px 2px;'>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level. In particular the COVID years had an impact on labor inequality.",
       },
     },
-
     // --------------------------------------
     // 6. USA vs. South America
     // --------------------------------------
-
     {
       charts: [
         {
@@ -449,12 +436,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -514,11 +501,9 @@ export default {
         text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span>is today rather similar to<span class ='highlight' style='color:var(--color-south-america)'>South America</span>inequality standards.",
       },
     },
-
     // --------------------------------------
     // 6. USA - Mexico
     // --------------------------------------
-
     {
       charts: [
         {
@@ -538,12 +523,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -622,11 +607,9 @@ export default {
         text: "The<span class ='highlight' style='color:var(--color-usa)'>USA</span><span class ='highlight' style='color:var(--color-south-america)'>Mexico</span>",
       },
     },
-
     // --------------------------------------
     // 7. China, Japan und India
     // --------------------------------------
-
     {
       charts: [
         {
@@ -646,12 +629,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
@@ -702,11 +685,9 @@ export default {
         text: "<span class ='highlight' style='color:var(--color-asia)'>China</span>,<span class ='highlight' style='color:var(--color-asia)'>Japan</span><span class ='highlight' style='color:var(--color-south-america)'>South America</span>and<span class ='highlight' style='color:var(--color-asia)'>India</span>",
       },
     },
-
     // --------------------------------------
     // 8. Africa
     // --------------------------------------
-
     {
       charts: [
         {
@@ -726,12 +707,12 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2009",
-              text: "Financial crisis",
+              x: "2008",
+              text: "Financial crisis 💰",
             },
             {
               x: "2019",
-              text: "Covid",
+              text: "Covid 😷",
             },
           ],
         },
