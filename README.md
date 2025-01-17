@@ -18,4 +18,4 @@ I am available for freelance data visualization work. Please [contact me](https:
 
 Our project is based on [starter template](https://github.com/the-pudding/svelte-starter) from the pudding.
 
-Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in the building the webpage especially with Svelte.
+Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in web development with Svelte.

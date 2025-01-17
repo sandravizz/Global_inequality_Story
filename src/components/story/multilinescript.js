@@ -73,7 +73,7 @@ export default {
       ],
       description: {
         title: `Gini by country 1980 to 2023`,
-        text: "The most commonly used measurement for economic inequality is the Gini index, which varies from 0 = complete equality to 1 = complete inequality. In this line chart we look at the development over the last 4 decades on a country level, meaning each line represents a country.",
+        text: "The most commonly used measurement for economic inequality is the Gini index, which varies from 0 = complete equality to 1 = complete inequality. What does complete inequality mean? Basically one person having it all, while the rest has nothing. These extreme values are artifical and never happen in reality. But looking at the cureent wealth of the richest person, gives us a sense of extreme inequality. In this line chart we look at the development over the last 4 decades on a country level, meaning each line represents a country.",
       },
     },
     // --------------------------------------
@@ -119,7 +119,7 @@ export default {
         },
       ],
       description: {
-        title: `One flat line`,
+        title: `One flat line 🤔`,
         text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>average we see a line rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal over the last decodes as commonly reported. So let’s investigate by decomposing the world. 🤓",
       },
     },
