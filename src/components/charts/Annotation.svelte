@@ -27,7 +27,7 @@
         class="text-small absolute middle"
         style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)}px;"
       >
-        {text}
+      {@html text}
       </div>
     {:else}
       {#if xValue !== undefined}
@@ -37,9 +37,10 @@
           class="text-small absolute middle"
           style="left: {$xScale(xValue) + dx}px; top: -32px;"
         >
-          {text}
+        {@html text}
         </div>
         <div class="xLine absolute" style="left: {$xScale(xValue)}px;" />
+       
       {/if}
 
       {#if yValue !== undefined}
@@ -68,6 +69,7 @@
   .text-small {
     letter-spacing: -0.5px;
     transition: all 0.8s;
+    text-align: right;
     opacity: 1;
   }
 

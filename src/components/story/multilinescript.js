@@ -2,14 +2,18 @@ import { group } from "d3";
 import MultilineChart from "$components/charts/MultilineChart.svelte";
 import data from "$data/data_all.csv";
 
+// console.log(data[0].country);
 const formattedData = data.map((d) => ({ ...d, value: +d.gini_pretaxes }));
+// console.log(formattedData);
 const groupedByCountry = group(formattedData, (d) => d.country).entries();
+// console.log(groupedByCountry);
 const renderData = Array.from(groupedByCountry, ([key, value]) => ({
   country: key,
   region: value[0].region,
   region2: value[0].region2,
   values: value.map((item) => ({ ...item })),
 }));
+// console.log(renderData);
 
 const formatter = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 0,

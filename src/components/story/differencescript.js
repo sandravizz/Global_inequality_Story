@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-const countryCodes = ["WO", "QE", "US", "DE", "FR", "SE", "MX"];
+const countryCodes = ["WO", "QE", "SE", "US", "MX"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
   const countryData = data.filter((d) => d.country === countryCode);
@@ -24,6 +24,23 @@ const renderData = countryCodes.flatMap((countryCode) => {
     },
   ];
 });
+console.log(renderData);
+console.log(renderData[0].values[42]);
+//World 0.08
+console.log(renderData[1].values[42]);
+//World 0.53
+console.log(renderData[2].values[42]);
+//Europe 0.18
+console.log(renderData[3].values[42]);
+//Europe 0.36
+console.log(renderData[4].values[42]);
+//Sweden 0.2
+console.log(renderData[5].values[42]);
+//Sweden 0.3
+console.log(renderData[6].values[42]);
+//USA 0.10
+console.log(renderData[7].values[42]);
+//USA 0.48
 
 export default {
   components: [DifferenceChart],
@@ -45,23 +62,23 @@ export default {
           },
           annotations: [
             {
-              x: "2017",
-              y: "0.5",
-              dy: -10,
-              dx: 10,
-              text: "10% richest owned 40% of national income",
+              x: "2018",
+              y: "0.51",
+              dy: 0,
+              dx: 0,
+              text: "Top 10% owned 53% in 2022",
             },
             {
-              x: "2017",
-              y: "0.17",
-              dy: -10,
-              dx: 10,
-              text: "50% poorest owned 40% of national income",
+              x: "2018",
+              y: "0.16",
+              dy: 0,
+              dx: 0,
+              text: "Bottom 50% owned 8% in 2022",
             },
             {
               y: 0,
-              dy: 2,
-              text: "= Global income",
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = Global income</span>",
             },
           ],
         },
@@ -88,23 +105,23 @@ export default {
           },
           annotations: [
             {
-              x: "2017",
-              y: "0.5",
+              x: "2018",
+              y: "0.45",
               dy: -10,
               dx: 10,
-              text: "10% richest owned 40% of national income",
+              text: "<span style='color: var(--color-europe)'>Top 10% owned 36% in 2022</span>",
             },
             {
-              x: "2017",
-              y: "0.17",
+              x: "2018",
+              y: "0.16",
               dy: -10,
               dx: 10,
-              text: "50% poorest owned 40% of national income",
+              text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2022</span>",
             },
             {
               y: 0,
-              dy: 2,
-              text: "= European income",
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = European income</span>",
             },
           ],
         },
@@ -132,22 +149,22 @@ export default {
           annotations: [
             {
               x: "2017",
-              y: "0.5",
+              y: "0.4",
               dy: -10,
               dx: 10,
-              text: "10% richest owned 40% of national income",
+              text: "<span style='color: var(--color-europe)'>10% Top owned 30% in 2022</span>",
             },
             {
               x: "2017",
-              y: "0.17",
+              y: "0.21",
               dy: -10,
               dx: 10,
-              text: "50% poorest owned 40% of national income",
+              text: "<span style='color: var(--color-europe)'>50% Bottom owned 20% in 2022</span>",
             },
             {
               y: 0,
-              dy: -18,
-              text: "- Swedish income",
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = National income</span>",
             },
           ],
         },
@@ -175,22 +192,22 @@ export default {
           annotations: [
             {
               y: 0,
-              dy: -18,
-              text: "- USA income",
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = National income</span>",
             },
             {
               x: "2017",
-              y: "0.5",
+              y: "0.55",
               dy: -10,
               dx: 10,
-              text: "10% richest owned 40% of national income",
+              text: "<span style='color: var(--color-usa)'>10% Top owned 48% in 2022</span>",
             },
             {
               x: "2017",
-              y: "0.17",
+              y: "0.22",
               dy: -10,
               dx: 10,
-              text: "50% poorest owned 40% of national income",
+              text: "<span style='color: var(--color-usa)'>50% Bottom owned 10% in 2022</span>",
             },
           ],
         },
@@ -198,51 +215,6 @@ export default {
       description: {
         title: `USA with historical highs`,
         text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
-      },
-    },
-
-    {
-      charts: [
-        {
-          key: "country",
-          componentIndex: 0,
-          data: renderData.filter((d) => d.country === "MX"),
-          options: {
-            stroke: [
-              "var(--color-south-america)",
-              "var(--color-south-america)",
-            ],
-            strokeOpacity: 1,
-            strokeWidth: 1.5,
-            yTickFormat: yTickFormatter,
-          },
-          annotations: [
-            {
-              y: 0,
-              dy: -18,
-              text: "- Mexico income",
-            },
-            {
-              x: "2017",
-              y: "0.5",
-              dy: -10,
-              dx: 10,
-              text: "10% richest owned 40% of national income",
-            },
-            {
-              x: "2017",
-              y: "0.17",
-              fill: "red",
-              dy: -10,
-              dx: 10,
-              text: "50% poorest owned 40% of national income",
-            },
-          ],
-        },
-      ],
-      description: {
-        title: `USA with historical highs`,
-        text: "Income inequality in the <span class ='highlight' style='color:var(--color-south-america)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
       },
     },
   ],
