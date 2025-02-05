@@ -24,23 +24,22 @@ const renderData = countryCodes.flatMap((countryCode) => {
     },
   ];
 });
-console.log(renderData);
-console.log(renderData[0].values[42]);
+console.log(renderData[0].values[43]);
 //World 0.08
-console.log(renderData[1].values[42]);
-//World 0.53
-console.log(renderData[2].values[42]);
+console.log(renderData[1].values[43]);
+//World 0.54
+console.log(renderData[2].values[43]);
 //Europe 0.18
-console.log(renderData[3].values[42]);
-//Europe 0.36
-console.log(renderData[4].values[42]);
-//Sweden 0.2
-console.log(renderData[5].values[42]);
-//Sweden 0.3
-console.log(renderData[6].values[42]);
-//USA 0.10
-console.log(renderData[7].values[42]);
-//USA 0.48
+console.log(renderData[3].values[43]);
+//Europe 0.37
+console.log(renderData[4].values[43]);
+//Sweden 0.23
+console.log(renderData[5].values[43]);
+//Sweden 0.31
+console.log(renderData[6].values[43]);
+//USA 0.13
+console.log(renderData[7].values[43]);
+//USA 0.47
 
 export default {
   components: [DifferenceChart],
@@ -62,18 +61,18 @@ export default {
           },
           annotations: [
             {
-              x: "2018",
-              y: "0.51",
+              x: "2019",
+              y: "0.52",
               dy: 0,
               dx: 0,
-              text: "Top 10% owned 53% in 2022",
+              text: "Top 10% owned 54% in 2023",
             },
             {
-              x: "2018",
+              x: "2019",
               y: "0.16",
               dy: 0,
               dx: 0,
-              text: "Bottom 50% owned 8% in 2022",
+              text: "Bottom 50% owned 8% in 2023",
             },
             {
               y: 0,
@@ -105,18 +104,18 @@ export default {
           },
           annotations: [
             {
-              x: "2018",
+              x: "2019",
               y: "0.45",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-europe)'>Top 10% owned 36% in 2022</span>",
+              text: "<span style='color: var(--color-europe)'>Top 10% owned 37% in 2023</span>",
             },
             {
-              x: "2018",
+              x: "2019",
               y: "0.16",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2022</span>",
+              text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2023</span>",
             },
             {
               y: 0,
@@ -148,18 +147,18 @@ export default {
           },
           annotations: [
             {
-              x: "2017",
+              x: "2019",
               y: "0.4",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-europe)'>10% Top owned 30% in 2022</span>",
+              text: "<span style='color: var(--color-europe)'>10% Top owned 31% in 2023</span>",
             },
             {
-              x: "2017",
+              x: "2019",
               y: "0.21",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-europe)'>50% Bottom owned 20% in 2022</span>",
+              text: "<span style='color: var(--color-europe)'>50% Bottom owned 23% in 2023</span>",
             },
             {
               y: 0,
@@ -196,25 +195,25 @@ export default {
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = National income</span>",
             },
             {
-              x: "2017",
+              x: "2018",
               y: "0.55",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-usa)'>10% Top owned 48% in 2022</span>",
+              text: "<span style='color: var(--color-usa)'>10% Top owned 47% in 2023</span>",
             },
             {
-              x: "2017",
+              x: "2018",
               y: "0.22",
               dy: -10,
               dx: 10,
-              text: "<span style='color: var(--color-usa)'>50% Bottom owned 10% in 2022</span>",
+              text: "<span style='color: var(--color-usa)'>50% Bottom owned 13% in 2023</span>",
             },
           ],
         },
       ],
       description: {
         title: `USA with historical highs`,
-        text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span> is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+        text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span>is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
       },
     },
   ],
