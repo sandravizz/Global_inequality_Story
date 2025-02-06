@@ -192,11 +192,11 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,
-        text: "Although the average offers a concise summary, it causes us to lose detailed information and may even lead to misinterpretation. 🤯 Examining all countries collectively reveals a wider range in the Gini coefficient, prompting the question: why do some countries exhibit lower inequality than others? 🧐 One<span class ='highlight' style='color:var(--color-global)'>global 🌎</span> trend evident in the chart below is the reduction in the gap between countries, indicating that the disparities among countries were larger in the 1980s than they are today in the 2020s.",
+        text: "Although the average offers a concise summary, it causes us to lose detailed information and may even lead to misinterpretation. Examining all countries collectively reveals a wider range in the Gini coefficient, prompting the question: why do some countries exhibit lower inequality than others? 🧐 <br> One<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>trend evident in this chart is the reduction in the gap between countries, indicating that the differences among countries were larger in the 1980s than they are today in the 2020s.",
       },
     },
     // --------------------------------------
-    // 3. Global vs. European average
+    // 4. Global vs. European average
     // --------------------------------------
     {
       charts: [
@@ -259,12 +259,12 @@ export default {
         },
       ],
       description: {
-        title: `Europe most equal`,
-        text: "The region with the lowest inequality, far below the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially in the early 90s a slight trend towards inequality, it is still the region with the lowest gini on average. ",
+        title: `Europe most equal 🥳`,
+        text: "The region with the lowest inequality level, far below the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially in the early 90s a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
     // --------------------------------------
-    // 4. European countries
+    // 5. European countries
     // --------------------------------------
     {
       charts: [
@@ -328,11 +328,11 @@ export default {
       ],
       description: {
         title: `All European countries low`,
-        text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world.",
+        text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world. 🌍",
       },
     },
     // --------------------------------------
-    // 5. USA vs. Europe
+    // 6. USA vs. Europe
     // --------------------------------------
     {
       charts: [
@@ -415,11 +415,11 @@ export default {
       ],
       description: {
         title: `USA towards inequality`,
-        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>was similar to<span class ='highlight' style=color:var(--color-europe)>European</span>standards in the 80s. Over the last 4 decades has become more unequal, currently reached the highest level.",
+        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>was similar to<span class ='highlight' style=color:var(--color-europe)>European</span>standards in the 80s. Over the last four decades the US has become steadily more unequal, currently reached the highest level.",
       },
     },
     // --------------------------------------
-    // 6. USA vs. South America
+    // 7. USA vs. South America
     // --------------------------------------
     {
       charts: [
@@ -505,11 +505,11 @@ export default {
       ],
       description: {
         title: `USA vs. Central/South America`,
-        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>is today rather similar to inequality levels observed in<span class ='highlight' style='color:var(--color-south-america)'>South and Central America</span>.",
+        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>is today rather similar to inequality levels observed in<span class ='highlight' style='color:var(--color-south-america)'>Central and South America,</span>which is one the most unequal regions.",
       },
     },
     // --------------------------------------
-    // 7. USA - Mexico
+    // 8. USA - Mexico
     // --------------------------------------
     {
       charts: [
@@ -614,11 +614,11 @@ export default {
       ],
       description: {
         title: `Mexico with extrem inquality `,
-        text: "Available data suggest that<span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> did not experience a strong reduction in inequality over the 20th century. In fact, income inequality has been extreme throughout the past and present centuries. 😕",
+        text: "Available data suggest that<span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>did not experience a strong reduction in inequality over the 20th century. In fact, income inequality has been extreme throughout the past and present centuries. 😕",
       },
     },
     // --------------------------------------
-    // 8. Africa - Mexico and South Africa
+    // 9. Africa - Mexico and South Africa
     // --------------------------------------
     {
       charts: [
@@ -724,7 +724,7 @@ export default {
       ],
       description: {
         title: `South Africa the most inequal `,
-        text: "Even more unequal than </span><span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is</span><span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸</span>. While democratic rights were extended to the totality of the population after the end of apartheid in 1991, extreme economic inequalities have persisted and been exacerbated. 😔",
+        text: "Even more unequal than</span><span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is</span><span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸.</span>While democratic rights were extended to the totality of the population after the end of apartheid in 1991, extreme economic inequalities have persisted and been exacerbated. 😔",
       },
     },
   ],

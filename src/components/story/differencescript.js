@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-const countryCodes = ["WO", "QE", "SE", "US", "MX"];
+const countryCodes = ["WO", "QE", "SE", "US", "MX", "ZA"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
   const countryData = data.filter((d) => d.country === countryCode);
@@ -40,6 +40,14 @@ console.log(renderData[6].values[43]);
 //USA 0.13
 console.log(renderData[7].values[43]);
 //USA 0.47
+console.log(renderData[8].values[43]);
+//Mexico 0.08
+console.log(renderData[9].values[43]);
+//Mexico 0.6
+console.log(renderData[10].values[43]);
+//Mexico 0.13
+console.log(renderData[11].values[43]);
+//Mexico 0.47
 
 export default {
   components: [DifferenceChart],
@@ -77,14 +85,14 @@ export default {
             {
               y: 0,
               dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = Global income</span>",
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🌎 Global income</span>",
             },
           ],
         },
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>Global 🌎</span>poorest 50%. The global bottom 50% income share remains historically low despite growth in the emerging world in the past decades.",
+        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>poorest 50%. The global bottom 50% income share remains historically low despite growth in the emerging world in the past decades.",
       },
     },
     // --------------------------------------
@@ -163,14 +171,14 @@ export default {
             {
               y: 0,
               dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = National income</span>",
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇸🇪 National income</span>",
             },
           ],
         },
       ],
       description: {
         title: `Sweden had a reverse ratio`,
-        text: "While inequalities have risen in Europe since the 1980s.<span class ='highlight' style='color:var(--color-europe)'>Sweden</span>is one of the least unequal countries in terms of income in Europe and the world, with the top 10% of the population earning just over 30% of total national income and the bottom 50% earning almost 24% of national income. ",
+        text: "While inequalities have risen in Europe since the 1980s.<span class ='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>is one of the least unequal countries in terms of income in Europe and the world, with the top 10% of the population earning just over 30% of total national income and the bottom 50% earning almost 24% of national income. ",
       },
     },
     // --------------------------------------
@@ -190,11 +198,6 @@ export default {
           },
           annotations: [
             {
-              y: 0,
-              dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = National income</span>",
-            },
-            {
               x: "2018",
               y: "0.55",
               dy: -10,
@@ -208,12 +211,106 @@ export default {
               dx: 10,
               text: "<span style='color: var(--color-usa)'>50% Bottom owned 13% in 2023</span>",
             },
+            {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇺🇸 National income</span>",
+            },
           ],
         },
       ],
       description: {
         title: `USA with historical highs`,
-        text: "Income inequality in the <span class ='highlight' style='color:var(--color-usa)'>USA</span>is among the highest among rich countries. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+        text: "Income inequality in the<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>is among the highest among, as seen in the chart before. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share.",
+      },
+    },
+    // --------------------------------------
+    // 5. Mexico
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "MX"),
+          options: {
+            stroke: [
+              "var(--color-south-america)",
+              "var(--color-south-america)",
+            ],
+            strokeOpacity: 1,
+            strokeWidth: 1.5,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2018",
+              y: "0.6",
+              dy: -10,
+              dx: 10,
+              text: "<span style='color: var(--color-south-america)'>10% Top owned 60% in 2023</span>",
+            },
+            {
+              x: "2018",
+              y: "0.15",
+              dy: -10,
+              dx: 10,
+              text: "<span style='color: var(--color-south-america)'>50% Bottom owned 0.8% in 2023</span>",
+            },
+            {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇲🇽 National income</span>",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `Mexico`,
+        text: "Huge cap, meaning the rich earn a lot the poorer half nothing, but last years postive development gap becoming smaller.",
+      },
+    },
+    // --------------------------------------
+    // 6. South Africa
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "ZA"),
+          options: {
+            stroke: ["var(--color-africa)", "var(--color-africa)"],
+            strokeOpacity: 1,
+            strokeWidth: 1.5,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2018",
+              y: "0.64",
+              dy: -10,
+              dx: 10,
+              text: "<span style='color: var(--color-africa)'>10% Top owned 65% in 2023</span>",
+            },
+            {
+              x: "2018",
+              y: "0.15",
+              dy: -10,
+              dx: 10,
+              text: "<span style='color: var(--color-africa)'>50% Bottom owned 0.6% in 2023</span>",
+            },
+            {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇿🇦 National income</span>",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `South Africa biggest gap`,
+        text: "Income inequality in the<span class ='highlight' style=var(--color-africa)'>South Africa 🇿🇦</span>is the highest globally and over the last 4 decades.",
       },
     },
   ],
