@@ -58,11 +58,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -70,11 +70,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -117,11 +117,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -129,11 +129,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -176,11 +176,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -188,11 +188,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -256,11 +256,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -268,11 +268,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -336,11 +336,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -348,11 +348,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -416,11 +416,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -428,11 +428,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -506,11 +506,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -518,11 +518,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -599,11 +599,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -611,11 +611,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -706,7 +706,7 @@ export default {
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -714,11 +714,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -775,7 +775,7 @@ export default {
         },
       ],
       description: {
-        title: `South Africa the most inequal `,
+        title: `South Africa the most inequal`,
         text: "Even more unequal than</span><span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is</span><span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸.</span>While democratic rights were extended to the totality of the population after the end of apartheid in 1991, extreme economic inequalities have persisted and been exacerbated. 😔",
       },
     },

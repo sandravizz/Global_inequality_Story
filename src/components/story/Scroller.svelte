@@ -197,25 +197,25 @@
     
 @media screen and (max-width: 780px) {    
   .step .content h4 {
-    font-size: var(--step-2); 
+    font-size: var(--step-1); 
   }   
 }
     
 @media screen and (max-width: 600px) {    
   .step .content h4 {
-    font-size: var(--step-1); 
+    font-size: var(--step-0); 
   }  
 }
     
 @media screen and (max-width: 480px) {   
   .step .content h4 {
-      font-size: var(--step-1); 
+      font-size: var(--step--1); 
     }  
 }
   
 @media screen and (max-width: 380px) {    
   .step .content h4 {
-      font-size: var(--step-0); 
+      font-size: var(--step--2); 
     }   
 }
 

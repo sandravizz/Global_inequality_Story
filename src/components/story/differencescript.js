@@ -89,11 +89,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -101,11 +101,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -146,17 +146,12 @@ export default {
               text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2023</span>",
             },
             {
-              y: 0,
-              dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = European income</span>",
-            },
-            {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -164,11 +159,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -215,11 +210,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -227,11 +222,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -278,11 +273,11 @@ export default {
             },
             {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -290,11 +285,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -338,17 +333,12 @@ export default {
               text: "<span style='color: var(--color-south-america)'>50% Bottom owned 0.8% in 2023</span>",
             },
             {
-              y: 0,
-              dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇲🇽 National income</span>",
-            },
-            {
               x: "1991",
-              text: "Collapse of Soviet Union",
+              text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -356,11 +346,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
@@ -411,7 +401,7 @@ export default {
             },
             {
               x: "2001",
-              text: "🌐 Dot.com bubble",
+              text: "🌐 Dot.com",
             },
             {
               x: "2008",
@@ -419,11 +409,11 @@ export default {
             },
             {
               x: "2019",
-              text: "🦠 Covid19",
+              text: "🦠 Covid",
             },
             {
               x: "2022",
-              text: "🇷🇺 Russian war",
+              text: "🇷🇺 War",
             },
           ],
         },
