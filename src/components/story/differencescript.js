@@ -146,6 +146,11 @@ export default {
               text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2023</span>",
             },
             {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = Europe income</span>",
+            },
+            {
               x: "1991",
               text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
@@ -333,6 +338,11 @@ export default {
               text: "<span style='color: var(--color-south-america)'>50% Bottom owned 0.8% in 2023</span>",
             },
             {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇲🇽 National income</span>",
+            },
+            {
               x: "1991",
               text: "Collapse <img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' />",
             },
@@ -356,7 +366,7 @@ export default {
         },
       ],
       description: {
-        title: `Mexico`,
+        title: `Mexico 🇲🇽`,
         text: "Huge cap, meaning the rich earn a lot the poorer half nothing, but last years postive development gap becoming smaller.",
       },
     },
