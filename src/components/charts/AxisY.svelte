@@ -21,7 +21,7 @@
         class:moveBottom={tick === $yScale.domain()[1]}
       >
         <div class="text-small">
-          {tickFormat ? tickFormat(yMax - tick) : yMax - tick}
+          {tickFormat ? tickFormat (yMax - tick) : yMax - tick}
         </div>
       </div>
     {/if}

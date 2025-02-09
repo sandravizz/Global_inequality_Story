@@ -1,12 +1,14 @@
 import { group } from "d3";
 import MultilineChart from "$components/charts/MultilineChart.svelte";
 import data from "$data/data_all.csv";
-
 // console.log(data[0].country);
+
 const formattedData = data.map((d) => ({ ...d, value: +d.gini_pretaxes }));
 // console.log(formattedData);
+
 const groupedByCountry = group(formattedData, (d) => d.country).entries();
 // console.log(groupedByCountry);
+
 const renderData = Array.from(groupedByCountry, ([key, value]) => ({
   country: key,
   region: value[0].region,
@@ -52,15 +54,27 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 7em;' /></div>",
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
             },
             {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -99,15 +113,27 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 7em;' /></div>",
+              text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
             },
             {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -149,12 +175,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -217,12 +255,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -285,12 +335,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -353,12 +415,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -402,15 +476,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "US",
-              dy: -10,
-              dx: 10,
-              text: "🇺🇸",
-            },
-          ],
         },
       ],
       description: {
@@ -440,12 +505,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -492,15 +569,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "US",
-              dy: -10,
-              dx: 10,
-              text: "🇺🇸",
-            },
-          ],
         },
       ],
       description: {
@@ -530,12 +598,24 @@ export default {
               text: "<div style='transform: translateY(-14%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -582,15 +662,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "MX",
-              dy: -10,
-              dx: 10,
-              text: "🇲🇽",
-            },
-          ],
         },
         {
           key: "country",
@@ -601,15 +672,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "US",
-              dy: -10,
-              dx: 10,
-              text: "🇺🇸",
-            },
-          ],
         },
       ],
       description: {
@@ -643,12 +705,20 @@ export default {
               text: "End of apartheid",
             },
             {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
               x: "2008",
-              text: "Financial crisis 💰",
+              text: "💰 Financial crisis",
             },
             {
               x: "2019",
-              text: "Covid 😷",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -692,15 +762,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "MX",
-              dy: -10,
-              dx: 10,
-              text: "🇲🇽",
-            },
-          ],
         },
         {
           key: "country",
@@ -711,15 +772,6 @@ export default {
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-            {
-              x: "2023",
-              z: "ZA",
-              dy: -10,
-              dx: 10,
-              text: "🇸🇸",
-            },
-          ],
         },
       ],
       description: {

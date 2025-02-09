@@ -45,9 +45,9 @@ console.log(renderData[8].values[43]);
 console.log(renderData[9].values[43]);
 //Mexico 0.6
 console.log(renderData[10].values[43]);
-//Mexico 0.13
+//South Afirca 0.06
 console.log(renderData[11].values[43]);
-//Mexico 0.47
+//South Africa 0.65
 
 export default {
   components: [DifferenceChart],
@@ -69,23 +69,43 @@ export default {
           },
           annotations: [
             {
-              x: "2019",
-              y: "0.52",
+              x: "2023",
+              y: "0.57",
               dy: 0,
               dx: 0,
               text: "Top 10% owned 54% in 2023",
             },
             {
-              x: "2019",
-              y: "0.16",
+              x: "2023",
+              y: "0.075",
               dy: 0,
               dx: 0,
-              text: "Bottom 50% owned 8% in 2023",
+              text: "Bottom 50% owned  8% in 2023",
             },
             {
               y: 0,
               dy: 0,
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🌎 Global income</span>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -112,15 +132,15 @@ export default {
           },
           annotations: [
             {
-              x: "2019",
-              y: "0.45",
+              x: "2023",
+              y: "0.40",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-europe)'>Top 10% owned 37% in 2023</span>",
             },
             {
-              x: "2019",
-              y: "0.16",
+              x: "2023",
+              y: "0.175",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-europe)'>Bottom 50% owned 18% in 2023</span>",
@@ -129,6 +149,26 @@ export default {
               y: 0,
               dy: 0,
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = European income</span>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -155,15 +195,15 @@ export default {
           },
           annotations: [
             {
-              x: "2019",
-              y: "0.4",
+              x: "2023",
+              y: "0.36",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-europe)'>10% Top owned 31% in 2023</span>",
             },
             {
-              x: "2019",
-              y: "0.21",
+              x: "2023",
+              y: "0.22",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-europe)'>50% Bottom owned 23% in 2023</span>",
@@ -172,6 +212,26 @@ export default {
               y: 0,
               dy: 0,
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇸🇪 National income</span>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -198,15 +258,15 @@ export default {
           },
           annotations: [
             {
-              x: "2018",
-              y: "0.55",
+              x: "2023",
+              y: "0.51",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-usa)'>10% Top owned 47% in 2023</span>",
             },
             {
-              x: "2018",
-              y: "0.22",
+              x: "2023",
+              y: "0.12",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-usa)'>50% Bottom owned 13% in 2023</span>",
@@ -214,7 +274,27 @@ export default {
             {
               y: 0,
               dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇺🇸 National income</span>",
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇺🇸 National income</span>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -244,15 +324,15 @@ export default {
           },
           annotations: [
             {
-              x: "2018",
-              y: "0.6",
+              x: "2023",
+              y: "0.59",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-south-america)'>10% Top owned 60% in 2023</span>",
             },
             {
-              x: "2018",
-              y: "0.15",
+              x: "2023",
+              y: "0.11",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-south-america)'>50% Bottom owned 0.8% in 2023</span>",
@@ -260,7 +340,27 @@ export default {
             {
               y: 0,
               dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇲🇽 National income</span>",
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇲🇽 National income</span>",
+            },
+            {
+              x: "1991",
+              text: "Collapse of Soviet Union",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },
@@ -287,15 +387,15 @@ export default {
           },
           annotations: [
             {
-              x: "2018",
-              y: "0.64",
+              x: "2023",
+              y: "0.65",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-africa)'>10% Top owned 65% in 2023</span>",
             },
             {
-              x: "2018",
-              y: "0.15",
+              x: "2023",
+              y: "0.09",
               dy: -10,
               dx: 10,
               text: "<span style='color: var(--color-africa)'>50% Bottom owned 0.6% in 2023</span>",
@@ -303,7 +403,27 @@ export default {
             {
               y: 0,
               dy: 0,
-              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> =🇿🇦 National income</span>",
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇿🇦 National income</span>",
+            },
+            {
+              x: "1991",
+              text: "End of apartheid",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com bubble",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid19",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 Russian war",
             },
           ],
         },

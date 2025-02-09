@@ -15,7 +15,7 @@
 
       <!-- Inside chart annotation -->
       <div
-        class=" text-small absolute"
+        class=" text-small"
         style="
 			left:{$xGet(getAnnotationData(xValue, zValue)) + dx}px; 
 			top:{$yGet(getAnnotationData(xValue, zValue)) + dy}px"
@@ -24,7 +24,7 @@
       </div>
     {:else if xValue !== undefined && yValue !== undefined}
       <div
-        class="text-small absolute middle"
+        class="text-small inside middle"
         style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)}px;"
       >
       {@html text}
@@ -58,6 +58,12 @@
 {/key}
 
 <style>
+
+ .inside {
+    position: absolute;
+    margin-left: -8.6em;
+  }
+
   .absolute {
     position: absolute;
   }
@@ -67,6 +73,8 @@
   }
 
   .text-small {
+    white-space: nowrap;
+    display: block; 
     letter-spacing: -0.5px;
     transition: all 0.8s;
     text-align: right;

@@ -7,20 +7,20 @@
   export let strokeWidth = 1;
   export let strokeOpacity = 1;
 
+  const { data, xGet, yGet, width } = getContext("LayerCake");
+
   const lineGenerator = line()
     .x((d) => $xGet(d))
     .y((d) => $yGet(d))
     .curve(curveMonotoneX);
-
-  const { data, xGet, yGet, width } = getContext("LayerCake");
 </script>
 
 {#key $width}
   <g class="line-group">
-    {#each $data as group, i}
+    {#each $data as d, i}
       <path
         class="path-line"
-        d={lineGenerator(group.values)}
+        d={lineGenerator(d.values)}
         stroke={Array.isArray(stroke) ? stroke[i] : stroke}
         stroke-opacity={strokeOpacity}
         stroke-width={strokeWidth}
