@@ -61,7 +61,7 @@
 
  .inside {
     position: absolute;
-    margin-left: -8.6em;
+    margin-left: -3em;
   }
 
   .absolute {
@@ -86,6 +86,6 @@
     border-left: 0.1px dashed var(--color-chart-axis);
     top: -8px;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 0.35;
   }
 </style>

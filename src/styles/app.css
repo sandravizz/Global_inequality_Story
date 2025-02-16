@@ -145,21 +145,21 @@ a:focus {
     }    
 }
 
-/*1400*/
+/*780*/
     
 @media screen and (max-width: 780px) {    
 .text-big {
     font-size: var(--step-0); 
   }
 .text-medium {
-    font-size: var(--step--2); 
+    font-size: var(--step--3); 
   }
 .text-small {
     font-size: var(--step--4); 
   }   
 }
 
-/*1400*/
+/*600*/
     
 @media screen and (max-width: 600px) {    
 .text-big {
@@ -197,7 +197,7 @@ a:focus {
       font-size: var(--step--4); 
     }
   .text-small {
-      font-size: var(--step--8); 
+      font-size: var(--step--6); 
     }    
 }
 
