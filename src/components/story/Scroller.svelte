@@ -39,11 +39,11 @@
 >
   <div class="container">
     <div class="chart-container">
-
-      <div class="chart"
+      <div
+        class="chart"
         class:sticky={stepIndex < storyscript.steps.length}
-        class:bottom={stepIndex >= storyscript.steps.length}>
-        
+        class:bottom={stepIndex >= storyscript.steps.length}
+      >
         {#each storyscript.components as component, i}
           <div class="chartComponent">
             <svelte:component
@@ -53,7 +53,6 @@
             />
           </div>
         {/each}
-        
       </div>
 
       <div class="steps">
@@ -65,7 +64,7 @@
                 <div class="content">
                   <h4>{step.description.title}</h4>
                   {#if step.description.text}
-                    <p class = "text-medium">{@html step.description.text}</p>
+                    <p class="text-medium">{@html step.description.text}</p>
                   {/if}
                 </div>
               </div>
@@ -164,7 +163,6 @@
   .contentbackground {
     border-radius: 30px;
     background-color: var(--color-background);
-    opacity: 0.85;
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -189,37 +187,37 @@
     text-transform: uppercase;
   }
 
-@media screen and (max-width: 1400px) {
-  .step .content h4 {
-      font-size: var(--step-2); 
-    }   
-}
-    
-@media screen and (max-width: 780px) {    
-  .step .content h4 {
-    font-size: var(--step-1); 
-  }   
-}
-    
-@media screen and (max-width: 600px) {    
-  .step .content h4 {
-    font-size: var(--step-0); 
-  }  
-}
-    
-@media screen and (max-width: 480px) {   
-  .step .content h4 {
-      font-size: var(--step--1); 
-    }  
-}
-  
-@media screen and (max-width: 380px) {    
-  .step .content h4 {
-      font-size: var(--step--2); 
-    }   
-}
+  @media screen and (max-width: 1400px) {
+    .step .content h4 {
+      font-size: var(--step-2);
+    }
+  }
 
-@media (min-width: 900px) {
+  @media screen and (max-width: 780px) {
+    .step .content h4 {
+      font-size: var(--step-1);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .step .content h4 {
+      font-size: var(--step-0);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .step .content h4 {
+      font-size: var(--step--1);
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .step .content h4 {
+      font-size: var(--step--2);
+    }
+  }
+
+  @media (min-width: 900px) {
     .fullWidth .container {
       margin: 0;
     }
@@ -242,5 +240,4 @@
       margin: auto;
     }
   }
-
 </style>

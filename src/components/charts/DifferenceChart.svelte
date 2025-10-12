@@ -2,7 +2,6 @@
 
 <script>
   import { LayerCake, Svg, Html } from "layercake";
-
   import Line from "$components/charts/Line.svelte";
   import AxisX from "$components/charts/AxisX.svelte";
   import AxisY from "$components/charts/AxisY.svelte";
@@ -35,9 +34,7 @@
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
-
   {#if data && width}
-
     <LayerCake
       {width}
       {height}
@@ -50,7 +47,6 @@
       yDomain={[0, 1]}
       custom={{ annotations: annotations }}
     >
-
       <Svg>
         <ClipPath {...options} />
         <Line {...options} {height} />
@@ -66,9 +62,6 @@
           <Annotation />
         </Html>
       {/if}
-
     </LayerCake>
-
   {/if}
-
 </div>

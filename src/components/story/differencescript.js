@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-const countryCodes = ["WO", "QE", "SE", "US", "MX", "ZA"];
+const countryCodes = ["WO", "QE", "SE", "US", "MX", "ZA", "JP"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
   const countryData = data.filter((d) => d.country === countryCode);
@@ -48,6 +48,10 @@ console.log(renderData[10].values[43]);
 //South Afirca 0.06
 console.log(renderData[11].values[43]);
 //South Africa 0.65
+console.log(renderData[12].values[43]);
+//Japan 0.18
+console.log(renderData[13].values[43]);
+//Japan 0.44
 
 export default {
   components: [DifferenceChart],
@@ -431,6 +435,69 @@ export default {
       description: {
         title: `South Africa biggest gap`,
         text: "Income inequality in the<span class ='highlight' style=var(--color-africa)'>South Africa 🇿🇦</span>is the highest globally and over the last 4 decades.",
+      },
+    },
+    // --------------------------------------
+    // 7. Japan
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "JP"),
+          options: {
+            stroke: ["var(--color-asia)", "var(--color-asia)"],
+            strokeOpacity: 1,
+            strokeWidth: 1.5,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2023",
+              y: "0.43",
+              dy: 0,
+              dx: 0,
+              text: "<span style='color: var(--color-asia)'>44% in 2023</span>",
+            },
+            {
+              x: "2023",
+              y: "0.22",
+              dy: 0,
+              dx: 0,
+              text: "<span style='color: var(--color-asia)'>18% in 2023</span>",
+            },
+            {
+              y: 0,
+              dy: 0,
+              text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> = 🇯🇵 Income</span>",
+            },
+            {
+              x: "1991",
+              text: "Asset bubble",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2019",
+              text: "🦠 Covid",
+            },
+            {
+              x: "2022",
+              text: "🇷🇺 War",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `Japan`,
+        text: "Income inequality in<span class ='highlight' style=var(--color-asia)'>Japan 🇯🇵</span>is the one of the lowest globally.",
       },
     },
   ],

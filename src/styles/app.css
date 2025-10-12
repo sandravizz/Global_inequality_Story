@@ -15,16 +15,33 @@ main {
 }
 
 a {
-	color: var(--color-link);
-	outline: none;
+  color: var(--color-link);
+  outline: none;
   text-decoration-line: underline;
   text-decoration-thickness: 0.2px;
 }
 
 a:hover,
 a:focus {
-	color: var(--color-link-hover);
+  color: var(--color-link-hover);
   outline: none;
+}
+
+/* Need to adapt this to musk image only when getting small */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+img {
+  animation: fadeInSlideUp 5s ease-out;
 }
 
 /*--------------------------------------*/
@@ -34,13 +51,13 @@ a:focus {
 :root {
   --color-background: #020100;
   --color-chart-axis: #b9d4d3;
-  --color-global: #d5f2f2; 
-  --color-europe:  #0CBFF5; 
-  --color-usa: #CFFF04 ; 
-  --color-asia: #ff9130 ; 
-  --color-south-america:#ff00c4 ;
-  --color-africa:#99F75E ; 
-  --color-link-hover: #4c8ffe; 
+  --color-global: #d5f2f2;
+  --color-europe: #0CBFF5;
+  --color-usa: #CFFF04;
+  --color-asia: #ff9130;
+  --color-south-america: #ff00c4;
+  --color-africa: #99F75E;
+  --color-link-hover: #4c8ffe;
 }
 
 /*--------------------------------------*/
@@ -104,26 +121,27 @@ a:focus {
 }
 
 .heading {
-    margin-top: 24px;
-    position: relative;
-    font-weight: bold;
-    &::before {
-      position: absolute;
-      top: -24px;
-      left: 0;
-      content: ' ';
-      display: block;
-      background-color: white;
-      width: 120px;
-      height: 1px;
-    }
+  margin-top: 24px;
+  position: relative;
+  font-weight: bold;
+
+  &::before {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    content: ' ';
+    display: block;
+    background-color: white;
+    width: 120px;
+    height: 1px;
   }
+}
 
 .highlight {
-    background: #020100; 
-    font-family: Montserrat Alternates3; 
-    padding: 3px 3px 3px 3px; 
-    margin: 2px 2px;
+  background: #020100;
+  font-family: Montserrat Alternates3;
+  padding: 3px 3px 3px 3px;
+  margin: 2px 2px;
 }
 
 
@@ -135,70 +153,80 @@ a:focus {
 
 @media screen and (max-width: 1400px) {
   .text-big {
-      font-size: var(--step-1); 
-    }
+    font-size: var(--step-1);
+  }
+
   .text-medium {
-      font-size: var(--step--1); 
-    }
+    font-size: var(--step--1);
+  }
+
   .text-small {
-      font-size: var(--step--3); 
-    }    
+    font-size: var(--step--3);
+  }
 }
 
 /*780*/
-    
-@media screen and (max-width: 780px) {    
-.text-big {
-    font-size: var(--step-0); 
+
+@media screen and (max-width: 780px) {
+  .text-big {
+    font-size: var(--step-0);
   }
-.text-medium {
-    font-size: var(--step--3); 
+
+  .text-medium {
+    font-size: var(--step--3);
   }
-.text-small {
-    font-size: var(--step--4); 
-  }   
+
+  .text-small {
+    font-size: var(--step--4);
+  }
 }
 
 /*600*/
-    
-@media screen and (max-width: 600px) {    
-.text-big {
-    font-size: var(--step-0); 
+
+@media screen and (max-width: 600px) {
+  .text-big {
+    font-size: var(--step-0);
   }
-.text-medium {
-    font-size: var(--step--3); 
+
+  .text-medium {
+    font-size: var(--step--3);
   }
-.text-small {
-    font-size: var(--step--5); 
-  }   
+
+  .text-small {
+    font-size: var(--step--5);
+  }
 }
 
 /* < 480 */
-    
-@media screen and (max-width: 480px) {   
+
+@media screen and (max-width: 480px) {
   .text-big {
-      font-size: var(--step-0); 
-    }
+    font-size: var(--step-0);
+  }
+
   .text-medium {
-      font-size: var(--step--3); 
-    }
+    font-size: var(--step--3);
+  }
+
   .text-small {
-      font-size: var(--step--6); 
-    }   
+    font-size: var(--step--6);
+  }
 }
 
 /* < 380 */
-  
-@media screen and (max-width: 380px) {    
+
+@media screen and (max-width: 380px) {
   .text-big {
-      font-size: var(--step--1); 
-    }
+    font-size: var(--step--1);
+  }
+
   .text-medium {
-      font-size: var(--step--4); 
-    }
+    font-size: var(--step--4);
+  }
+
   .text-small {
-      font-size: var(--step--6); 
-    }    
+    font-size: var(--step--6);
+  }
 }
 
 /*--------------------------------------*/

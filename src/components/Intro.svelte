@@ -21,7 +21,6 @@
   ];
 
   $: {
-
     if (show || hide) {
       const timeline = gsap.timeline();
       const offset = show ? 1 : 0;
@@ -33,13 +32,13 @@
       }
 
       for (let i = 0; i <= filters.length; i++) {
-       //the whole slide 
+        //the whole slide
         timeline.set(
           slideEl,
           { filter: filters[i], duration: 0.2 },
           i * 0.2 + offset,
         );
-      //the text
+        //the text
         timeline.set(
           textEl,
           {
@@ -71,18 +70,17 @@
     <h1 class="title">
       {title}
     </h1>
-</div>
+  </div>
   <img bind:this={imgEl} {src} alt={title} />
   <div class="hint text-small">scroll down</div>
 </div>
 
 <style>
-
-.slide.isVisible {
+  .slide.isVisible {
     opacity: 1;
   }
 
-.slide {
+  .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,7 +94,7 @@
     align-items: center;
   }
 
-img {
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -106,14 +104,14 @@ img {
     object-position: 50% 50%;
   }
 
-.textcontainer {
+  .textcontainer {
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-.title {
+  .title {
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
@@ -124,11 +122,11 @@ img {
     margin: 0 20 0 0;
     padding: 0;
     opacity: 0.9;
-    font-family:"Syncopate";
+    font-family: "Syncopate";
     font-size: var(--step-7);
   }
 
-.hint {
+  .hint {
     z-index: 100;
     position: absolute;
     bottom: 20px;
@@ -140,59 +138,48 @@ img {
     opacity: 1;
   }
 
-/*--------------------------------------*/
-/* Screen stylings */
-/*--------------------------------------*/
+  /*--------------------------------------*/
+  /* Screen stylings */
+  /*--------------------------------------*/
 
-@media screen and (max-width: 1400px) {
-
-.title {
-    font-size: var(--step-6); 
-    -webkit-text-stroke-width: 2px;
-    letter-spacing: -1.2px;
-    word-spacing: 20px;
-  }
-  
-}
-  
-@media screen and (max-width: 780px) {
-  
-.title {
-    font-size: var(--step-4); 
-    -webkit-text-stroke-width: 1.9px;
-    word-spacing: 20px;
-  }
-  
-}
-  
-@media screen and (max-width: 600px) {
-  
-.title {
-    font-size: var(--step-3); 
-    -webkit-text-stroke-width: 1.4px;
-    word-spacing: 15px;
-  }
-  
-}
-  
-@media screen and (max-width: 480px) {
-  
-.title {
-    font-size: var(--step-2); 
-    -webkit-text-stroke-width: 1.1px;
-    word-spacing: 15px;
+  @media screen and (max-width: 1600px) {
+    .title {
+      font-size: var(--step-6);
+      -webkit-text-stroke-width: 2px;
+      letter-spacing: -1.2px;
+      word-spacing: 20px;
+    }
   }
 
-}
-
-@media screen and (max-width: 380px) {
-  
-.title {
-    font-size: var(--step-1); 
-    -webkit-text-stroke-width: 0.9px;
-    word-spacing: 10px;
+  @media screen and (max-width: 780px) {
+    .title {
+      font-size: var(--step-4);
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
+    }
   }
-  
-}
 
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: var(--step-3);
+      -webkit-text-stroke-width: 1.4px;
+      word-spacing: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: var(--step-2);
+      -webkit-text-stroke-width: 1.1px;
+      word-spacing: 15px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .title {
+      font-size: var(--step-1);
+      -webkit-text-stroke-width: 0.9px;
+      word-spacing: 10px;
+    }
+  }
 </style>
