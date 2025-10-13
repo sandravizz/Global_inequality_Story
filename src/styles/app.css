@@ -9,16 +9,13 @@
 html,
 body {
   background-color: var(--color-background);
-  /* ensure uniform dark canvas */
   color: var(--color-chart-axis);
   min-height: 100%;
-}
-
-body {
   margin: 0;
 }
 
 main {
+  background-color: var(--color-background);
   display: block;
 }
 
@@ -57,7 +54,7 @@ img {
 /*--------------------------------------*/
 
 :root {
-  --color-background: #020100;
+  --color-background: black;
   --color-chart-axis: #b9d4d3;
   --color-global: #d5f2f2;
   --color-europe: #0CBFF5;
@@ -151,7 +148,6 @@ img {
   padding: 3px 3px 3px 3px;
   margin: 2px 2px;
 }
-
 
 /*--------------------------------------*/
 /* Screen stylings */

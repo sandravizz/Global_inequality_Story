@@ -142,7 +142,7 @@
   /* Screen stylings */
   /*--------------------------------------*/
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1800px) {
     .title {
       font-size: var(--step-6);
       -webkit-text-stroke-width: 2px;

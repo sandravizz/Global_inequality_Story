@@ -26,9 +26,7 @@
 </script>
 
 <div style="height: {height}px; width: 100%;" bind:clientWidth={width}>
- 
   {#if data && width}
-
     <LayerCake
       {width}
       {height}
@@ -41,7 +39,6 @@
       custom={{ annotations: annotations }}
       padding={{ left: 24 }}
     >
-
       <Svg>
         <Line {...options} />
       </Svg>
@@ -56,9 +53,6 @@
         <AxisX />
         <AxisY tickFormat={options.yTickFormat} />
       </Html>
-
     </LayerCake>
-
   {/if}
-  
 </div>

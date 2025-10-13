@@ -4,7 +4,7 @@
   import differencescript from "./story/differencescript.js";
 </script>
 
-<section style="margin-top: 50px;  margin-bottom: 100px">
+<section>
   <p class="text-medium">
     <a
       target="_blank"
@@ -40,7 +40,7 @@
   <Scroller storyscript={multilinescript} layout="wide" />
 </div>
 
-<section style="margin: 50px auto">
+<section>
   <p class="text-medium">
     As the charts presented so far illustrate, economic inequality is strongly
     influenced by geographical context, which in turn is shaped by local
@@ -70,7 +70,7 @@
   <Scroller storyscript={differencescript} layout="wide" />
 </div>
 
-<section style="margin: 50px auto">
+<section>
   <p class="text-medium">
     The data and analysis presented here are based on the work of more than 100
     researchers over four years, located on all continents, contributing to the
@@ -86,10 +86,11 @@
 </section>
 
 <style>
+  
   section {
     max-width: 50rem;
     padding: 16px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   section.wide {
