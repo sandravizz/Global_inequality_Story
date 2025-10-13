@@ -42,16 +42,25 @@
 
 <section style="margin: 50px auto">
   <p class="text-medium">
-    The data and analysis presented here are based on the work of more than 100
-    researchers over four years, located on all continents, contributing to the
-    World Inequality Database (WID.world), maintained by the World Inequality
-    Lab. This vast network collaborates with statistical institutions, tax
-    authorities, universities and international organizations, to harmonize,
-    analyze and disseminate comparable international inequality data. This
-    allows to present systematic data on inequality at the global level and to
-    analyze how it has evolved over time. Global income inequality has always
-    been very great, reflecting the persistence of a world economic system that
-    is extremely hierarchical both between countries and within them.
+    As the charts presented so far illustrate, economic inequality is strongly
+    influenced by geographical context, which in turn is shaped by local
+    politics and economic regulations—or the lack thereof.
+  </p>
+  <p class="text-medium">
+    The previous visualizations focused on the Gini coefficient, a single
+    numerical indicator that provides an overall summary of inequality within a
+    country. While the Gini coefficient is useful for understanding the general
+    level of inequality, it can obscure important details. For instance, two
+    countries with the same Gini value might differ significantly in whether
+    inequality is driven by extreme income concetration at the top or lacking a
+    miminum share at the bottom.
+  </p>
+  <p class="text-medium">
+    To gain a more nuanced understanding, the following charts compare the share
+    of national income held by the richest 10% with that of the poorest 50%.
+    This comparison allows us to observe how these two income groups have
+    evolved relative to each other over the past four decades, revealing more
+    subtle dynamics in inequality trends across countries.
   </p>
 </section>
 

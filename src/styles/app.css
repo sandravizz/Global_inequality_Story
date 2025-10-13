@@ -6,6 +6,14 @@
 /* General */
 /*--------------------------------------*/
 
+html,
+body {
+  background-color: var(--color-background);
+  /* ensure uniform dark canvas */
+  color: var(--color-chart-axis);
+  min-height: 100%;
+}
+
 body {
   margin: 0;
 }

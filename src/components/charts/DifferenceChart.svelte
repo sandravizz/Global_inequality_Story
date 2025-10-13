@@ -1,13 +1,6 @@
 <svelte:options accessors={true} />
 
 <script>
-  import { LayerCake, Svg, Html } from "layercake";
-  import Line from "$components/charts/Line.svelte";
-  import AxisX from "$components/charts/AxisX.svelte";
-  import AxisY from "$components/charts/AxisY.svelte";
-  import Annotation from "$components/charts/Annotation.svelte";
-  import ClipPath from "$components/charts/ClipPath.svelte";
-
   export let chart;
   export let height = 500;
 
