@@ -83,7 +83,7 @@
 
   .xLine {
     border-width: 0;
-    border-left: 0.1px dashed var(--color-chart-axis);
+    border-left: 1px dashed var(--color-chart-axis);
     top: -8px;
     bottom: 0;
     opacity: 0.35;

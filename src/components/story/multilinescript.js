@@ -48,31 +48,11 @@ export default {
             yTickFormat: yTickFormatter,
           },
           annotations: [
-            {
-              y: 0,
-              dy: -5,
-              text: "<div style='transform: translateY(-39%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 6em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' /> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+           {
+            y: 0,
+            dy: -5,
+            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
+            },   
           ],
         },
         {
@@ -107,31 +87,11 @@ export default {
             yTickFormat: yTickFormatter,
           },
           annotations: [
-            {
-              y: 0,
-              dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+           {
+            y: 0,
+            dy: -5,
+            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
+            },   
           ],
         },
         {
@@ -168,33 +128,13 @@ export default {
             strokeOpacity: 0.6,
             strokeWidth: 0.2,
             yTickFormat: yTickFormatter,
-          },
+          },        
           annotations: [
-            {
-              y: 0,
-              dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+           {
+            y: 0,
+            dy: -5,
+            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
+            },   
           ],
         },
         {
@@ -259,26 +199,6 @@ export default {
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
           ],
         },
         {
@@ -342,27 +262,7 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+            }
           ],
         },
         {
@@ -426,27 +326,7 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+            }
           ],
         },
         {
@@ -520,27 +400,7 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+            }
           ],
         },
         {
@@ -617,27 +477,7 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;'/> Collapse",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+            }
           ],
         },
         {
@@ -724,27 +564,11 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
+            }, 
+                  {
               x: "1991",
-              text: "End of apartheid",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
-            },
+              text: "End of apartheid/Asset bubble",
+            }
           ],
         },
         {
@@ -828,26 +652,6 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "End of apartheid/Asset bubble",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
-            {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2019",
-              text: "🦠 Covid",
-            },
-            {
-              x: "2022",
-              text: "🇷🇺 War",
             },
           ],
         },

@@ -9,10 +9,10 @@
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >World production
+      >World production 
     </a> is so high as it has never been before in history. Humanity has reached
     a level of efficiency that could feed the entire world. 💪 Then why are so many
-    people still living and dying in poverty? 😞
+    people still living and dying in poverty? 😞   
   </p>
   <p class="text-medium">
     Global inequality has always been very high, reflecting the persistence of a
@@ -25,8 +25,8 @@
     The data presented in this project are provided by the <a
       target="_blank"
       href="https://wid.world/"
-      >World inequality lab
-    </a> using the work of more than 100 researchers located on all continents. This
+      >World inequality lab 
+    </a> the using the work of more than 100 researchers located on all continents. This
     vast network collaborates with statistical institutions, tax authorities, universities,
     and international organizations, to harmonize international inequality data.
     Thanks to this systematic data on inequality at the global level and over the
@@ -34,11 +34,7 @@
   </p>
 </section>
 
-<div
-  style="margin-top: calc((-100vh + 500px)/2); margin-bottom: calc((-100vh + 500px)/2);"
->
-  <Scroller storyscript={multilinescript} layout="wide" />
-</div>
+<Scroller storyscript={multilinescript} layout="wide" />
 
 <section>
   <p class="text-medium">
@@ -64,11 +60,7 @@
   </p>
 </section>
 
-<div
-  style="margin-top: calc((-100vh + 500px)/2); margin-bottom: calc((-100vh + 500px)/2);"
->
-  <Scroller storyscript={differencescript} layout="wide" />
-</div>
+<Scroller storyscript={differencescript} layout="wide" />
 
 <section>
   <p class="text-medium">
@@ -88,12 +80,11 @@
 <style>
   
   section {
-    max-width: 50rem;
-    padding: 16px;
+    max-width: 60rem;
     margin: 50px auto;
   }
 
   section.wide {
-    max-width: 70rem;
+    max-width: 100rem;
   }
 </style>
