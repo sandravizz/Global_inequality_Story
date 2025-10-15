@@ -162,7 +162,7 @@
 
   .contentbackground {
     border-radius: 30px;
-    background-color: var(--color-background);
+    background-color: var(--color-background2);
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -176,15 +176,14 @@
   }
 
   .step .content h2 {
-    -webkit-text-fill-color: var(--color-background);
+    -webkit-text-fill-color: var(--color-background2);
     -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-width: 1.5px;
     line-height: 30px;
-    letter-spacing: 0.5px;
-    word-spacing: 5px;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
     font-size: var(--step-1);
-    font-family: "Syncopate";
-    text-transform: uppercase;
+    font-family: "Montserrat Alternates2", sans-serif;
   }
 
   @media screen and (max-width: 1400px) {

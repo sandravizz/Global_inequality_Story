@@ -6,20 +6,21 @@
 
 <section>
   <p class="text-medium">   
- <a target="_blank"
+  <a target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >  Humanity now produces more than ever before  
-    </a> <br>
+      >Humanity now produces more than ever before </a> <br>
     enough to feed and sustain the entire planet. <br>
     Yet millions still live and die in poverty. 
   </p>
- <p class="text-medium">      
+  <p class="text-medium">*</p>
+  <p class="text-medium">      
     If such abundance coexists with such deprivation, <br> 
     the problem cannot be production itself, <br>
     but the way its benefits are shared <br>
     a way that is far from equal.
-</p>
-  <p class="text-medium">
+ </p>
+ <p class="text-medium">*</p>
+ <p class="text-medium">
    Global inequality remains deeply entrenched, <br>
    reflecting a world economy that is profoundly hierarchical <br>
    And as frustration and anger grow in many societies <br> 
@@ -82,4 +83,5 @@
   section.wide {
     max-width: 100rem;
   }
+  
 </style>

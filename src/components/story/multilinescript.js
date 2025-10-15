@@ -68,7 +68,7 @@ export default {
       ],
       description: {
         title: `The Inequality Spectrum`,
-            text: "Let’s start with one simple number — the<span class='highlight'>Gini coefficient</span><br>It tells us how income is shared within a country or across the<span class='highlight' style='color:var(--color-global)'>world.</span><br>A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything.<br>You can imagine that extreme — one Musk holding all the<span class='highlight' style='color:var(--color-global)'>world’s</span>money.<br>This single number will guide us through more than four decades, from the 1980s to today.<br>The line may look simple, but it hides a lot of motion beneath it."
+            text: "Let’s start with one simple number the<span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the<span class='highlight' style='color:var(--color-global)'>world. 🌎</span> A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the<span class='highlight' style='color:var(--color-global)'>world’s 🌎</span>money. This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
       },
     },
     // --------------------------------------
@@ -92,6 +92,15 @@ export default {
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
+            {
+              x: "2022",
+              y: 0.77,
+              text: "The global Gini was<br/>0.71 in 2024",
+            },
           ],
         },
         {
@@ -107,7 +116,7 @@ export default {
       ],
       description: {
         title: `One flat line 🤔`,
-        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades.<br>At first glance, that looks like stasis — unequal then, unequal now.<br>But the stillness is deceptive: inequality within countries has grown while inequality between countries has fallen.<br>Even the 2008 crisis left only a small mark before the line steadied again.<br>This apparent flatness is not silence — it’s tension held in balance."
+        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis — unequal then, unequal now. But the stillness is deceptive: inequality within countries has grown while inequality between countries has fallen. Even the 2008 crisis left only a small mark before the line steadied again. This apparent flatness is not silence — it’s tension held in balance."
       },
     },
     // --------------------------------------
@@ -125,8 +134,8 @@ export default {
             d.country != "QF"),
           options: {
             stroke: "var(--color-global)",
-            strokeOpacity: 0.6,
-            strokeWidth: 0.2,
+            strokeOpacity: 0.8,
+            strokeWidth: 0.4,
             yTickFormat: yTickFormatter,
           },        
          annotations: [
@@ -171,7 +180,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,
-        text: "Although the average offers a concise summary, it causes us to lose detailed information and may even lead to misinterpretation. Examining all countries collectively reveals a wider range in the Gini coefficient, prompting the question: why do some countries exhibit lower inequality than others? 🧐 <br> One<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>trend evident in this chart is the reduction in the gap between countries, indicating that the differences among countries were larger in the 1980s than they are today in the 2020s.",
+        text: "Although the average offers a concise summary, it causes us to lose detailed information and may even lead to misinterpretation. Examining all countries collectively reveals a wider range in the Gini coefficient, prompting the question: why do some countries exhibit lower inequality than others? 🧐 One<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>trend evident in this chart is the reduction in the gap between countries, indicating that the differences among countries were larger in the 1980s than they are today in the 2020s.",
       },
     },
     // --------------------------------------
@@ -198,6 +207,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "1991",
+              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' /> Collapse",
             },
           ],
         },
@@ -234,7 +247,7 @@ export default {
         },
       ],
       description: {
-        title: `Europe most equal continent 🥳`,
+        title: `Europe most equal 🥳`,
         text: "The region with the lowest inequality level, far below the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially in the early 90s a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
@@ -262,6 +275,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2020",
+              text: "🦠 Covid",
             },
           ],
         },
@@ -327,6 +344,10 @@ export default {
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
+            {
+              x: "2020",
+              text: "🦠 Covid",
+            },
           ],
         },
         {
@@ -372,7 +393,7 @@ export default {
         },
       ],
       description: {
-        title: `The United States of rising Inequality`,
+        title: `The United States of Inequality`,
         text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>was similar to<span class ='highlight' style=color:var(--color-europe)>European</span>standards in the 80s. Over the last four decades the US has become steadily more unequal, currently reached the highest level.",
       },
     },
@@ -400,6 +421,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+                    {
+              x: "2020",
+              text: "🦠 Covid",
             },
           ],
         },
@@ -565,9 +590,9 @@ export default {
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             }, 
-                  {
+            {
               x: "1991",
-              text: "End of apartheid/Asset bubble",
+              text: "End of apartheid",
             }
           ],
         },
