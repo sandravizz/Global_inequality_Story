@@ -47,12 +47,12 @@ export default {
             fill: "var(--color-global)",
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-           {
-            y: 0,
-            dy: -5,
-            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
-            },   
+        annotations: [
+            {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -86,12 +86,12 @@ export default {
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
-           {
-            y: 0,
-            dy: -5,
-            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
-            },   
+       annotations: [
+            {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -129,12 +129,12 @@ export default {
             strokeWidth: 0.2,
             yTickFormat: yTickFormatter,
           },        
-          annotations: [
-           {
-            y: 0,
-            dy: -5,
-            text: "<div style='display:flex; align-items: center'><span> - Complete Inequality</span></div>",
-            },   
+         annotations: [
+            {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -193,11 +193,11 @@ export default {
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
+         annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -257,12 +257,12 @@ export default {
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
+       annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            }
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -321,12 +321,12 @@ export default {
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
+         annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            }
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -395,12 +395,12 @@ export default {
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
+        annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            }
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -472,12 +472,12 @@ export default {
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
-          annotations: [
+         annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            }
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
           ],
         },
         {
@@ -563,7 +563,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             }, 
                   {
               x: "1991",
@@ -648,10 +648,10 @@ export default {
             yTickFormat: yTickFormatter,
           },
           annotations: [
-            {
+           {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> - Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },

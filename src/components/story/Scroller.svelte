@@ -62,7 +62,7 @@
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
-                  <h4>{step.description.title}</h4>
+                  <h2>{step.description.title}</h2>
                   {#if step.description.text}
                     <p class="text-medium">{@html step.description.text}</p>
                   {/if}
@@ -175,10 +175,10 @@
     z-index: 2;
   }
 
-  .step .content h4 {
+  .step .content h2 {
     -webkit-text-fill-color: var(--color-background);
     -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-width: 1px;
     line-height: 30px;
     letter-spacing: -1.2px;
     word-spacing: 4px;
@@ -188,31 +188,32 @@
   }
 
   @media screen and (max-width: 1400px) {
-    .step .content h4 {
+    .step .content h2 {
       font-size: var(--step-2);
     }
   }
 
   @media screen and (max-width: 780px) {
-    .step .content h4 {
+    .step .content h2
+     {
       font-size: var(--step-1);
     }
   }
 
   @media screen and (max-width: 600px) {
-    .step .content h4 {
+    .step .content h2 {
       font-size: var(--step-0);
     }
   }
 
   @media screen and (max-width: 480px) {
-    .step .content h4 {
+    .step .content h2 {
       font-size: var(--step--1);
     }
   }
 
   @media screen and (max-width: 380px) {
-    .step .content h4 {
+    .step .content h2 {
       font-size: var(--step--2);
     }
   }
