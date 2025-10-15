@@ -1,6 +1,6 @@
 # Global inequality
 
-An ambitious storytelling project analyzing global inequality using World Inequality Database data, built with D3.js and Svelte via Layer Cake.
+An [data storytelling project](https://www.sandraviz.com/inner-project-page/project-title-02) analyzing global inequality using World Inequality Database data, built with D3.js and Svelte via Layer Cake.
 
 ## Folder structure
 
