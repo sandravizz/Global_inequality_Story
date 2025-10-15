@@ -5,32 +5,27 @@
 </script>
 
 <section>
-  <p class="text-medium">
-    <a
-      target="_blank"
+  <p class="text-medium">   
+ <a target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >World production 
-    </a> is so high as it has never been before in history. Humanity has reached
-    a level of efficiency that could feed the entire world. 💪 Then why are so many
-    people still living and dying in poverty? 😞   
+      >  Humanity now produces more than ever before  
+    </a> <br>
+    enough to feed and sustain the entire planet. <br>
+    Yet millions still live and die in poverty. 
   </p>
+ <p class="text-medium">      
+    If such abundance coexists with such deprivation, <br> 
+    the problem cannot be production itself, <br>
+    but the way its benefits are shared <br>
+    a way that is far from equal.
+</p>
   <p class="text-medium">
-    Global inequality has always been very high, reflecting the persistence of a
-    world economic system that is extremely hierarchical both between countries
-    and within them. On the other hand, in more and more countries fascism is
-    again on the rise. Both might be related as in particular extreme inequality
-    leads to high level of frustration, fear, and anger. 😡
-  </p>
-  <p class="text-medium">
-    The data presented in this project are provided by the <a
-      target="_blank"
-      href="https://wid.world/"
-      >World inequality lab 
-    </a> the using the work of more than 100 researchers located on all continents. This
-    vast network collaborates with statistical institutions, tax authorities, universities,
-    and international organizations, to harmonize international inequality data.
-    Thanks to this systematic data on inequality at the global level and over the
-    last four decades trends can be made visual. 👀
+   Global inequality remains deeply entrenched, <br>
+   reflecting a world economy that is profoundly hierarchical <br>
+   And as frustration and anger grow in many societies <br> 
+   seen in the rise of extremist and authoritarian movements <br> 
+   one might ask <br> 
+   could this be fueled by such extreme inequality?
   </p>
 </section>
 

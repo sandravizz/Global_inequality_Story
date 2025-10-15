@@ -67,8 +67,8 @@ export default {
         },
       ],
       description: {
-        title: `Gini by country 1980 to 2024`,
-        text: "The most commonly used measurement for economic inequality is the Gini index, which varies from 0 = complete equality to 1 = complete inequality. What does complete inequality mean? Basically one person having it all, while the rest has nothing. In this line chart we look at the development over the last four decades on a country level, meaning each line represents a country.",
+        title: `The Inequality Spectrum`,
+            text: "Let’s start with one simple number — the<span class='highlight'>Gini coefficient</span><br>It tells us how income is shared within a country or across the<span class='highlight' style='color:var(--color-global)'>world.</span><br>A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything.<br>You can imagine that extreme — one Musk holding all the<span class='highlight' style='color:var(--color-global)'>world’s</span>money.<br>This single number will guide us through more than four decades, from the 1980s to today.<br>The line may look simple, but it hides a lot of motion beneath it."
       },
     },
     // --------------------------------------
@@ -107,7 +107,7 @@ export default {
       ],
       description: {
         title: `One flat line 🤔`,
-        text: "Looking at the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average (weighted) we see a line closer to 1 (inequality) and rather flat, meaning that there hasn’t been much change on this aggregated level. Someone might questioning if the world actually has become more unequal as commonly reported and contar that the world has been uneqaul since decades. Let’s have a deeper look into this by decomposing the world. 🤓",
+        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades.<br>At first glance, that looks like stasis — unequal then, unequal now.<br>But the stillness is deceptive: inequality within countries has grown while inequality between countries has fallen.<br>Even the 2008 crisis left only a small mark before the line steadied again.<br>This apparent flatness is not silence — it’s tension held in balance."
       },
     },
     // --------------------------------------
@@ -234,7 +234,7 @@ export default {
         },
       ],
       description: {
-        title: `Europe most equal 🥳`,
+        title: `Europe most equal continent 🥳`,
         text: "The region with the lowest inequality level, far below the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially in the early 90s a slight trend towards inequality, it is still the region with the lowest gini on average. ",
       },
     },
@@ -298,7 +298,7 @@ export default {
         },
       ],
       description: {
-        title: `All European countries low`,
+        title: `Even Among Equals`,
         text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world. 🌍",
       },
     },
@@ -372,7 +372,7 @@ export default {
         },
       ],
       description: {
-        title: `USA towards inequality`,
+        title: `The United States of rising Inequality`,
         text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>was similar to<span class ='highlight' style=color:var(--color-europe)>European</span>standards in the 80s. Over the last four decades the US has become steadily more unequal, currently reached the highest level.",
       },
     },
@@ -536,7 +536,7 @@ export default {
         },
       ],
       description: {
-        title: `Mexico with extrem inquality`,
+        title: `Mexico: The Unequal Neighbor`,
         text: "Available data suggest that<span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>did not experience a strong reduction in inequality over the 20th century. In fact, income inequality has been extreme throughout the past and present centuries. 😕",
       },
     },
@@ -624,7 +624,7 @@ export default {
         },
       ],
       description: {
-        title: `South Africa the most inequal`,
+        title: `South Africa’s Climb to the Top of Inequality`,
         text: "Even more unequal than <span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is<span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸.</span>While democratic rights were extended to the totality of the population after the end of apartheid in 1991, extreme economic inequalities have persisted and been exacerbated. 😔",
       },
     },
@@ -708,7 +708,7 @@ export default {
         },
       ],
       description: {
-        title: `vs. Japan, the most equal`,
+        title: `Japan: The Outlier of Equality`,
         text: "Even though Europe is the most equal region, its </span><span class ='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> which is the most equal country. The contrast to<span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸</span>is enorm.",
       },
     },

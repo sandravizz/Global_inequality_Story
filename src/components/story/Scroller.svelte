@@ -178,11 +178,11 @@
   .step .content h2 {
     -webkit-text-fill-color: var(--color-background);
     -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.2px;
     line-height: 30px;
-    letter-spacing: -1.2px;
-    word-spacing: 4px;
-    font-size: var(--step-2);
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    font-size: var(--step-1);
     font-family: "Syncopate";
     text-transform: uppercase;
   }
