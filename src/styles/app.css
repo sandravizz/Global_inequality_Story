@@ -38,7 +38,7 @@ a:focus {
 
 :root {
   --color-background:black;
-  --color-background2:#1E1E1E;
+  --color-background2:#00080A;
   --color-chart-axis: #b9d4d3;
   --color-global: #d5f2f2;
   --color-europe: #0CBFF5;
@@ -81,14 +81,14 @@ a:focus {
 /* Text versions */
 /*--------------------------------------*/
 
-/* .text-big {
+.text-big {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
   hyphens: auto;
-  font-size: var(--step-4);
+  font-size: var(--step-1);
   line-height: 1.15;
   text-align: left;
-} */
+}
 
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
@@ -101,7 +101,7 @@ a:focus {
 
 .text-small {
   font-family: "Montserrat Alternates2", sans-serif;
-  color: var(--color-global);
+  color: var(--color-chart-axis);
   font-size: var(--step--1);
   margin-bottom: 5px;
   line-height: 1.4;

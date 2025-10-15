@@ -9,7 +9,7 @@
   import Annotation from "$components/charts/Annotation.svelte";
 
   export let chart;
-  export let height = 500;
+  export let height = 800;
 
   let width;
   let data;
@@ -37,7 +37,7 @@
       {data}
       yDomain={[0, 1]}
       custom={{ annotations: annotations }}
-      padding={{ left: 24 }}
+      padding={{ left: 30 }}
     >
       <Svg>
         <Line {...options} />

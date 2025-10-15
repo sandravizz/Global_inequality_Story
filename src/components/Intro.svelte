@@ -72,7 +72,7 @@
     </h1>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
-  <div class="hint text-small">scroll down</div>
+  <!-- <div class="hint text-small">scroll down</div> -->
 </div>
 
 <style>

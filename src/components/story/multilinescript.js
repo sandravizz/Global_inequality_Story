@@ -51,7 +51,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -68,7 +68,7 @@ export default {
       ],
       description: {
         title: `The Inequality Spectrum`,
-            text: "Let’s start with one simple number the<span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the<span class='highlight' style='color:var(--color-global)'>world. 🌎</span> A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the<span class='highlight' style='color:var(--color-global)'>world’s 🌎</span>money. This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
+        text: "Let’s start with one simple number the<span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the world. A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the world’s money. This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
       },
     },
     // --------------------------------------
@@ -90,7 +90,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2008",
@@ -98,7 +98,7 @@ export default {
             },
             {
               x: "2022",
-              y: 0.77,
+              y: 0.74,
               text: "The global Gini was<br/>0.71 in 2024",
             },
           ],
@@ -142,7 +142,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -179,8 +179,8 @@ export default {
         },
       ],
       description: {
-        title: `Average can be misleading 🤯`,
-        text: "Although the average offers a concise summary, it causes us to lose detailed information and may even lead to misinterpretation. Examining all countries collectively reveals a wider range in the Gini coefficient, prompting the question: why do some countries exhibit lower inequality than others? 🧐 One<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>trend evident in this chart is the reduction in the gap between countries, indicating that the differences among countries were larger in the 1980s than they are today in the 2020s.",
+        title: `Average can be misleading 🤯`,  
+        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories.<br>In the 1980s, the gap between rich and poor nations was wide; since then, incomes have drawn closer.<br>This convergence helps the <span class='highlight' style='color:var(--color-global)'>global</span> average look flatter today.<br>Yet inside many countries, new divides deepened over time.<br>The <span class='highlight' style='color:var(--color-global)'>world</span> became more even across borders — but less equal within them."
       },
     },
     // --------------------------------------
@@ -206,11 +206,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "<img src='./assets/SovietUnion.png' style='display: inline-block; width: 1.2em;' /> Collapse",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -247,8 +243,8 @@ export default {
         },
       ],
       description: {
-        title: `Europe most equal 🥳`,
-        text: "The region with the lowest inequality level, far below the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>average is<span class ='highlight' style='color:var(--color-europe)'>Europe.</span>Even though we can identify especially in the early 90s a slight trend towards inequality, it is still the region with the lowest gini on average. ",
+        title: `Europe most equal continent 🥳`,
+        text: "<span class='highlight' style='color:var(--color-europe)'>Europe’s</span> line lies far below the <span class='highlight' style='color:var(--color-global)'>global</span> average.<br>For decades, social welfare and labor protections kept inequality comparatively low.<br>From the 1990s onward, the Gini edged up as markets opened and regulation softened.<br>The distance between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>world</span>narrowed — not because others became fairer, but because <span class='highlight' style='color:var(--color-europe)'>Europe</span> grew slightly less equal. Even the continent of equality shows small cracks beneath its calm surface. ⚖️" 
       },
     },
     // --------------------------------------
@@ -274,12 +270,8 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "2020",
-              text: "🦠 Covid",
-            },
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            }
           ],
         },
         {
@@ -316,7 +308,7 @@ export default {
       ],
       description: {
         title: `Even Among Equals`,
-        text: "When decomposing the<span class ='highlight' style='color:var(--color-europe)'>European</span>average on a country level, someone can observe the differences. Nevertheless are all countries in a the lower Gini level compared to the rest of the world. 🌍",
+        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, equality looks like a family resemblance — but not an identical twin.<br>Northern countries hold steady with lower Ginis; parts of the south and east rise gently over time.<br>Together they form a compact cluster, well below the <span class='highlight' style='color:var(--color-global)'>global</span> line.<br>Here, the Gini moves slowly — reminding us that equality is maintained, not won once. 🛠️"
       },
     },
     // --------------------------------------
@@ -342,12 +334,8 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "2020",
-              text: "🦠 Covid",
-            },
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            }
           ],
         },
         {
@@ -393,8 +381,8 @@ export default {
         },
       ],
       description: {
-        title: `The United States of Inequality`,
-        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>was similar to<span class ='highlight' style=color:var(--color-europe)>European</span>standards in the 80s. Over the last four decades the US has become steadily more unequal, currently reached the highest level.",
+        title: `The United States of rising Inequality 🇺🇸`,
+        text: "In the early 1980s, the <span class='highlight' style='color:var(--color-usa)'>United States</span> sat near <span class='highlight' style='color:var(--color-europe)'>Europe</span> on the Gini scale — lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the <span class='highlight' style='color:var(--color-usa)'>U.S.</span> sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
       },
     },
     // --------------------------------------

@@ -101,7 +101,7 @@
     flex-direction: column;
     width: calc(100% - 32px);
     position: relative;
-    margin: 0 16px;
+    margin: auto 16px;
   }
 
   .fullWidth .chart-container {
@@ -117,8 +117,8 @@
 
   .chartComponent {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     left: 0;
     right: 0;
   }
@@ -155,7 +155,7 @@
 
   .contentwrapper {
     position: relative;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     padding: 10px;
   }
@@ -163,6 +163,7 @@
   .contentbackground {
     border-radius: 30px;
     background-color: var(--color-background2);
+    opacity: 0.8;
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -182,7 +183,6 @@
     line-height: 30px;
     letter-spacing: 0.8px;
     word-spacing: 2px;
-    font-size: var(--step-1);
     font-family: "Montserrat Alternates2", sans-serif;
   }
 

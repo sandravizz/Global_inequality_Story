@@ -8,25 +8,19 @@
   <p class="text-medium">   
   <a target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >Humanity now produces more than ever before </a> <br>
-    enough to feed and sustain the entire planet. <br>
-    Yet millions still live and die in poverty. 
+      >Humanity now produces more than ever before </a> enough to feed and sustain the entire planet. 
+      Yet millions still live and die in poverty. 
   </p>
-  <p class="text-medium">*</p>
   <p class="text-medium">      
-    If such abundance coexists with such deprivation, <br> 
-    the problem cannot be production itself, <br>
-    but the way its benefits are shared <br>
-    a way that is far from equal.
+    If such abundance coexists with such deprivation, the problem cannot be production itself, <br>
+    but the way its benefits are shared a way that is far from equal.
  </p>
- <p class="text-medium">*</p>
  <p class="text-medium">
-   Global inequality remains deeply entrenched, <br>
-   reflecting a world economy that is profoundly hierarchical <br>
-   And as frustration and anger grow in many societies <br> 
-   seen in the rise of extremist and authoritarian movements <br> 
-   one might ask <br> 
-   could this be fueled by such extreme inequality?
+   Global inequality remains deeply entrenched, 
+   reflecting a world economy that is profoundly hierarchical 
+   And as frustration and anger grow in many societies  
+   seen in the rise of extremist and authoritarian movements 
+   one might ask - could this be fueled by such extreme inequality?
   </p>
 </section>
 
