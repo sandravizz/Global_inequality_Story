@@ -6,13 +6,12 @@
 
 <section>
   <p class="text-medium">   
-  <a target="_blank"
-      href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >Humanity now produces more than ever before </a> enough to feed and sustain the entire planet. 
-      Yet millions still live and die in poverty. 
+  <a target="_blank" href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
+   >Humanity now produces more than ever before </a> enough to feed and sustain the entire planet. 
+    Yet millions still live and die in poverty. 
   </p>
   <p class="text-medium">      
-    If such abundance coexists with such deprivation, the problem cannot be production itself, <br>
+    If such abundance coexists with such deprivation, the problem cannot be production itself,
     but the way its benefits are shared a way that is far from equal.
  </p>
  <p class="text-medium">

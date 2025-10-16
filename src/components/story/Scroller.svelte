@@ -188,7 +188,7 @@
 
   @media screen and (max-width: 1400px) {
     .step .content h2 {
-      font-size: var(--step-2);
+      font-size: 30px;
     }
   }
 

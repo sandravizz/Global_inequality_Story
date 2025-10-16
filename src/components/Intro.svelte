@@ -72,7 +72,6 @@
     </h1>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
-  <!-- <div class="hint text-small">scroll down</div> -->
 </div>
 
 <style>
@@ -123,19 +122,7 @@
     padding: 0;
     opacity: 0.9;
     font-family: "Syncopate";
-    font-size: var(--step-7);
-  }
-
-  .hint {
-    z-index: 100;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    /* transform: translateX(-50%); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 1;
+    font-size: 100px;
   }
 
   /*--------------------------------------*/
@@ -144,16 +131,24 @@
 
   @media screen and (max-width: 1800px) {
     .title {
-      font-size: var(--step-6);
+      font-size: 100px;
       -webkit-text-stroke-width: 2px;
       letter-spacing: -1.2px;
       word-spacing: 20px;
     }
   }
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 1400px) {
     .title {
-      font-size: var(--step-4);
+      font-size: 70px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
+    }
+  }
+
+    @media screen and (max-width: 1000px) {
+    .title {
+      font-size: 50px;
       -webkit-text-stroke-width: 1.9px;
       word-spacing: 20px;
     }
@@ -161,7 +156,7 @@
 
   @media screen and (max-width: 600px) {
     .title {
-      font-size: var(--step-3);
+      font-size: 50px;
       -webkit-text-stroke-width: 1.4px;
       word-spacing: 15px;
     }
@@ -169,7 +164,7 @@
 
   @media screen and (max-width: 480px) {
     .title {
-      font-size: var(--step-2);
+     font-size: 50px;
       -webkit-text-stroke-width: 1.1px;
       word-spacing: 15px;
     }
@@ -177,7 +172,7 @@
 
   @media screen and (max-width: 380px) {
     .title {
-      font-size: var(--step-1);
+      font-size: 30px;
       -webkit-text-stroke-width: 0.9px;
       word-spacing: 10px;
     }

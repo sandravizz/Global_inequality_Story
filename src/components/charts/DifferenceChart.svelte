@@ -10,7 +10,7 @@
   import ClipPath from "$components/charts/ClipPath.svelte";
 
   export let chart;
-  export let height = 500;
+  export let height = 800;
 
   let width;
   let key;

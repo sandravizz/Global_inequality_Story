@@ -47,11 +47,11 @@ export default {
             fill: "var(--color-global)",
             yTickFormat: yTickFormatter,
           },
-        annotations: [
+          annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'><span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -86,11 +86,11 @@ export default {
             strokeWidth: 0,
             yTickFormat: yTickFormatter,
           },
-       annotations: [
+          annotations: [
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'><span> = Complete Inequality</span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2008",
@@ -99,7 +99,7 @@ export default {
             {
               x: "2022",
               y: 0.74,
-              text: "The global Gini was<br/>0.71 in 2024",
+              text: "The global Gini was<br/>0.67 in 2023",
             },
           ],
         },
@@ -180,7 +180,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,  
-        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories.<br>In the 1980s, the gap between rich and poor nations was wide; since then, incomes have drawn closer.<br>This convergence helps the <span class='highlight' style='color:var(--color-global)'>global</span> average look flatter today.<br>Yet inside many countries, new divides deepened over time.<br>The <span class='highlight' style='color:var(--color-global)'>world</span> became more even across borders — but less equal within them."
+        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s, the gap between rich and poor nations was wide; since then, incomes have drawn closer. This convergence helps the <span class='highlight' style='color:var(--color-global)'>global</span> average look flatter today. Yet inside many countries, new divides deepened over time.The <span class='highlight' style='color:var(--color-global)'>world</span> became more even across borders — but less equal within them."
       },
     },
     // --------------------------------------
@@ -244,7 +244,7 @@ export default {
       ],
       description: {
         title: `Europe most equal continent 🥳`,
-        text: "<span class='highlight' style='color:var(--color-europe)'>Europe’s</span> line lies far below the <span class='highlight' style='color:var(--color-global)'>global</span> average.<br>For decades, social welfare and labor protections kept inequality comparatively low.<br>From the 1990s onward, the Gini edged up as markets opened and regulation softened.<br>The distance between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>world</span>narrowed — not because others became fairer, but because <span class='highlight' style='color:var(--color-europe)'>Europe</span> grew slightly less equal. Even the continent of equality shows small cracks beneath its calm surface. ⚖️" 
+        text: "<span class='highlight' style='color:var(--color-europe)'>Europe’s</span> line lies far below the <span class='highlight' style='color:var(--color-global)'>global</span> average. For decades, social welfare and labor protections kept inequality comparatively low.From the 1990s onward, the Gini edged up as markets opened and regulation softened.The distance between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>world</span>narrowed — not because others became fairer, but because <span class='highlight' style='color:var(--color-europe)'>Europe</span> grew slightly less equal. Even the continent of equality shows small cracks beneath its calm surface. ⚖️" 
       },
     },
     // --------------------------------------
@@ -262,8 +262,8 @@ export default {
             d.country != "QF"),
           options: {
             stroke: "var(--color-global)",
-            strokeOpacity: 0.4,
-            strokeWidth: 0.3,
+            strokeOpacity: 0.6,
+            strokeWidth: 0.4,
             yTickFormat: yTickFormatter,
           },
        annotations: [
@@ -308,7 +308,7 @@ export default {
       ],
       description: {
         title: `Even Among Equals`,
-        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, equality looks like a family resemblance — but not an identical twin.<br>Northern countries hold steady with lower Ginis; parts of the south and east rise gently over time.<br>Together they form a compact cluster, well below the <span class='highlight' style='color:var(--color-global)'>global</span> line.<br>Here, the Gini moves slowly — reminding us that equality is maintained, not won once. 🛠️"
+        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, equality looks like a family resemblance — but not an identical twin. Northern countries hold steady with lower Ginis - parts of the south and east rise gently over time. Together they form a compact cluster, well below the <span class='highlight' style='color:var(--color-global)'>global</span> line. Here, the Gini moves slowly — reminding us that equality is maintained, not won once."
       },
     },
     // --------------------------------------
@@ -381,8 +381,8 @@ export default {
         },
       ],
       description: {
-        title: `The United States of rising Inequality 🇺🇸`,
-        text: "In the early 1980s, the <span class='highlight' style='color:var(--color-usa)'>United States</span> sat near <span class='highlight' style='color:var(--color-europe)'>Europe</span> on the Gini scale — lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the <span class='highlight' style='color:var(--color-usa)'>U.S.</span> sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
+        title: `The United States of rising Inequality`,
+        text: "In the early 1980s, the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> sat near <span class='highlight' style='color:var(--color-europe)'>Europe</span> on the Gini scale — lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the <span class='highlight' style='color:var(--color-usa)'>U.S. 🇺🇸</span> sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
       },
     },
     // --------------------------------------
@@ -408,7 +408,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
                     {
               x: "2020",
@@ -462,8 +462,8 @@ export default {
         },
       ],
       description: {
-        title: `USA vs. Central/South America`,
-        text: "The<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>is today rather similar to inequality levels observed in<span class ='highlight' style='color:var(--color-south-america)'>Central and South America,</span>which is one the most unequal regions.",
+        title: `South America’s Uneven Paths`,
+        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span>, Gini lines have long stood high. In the 2000s, social programs and wage reforms bent some of those lines downward — small but meaningful progress.Momentum later slowed, and the region remains one of inequality’s strongholds.The pattern softened, but it did not break."
       },
     },
     // --------------------------------------
@@ -489,7 +489,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -549,8 +549,8 @@ export default {
         },
       ],
       description: {
-        title: `Mexico: The Unequal Neighbor`,
-        text: "Available data suggest that<span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>did not experience a strong reduction in inequality over the 20th century. In fact, income inequality has been extreme throughout the past and present centuries. 😕",
+        title: `The unequal neighbor Mexico 🇲🇽`,
+        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico’s 🇲🇽</span> Gini line swings with time. It rose during reforms and trade liberalization in the 1990s, then eased somewhat in the 2000s. Recently, it stabilized — still high, but less extreme than before. In the neighborhood of the <span class='highlight' style='color:var(--color-usa)'>U.S.</span>, it remains a study in contrasts."
       },
     },
     // --------------------------------------
@@ -576,7 +576,7 @@ export default {
             {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             }, 
             {
               x: "1991",
@@ -637,8 +637,8 @@ export default {
         },
       ],
       description: {
-        title: `South Africa’s Climb to the Top of Inequality`,
-        text: "Even more unequal than <span class ='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is<span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸.</span>While democratic rights were extended to the totality of the population after the end of apartheid in 1991, extreme economic inequalities have persisted and been exacerbated. 😔",
+        title: `The peak of inequality`,
+        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa’s 🇸🇸</span> line rises steeply, among the highest on Earth. In the 1980s it was already immense; after apartheid, it climbed even higher. Political change reshaped institutions, but the Gini stayed extreme. Freedom alone couldn’t flatten the line."
       },
     },
     // --------------------------------------
@@ -664,7 +664,7 @@ export default {
            {
               y: 0,
               dy: -5,
-              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality ~ </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -722,7 +722,91 @@ export default {
       ],
       description: {
         title: `Japan: The Outlier of Equality`,
-        text: "Even though Europe is the most equal region, its </span><span class ='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> which is the most equal country. The contrast to<span class ='highlight' style='color:var(--color-africa)'>South Africa 🇸🇸</span>is enorm.",
+        text: "<span class='highlight' style='color:var(--color-asia)'>Japan’s 🇯🇵</span> Gini barely changes, from the 1980s to today. It remains low and steady.Broad middle incomes and cohesive labor structures kept inequality in check.While others rose and fell, <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> held its line."
+      },
+    },
+    // --------------------------------------
+    // 11. South Africa vs. Japan to global
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter(d => d.country != "QB" &&
+            d.country != "QA" &&
+            d.country != "QD" &&
+            d.country != "QC" &&
+            d.country != "QF"),
+          options: {
+            stroke: "var(--color-global)",
+            strokeOpacity: 0,
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+           {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+          ],
+        },
+        {
+          key: "country",
+          componentIndex: 1,
+          data: renderData.filter((d) => ["QE"].includes(d.country)),
+          options: {
+            stroke: "var(--color-europe)",
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 2,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "var(--color-global)",
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 3,
+          data: renderData,
+          options: {
+            stroke: "var(--color-africa)",
+            strokeWidth: 0,
+            strokeOpacity: 1,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 4,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "var(--color-global)",
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 5,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "var(--color-global)",
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+        },
+      ],
+      description: {
+        title: `The flat line revisited 🔄`,
+        text: "Seen up close, the flat <span class='highlight' style='color:var(--color-global)'>global</span> line is no longer a mystery.Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves. 🌍"
       },
     },
   ],
