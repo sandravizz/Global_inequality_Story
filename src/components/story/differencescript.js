@@ -96,7 +96,8 @@ export default {
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>10 richest %. The lower line represents the income share of the<span class ='highlight' style='color:var(--color-global)'>global 🌎</span>poorest 50%. The global bottom 50% income share remains historically low despite growth in the emerging world in the past decades.",
+        text: "The upper line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> richest 10%. The lower line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low — underscoring how much of the world’s income continues to concentrate at the top."
+
       },
     },
     // --------------------------------------
@@ -139,7 +140,8 @@ export default {
       ],
       description: {
         title: `Smallest gap in Europe`,
-        text: "In<span class ='highlight' style='color:var(--color-europe)'>Europe</span>deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share",
+text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span>, the movements shown refer to <em>income inequality</em> (Gini and income shares), not wealth. For details, see <a href='https://www.eurofound.europa.eu/en/publications/all/developments-income-inequality-and-middle-class-eu' target='_blank'>Eurofound</a>, the <a href='https://wid.world/document/inequality-trends-in-europe-world-inequality-lab-issue-brief-2022-04/' target='_blank'>World Inequality Lab</a>, <a href='https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe' target='_blank'>CEPR/VoxEU</a>, and <a href='https://www.intereconomics.eu/contents/year/2016/number/2/article/income-inequality-in-europe-since-the-crisis.html' target='_blank'>Intereconomics</a>."
+ 
       },
     },
     // --------------------------------------

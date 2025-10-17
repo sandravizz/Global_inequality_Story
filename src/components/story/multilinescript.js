@@ -116,7 +116,8 @@ export default {
       ],
       description: {
         title: `One flat line 🤔`,
-        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis — unequal then, unequal now. But the stillness is deceptive: inequality within countries has grown while inequality between countries has fallen. Even the 2008 crisis left only a small mark before the line steadied again. This apparent flatness is not silence — it’s tension held in balance."
+        text: "Looking at the <span class='highlight' style='color:var(--color-global)'>global</span> average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis — unequal then, unequal now. But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what’s happening underneath? Even the 2008 financial crisis left only a small mark before the line steadied again."
+ 
       },
     },
     // --------------------------------------
@@ -180,7 +181,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,  
-        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s, the gap between rich and poor nations was wide; since then, incomes have drawn closer. This convergence helps the <span class='highlight' style='color:var(--color-global)'>global</span> average look flatter today. Yet inside many countries, new divides deepened over time.The <span class='highlight' style='color:var(--color-global)'>world</span> became more even across borders — but less equal within them."
+        text: "Break apart that smooth <span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s, the gap between equal and unequal nations was wide. Since then, their distances have narrowed. Nevertheless, even with a smaller gap today, the variance between countries remains enormous — and a single average, condensed into one number, misses much of the real picture. To understand what shapes it, let’s look at countries, regions, and the patterns that emerge between them."
       },
     },
     // --------------------------------------
@@ -244,7 +245,7 @@ export default {
       ],
       description: {
         title: `Europe most equal continent 🥳`,
-        text: "<span class='highlight' style='color:var(--color-europe)'>Europe’s</span> line lies far below the <span class='highlight' style='color:var(--color-global)'>global</span> average. For decades, social welfare and labor protections kept inequality comparatively low.From the 1990s onward, the Gini edged up as markets opened and regulation softened.The distance between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>world</span>narrowed — not because others became fairer, but because <span class='highlight' style='color:var(--color-europe)'>Europe</span> grew slightly less equal. Even the continent of equality shows small cracks beneath its calm surface. ⚖️" 
+        text: "<span class='highlight' style='color:var(--color-europe)'>Europe’s</span> Gini represents a more economically equal continent than the <span class='highlight' style='color:var(--color-global)'>global</span> average. For decades, social welfare systems and labor protections maintained this balance. From the 1990s onward, the Gini coefficient increased gradually as markets liberalized and regulations eased. The distance between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the world narrowed — not because other regions became more equal, but because <span class='highlight' style='color:var(--color-europe)'>Europe’s</span> disparities widened slightly." 
       },
     },
     // --------------------------------------
@@ -308,7 +309,7 @@ export default {
       ],
       description: {
         title: `Even Among Equals`,
-        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, equality looks like a family resemblance — but not an identical twin. Northern countries hold steady with lower Ginis - parts of the south and east rise gently over time. Together they form a compact cluster, well below the <span class='highlight' style='color:var(--color-global)'>global</span> line. Here, the Gini moves slowly — reminding us that equality is maintained, not won once."
+        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality patterns are similar but not uniform. Northern countries remain stable at lower Gini levels; parts of the south and east increase gradually. Together they form a compact cluster, below the <span class='highlight' style='color:var(--color-global)'>global</span> line. Changes are gradual, indicating that equality is maintained rather than settled once."
       },
     },
     // --------------------------------------
@@ -463,7 +464,7 @@ export default {
       ],
       description: {
         title: `South America’s Uneven Paths`,
-        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span>, Gini lines have long stood high. In the 2000s, social programs and wage reforms bent some of those lines downward — small but meaningful progress.Momentum later slowed, and the region remains one of inequality’s strongholds.The pattern softened, but it did not break."
+        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span>, Gini values have remained high. In the 2000s, social programs and wage reforms lowered inequality in some countries, but momentum later slowed. During the COVID-19 pandemic, inequality rose sharply as jobs and informal work were disrupted — a pattern confirmed by regional reports from the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>Inter-American Development Bank (IDB)</a> and the <a href='https://openknowledge.worldbank.org/entities/publication/07362ed8-ea20-5b1c-b32b-8a6e923efdc5' target='_blank'>World Bank</a>. Fiscal measures softened the impact, yet the Gini still increased. In contrast, the <span class='highlight' style='color:var(--color-usa)'>United States</span> showed a milder or briefly reversed effect, reflecting stronger policy buffers."
       },
     },
     // --------------------------------------
@@ -550,7 +551,8 @@ export default {
       ],
       description: {
         title: `The unequal neighbor Mexico 🇲🇽`,
-        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico’s 🇲🇽</span> Gini line swings with time. It rose during reforms and trade liberalization in the 1990s, then eased somewhat in the 2000s. Recently, it stabilized — still high, but less extreme than before. In the neighborhood of the <span class='highlight' style='color:var(--color-usa)'>U.S.</span>, it remains a study in contrasts."
+        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico</span> remains one of the most unequal countries in the world. Its Gini rose during economic reforms and trade liberalization in the 1990s, then eased in the 2000s and stabilized at a high level. During the COVID-19 pandemic, inequality first increased as urban and informal workers lost income, then declined sharply and has stayed lower since. Research by <a href='https://www.scielo.org.mx/scielo.php?pid=S0186-72022021000100007&script=sci_arttext' target='_blank'>Lustig</a> and the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>IADB</a> links this shift to labor market recovery and wage growth among lower-income workers. Next to the <span class='highlight' style='color:var(--color-usa)'>United States</span>, the contrast remains clear — two connected economies shaped by very different social protections and post-crisis recoveries."
+
       },
     },
     // --------------------------------------
