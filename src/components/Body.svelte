@@ -16,8 +16,8 @@
  </p>
  <p class="text-medium">
    Global inequality remains deeply entrenched, 
-   reflecting a world economy that is profoundly hierarchical 
-   And as frustration and anger grow in many societies  
+   reflecting a world economy that is profoundly hierarchical.  
+   As frustration and anger grow in many societies  
    seen in the rise of extremist and authoritarian movements 
    one might ask - could this be fueled by such extreme inequality?
   </p>
@@ -71,10 +71,6 @@
   section {
     max-width: 60rem;
     margin: 50px auto;
-  }
-
-  section.wide {
-    max-width: 100rem;
   }
   
 </style>

@@ -118,7 +118,7 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.41",
+              y: "0.40",
               dy: 0,
               dx: 0,
               text: "<span style='color: var(--color-europe)'>37% in 2023</span>",
@@ -140,8 +140,7 @@ export default {
       ],
       description: {
         title: `Smallest gap in Europe`,
-text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span>, the movements shown refer to <em>income inequality</em> (Gini and income shares), not wealth. For details, see <a href='https://www.eurofound.europa.eu/en/publications/all/developments-income-inequality-and-middle-class-eu' target='_blank'>Eurofound</a>, the <a href='https://wid.world/document/inequality-trends-in-europe-world-inequality-lab-issue-brief-2022-04/' target='_blank'>World Inequality Lab</a>, <a href='https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe' target='_blank'>CEPR/VoxEU</a>, and <a href='https://www.intereconomics.eu/contents/year/2016/number/2/article/income-inequality-in-europe-since-the-crisis.html' target='_blank'>Intereconomics</a>."
- 
+        text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span>, the gap between the richest 10% and the poorest 50% was exceptionally small in the 1980s. From the early 1990s onward, the distance between the two began to widen, driven mainly by a decline in the income share of the lower half. A brief reversal appears around the 2008 financial crisis, when top incomes fell slightly and the lower half recovered modestly. Since then, both lines have stabilized, yet the overall gap remains wider than it once was — though still smaller than the <span class='highlight' style='color:var(--color-global)'>global</span> average."
       },
     },
     // --------------------------------------
@@ -162,7 +161,7 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
           annotations: [
             {
               x: "2023",
-              y: "0.37",
+              y: "0.36",
               dy: 0,
               dx: 0,
               text: "<span style='color: var(--color-europe)'>31% in 2023</span>",
@@ -178,17 +177,18 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
               y: 0,
               dy: 0,
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> - 🇸🇪 Income</span>",
-            },      
-            {
+            },  
+           {
               x: "2020",
               text: "🦠 Covid",
-            },
+            },        
           ],
         },
       ],
       description: {
         title: `Sweden had a reverse ratio`,
-        text: "While inequalities have risen in Europe since the 1980s.<span class ='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>is one of the least unequal countries in terms of income in Europe and the world, with the top 10% of the population earning just over 30% of total national income and the bottom 50% earning almost 24% of national income. ",
+        text: "While inequalities have risen in Europe since the 1980s, <span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span> remains one of the most equal countries in the <span class='highlight' style='color:var(--color-global)'>world</span>. The top 10% of the population earn just over 30% of total national income, while the bottom 50% receive around 24%. During the COVID-19 pandemic, inequality briefly increased as low-income employment declined, but strong welfare support and recovery measures quickly reversed this effect — returning income shares to pre-pandemic levels."
+
       },
     },
     // --------------------------------------
@@ -209,7 +209,7 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
           annotations: [
             {
               x: "2023",
-              y: "0.51",
+              y: "0.5",
               dy: 0,
               dx: 0,
               text: "<span style='color: var(--color-usa)'>47% in 2023</span>",
@@ -227,19 +227,23 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> - 🇺🇸 Income</span>",
             },
             {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
+              x: "2020",
+              text: "🦠 Covid",
+            },  
             {
               x: "2008",
               text: "💰 Financial crisis",
+            },
+            {
+              x: "2001",
+              text: "🌐 Dot.com",
             },
           ],
         },
       ],
       description: {
         title: `USA with historical highs`,
-        text: "Income inequality in the<span class ='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>is among the highest among, as seen in the chart before. The top 10% earns on average 17 times more than the bottom 50%, which is significantly higher than in Europe. From the early 1980s onward, deregulation, privatizations, decreases in tax progressivity and a decline in union coverage all contributed to a formidable rise in the top 10% income share.",
+        text: "Now let’s compare to the<span class='highlight' style='color:var(--color-usa)'>US 🇺🇸</span>the gap is clear when set against<span class='highlight' style='color:var(--color-europe)'>Sweden</span>The top 10% earn on average 17 times more than the bottom 50%. Since the early 1980s, deregulation, privatization, lower tax progressivity, and declining union coverage have contributed to a steady rise in the top 10% income share. During the COVID-19 pandemic, the income of the richest 10% continued to rise, while the recovery for lower-income groups lagged. Unlike in<span class='highlight' style='color:var(--color-europe)'>Sweden</span>where inequality fell after the initial shock, the post-pandemic increase in top incomes in the<span class='highlight' style='color:var(--color-usa)'>US 🇺🇸</span>persisted — reinforcing the long-term trend of widening inequality."
       },
     },
     // --------------------------------------
@@ -281,6 +285,10 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
               text: "<div style='transform: translateY(0%); display:flex; align-items: center'> <span> - 🇲🇽 Income</span>",
             },
             {
+              x: "2020",
+              text: "🦠 Covid",
+            },  
+            {
               x: "2008",
               text: "💰 Financial crisis",
             },
@@ -289,8 +297,8 @@ text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span
       ],
       description: {
         title: `Mexico 🇲🇽`,
-        text: "Huge cap, meaning the rich earn a lot the poorer half nothing, but last years postive development gap becoming smaller.",
-      },
+        text: "In<span class='highlight' style='color:var(--color-south-america)'>Mexico</span>inequality has long been among the highest in the <span class='highlight' style='color:var(--color-global)'>world</span>. Yet during COVID-19,<span class='highlight' style='color:var(--color-south-america)'>Mexico</span>broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong> — one of the few clear declines among major economies. As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes,<span class='highlight' style='color:var(--color-south-america)'> Mexico</span>is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom. The gap remains large, but this turn marks a rare departure from the region’s norm."
+      }
     },
     // --------------------------------------
     // 6. South Africa
