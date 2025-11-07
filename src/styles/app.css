@@ -37,15 +37,15 @@ a:focus {
 /*--------------------------------------*/
 
 :root {
-  --color-background:black;
-  --color-background2:#00080A;
+  --color-background: black;
+  --color-background2: #00080a;
   --color-chart-axis: #b9d4d3;
   --color-global: #d5f2f2;
-  --color-europe: #0CBFF5;
-  --color-usa: #CFFF04;
+  --color-europe: #0cbff5;
+  --color-usa: #cfff04;
   --color-asia: #ff9130;
   --color-south-america: #ff00c4;
-  --color-africa: #99F75E;
+  --color-africa: #99f75e;
   --color-link-hover: #4c8ffe;
 }
 
@@ -57,7 +57,7 @@ a:focus {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
   hyphens: auto;
-  font-size: 30px;
+  font-size: 48px;
   line-height: 1.15;
   text-align: left;
 }
@@ -65,7 +65,7 @@ a:focus {
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.6;
   hyphens: auto;
   text-align: left;
@@ -90,7 +90,7 @@ a:focus {
     position: absolute;
     top: -24px;
     left: 0;
-    content: ' ';
+    content: " ";
     display: block;
     background-color: white;
     width: 120px;
@@ -109,83 +109,51 @@ a:focus {
 /* Screen stylings */
 /*--------------------------------------*/
 
-/*1400*/
+/* Tablet landscape / Small laptop (< 1024px) */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
   .text-big {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .text-medium {
+    font-size: 20px;
+  }
+
+  .text-small {
+    font-size: 14px;
+  }
+}
+
+/* Tablet (< 768px) */
+
+@media screen and (max-width: 768px) {
+  .text-big {
     font-size: 28px;
   }
 
-  .text-small {
+  .text-medium {
     font-size: 18px;
   }
-}
-
-/*780*/
-
-@media screen and (max-width: 780px) {
-  .text-big {
-    font-size: var(--step-0);
-  }
-
-  .text-medium {
-    font-size: var(--step-1);
-  }
 
   .text-small {
-    font-size: var(--step-0);
+    font-size: 14px;
   }
 }
 
-/*600*/
-
-@media screen and (max-width: 600px) {
-  .text-big {
-    font-size: var(--step-0);
-  }
-
-  .text-medium {
-    font-size: 30px;
-  }
-
-  .text-small {
-    font-size: 100px;
-  }
-}
-
-/* < 480 */
+/* Mobile (< 480px) */
 
 @media screen and (max-width: 480px) {
   .text-big {
-    font-size: var(--step-0);
+    font-size: 24px;
   }
 
   .text-medium {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .text-small {
-    font-size: 50px;
-  }
-}
-
-/* < 380 */
-
-@media screen and (max-width: 380px) {
-  .text-big {
-    font-size: var(--step--1);
-  }
-
-  .text-medium {
-    font-size: 30px;
-  }
-
-  .text-small {
-    font-size: 50px;
+    font-size: 12px;
   }
 }
 
@@ -200,10 +168,4 @@ a:focus {
   --z-overlay: 1000;
   --border-radius: 2px;
   --1s: 1ms;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  :root {
-    --1s: 1s;
-  }
 }

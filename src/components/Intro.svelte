@@ -129,15 +129,6 @@
   /* Screen stylings */
   /*--------------------------------------*/
 
-  @media screen and (max-width: 1800px) {
-    .title {
-      font-size: 100px;
-      -webkit-text-stroke-width: 2px;
-      letter-spacing: -1.2px;
-      word-spacing: 20px;
-    }
-  }
-
   @media screen and (max-width: 1400px) {
     .title {
       font-size: 70px;
@@ -146,35 +137,19 @@
     }
   }
 
-    @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 780px) {
     .title {
       font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 20px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.4px;
+      -webkit-text-stroke-width: 1.5px;
       word-spacing: 15px;
     }
   }
 
   @media screen and (max-width: 480px) {
     .title {
-     font-size: 50px;
-      -webkit-text-stroke-width: 1.1px;
-      word-spacing: 15px;
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    .title {
-      font-size: 30px;
-      -webkit-text-stroke-width: 0.9px;
-      word-spacing: 10px;
+      font-size: 35px;
+      -webkit-text-stroke-width: 1px;
+      word-spacing: 12px;
     }
   }
 </style>

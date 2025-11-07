@@ -117,10 +117,13 @@
 
   .chartComponent {
     position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
   }
 
   .step {
@@ -193,27 +196,25 @@
   }
 
   @media screen and (max-width: 780px) {
-    .step .content h2
-     {
-      font-size: var(--step-1);
-    }
-  }
-
-  @media screen and (max-width: 600px) {
     .step .content h2 {
-      font-size: var(--step-0);
+      font-size: 28px;
     }
   }
 
   @media screen and (max-width: 480px) {
     .step .content h2 {
-      font-size: var(--step--1);
+      font-size: 22px;
     }
   }
 
-  @media screen and (max-width: 380px) {
-    .step .content h2 {
-      font-size: var(--step--2);
+  /* Mobile landscape - increase spacing between steps */
+  @media (max-height: 600px) and (orientation: landscape) {
+    .step {
+      margin-bottom: 100vh;
+    }
+
+    .step:last-of-type {
+      height: 180vh;
     }
   }
 
