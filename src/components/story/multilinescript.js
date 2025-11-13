@@ -123,7 +123,7 @@ export default {
       },
     },
     // --------------------------------------
-    //3. Global average all countries
+    // 3. Global average all countries
     // --------------------------------------
     {
       charts: [

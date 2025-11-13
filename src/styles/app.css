@@ -37,8 +37,8 @@ a:focus {
 /*--------------------------------------*/
 
 :root {
-  --color-background: #010505; 
-  --color-background2: #062326;
+  --color-background: #020B0C; 
+  --color-background2: #051F22;
   --color-chart-axis: #d7dcf0;
   --color-global: #eef0fd;
   --color-europe: #53e3ef; 
@@ -65,7 +65,7 @@ a:focus {
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.4;
   hyphens: auto;
   text-align: left;
@@ -102,8 +102,8 @@ a:focus {
 
 .highlight {
   background: var(--color-background2);
-  font-family: Montserrat Alternates3;
-  padding: 3px 3px 3px 3px;
+  font-family: "Montserrat Alternates3", sans-serif;
+  padding: 4px 4px 4px 4px;
   margin: 2px 2px;
 }
 
@@ -114,6 +114,21 @@ a:focus {
 /* Tablet landscape / Small laptop (< 1024px) */
 
 @media screen and (max-width: 1024px) {
+
+  .title {
+      font-size: 50px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
+
   .text-big {
     font-size: 36px;
   }
@@ -130,6 +145,21 @@ a:focus {
 /* Tablet (< 768px) */
 
 @media screen and (max-width: 768px) {
+
+  .title {
+      font-size: 50px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
+
   .text-big {
     font-size: 28px;
   }
@@ -146,6 +176,20 @@ a:focus {
 /* Mobile (< 480px) */
 
 @media screen and (max-width: 480px) {
+
+  .title {
+      font-size: 50px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
   .text-big {
     font-size: 24px;
   }

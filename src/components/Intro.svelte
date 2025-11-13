@@ -147,31 +147,65 @@
     font-family: "Montserrat Alternates2", sans-serif;
   }
 
-  /*--------------------------------------*/
-  /* Screen stylings */
-  /*--------------------------------------*/
+/*--------------------------------------*/
+/* Screen stylings */
+/*--------------------------------------*/
 
-  @media screen and (max-width: 1400px) {
-    .title {
-      font-size: 70px;
+/* Tablet landscape / Small laptop (< 1024px) */
+
+@media screen and (max-width: 1024px) {
+  
+  .title {
+      font-size: 50px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 26px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
+}
+
+/* Tablet (< 768px) */
+
+@media screen and (max-width: 768px) {
+
+  .title {
+      font-size: 50px;
       -webkit-text-stroke-width: 1.9px;
       word-spacing: 20px;
-    }
   }
 
-  @media screen and (max-width: 780px) {
-    .title {
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
+}
+
+/* Mobile (< 480px) */
+
+@media screen and (max-width: 480px) {
+
+  .title {
       font-size: 50px;
-      -webkit-text-stroke-width: 1.5px;
-      word-spacing: 15px;
-    }
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 20px;
   }
 
-  @media screen and (max-width: 480px) {
-    .title {
-      font-size: 35px;
-      -webkit-text-stroke-width: 1px;
-      word-spacing: 12px;
-    }
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
   }
+}
+
 </style>

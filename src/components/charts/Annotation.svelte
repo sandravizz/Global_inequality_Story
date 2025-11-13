@@ -84,8 +84,8 @@
   .xLine {
     border-width: 0;
     border-left: 1px dashed var(--color-chart-axis);
-    top: -8px;
+    top: 0px;
     bottom: 0;
-    opacity: 0.35;
+    opacity: 0.6;
   }
 </style>

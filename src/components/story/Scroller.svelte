@@ -179,33 +179,19 @@
     z-index: 2;
   }
 
-  .step .content h2 {
-    -webkit-text-fill-color: var(--color-background2);
-    -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 1.5px;
+  .step .content {
+    fill: #d5f2f2;
     line-height: 30px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0px;
     word-spacing: 2px;
     font-family: "Montserrat Alternates2", sans-serif;
   }
 
-  @media screen and (max-width: 1400px) {
-    .step .content h2 {
-      font-size: 30px;
-    }
+  h2 {
+    font-size: 28px;
+    font-family: "Montserrat Alternates3", sans-serif;
   }
 
-  @media screen and (max-width: 780px) {
-    .step .content h2 {
-      font-size: 28px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .step .content h2 {
-      font-size: 22px;
-    }
-  }
 
   /* Mobile landscape - increase spacing between steps */
   @media (max-height: 600px) and (orientation: landscape) {
