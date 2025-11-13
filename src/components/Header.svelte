@@ -15,6 +15,8 @@
   <Intro
     src="{base}/assets/1.png"
     title="Global inequality"
+    subtitle="An interactive data-story tracing how inequality has shifted across countries and over time"
+    credentials="by Patrick and Sandra"
     hide={slideIndex !== undefined ? slideIndex !== 0 : null}
     show={slideIndex !== undefined ? slideIndex === 0 : null}
     isVisible={true}
@@ -23,6 +25,8 @@
   <Intro
     src="{base}/assets/2.jpeg"
     title="Global inequality"
+    subtitle="An interactive data-story tracing how inequality has shifted across countries and over time"
+    credentials="by Patrick and Sandra"
     hide={slideIndex !== 1}
     show={slideIndex === 1}
   />

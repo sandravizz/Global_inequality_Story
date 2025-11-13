@@ -3,6 +3,8 @@
 
   export let src;
   export let title;
+  export let subtitle;
+  export let credentials;
   export let hide;
   export let show;
   export let isVisible = false;
@@ -35,7 +37,7 @@
         //the whole slide
         timeline.set(
           slideEl,
-          { filter: filters[i], duration: 0.2 },
+          { filter: filters[i], duration: 2 },
           i * 0.2 + offset,
         );
         //the text
@@ -67,9 +69,12 @@
 
 <div bind:this={slideEl} class="slide" class:isVisible>
   <div class="textcontainer" bind:this={textEl}>
-    <h1 class="title">
+    <h3 class="title">
       {title}
-    </h1>
+    </h3>
+    <p class="subtitle">
+      {subtitle}
+    </p>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
 </div>
@@ -113,16 +118,33 @@
   .title {
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #d5f2f2;
-    -webkit-text-stroke-width: 3px;
-    letter-spacing: -1.2px;
+    -webkit-text-stroke-width: 3.5px;
+    letter-spacing: 1px;
     word-spacing: 30px;
     text-wrap: nowrap;
     text-transform: uppercase;
-    margin: 0 20 0 0;
+    margin: -200px 0 0 0;
     padding: 0;
-    opacity: 0.9;
     font-family: "Syncopate";
-    font-size: 100px;
+    font-size: 110px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    text-wrap: nowrap;
+    margin: 0 0 0 0;
+    font-size: 26px;
+    font-family: "Montserrat Alternates2", sans-serif;
+  }
+
+  .credentials { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    text-wrap: nowrap;
+    margin: 0 0 0 0;
+    font-size: 12px;
+    font-family: "Montserrat Alternates2", sans-serif;
   }
 
   /*--------------------------------------*/
