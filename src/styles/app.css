@@ -37,8 +37,8 @@ a:focus {
 /*--------------------------------------*/
 
 :root {
-  --color-background: black;
-  --color-background2: #00080a;
+  --color-background: #010505; 
+  --color-background2: red;
   --color-chart-axis: #b9d4d3;
   --color-global: #d5f2f2;
   --color-europe: #0cbff5;
@@ -65,10 +65,12 @@ a:focus {
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.4;
   hyphens: auto;
   text-align: left;
+  word-spacing: 0.15em; 
+  letter-spacing: -0.38px;
 }
 
 .text-small {
