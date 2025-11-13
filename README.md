@@ -2,66 +2,63 @@
 
 An [data storytelling project](https://www.sandraviz.com/inner-project-page/project-title-02) analyzing global inequality using World Inequality Database data, built with D3.js and Svelte via Layer Cake.
 
-## Folder structure
+## Structure overview
 
 ```
 src/
 │
 ├── app.html
 │
-├── src/
-│   ├── components/
-│   │   ├── Body.svelte
-│   │   ├── Footer.svelte
-│   │   ├── Header.svelte
-│   │   ├── Intro.svelte
-│   │   │
-│   │   └── charts/
-│   │       ├── Annotation.svelte
-│   │       ├── AxisX.svelte
-│   │       ├── AxisY.svelte
-│   │       ├── ClipPath.svelte
-│   │       ├── DifferenceChart.svelte
-│   │       ├── Line.svelte
-│   │       └── MultilineChart.svelte
+├── components/
+│   ├── Body.svelte
+│   ├── Footer.svelte
+│   ├── Header.svelte
+│   ├── Intro.svelte
 │   │
-│   ├── story/
-│   │   ├── differenceScript.js
-│   │   ├── multilineScript.js
-│   │   ├── Scroller.svelte
-│   │   └── Scrolly.svelte
+│   └── charts/
+│   │    ├── Annotation.svelte
+│   │    ├── AxisX.svelte
+│   │    ├── AxisY.svelte
+│   │    ├── ClipPath.svelte
+│   │    ├── DifferenceChart.svelte
+│   │    ├── Line.svelte
+│   │    └── MultilineChart.svelte
 │   │
-│   ├── data/
-│   │   ├── data_all.csv
-│   │   ├── data_diff.csv
-│   │   └── wid_countries.csv
-│   │
-│   ├── routes/
-│   │   ├── +error.svelte
-│   │   ├── +layout.js
-│   │   ├── +layout.svelte
-│   │   ├── +page.svelte
-│   │   └── +arrow.svelte
-│   │
-│   ├── styles/
-│   │   ├── app.css
-│   │   ├── fonts.css
-│   │   ├── normalize.css
-│   │   └── reset.css
-│   │
-│   └── utils/
-│       ├── arqueroHelpers.js
-│       └── data.js
-│
+│   └── story/
+│       ├── differenceScript.js
+│       ├── multilineScript.js
+│       ├── Scroller.svelte
+│       └── Scrolly.svelte
+│    
+├── data/
+│       ├── data_all.csv
+│       ├── data_diff.csv
+│       └── wid_countries.csv
+│   
+├── routes/
+│       ├── +error.svelte
+│       ├── +layout.js
+│       ├── +layout.svelte
+│       ├── +page.svelte
+│       └── +arrow.svelte
+│    
+├── styles/
+│       ├── app.css
+│       ├── fonts.css
+│       ├── normalize.css
+│       └── reset.css
+│    
+└── utils/
+       ├── arqueroHelpers.js
+       └── data.js
 
 ```
 
 Made with :green_heart: by [Sandra](https://www.sandraviz.com) and [Patrick](https://www.linkedin.com/in/patrickwojda/).
 
-I am available for freelance data visualization work. Please [contact me](https://www.sandraviz.com/contact) in case you would like me to help you with my experience and expertise or [connect](https://www.linkedin.com/in/sandradataviz/) with me.
+We are available for freelance data visualization work. Please [get in touch](https://www.sandraviz.com/contact) in case you would like us to help you with our experience and expertise.
 
 #### Credits
 
 Our project is based on [starter template](https://github.com/the-pudding/svelte-starter) from the pudding.
-
 Thanks to [Simon Mulquin](https://github.com/SimonMulquin) for your support in web development with Svelte.
