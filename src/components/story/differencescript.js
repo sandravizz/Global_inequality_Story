@@ -344,7 +344,7 @@ export default {
       ],
       description: {
         title: `South Africa biggest gap`,
-        text: "Income inequality in the<span class ='highlight' style=var(--color-africa)'>South Africa 🇿🇦</span>is the highest globally and over the last 4 decades.",
+        text: "South <span class='highlight' style='color:var(--color-africa)'>Africa</span> 🇿🇦 stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 1980s, and from the early 1990s onward it rose even further, reaching its highest levels around 2010. The end of apartheid brought profound political change, but only limited economic redistribution. This reflects the deep structural legacy of apartheid: persistent racial divides, stark spatial separation, limited land reform, and concentrated ownership. Social spending has softened some edges, but the underlying distribution has remained largely unchanged, leaving inequality at record levels today."
       },
     },
     // --------------------------------------

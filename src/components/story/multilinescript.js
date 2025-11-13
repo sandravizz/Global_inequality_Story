@@ -14,6 +14,8 @@ const renderData = Array.from(groupedByCountry, ([key, value]) => ({
   values: value.map((item) => ({ ...item })),
 }));
 
+console.log(renderData);
+
 const formatter = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 0,
   maximumFractionDigits: 1,
@@ -383,7 +385,7 @@ export default {
       ],
       description: {
         title: `The United States of rising Inequality`,
-        text: "In the early 1980s, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>sat near<span class='highlight' style='color:var(--color-europe)'>Europe</span>on the Gini scale: lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the<span class='highlight' style='color:var(--color-usa)'>U.S. 🇺🇸</span>sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
+        text: "In the early 1980s, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>sat near<span class='highlight' style='color:var(--color-europe)'>Europe</span>on the Gini scale: lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
       },
     },
     // --------------------------------------
@@ -464,7 +466,7 @@ export default {
       ],
       description: {
         title: `South America’s Uneven Paths`,
-        text: "Across<span class='highlight' style='color:var(--color-south-america)'>South America,</span>Gini values have remained high. In the 2000s, social programs and wage reforms lowered inequality in some countries, but momentum later slowed. During the COVID-19 pandemic, inequality rose sharply as jobs and informal work were disrupted: a pattern confirmed by regional reports from the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>Inter-American Development Bank (IDB)</a> and the <a href='https://openknowledge.worldbank.org/entities/publication/07362ed8-ea20-5b1c-b32b-8a6e923efdc5' target='_blank'>World Bank</a>. Fiscal measures softened the impact, yet the Gini still increased. In contrast, the<span class='highlight' style='color:var(--color-usa)'>United States</span>showed a milder or briefly reversed effect, reflecting stronger policy buffers."
+        text: "Across<span class='highlight' style='color:var(--color-south-america)'>South America,</span>Gini values have remained high. In the 2000s, social programs and wage reforms lowered inequality in some countries, but momentum later slowed. During the COVID-19 pandemic, inequality rose sharply as jobs and informal work were disrupted: a pattern confirmed by regional reports from other sources such as<a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>Inter-American Development Bank (IDB)</a> and the <a href='https://openknowledge.worldbank.org/entities/publication/07362ed8-ea20-5b1c-b32b-8a6e923efdc5' target='_blank'>World Bank</a>. Fiscal measures softened the impact, yet the Gini still increased. In contrast, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>showed a milder or briefly reversed effect, reflecting stronger policy buffers."
       },
     },
     // --------------------------------------
@@ -491,6 +493,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
             },
           ],
         },
@@ -551,7 +557,7 @@ export default {
       ],
       description: {
         title: `The unequal neighbor Mexico 🇲🇽`,
-        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico</span>remains one of the most unequal countries in the world. Its Gini rose during economic reforms and trade liberalization in the 1990s, then eased in the 2000s and stabilized at a high level. During the COVID-19 pandemic, inequality first increased as urban and informal workers lost income, then declined sharply and has stayed lower since. Research by <a href='https://www.scielo.org.mx/scielo.php?pid=S0186-72022021000100007&script=sci_arttext' target='_blank'>Lustig</a> and the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>IADB</a> links this shift to labor market recovery and wage growth among lower-income workers. Next to the<span class='highlight' style='color:var(--color-usa)'>United States,</span>the contrast remains clear: two connected economies shaped by very different social protections and post-crisis recoveries."
+        text: "One of the most unequal countires remains<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>its Gini rose during economic reforms and trade liberalization in the 1990s, then eased in the 2000s and stabilized at a high level. During the COVID-19 pandemic, inequality first increased as urban and informal workers lost income, then declined sharply and has stayed lower since. Research by <a href='https://www.scielo.org.mx/scielo.php?pid=S0186-72022021000100007&script=sci_arttext' target='_blank'>Lustig</a> and the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>IADB</a> links this shift to labor market recovery and wage growth among lower-income workers. Next to the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>two connected economies shaped by very different social protections and post-crisis recoveries."
 
       },
     },
@@ -583,7 +589,11 @@ export default {
             {
               x: "1991",
               text: "End of apartheid",
-            }
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
+            },
           ],
         },
         {
@@ -640,7 +650,7 @@ export default {
       ],
       description: {
         title: `The peak of inequality`,
-        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa’s 🇸🇸</span>line rises steeply, among the highest on Earth. In the 1980s it was already immense; after apartheid, it climbed even higher. Political change reshaped institutions, but the Gini stayed extreme. Freedom alone couldn’t flatten the line."
+        text: "In<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>inequality was already extreme in the 1980s, and from the early 1990s onward it rose even further, with a little downward trend just after the financial crises as being visisble for<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>. The end of apartheid brought profound political change, but only limited economic redistribution. Social spending has softened some edges, but the underlying distribution has remained largely unchanged, leaving inequality at record levels today."
       },
     },
     // --------------------------------------
@@ -663,10 +673,14 @@ export default {
             yTickFormat: yTickFormatter,
           },
           annotations: [
-           {
+            {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2008",
+              text: "💰 Financial crisis",
             },
           ],
         },
@@ -723,8 +737,8 @@ export default {
         },
       ],
       description: {
-        title: `Japan: The Outlier of Equality`,
-        text: "<span class='highlight' style='color:var(--color-asia)'>Japan’s 🇯🇵</span>Gini barely changes, from the 1980s to today. It remains low and steady.Broad middle incomes and cohesive labor structures kept inequality in check. While others rose and fell,<span class='highlight' style='color:var(--color-asia)'>Japan</span>held its line."
+        title: `Japan 🇯🇵: The Outlier of Equality`,
+        text: "Using<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>as a reference point at one extreme of global inequality,<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>sits at the other. Its income inequality has remained surprisingly stable over decades. Broad middle-income employment, cohesive labor structures, deep social norms around work, and progressive tax and inheritance systems helped<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>hold its line. At the same time, structural factors like demographic change, the rise of part-time employment and weak wage growth mean that modest inequality has slowly increased. Together,<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>and<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>illustrate the breadth of global inequality trajectories: one marked by persistent extreme disparity, the other by relative stability and gradual change."
       },
     },
     // --------------------------------------
@@ -807,8 +821,8 @@ export default {
         },
       ],
       description: {
-        title: `The flat line revisited 🔄`,
-        text: "Seen up close, the flat<span class='highlight' style='color:var(--color-global)'>global</span>line is no longer a mystery.Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The<span class='highlight' style='color:var(--color-global)'>world’s</span>line looks calm, but beneath it, everything moves. 🌍"
+        title: `The flat line revisited`,
+        text: "Seen up close, the flat<span class='highlight' style='color:var(--color-global)'>global</span>line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The<span class='highlight' style='color:var(--color-global)'>world’s</span>line looks calm, but beneath it, everything moves."
       },
     },
   ],
