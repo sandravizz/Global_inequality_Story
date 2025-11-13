@@ -186,7 +186,7 @@ export default {
         },
       ],
       description: {
-        title: `Sweden had a reverse ratio`,
+        title: `Sweden 🇸🇪 had a reverse ratio`,
         text: "While inequalities have risen in Europe since the 1980s,<span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>remains one of the most equal countries in the<span class='highlight' style='color:var(--color-global)'>world.</span>The top 10% of the population earn just over 30% of total national income, while the bottom 50% receive around 24%. During the COVID-19 pandemic, inequality briefly increased as low-income employment declined, but strong welfare support and recovery measures quickly reversed this effect: returning income shares to pre-pandemic levels."
 
       },
@@ -242,8 +242,8 @@ export default {
         },
       ],
       description: {
-        title: `USA with historical highs`,
-        text: "Now let’s compare to the<span class='highlight' style='color:var(--color-usa)'>US 🇺🇸</span>the gap is clear when set against<span class='highlight' style='color:var(--color-europe)'>Sweden</span>The top 10% earn on average 17 times more than the bottom 50%. Since the early 1980s, deregulation, privatization, lower tax progressivity, and declining union coverage have contributed to a steady rise in the top 10% income share. During the COVID-19 pandemic, the income of the richest 10% continued to rise, while the recovery for lower-income groups lagged. Unlike in<span class='highlight' style='color:var(--color-europe)'>Sweden</span>where inequality fell after the initial shock, the post-pandemic increase in top incomes in the<span class='highlight' style='color:var(--color-usa)'>US 🇺🇸</span>persisted: reinforcing the long-term trend of widening inequality."
+        title: `USA 🇺🇸 with historical highs`,
+        text: "Now let’s compare to the<span class='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>the gap is clear when set against<span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>The top 10% earn on average 17 times more than the bottom 50%. Since the early 1980s, deregulation, privatization, lower tax progressivity, and declining union coverage have contributed to a steady rise in the top 10% income share. During the COVID-19 pandemic, the income of the richest 10% continued to rise, while the recovery for lower-income groups lagged. Unlike in<span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>where inequality fell after the initial shock, the post-pandemic increase in top incomes in the<span class='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>persisted: reinforcing the long-term trend of widening inequality."
       },
     },
     // --------------------------------------
@@ -297,7 +297,7 @@ export default {
       ],
       description: {
         title: `Mexico 🇲🇽`,
-        text: "In<span class='highlight' style='color:var(--color-south-america)'>Mexico</span>inequality has long been among the highest in the<span class='highlight' style='color:var(--color-global)'>world.</span>Yet during COVID-19,<span class='highlight' style='color:var(--color-south-america)'>Mexico</span>broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>: one of the few clear declines among major economies. As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes,<span class='highlight' style='color:var(--color-south-america)'> Mexico</span>is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom. The gap remains large, but this turn marks a rare departure from the region’s norm."
+        text: "In<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>inequality has long been among the highest in the<span class='highlight' style='color:var(--color-global)'>world.</span>Yet during COVID-19,<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>: one of the few clear declines among major economies. As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes,<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom. The gap remains large, but this turn marks a rare departure from the region’s norm."
       }
     },
     // --------------------------------------
@@ -343,8 +343,8 @@ export default {
         },
       ],
       description: {
-        title: `South Africa biggest gap`,
-        text: "South <span class='highlight' style='color:var(--color-africa)'>Africa</span> 🇿🇦 stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 1980s, and from the early 1990s onward it rose even further, reaching its highest levels around 2010. The end of apartheid brought profound political change, but only limited economic redistribution. This reflects the deep structural legacy of apartheid: persistent racial divides, stark spatial separation, limited land reform, and concentrated ownership. Social spending has softened some edges, but the underlying distribution has remained largely unchanged, leaving inequality at record levels today."
+        title: `South Africa 🇿🇦 biggest gap`,
+        text: "As seen before<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world.</span>Inequality was already extreme in the 1980s, and from the early 1990s onward it rose even further, reaching its highest levels around 2010. The end of apartheid brought profound political change, but only limited economic redistribution. This reflects the deep structural legacy of apartheid: persistent racial divides, stark spatial separation, limited land reform, and concentrated ownership. Social spending has softened some edges, but the underlying distribution has remained largely unchanged, leaving inequality at record levels today."
       },
     },
     // --------------------------------------

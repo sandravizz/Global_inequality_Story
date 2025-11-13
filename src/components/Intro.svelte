@@ -45,7 +45,7 @@
             x: i === filters.length ? 0 : randomInRange(-40, 40),
             y: i === filters.length ? 0 : randomInRange(-40, 40),
             scale: i === filters.length ? 1 : randomInRange(0.8, 1.2),
-            duration: 0.8,
+            duration: 1.5,
           },
           i * 0.2 + offset,
         );
@@ -56,7 +56,7 @@
             x: i === filters.length ? 0 : randomInRange(-10, 10),
             y: i === filters.length ? 0 : randomInRange(-10, 10),
             scale: i === filters.length ? 1.05 : randomInRange(1.05, 1.6),
-            duration: 0.8,
+            duration: 1.5,
           },
           i * 0.2 + offset,
         );
@@ -114,7 +114,7 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #d5f2f2;
     -webkit-text-stroke-width: 3px;
-    letter-spacing: -1.4px;
+    letter-spacing: -1.2px;
     word-spacing: 30px;
     text-wrap: nowrap;
     text-transform: uppercase;

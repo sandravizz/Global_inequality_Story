@@ -118,7 +118,7 @@ export default {
       ],
       description: {
         title: `One flat line 🤔`,
-        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis — unequal then, unequal now. But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what’s happening underneath? Even the 2008 financial crisis left only a small mark before the line steadied again."
+        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis: unequal then, unequal now. But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what’s happening underneath? Even the 2008 financial crisis left only a small mark before the line steadied again."
  
       },
     },
@@ -183,7 +183,7 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,  
-        text: "Break apart that smooth <span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s, the gap between equal and unequal nations was wide. Since then, their distances have narrowed. Nevertheless, even with a smaller gap today, the variance between countries remains enormous — and a single average, condensed into one number, misses much of the real picture. To understand what shapes it, let’s look at countries, regions, and the patterns that emerge between them."
+        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span>line and you find many stories. In the 1980s, the gap between equal and unequal nations was wide. Since then, their distances have narrowed. Nevertheless, even with a smaller gap today, the variance between countries remains enormous and a single average, condensed into one number, misses much of the real picture. To understand what shapes it, let’s look at countries, regions, and the patterns that emerge between them."
       },
     },
     // --------------------------------------
@@ -247,7 +247,7 @@ export default {
       ],
       description: {
         title: `Europe most equal continent 🥳`,
-        text: "<span class='highlight' style='color:var(--color-europe)'>Europe</span>represents a more economically equal continent than the<span class='highlight' style='color:var(--color-global)'>global</span>average. For decades, social welfare systems and labor protections maintained this balance. From the 1990s onward, the Gini coefficient increased gradually as markets liberalized and regulations eased. The distance between<span class='highlight' style='color:var(--color-europe)'>Europe</span>and the world narrowed, not because other regions became more equal, but because<span class='highlight' style='color:var(--color-europe)'>Europe’s</span>disparities widened slightly." 
+        text: "In comparison to the<span class='highlight' style='color:var(--color-global)'>global</span>average<span class='highlight' style='color:var(--color-europe)'>Europe</span>represents a more economically equal continent. For decades, social welfare systems and labor protections maintained this balance. From the 1990s onward, the Gini coefficient increased gradually as markets liberalized and regulations eased. The distance between<span class='highlight' style='color:var(--color-europe)'>Europe</span>and the world narrowed, not because other regions became more equal, but because<span class='highlight' style='color:var(--color-europe)'>Europe’s</span>disparities widened slightly." 
       },
     },
     // --------------------------------------

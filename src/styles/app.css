@@ -38,14 +38,14 @@ a:focus {
 
 :root {
   --color-background: #010505; 
-  --color-background2: red;
-  --color-chart-axis: #b9d4d3;
-  --color-global: #d5f2f2;
-  --color-europe: #0cbff5;
-  --color-usa: #cfff04;
-  --color-asia: #ff9130;
-  --color-south-america: #ff00c4;
-  --color-africa: #99f75e;
+  --color-background2: #062326;
+  --color-chart-axis: #d7dcf0;
+  --color-global: #eef0fd;
+  --color-europe: #53e3ef; 
+  --color-usa: #bdea00;
+  --color-asia: #9ab6ff;
+  --color-south-america: #FF559C;
+  --color-africa: #8af8cc;
   --color-link-hover: #4c8ffe;
 }
 
@@ -57,7 +57,7 @@ a:focus {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
   hyphens: auto;
-  font-size: 48px;
+  font-size: 55px;
   line-height: 1.15;
   text-align: left;
 }

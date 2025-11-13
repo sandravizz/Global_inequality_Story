@@ -7,7 +7,7 @@
 <section>
   <p class="text-medium">   
   <a target="_blank" href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-   >Humanity now produces more than ever before </a> enough to feed and sustain the entire planet. 
+   >Today humanity produces more than ever before </a> enough to feed and sustain the entire planet. 
     Yet millions still live and die in poverty. 
   </p>
   <p class="text-medium">      
