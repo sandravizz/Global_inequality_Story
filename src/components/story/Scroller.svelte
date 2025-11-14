@@ -65,6 +65,8 @@
                   <h2>{step.description.title}</h2>
                   {#if step.description.text}
                     <p class="text-medium">{@html step.description.text}</p>
+                    <p class="text-medium">{@html step.description.text2}</p>
+                    <p class="text-medium">{@html step.description.text3}</p>
                   {/if}
                 </div>
               </div>

@@ -42,8 +42,8 @@ a:focus {
   --color-chart-axis: #d7dcf0;
   --color-global: #eef0fd;
   --color-europe: #53e3ef; 
-  --color-usa: #bdea00;
-  --color-asia: #9ab6ff;
+  --color-asia: #bdea00;
+  --color-usa: #9ab6ff;
   --color-south-america: #FF559C;
   --color-africa: #8af8cc;
   --color-link-hover: #4c8ffe;
@@ -76,7 +76,7 @@ a:focus {
 .text-small {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 5px;
   line-height: 1.4;
   hyphens: auto;
@@ -103,9 +103,74 @@ a:focus {
 .highlight {
   background: var(--color-background2);
   font-family: "Montserrat Alternates3", sans-serif;
-  padding: 4px 4px 4px 4px;
-  margin: 2px 2px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px;
 }
+
+.fn {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.fn sup {
+    font-size: 0.7em;
+    font-family: "Montserrat Alternates3", sans-serif;
+}
+
+/* Tooltip bubble */
+.fn::after {
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    bottom: 1.6em;
+    min-width: 100px;
+    max-width: 400px;
+    padding: 0.6em 0.8em;
+    border-radius: 6px;
+    background: rgb(111, 86, 127, 0.9);
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1.3;
+    box-shadow: 0 4px 12px rgb(111, 86, 127, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(4px);
+    transition: opacity 150ms ease-out, transform 150ms ease-out;
+    z-index: 10;
+  }
+
+  /* Small arrow below tooltip */
+  .fn::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 1.1em;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgb(111, 86, 127, 0.85) transparent transparent transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-out;
+  }
+
+  /* Show tooltip on hover or keyboard focus */
+  .fn:hover::after,
+  .fn:hover::before,
+  .fn:focus-visible::after,
+  .fn:focus-visible::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Make sure tooltip stays on screen on narrow viewports */
+  @media (max-width: 600px) {
+      .fn::after {
+        left: auto;
+        right: 0;
+      }
+    }
 
 /*--------------------------------------*/
 /* Screen stylings */

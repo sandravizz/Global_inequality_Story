@@ -68,10 +68,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `The Inequality Spectrum`,
-        text: "Let’s start with one simple number the<span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the world. A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the world’s money. This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
-      },
+    description: {
+      title: `The Inequality Spectrum`,  
+      text: "Let’s start with one simple number, the <span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the world.", 
+      text2: "A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the world’s money.",
+      text3: "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
+    },
     },
     // --------------------------------------
     //2. Global average
@@ -116,11 +118,13 @@ export default {
           },
         },
       ],
-      description: {
-        title: `One flat line 🤔`,
-        text: "Looking at the<span class='highlight' style='color:var(--color-global)'>global</span>average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance, that looks like stasis: unequal then, unequal now. But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what’s happening underneath? Even the 2008 financial crisis left only a small mark before the line steadied again."
- 
-      },
+    description: {
+      title: `One flat line 🤔`,    
+      text: "Looking at the <span class='highlight' style='color:var(--color-global)'>global</span> average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance that looks like stasis; unequal then and unequal now.",      
+      text2: "But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what is happening underneath?",    
+      text3: "Even the 2008 financial crisis left only a small mark before the line steadied again."
+    },
+
     },
     // --------------------------------------
     // 3. Global average all countries
@@ -181,10 +185,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `Average can be misleading 🤯`,  
-        text: "Break apart that smooth<span class='highlight' style='color:var(--color-global)'>global</span>line and you find many stories. In the 1980s, the gap between equal and unequal nations was wide. Since then, their distances have narrowed. Nevertheless, even with a smaller gap today, the variance between countries remains enormous and a single average, condensed into one number, misses much of the real picture. To understand what shapes it, let’s look at countries, regions, and the patterns that emerge between them."
-      },
+    description: {
+      title: `Average can be misleading 🤯`,     
+      text: "Break apart that smooth <span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s the gap between equal and unequal nations was wide.",     
+      text2: "Since then their distances have narrowed. Even with a smaller gap today the variance between countries remains enormous and a single average, condensed into one number, misses much of the real picture.",  
+      text3: "To understand what shapes it we need to look at countries, regions and the patterns that emerge between them."
+    },
     },
     // --------------------------------------
     // 4. Global vs. European average
@@ -245,10 +251,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `Europe most equal continent 🥳`,
-        text: "In comparison to the<span class='highlight' style='color:var(--color-global)'>global</span>average<span class='highlight' style='color:var(--color-europe)'>Europe</span>represents a more economically equal continent. For decades, social welfare systems and labor protections maintained this balance. From the 1990s onward, the Gini coefficient increased gradually as markets liberalized and regulations eased. The distance between<span class='highlight' style='color:var(--color-europe)'>Europe</span>and the world narrowed, not because other regions became more equal, but because<span class='highlight' style='color:var(--color-europe)'>Europe’s</span>disparities widened slightly." 
-      },
+     description: {
+      title: `Europe most equal continent 🥳`,
+      text: "In comparison to the <span class='highlight' style='color:var(--color-global)'>global</span> average, <span class='highlight' style='color:var(--color-europe)'>Europe</span> is the most economically equal continent. Its Gini values have remained low and tightly clustered since the 1980s<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.", 
+      text2: "Inequality in <span class='highlight' style='color:var(--color-europe)'>Europe</span> rose slightly from the early 1990s into the mid 2000s. This was largely due to labour market liberalization and the growing role of capital income. Even with these changes the region continued to compress disparities more effectively than most other parts of the world because of its welfare systems and progressive taxes<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",  
+      text3: "The gap between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>global</span> average narrowed mainly because emerging economies grew faster rather than because Europe became significantly more unequal<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>. Overall, <span class='highlight' style='color:var(--color-europe)'>Europe</span> shows a stable pattern with small movements but no major breaks. This reflects long standing redistributive institutions that continue to keep inequality in check<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>4</sup></span>."
+    },
     },
     // --------------------------------------
     // 5. European countries
@@ -309,10 +317,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `Even Among Equals`,
-        text: "Within<span class='highlight' style='color:var(--color-europe)'>Europe,</span>inequality patterns are similar but not uniform. Northern countries remain stable at lower Gini levels; parts of the south and east increase gradually. Together they form a compact cluster, below the<span class='highlight' style='color:var(--color-global)'>global</span>line. Changes are gradual, indicating that equality is maintained rather than settled once."
-      },
+    description: {
+      title: `Even among equals`,
+      text: "Even within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality levels differ. Northern countries maintain especially low and stable Gini values supported by cohesive labour markets and strong social protections<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.",
+      text2: "Parts of Southern and Eastern <span class='highlight' style='color:var(--color-europe)'>Europe</span> show gradual increases in inequality starting in the 1990s. This reflects economic transitions, weaker labour institutions and more volatile capital income<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+      text3: "Despite these differences, all European countries remain far below the <span class='highlight' style='color:var(--color-global)'>global</span> inequality level. Together they form a compact cluster held together by a shared commitment to redistribution<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>."
+    },
     },
     // --------------------------------------
     // 6. USA vs. Europe
@@ -383,10 +393,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `The United States of rising Inequality`,
-        text: "In the early 1980s, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>sat near<span class='highlight' style='color:var(--color-europe)'>Europe</span>on the Gini scale: lower, steadier, more balanced. Then, decade by decade, its line climbed. Today, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>sits among the highest of advanced economies, showing a widening income gap. The line that once traced broad prosperity now arcs toward polarization."
-      },
+    description: {
+      title: `The United States of rising inequality`,
+      text: "In the early 1980s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+      text2: "From that point onward inequality in the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
+      text3: "Today the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stands among the most unequal advanced economies and redistributes significantly less than most European countries<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>."
+    },
     },
     // --------------------------------------
     // 7. USA vs. South America
@@ -413,7 +425,7 @@ export default {
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
-                    {
+            {
               x: "2020",
               text: "🦠 Covid",
             },
@@ -464,10 +476,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `South America’s Uneven Paths`,
-        text: "Across<span class='highlight' style='color:var(--color-south-america)'>South America,</span>Gini values have remained high. In the 2000s, social programs and wage reforms lowered inequality in some countries, but momentum later slowed. During the COVID-19 pandemic, inequality rose sharply as jobs and informal work were disrupted: a pattern confirmed by regional reports from other sources such as<a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>Inter-American Development Bank (IDB)</a> and the <a href='https://openknowledge.worldbank.org/entities/publication/07362ed8-ea20-5b1c-b32b-8a6e923efdc5' target='_blank'>World Bank</a>. Fiscal measures softened the impact, yet the Gini still increased. In contrast, the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>showed a milder or briefly reversed effect, reflecting stronger policy buffers."
-      },
+    description: {
+      title: `South America's uneven paths`,
+      text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 1980s and 1990s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>1</sup></span>.",
+      text2: "From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>2</sup></span>.",
+      text3: "Inequality rose sharply during the COVID 19 pandemic especially for informal and urban workers. Although fiscal support softened the impact it remained above pre pandemic levels in several countries<span class='fn' tabindex='0' data-note='IDB and World Bank COVID 19 reports'><sup>3</sup></span>."
+    },
     },
     // --------------------------------------
     // 8. USA - Mexico
@@ -493,6 +507,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2020",
+              text: "🦠 Covid",
             },
             {
               x: "2008",
@@ -555,11 +573,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `The unequal neighbor Mexico 🇲🇽`,
-        text: "One of the most unequal countires remains<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>its Gini rose during economic reforms and trade liberalization in the 1990s, then eased in the 2000s and stabilized at a high level. During the COVID-19 pandemic, inequality first increased as urban and informal workers lost income, then declined sharply and has stayed lower since. Research by <a href='https://www.scielo.org.mx/scielo.php?pid=S0186-72022021000100007&script=sci_arttext' target='_blank'>Lustig</a> and the <a href='https://publications.iadb.org/en/higher-inequality-latin-america-collateral-effect-pandemic' target='_blank'>IADB</a> links this shift to labor market recovery and wage growth among lower-income workers. Next to the<span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span>two connected economies shaped by very different social protections and post-crisis recoveries."
-
-      },
+    description: {
+      title: `The unequal neighbour Mexico 🇲🇽`,
+      text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> experienced rising inequality during the economic reforms and trade liberalization of the 1980s and 1990s<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+      text2: "",
+      text3: "During the COVID 19 pandemic inequality first increased then fell quickly as labour markets recovered and lower income wages rose. This pattern is documented in regional studies by the IDB<span class='fn' tabindex='0' data-note='IDB COVID 19 Report'><sup>3</sup></span>."
+    },
     },
     // --------------------------------------
     // 9. Africa - Mexico and South Africa
@@ -648,10 +667,12 @@ export default {
           },
         },
       ],
-      description: {
-        title: `The peak of inequality`,
-        text: "In<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>inequality was already extreme in the 1980s, and from the early 1990s onward it rose even further, with a little downward trend just after the financial crises as being visisble for<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span>. The end of apartheid brought profound political change, but only limited economic redistribution. Social spending has softened some edges, but the underlying distribution has remained largely unchanged, leaving inequality at record levels today."
-      },
+description: {
+  title: `The peak of inequality`,
+  text: "<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> is one of the most unequal countries in the world. Inequality was already extreme in the 1980s and increased further after the end of apartheid<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+  text2: "High unemployment, strong divides between skilled and unskilled work and large spatial and educational inequalities keep distribution highly polarized<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
+  text3: "Social grants reduce poverty but cannot compensate for the deep structural inequality generated in the labour market. Inequality therefore remains among the highest globally<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>."
+},
     },
     // --------------------------------------
     // 10. South Africa vs. Japan
@@ -677,6 +698,10 @@ export default {
               y: 0,
               dy: -5,
               text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+                {
+              x: "1991",
+              text: "End of apartheid",
             },
             {
               x: "2008",
@@ -736,13 +761,15 @@ export default {
           },
         },
       ],
-      description: {
-        title: `Japan 🇯🇵: The Outlier of Equality`,
-        text: "Using<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>as a reference point at one extreme of global inequality,<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>sits at the other. Its income inequality has remained surprisingly stable over decades. Broad middle-income employment, cohesive labor structures, deep social norms around work, and progressive tax and inheritance systems helped<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>hold its line. At the same time, structural factors like demographic change, the rise of part-time employment and weak wage growth mean that modest inequality has slowly increased. Together,<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span>and<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span>illustrate the breadth of global inequality trajectories: one marked by persistent extreme disparity, the other by relative stability and gradual change."
-      },
+    description: {
+      title: `Japan: the outlier of equality`,
+      text: "<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> remains among the lowest inequality countries. Inequality increased gradually in the 1980s and again in the early 2000s<span class='fn' tabindex='0' data-note='Kambayashi et al. (2024)'><sup>1</sup></span>.",
+      text2: "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+      text3: "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>."
+    },
     },
     // --------------------------------------
-    // 11. South Africa vs. Japan to global
+    // 11. Global average
     // --------------------------------------
     {
       charts: [
@@ -822,7 +849,9 @@ export default {
       ],
       description: {
         title: `The flat line revisited`,
-        text: "Seen up close, the flat<span class='highlight' style='color:var(--color-global)'>global</span>line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The<span class='highlight' style='color:var(--color-global)'>world’s</span>line looks calm, but beneath it, everything moves."
+        text: "Seen up close, the flat<span class='highlight' style='color:var(--color-global)'>global</span>line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The<span class='highlight' style='color:var(--color-global)'>world’s</span>line looks calm, but beneath it, everything moves.",
+        text2:"", 
+        text3:""
       },
     },
   ],
