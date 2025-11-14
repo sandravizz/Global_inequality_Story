@@ -65,7 +65,7 @@ a:focus {
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.4;
   hyphens: auto;
   text-align: left;
@@ -76,7 +76,17 @@ a:focus {
 .text-small {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
-  font-size: 17px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+  hyphens: auto;
+  text-align: left;
+}
+
+.text-extra-small {
+  font-family: "Montserrat Alternates2", sans-serif;
+  color: var(--color-chart-axis);
+  font-size: 12px;
   margin-bottom: 5px;
   line-height: 1.4;
   hyphens: auto;
@@ -94,7 +104,7 @@ a:focus {
     left: 0;
     content: " ";
     display: block;
-    background-color: white;
+    background-color:  var(--color-chart-axis);
     width: 120px;
     height: 1px;
   }
@@ -129,11 +139,11 @@ a:focus {
     max-width: 400px;
     padding: 0.6em 0.8em;
     border-radius: 6px;
-    background: rgb(111, 86, 127, 0.9);
-    color: #fff;
+    background: rgb(10, 97, 103, 0.9);
+    color: var(--color-chart-axis);
     font-size: 0.8em;
     line-height: 1.3;
-    box-shadow: 0 4px 12px rgb(111, 86, 127, 0.3);
+    box-shadow: 0 4px 12px  rgb(10, 97, 103, 0.3);
     opacity: 0;
     pointer-events: none;
     transform: translateY(4px);
@@ -149,7 +159,7 @@ a:focus {
     bottom: 1.1em;
     border-width: 6px;
     border-style: solid;
-    border-color: rgb(111, 86, 127, 0.85) transparent transparent transparent;
+    border-color:  rgb(10, 97, 103, 0.85) transparent transparent transparent;
     opacity: 0;
     pointer-events: none;
     transition: opacity 150ms ease-out;

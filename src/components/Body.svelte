@@ -53,16 +53,6 @@
 
 <section>
   <p class="text-medium">
-    The data and analysis presented here are based on the work of more than 100
-    researchers over four years, located on all continents, contributing to the
-    World Inequality Database (WID.world), maintained by the World Inequality
-    Lab. This vast network collaborates with statistical institutions, tax
-    authorities, universities and international organizations, to harmonize,
-    analyze and disseminate comparable international inequality data. This
-    allows to present systematic data on inequality at the global level and to
-    analyze how it has evolved over time. Global income inequality has always
-    been very great, reflecting the persistence of a world economic system that
-    is extremely hierarchical both between countries and within them.
   </p>
 </section>
 

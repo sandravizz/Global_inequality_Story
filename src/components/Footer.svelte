@@ -1,7 +1,22 @@
 <section>
-  <h3  class="text-small heading">Methodology</h3>
+  <h3 class="text-extra-small heading">Data source</h3>
 
-  <p class="text-small">
+  <p class="text-extra-small">
+    The data and analysis presented here are based on the work of more than 100
+    researchers over four years, located on all continents, contributing to the
+    World Inequality Database (WID.world), maintained by the World Inequality
+    Lab. This vast network collaborates with statistical institutions, tax
+    authorities, universities and international organizations, to harmonize,
+    analyze and disseminate comparable international inequality data. This
+    allows to present systematic data on inequality at the global level and to
+    analyze how it has evolved over time. Global income inequality has always
+    been very great, reflecting the persistence of a world economic system that
+    is extremely hierarchical both between countries and within them.
+  </p>
+
+  <h3 class="text-extra-small">Methodology</h3>
+
+  <p class="text-extra-small">
     Income data was sourced from the <a
       target="_blank"
       href="https://wid.world/wid-world/">World Inequality Database</a
@@ -13,7 +28,7 @@
     rankings.
   </p>
 
-  <p class="text-small">
+  <p class="text-extra-small">
     <a
       target="_blank"
       href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
@@ -30,15 +45,14 @@
 </section>
 
 <style>
-
   section {
-    max-width: 50rem;
+    max-width: 35rem;
     padding: 24px 16px;
     margin: 0 auto;
   }
 
   section.wide {
-    max-width: 70rem;
+    max-width: 35rem;
   }
 </style>
 

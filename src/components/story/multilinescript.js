@@ -638,7 +638,10 @@ export default {
         {
           key: "country",
           componentIndex: 3,
-          data: renderData,
+           data: renderData.filter(
+            (d) =>
+              d.region2 === "South America" || d.region2 === "Central America",
+          ),
           options: {
             stroke: "var(--color-africa)",
             strokeWidth: 0,
@@ -732,7 +735,10 @@ description: {
         {
           key: "country",
           componentIndex: 3,
-          data: renderData,
+        data: renderData.filter(
+            (d) =>
+              d.region2 === "South America" || d.region2 === "Central America",
+          ),
           options: {
             stroke: "var(--color-africa)",
             strokeWidth: 0,
@@ -767,6 +773,91 @@ description: {
       text2: "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
       text3: "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>."
     },
+    },
+    // --------------------------------------
+    // 11. Global average
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter(d => d.country != "QB" &&
+            d.country != "QA" &&
+            d.country != "QD" &&
+            d.country != "QC" &&
+            d.country != "QF"),
+          options: {
+            stroke: "var(--color-global)",
+           strokeOpacity: 0.4,
+            strokeWidth: 0.3,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+           {
+              y: 0,
+              dy: -5,
+              text: "<div style='transform: translateY(-15%); display:flex; align-items: center'> <span> = Complete Inequality </span><img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+          ],
+        },
+        {
+          key: "country",
+          componentIndex: 1,
+          data: renderData.filter((d) => ["QE"].includes(d.country)),
+          options: {
+            stroke: "var(--color-europe)",
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 2,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
+          options: {
+            stroke: "var(--color-global)",
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 3,
+           data: renderData.filter(
+            (d) =>
+              d.region === "Asia",
+          ),
+          options: {
+            stroke: "var(--color-asia)",
+            strokeWidth: 0.4,
+            strokeOpacity: 1,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 4,
+          data: renderData.filter((d) => ["JP"].includes(d.country)),
+          options: {
+            stroke: "var(--color-asia)",
+            strokeWidth: 4,
+            yTickFormat: yTickFormatter,
+          },
+        },
+        {
+          key: "country",
+          componentIndex: 5,
+          data: renderData.filter((d) => ["JP"].includes(d.country)),
+          options: {
+            stroke: "var(--color-asia)",
+            strokeWidth: 0,
+            yTickFormat: yTickFormatter,
+          },
+        },
+      ],
+      description: {
+      },
     },
     // --------------------------------------
     // 11. Global average
@@ -818,10 +909,10 @@ description: {
         {
           key: "country",
           componentIndex: 3,
-          data: renderData,
+          data: renderData.filter((d) => ["WO"].includes(d.country)),
           options: {
-            stroke: "var(--color-africa)",
-            strokeWidth: 0,
+            stroke: "var(--color-global)",
+            strokeWidth: 4,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
           },

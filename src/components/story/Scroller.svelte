@@ -160,15 +160,15 @@
 
   .contentwrapper {
     position: relative;
-    width: 85%;
+    width: 77%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 23px;
   }
 
   .contentbackground {
     border-radius: 30px;
     background-color: var(--color-background2);
-    opacity: 0.8;
+    opacity: 0.9;
     position: absolute;
     top: -10px;
     bottom: -10px;
@@ -182,7 +182,7 @@
   }
 
   .step .content {
-    fill: #d5f2f2;
+    fill: var(--color-chart-axis);
     line-height: 30px;
     letter-spacing: 0px;
     word-spacing: 2px;
@@ -190,7 +190,8 @@
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 23px;
+    fill: var(--color-chart-axis);
     font-family: "Montserrat Alternates3", sans-serif;
   }
 
