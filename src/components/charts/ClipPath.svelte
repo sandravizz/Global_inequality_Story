@@ -78,6 +78,6 @@
 <style>
   .clips path,
   .paths path {
-    transition: all 1s;
+    transition: all 1.5s;
   }
 </style>

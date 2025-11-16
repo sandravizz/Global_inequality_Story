@@ -8,7 +8,7 @@
 
   const tl = gsap.timeline();
   tl.call(setSlideIndex, [1], 5);  
-  tl.call(setSlideIndex, [0], 10); 
+  tl.call(setSlideIndex, [0], 15); 
 </script>
 
 <div class="wrapper">

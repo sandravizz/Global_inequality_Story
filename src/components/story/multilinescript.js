@@ -906,13 +906,16 @@ description: {
             yTickFormat: yTickFormatter,
           },
         },
-        {
+      {
           key: "country",
           componentIndex: 3,
-          data: renderData.filter((d) => ["WO"].includes(d.country)),
+           data: renderData.filter(
+            (d) =>
+              d.region === "test",
+          ),
           options: {
             stroke: "var(--color-global)",
-            strokeWidth: 4,
+            strokeWidth: 3,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
           },

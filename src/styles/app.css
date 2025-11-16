@@ -37,8 +37,9 @@ a:focus {
 /*--------------------------------------*/
 
 :root {
-  --color-background: #020B0C; 
+  /* --color-background: #020B0C;  */
   --color-background2: #051F22;
+  --color-background: #020B0C; 
   --color-chart-axis: #d7dcf0;
   --color-global: #eef0fd;
   --color-europe: #53e3ef; 

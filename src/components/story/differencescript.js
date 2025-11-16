@@ -74,17 +74,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.56",
-              dy: 0,
-              dx: 0,
-              text: "53% in 2023",
+              y: renderData[1].values[43].value,
+              dy: -50,
+              dx: 20,
+              text: "53% in <br> 2023",
             },
             {
               x: "2023",
-              y: "0.08",
-              dy: 0,
-              dx: 0,
-              text: "8% in 2023",
+              y: renderData[0].values[43].value,
+              dy: -50,
+              dx: 20,
+              text: "8% in <br> 2023",
             },
             {
               y: 0,
@@ -96,8 +96,9 @@ export default {
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>richest 10%. The lower line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the<span class='highlight' style='color:var(--color-global)'>global</span>bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top."
-
+        text: "The upper line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>richest 10%. The lower line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the<span class='highlight' style='color:var(--color-global)'>global</span>bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
+        text2: "", 
+        text3: ""
       },
     },
     // --------------------------------------
@@ -118,17 +119,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.39",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-europe)'>36% in 2023</span>",
+              y: renderData[3].values[43].value,
+                  dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-europe)'>36% in <br> 2023</span>",
             },
             {
               x: "2023",
-              y: "0.185",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-europe)'>19% in 2023</span>",
+              y: renderData[2].values[43].value,
+                 dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-europe)'>19% in <br> 2023</span>",
             },
             {
               y: 0,
@@ -161,17 +162,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.35",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-europe)'>30% in 2023</span>",
+              y: renderData[5].values[43].value,
+              dy: -60,
+              dx: 20,
+              text: "<span style='color: var(--color-europe)'>30% in <br> 2023</span>",
             },
             {
               x: "2023",
-              y: "0.23",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-europe)'>25% in 2023</span>",
+              y: renderData[4].values[43].value,
+              dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-europe)'>25% in <br> 2023</span>",
             },
             {
               y: 0,
@@ -209,17 +210,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.5",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-usa)'>47% in 2023</span>",
+              y: renderData[7].values[43].value,
+                    dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-usa)'>47% in <br> 2023</span>",
             },
             {
               x: "2023",
-              y: "0.13",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-usa)'>13% in 2023</span>",
+              y: renderData[6].values[43].value,
+                   dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-usa)'>13% in <br> 2023</span>",
             },
             {
               y: 0,
@@ -267,17 +268,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.59",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-south-america)'>60% in 2023</span>",
+              y: renderData[9].values[43].value,
+              dy: -60,
+              dx: 20,
+              text: "<span style='color: var(--color-south-america)'>60% in <br> 2023</span>",
             },
             {
               x: "2023",
-              y: "0.105",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-south-america)'>8% in 2023</span>",
+              y: renderData[8].values[43].value,
+                   dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-south-america)'>8% in <br> 2023</span>",
             },
             {
               y: 0,
@@ -318,17 +319,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.645",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-africa)'>65% in 2023</span>",
+              y: renderData[11].values[43].value,
+                 dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-africa)'>65% in <br> 2023</span>",
             },
             {
               x: "2023",
-              y: "0.09",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-africa)'>6% in 2023</span>",
+              y: renderData[10].values[43].value,
+                 dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-africa)'>6% in <br> 2023</span>",
             },
             {
               y: 0,
@@ -365,17 +366,17 @@ export default {
           annotations: [
             {
               x: "2023",
-              y: "0.425",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-asia)'>43% in 2023</span>",
+              y: renderData[13].values[43].value,
+                 dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-asia)'>43% in <br>2023</span>",
             },
             {
               x: "2023",
-              y: "0.215",
-              dy: 0,
-              dx: 0,
-              text: "<span style='color: var(--color-asia)'>19% in 2023</span>",
+              y: renderData[12].values[43].value,
+              dy: -50,
+              dx: 20,
+              text: "<span style='color: var(--color-asia)'>19% in <br> 2023</span>",
             },
             {
               y: 0,

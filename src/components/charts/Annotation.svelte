@@ -25,7 +25,7 @@
     {:else if xValue !== undefined && yValue !== undefined}
       <div
         class="text-small inside middle"
-        style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)}px;"
+        style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)+ dy}px;"
       >
       {@html text}
       </div>
