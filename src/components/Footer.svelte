@@ -1,5 +1,5 @@
 <section>
-  <h3 class="text-extra-small heading">Data source</h3>
+  <h3 class="text-extra-small">Data source</h3>
 
   <p class="text-extra-small">
     The data and analysis presented here are based on the work of more than 100

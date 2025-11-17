@@ -1,92 +1,4 @@
 year,country,gini_pretaxes,region,region2,shortname,decade
-1980,test,0.4447,test,Western Europe,Andorra,1980
-1981,test,0.4462,test,Western Europe,Andorra,1980
-1982,test,0.4474,test,Western Europe,Andorra,1980
-1983,test,0.4467,test,Western Europe,Andorra,1980
-1984,test,0.4511,test,Western Europe,Andorra,1980
-1985,test,0.4558,test,Western Europe,Andorra,1980
-1986,test,0.4511,test,Western Europe,Andorra,1980
-1987,test,0.4493,test,Western Europe,Andorra,1980
-1988,test,0.4446,test,Western Europe,Andorra,1980
-1989,test,0.4448,test,Western Europe,Andorra,1980
-1990,test,0.4437,test,Western Europe,Andorra,1990
-1991,test,0.4412,test,Western Europe,Andorra,1990
-1992,test,0.45,test,Western Europe,Andorra,1990
-1993,test,0.4578,test,Western Europe,Andorra,1990
-1994,test,0.4658,test,Western Europe,Andorra,1990
-1995,test,0.463,test,Western Europe,Andorra,1990
-1996,test,0.4639,test,Western Europe,Andorra,1990
-1997,test,0.4717,test,Western Europe,Andorra,1990
-1998,test,0.4714,test,Western Europe,Andorra,1990
-1999,test,0.472,test,Western Europe,Andorra,1990
-2000,test,0.4786,test,Western Europe,Andorra,2000
-2001,test,0.476,test,Western Europe,Andorra,2000
-2002,test,0.471,test,Western Europe,Andorra,2000
-2003,test,0.4747,test,Western Europe,Andorra,2000
-2004,test,0.4829,test,Western Europe,Andorra,2000
-2005,test,0.4832,test,Western Europe,Andorra,2000
-2006,test,0.4881,test,Western Europe,Andorra,2000
-2007,test,0.486,test,Western Europe,Andorra,2000
-2008,test,0.4697,test,Western Europe,Andorra,2000
-2009,test,0.4627,test,Western Europe,Andorra,2000
-2010,test,0.481,test,Western Europe,Andorra,2010
-2011,test,0.4817,test,Western Europe,Andorra,2010
-2012,test,0.4774,test,Western Europe,Andorra,2010
-2013,test,0.4812,test,Western Europe,Andorra,2010
-2014,test,0.4848,test,Western Europe,Andorra,2010
-2015,test,0.484,test,Western Europe,Andorra,2010
-2016,test,0.4836,test,Western Europe,Andorra,2010
-2017,test,0.4829,test,Western Europe,Andorra,2010
-2018,test,0.4811,test,Western Europe,Andorra,2010
-2019,test,0.478,test,Western Europe,Andorra,2010
-2020,test,0.4784,test,Western Europe,Andorra,2020
-2021,test,0.4829,test,Western Europe,Andorra,2020
-2022,test,0.4833,test,Western Europe,Andorra,2020
-2023,test,0.4833,test,Western Europe,Andorra,2020
-1980,test2,0.4447,test,Western Europe,Andorra,1980
-1981,test2,0.4462,test,Western Europe,Andorra,1980
-1982,test2,0.4474,test,Western Europe,Andorra,1980
-1983,test2,0.4467,test,Western Europe,Andorra,1980
-1984,test2,0.4511,test,Western Europe,Andorra,1980
-1985,test2,0.4558,test,Western Europe,Andorra,1980
-1986,test2,0.4511,test,Western Europe,Andorra,1980
-1987,test2,0.4493,test,Western Europe,Andorra,1980
-1988,test2,0.4446,test,Western Europe,Andorra,1980
-1989,test2,0.4448,test,Western Europe,Andorra,1980
-1990,test2,0.4437,test,Western Europe,Andorra,1990
-1991,test2,0.4412,test,Western Europe,Andorra,1990
-1992,test2,0.45,test,Western Europe,Andorra,1990
-1993,test2,0.4578,test,Western Europe,Andorra,1990
-1994,test2,0.4658,test,Western Europe,Andorra,1990
-1995,test2,0.463,test,Western Europe,Andorra,1990
-1996,test2,0.4639,test,Western Europe,Andorra,1990
-1997,test2,0.4717,test,Western Europe,Andorra,1990
-1998,test2,0.4714,test,Western Europe,Andorra,1990
-1999,test2,0.472,test,Western Europe,Andorra,1990
-2000,test2,0.4786,test,Western Europe,Andorra,2000
-2001,test2,0.476,test,Western Europe,Andorra,2000
-2002,test2,0.471,test,Western Europe,Andorra,2000
-2003,test2,0.4747,test,Western Europe,Andorra,2000
-2004,test2,0.4829,test,Western Europe,Andorra,2000
-2005,test2,0.4832,test,Western Europe,Andorra,2000
-2006,test2,0.4881,test,Western Europe,Andorra,2000
-2007,test2,0.486,test,Western Europe,Andorra,2000
-2008,test2,0.4697,test,Western Europe,Andorra,2000
-2009,test2,0.4627,test,Western Europe,Andorra,2000
-2010,test2,0.481,test,Western Europe,Andorra,2010
-2011,test2,0.4817,test,Western Europe,Andorra,2010
-2012,test2,0.4774,test,Western Europe,Andorra,2010
-2013,test2,0.4812,test,Western Europe,Andorra,2010
-2014,test2,0.4848,test,Western Europe,Andorra,2010
-2015,test2,0.484,test,Western Europe,Andorra,2010
-2016,test2,0.4836,test,Western Europe,Andorra,2010
-2017,test2,0.4829,test,Western Europe,Andorra,2010
-2018,test2,0.4811,test,Western Europe,Andorra,2010
-2019,test2,0.478,test,Western Europe,Andorra,2010
-2020,test2,0.4784,test,Western Europe,Andorra,2020
-2021,test2,0.4829,test,Western Europe,Andorra,2020
-2022,test2,0.4833,test,Western Europe,Andorra,2020
-2023,test2,0.4833,test,Western Europe,Andorra,2020
 1980,AD,0.4447,Europe,Western Europe,Andorra,1980
 1981,AD,0.4462,Europe,Western Europe,Andorra,1980
 1982,AD,0.4474,Europe,Western Europe,Andorra,1980
@@ -9459,50 +9371,50 @@ year,country,gini_pretaxes,region,region2,shortname,decade
 2021,ZW,0.6189,Africa,East Africa,Zimbabwe,2020
 2022,ZW,0.6189,Africa,East Africa,Zimbabwe,2020
 2023,ZW,0.6189,Africa,East Africa,Zimbabwe,2020
-1980,WO,0.6872879750845513,,,World,1980
-1981,WO,0.683646410881785,,,World,1980
-1982,WO,0.6802182805505836,,,World,1980
-1983,WO,0.6820003908028696,,,World,1980
-1984,WO,0.6828309963910542,,,World,1980
-1985,WO,0.6833112851221372,,,World,1980
-1986,WO,0.6857894188160287,,,World,1980
-1987,WO,0.6864811989682096,,,World,1980
-1988,WO,0.6899017334854705,,,World,1980
-1989,WO,0.692235046510433,,,World,1980
-1990,WO,0.6959256703631311,,,World,1990
-1991,WO,0.6967911238218036,,,World,1990
-1992,WO,0.6999512984770533,,,World,1990
-1993,WO,0.6990724093135086,,,World,1990
-1994,WO,0.701405524324521,,,World,1990
-1995,WO,0.7013249383167306,,,World,1990
-1996,WO,0.7040961389577305,,,World,1990
-1997,WO,0.7022930542053842,,,World,1990
-1998,WO,0.7049737698794658,,,World,1990
-1999,WO,0.706283054347459,,,World,1990
-2000,WO,0.7086990839225393,,,World,2000
-2001,WO,0.7079632987509115,,,World,2000
-2002,WO,0.7060929955628552,,,World,2000
-2003,WO,0.7051719124696945,,,World,2000
-2004,WO,0.7033255255610555,,,World,2000
-2005,WO,0.7034088461507508,,,World,2000
-2006,WO,0.70061760207156,,,World,2000
-2007,WO,0.698030491954313,,,World,2000
-2008,WO,0.6942995245082386,,,World,2000
-2009,WO,0.6862619700681449,,,World,2000
-2010,WO,0.6838698349355781,,,World,2010
-2011,WO,0.6838371870997833,,,World,2010
-2012,WO,0.6798616448964907,,,World,2010
-2013,WO,0.6776844587979269,,,World,2010
-2014,WO,0.6742285724924812,,,World,2010
-2015,WO,0.673099131577203,,,World,2010
-2016,WO,0.6712875650109424,,,World,2010
-2017,WO,0.6714521658008579,,,World,2010
-2018,WO,0.6701420813286347,,,World,2010
-2019,WO,0.6673033041159186,,,World,2010
-2020,WO,0.6686272163259446,,,World,2020
-2021,WO,0.6702297377436963,,,World,2020
-2022,WO,0.6706274869197131,,,World,2020
-2023,WO,0.6689525106382348,,,World,2020
+1980,WO,0.6872879750845513,World,World,World,1980
+1981,WO,0.683646410881785,World,World,World,1980
+1982,WO,0.6802182805505836,World,World,World,1980
+1983,WO,0.6820003908028696,World,World,World,1980
+1984,WO,0.6828309963910542,World,World,World,1980
+1985,WO,0.6833112851221372,World,World,World,1980
+1986,WO,0.6857894188160287,World,World,World,1980
+1987,WO,0.6864811989682096,World,World,World,1980
+1988,WO,0.6899017334854705,World,World,World,1980
+1989,WO,0.692235046510433,World,World,World,1980
+1990,WO,0.6959256703631311,World,World,World,1990
+1991,WO,0.6967911238218036,World,World,World,1990
+1992,WO,0.6999512984770533,World,World,World,1990
+1993,WO,0.6990724093135086,World,World,World,1990
+1994,WO,0.701405524324521,World,World,World,1990
+1995,WO,0.7013249383167306,World,World,World,1990
+1996,WO,0.7040961389577305,World,World,World,1990
+1997,WO,0.7022930542053842,World,World,World,1990
+1998,WO,0.7049737698794658,World,World,World,1990
+1999,WO,0.706283054347459,World,World,World,1990
+2000,WO,0.7086990839225393,World,World,World,2000
+2001,WO,0.7079632987509115,World,World,World,2000
+2002,WO,0.7060929955628552,World,World,World,2000
+2003,WO,0.7051719124696945,World,World,World,2000
+2004,WO,0.7033255255610555,World,World,World,2000
+2005,WO,0.7034088461507508,World,World,World,2000
+2006,WO,0.70061760207156,World,World,World,2000
+2007,WO,0.698030491954313,World,World,World,2000
+2008,WO,0.6942995245082386,World,World,World,2000
+2009,WO,0.6862619700681449,World,World,World,2000
+2010,WO,0.6838698349355781,World,World,World,2010
+2011,WO,0.6838371870997833,World,World,World,2010
+2012,WO,0.6798616448964907,World,World,World,2010
+2013,WO,0.6776844587979269,World,World,World,2010
+2014,WO,0.6742285724924812,World,World,World,2010
+2015,WO,0.673099131577203,World,World,World,2010
+2016,WO,0.6712875650109424,World,World,World,2010
+2017,WO,0.6714521658008579,World,World,World,2010
+2018,WO,0.6701420813286347,World,World,World,2010
+2019,WO,0.6673033041159186,World,World,World,2010
+2020,WO,0.6686272163259446,World,World,World,2020
+2021,WO,0.6702297377436963,World,World,World,2020
+2022,WO,0.6706274869197131,World,World,World,2020
+2023,WO,0.6689525106382348,World,World,World,2020
 1980,QB,0.6936,,,Africa,1980
 1981,QB,0.6910000000000001,,,Africa,1980
 1982,QB,0.6904,,,Africa,1980

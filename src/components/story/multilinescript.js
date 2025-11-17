@@ -196,7 +196,7 @@ export default {
     // 4. Global vs. European average
     // --------------------------------------
     {
-      charts: [
+     charts: [
         {
           key: "country",
           componentIndex: 0,
@@ -911,7 +911,7 @@ description: {
           componentIndex: 3,
            data: renderData.filter(
             (d) =>
-              d.region === "test",
+              d.region === "world",
           ),
           options: {
             stroke: "var(--color-global)",

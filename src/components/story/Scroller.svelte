@@ -62,7 +62,7 @@
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
-                  <h2>{step.description.title}</h2>
+                  <h2 class="text_scroll_title">{step.description.title}</h2>
                   {#if step.description.text}
                     <p class="text-medium">{@html step.description.text}</p>
                     <p class="text-medium">{@html step.description.text2}</p>
@@ -103,7 +103,7 @@
     flex-direction: column;
     width: calc(100% - 32px);
     position: relative;
-    margin: auto 16px;
+    margin: auto 10px;
   }
 
   .fullWidth .chart-container {
@@ -160,9 +160,9 @@
 
   .contentwrapper {
     position: relative;
-    width: 77%;
+    width: 80%;
     margin: 0 auto;
-    padding: 23px;
+    padding: 5px;
   }
 
   .contentbackground {
@@ -189,13 +189,6 @@
     font-family: "Montserrat Alternates2", sans-serif;
   }
 
-  h2 {
-    font-size: 23px;
-    fill: var(--color-chart-axis);
-    font-family: "Montserrat Alternates3", sans-serif;
-  }
-
-
   /* Mobile landscape - increase spacing between steps */
   @media (max-height: 600px) and (orientation: landscape) {
     .step {
@@ -213,7 +206,7 @@
     }
 
     .chart {
-      padding-left: 8px;
+      padding-left: 4px;
     }
 
     .fullWidth .chart {
@@ -222,7 +215,7 @@
 
     .fullWidth .steps {
       width: 40%;
-      margin-left: 10%;
+      margin-left: 5%;
     }
 
     .wide .contentwrapper {

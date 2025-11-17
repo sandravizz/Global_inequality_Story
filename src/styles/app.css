@@ -63,10 +63,16 @@ a:focus {
   text-align: left;
 }
 
+.text_scroll_title {
+    font-size: 23px;
+    fill: var(--color-chart-axis);
+    font-family: "Montserrat Alternates3", sans-serif;
+  }
+
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.4;
   hyphens: auto;
   text-align: left;
@@ -77,7 +83,7 @@ a:focus {
 .text-small {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 5px;
   line-height: 1.4;
   hyphens: auto;
@@ -89,7 +95,7 @@ a:focus {
   color: var(--color-chart-axis);
   font-size: 12px;
   margin-bottom: 5px;
-  line-height: 1.4;
+  line-height: 1;
   hyphens: auto;
   text-align: left;
 }
@@ -209,8 +215,14 @@ a:focus {
     font-size: 36px;
   }
 
-  .text-medium {
+  .text_scroll_title {
     font-size: 20px;
+    fill: var(--color-chart-axis);
+    font-family: "Montserrat Alternates3", sans-serif;
+  }
+
+  .text-medium {
+    font-size: 17px;
   }
 
   .text-small {
@@ -241,7 +253,13 @@ a:focus {
   }
 
   .text-medium {
+    font-size: 16px;
+  }
+
+  .text_scroll_title {
     font-size: 18px;
+    fill: var(--color-chart-axis);
+    font-family: "Montserrat Alternates3", sans-serif;
   }
 
   .text-small {
@@ -270,12 +288,18 @@ a:focus {
     font-size: 24px;
   }
 
-  .text-medium {
+  .text_scroll_title {
     font-size: 16px;
+    fill: var(--color-chart-axis);
+    font-family: "Montserrat Alternates3", sans-serif;
+  }
+
+  .text-medium {
+    font-size: 14px;
   }
 
   .text-small {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
