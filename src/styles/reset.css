@@ -1,7 +1,6 @@
 body {
   background-color: var(--color-background);
   color: #d5f2f2;
-  line-height: 1.6;
   font-feature-settings:
     "kern" 1,
     "onum" 0,
@@ -12,18 +11,7 @@ body {
 }
 
 html {
-  scrollbar-color: #d5f2f2 rgba(255, 255, 255, 0.05);
   scrollbar-width: thin;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 16px 0;
 }
 
 mark {
@@ -173,13 +161,8 @@ tfoot {
   color: var(--color-placeholder, gray);
 }
 
-::-moz-selection {
-  background-color: var(--color-selection, lightgray);
-}
 
-::selection {
-  background-color: var(--color-selection, lightgray);
-}
+
 
 select {
   display: inline-block;
@@ -189,7 +172,6 @@ select {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #ffffff;
-  background-color: rgba(55, 65, 81, 0.6);
   margin-bottom: 4px;
   padding-right: 2.5rem;
 
@@ -223,7 +205,6 @@ ul {
 }
 
 .skip-to-main:focus {
-  background-color: var(--color-gray-900, black);
   color: var(--color-white, white);
   width: auto;
   height: auto;

@@ -71,8 +71,8 @@ export default {
     description: {
       title: `The Inequality Spectrum`,  
       text: "Let’s start with one simple number, the <span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the world.", 
-      text2: "A Gini of 0 means everyone earns the same; a Gini of 1 means one person earns everything. You can imagine that extreme, one Musk holding all the world’s money.",
-      text3: "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it."
+      text3: "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it.", 
+      text2: "A Gini of 1 means one person earns everything <img src='./assets/Musk_face.png' style='display: inline-block; width: 1.8em;' /> and a Gini of 0 means everyone earns the same, whereas a. You can imagine that extreme, one Musk holding all the world’s money.",
     },
     },
     // --------------------------------------

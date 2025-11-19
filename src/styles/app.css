@@ -8,17 +8,11 @@
 
 html,
 body {
-  background-color: var(--color-background);
   color: var(--color-chart-axis);
   min-height: 100%;
   margin: 0;
-  overflow-x: hidden;
 }
 
-main {
-  background-color: var(--color-background);
-  display: block;
-}
 
 a {
   color: var(--color-link);
@@ -33,12 +27,27 @@ a:focus {
   outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 16px 0;
+}
+
+p {
+  display: block;
+  unicode-bidi: isolate;
+  margin-top: 10px; 
+  margin-bottom: 10;
+}
+
 /*--------------------------------------*/
 /* Colours */
 /*--------------------------------------*/
 
 :root {
-  /* --color-background: #020B0C;  */
   --color-background2: #051F22;
   --color-background: #020B0C; 
   --color-chart-axis: #d7dcf0;
@@ -68,7 +77,8 @@ a:focus {
     font-size: 23px;
     fill: var(--color-chart-axis);
     font-family: "Montserrat Alternates3", sans-serif;
-  }
+    margin-bottom: 8px;
+}
 
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
@@ -77,6 +87,17 @@ a:focus {
   line-height: 1.4;
   hyphens: auto;
   text-align: left;
+  word-spacing: 0.15em; 
+  letter-spacing: -0.38px;
+}
+
+.text-medium-scroller {
+  font-family: "Montserrat Alternates2", sans-serif;
+  color: var(--color-global);
+  font-size: 18px;
+  line-height: 1.4;
+  hyphens: auto;
+  text-align: block;
   word-spacing: 0.15em; 
   letter-spacing: -0.38px;
 }
@@ -204,6 +225,7 @@ a:focus {
 
   .text_scroll_title {
     font-size: 20px;
+    line-height: 1.6;
     fill: var(--color-chart-axis);
     font-family: "Montserrat Alternates3", sans-serif;
   }
@@ -211,6 +233,11 @@ a:focus {
   .text-medium {
     font-size: 17px;
   }
+
+  .text-medium-scroller {
+    font-size: 16px;
+    line-height: 1.4;
+}
 
   .text-small {
     font-size: 14px;
@@ -221,46 +248,84 @@ a:focus {
 
 @media screen and (max-width: 768px) {
 
-  .text-big {
+.text-big {
     font-size: 28px;
-  }
+}
 
-  .text-medium {
+.text-medium {
     font-size: 16px;
-  }
+}
 
-  .text_scroll_title {
+.text-medium-scroller {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.text_scroll_title {
     font-size: 18px;
     fill: var(--color-chart-axis);
     font-family: "Montserrat Alternates3", sans-serif;
-  }
+}
 
-  .text-small {
+.text-small {
     font-size: 14px;
-  }
+}
+
 }
 
 /* Mobile (< 480px) */
 
 @media screen and (max-width: 480px) {
 
-  .text-big {
+.text-big {
     font-size: 24px;
   }
 
-  .text_scroll_title {
+.text_scroll_title {
     font-size: 16px;
     fill: var(--color-chart-axis);
     font-family: "Montserrat Alternates3", sans-serif;
   }
 
-  .text-medium {
+.text-medium-scroller {
     font-size: 14px;
+    line-height: 1.3;
+}
+
+.text-medium {
+    font-size: 13px;
+}
+
+.text-small {
+    font-size: 11px;
+}
+}
+
+/* Mobile (< 260px) */
+
+@media screen and (max-width: 260px) {
+
+.text-big {
+    font-size: 24px;
   }
 
-  .text-small {
-    font-size: 11px;
+.text_scroll_title {
+    font-size: 15px;
+    line-height: 1.1;
   }
+
+.text-medium-scroller {
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.text-medium {
+    font-size: 13px;
+}
+
+.text-small {
+    font-size: 11px;
+}
 }
 
 /*--------------------------------------*/

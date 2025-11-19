@@ -29,7 +29,7 @@
   <p class="text-medium">
     As the charts presented so far illustrate, economic inequality is strongly
     influenced by geographical context, which in turn is shaped by local
-    politics and economic regulations—or the lack thereof.
+    politics and economic regulations, or the lack thereof.
   </p>
   <p class="text-medium">
     The previous visualizations focused on the Gini coefficient, a single
@@ -58,8 +58,20 @@
 <style>
   
   section {
-    max-width: 60rem;
-    margin: 50px auto;
+    max-width: 50rem;
+    padding: 20 0px;
+    margin: 0 auto;
   }
-  
+
+  section.fullWidth {
+    max-width: none;
+    padding: 20px auto;
+    margin: 0 auto;
+  }
+
+  section.wide {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+ 
 </style>

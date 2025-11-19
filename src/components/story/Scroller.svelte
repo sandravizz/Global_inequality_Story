@@ -62,11 +62,11 @@
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
-                  <h2 class="text_scroll_title">{step.description.title}</h2>
+                  <p class="text_scroll_title">{step.description.title}</p>
                   {#if step.description.text}
-                    <p class="text-medium">{@html step.description.text}</p>
-                    <p class="text-medium">{@html step.description.text2}</p>
-                    <p class="text-medium">{@html step.description.text3}</p>
+                    <p class="text-medium-scroller">{@html step.description.text}</p>
+                    <p class="text-medium-scroller">{@html step.description.text2}</p>
+                    <p class="text-medium-scroller">{@html step.description.text3}</p>
                   {/if}
                 </div>
               </div>
@@ -87,11 +87,13 @@
 
   section.fullWidth {
     max-width: none;
-    padding: 20px;
+    padding: 20px auto;
+    margin: 0 auto;
   }
 
   section.wide {
     max-width: 70rem;
+    margin: 0 auto;
   }
 
   .container {
@@ -134,11 +136,11 @@
     background: none;
     z-index: 2;
     position: relative;
-    margin-bottom: 33vh;
+    margin: 10vh 10vh 10vh 0vh;
   }
 
   .steps {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 
   .step:last-of-type {
@@ -160,20 +162,20 @@
 
   .contentwrapper {
     position: relative;
-    width: 80%;
-    margin: 0 auto;
-    padding: 5px;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0px;
   }
 
   .contentbackground {
     border-radius: 30px;
     background-color: var(--color-background2);
-    opacity: 0.9;
+    opacity: 0.8;
     position: absolute;
     top: -10px;
     bottom: -10px;
-    left: -20px;
-    right: -20px;
+    left: -10px;
+    right: -10px;
   }
 
   .content {
@@ -206,7 +208,7 @@
     }
 
     .chart {
-      padding-left: 4px;
+      padding-left: 0px;
     }
 
     .fullWidth .chart {
@@ -215,12 +217,11 @@
 
     .fullWidth .steps {
       width: 40%;
-      margin-left: 5%;
+      margin-left: 0%;
     }
 
     .wide .contentwrapper {
       position: relative;
-      margin: auto;
     }
   }
 </style>

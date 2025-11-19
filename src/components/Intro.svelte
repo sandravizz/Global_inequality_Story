@@ -232,7 +232,7 @@
 
   .title {
       font-size: 40px;
-      -webkit-text-stroke-width: 1.7px;
+      -webkit-text-stroke-width: 1.6px;
       word-spacing: 15px;
   }
 
@@ -240,7 +240,7 @@
     word-spacing: 5px;
     letter-spacing: 0px;
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Montserrat Alternates2", sans-serif;
     margin: 10px 10px 10px 10px;
   }
@@ -252,7 +252,7 @@
 
   .title {
       font-size: 30px;
-      -webkit-text-stroke-width: 1.7px;
+      -webkit-text-stroke-width: 1.5px;
       word-spacing: 15px;
   }
 
@@ -272,8 +272,8 @@
 
   .title {
       font-size: 30px;
-      -webkit-text-stroke-width: 1.2px;
-      word-spacing: 10px;
+      -webkit-text-stroke-width: 1.3px;
+      word-spacing: 12px;
       white-space: normal; 
       text-align: center;
   }
@@ -294,7 +294,7 @@
 
   .title {
       font-size: 20px;
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1.2px;
       word-spacing: 10px;
       white-space: normal; 
       text-align: center;
