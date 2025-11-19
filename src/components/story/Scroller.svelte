@@ -140,7 +140,7 @@
   }
 
   .steps {
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
 
   .step:last-of-type {

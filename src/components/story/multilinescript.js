@@ -943,7 +943,7 @@ description: {
       ],
       description: {
         title: `The flat line revisited`,
-        text: "Seen up close, the flat<span class='highlight' style='color:var(--color-global)'>global</span>line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The<span class='highlight' style='color:var(--color-global)'>world’s</span>line looks calm, but beneath it, everything moves.",
+        text: "Seen up close, the flat <span class='highlight' style='color:var(--color-global)'>global</span> line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves.",
         text2:"", 
         text3:""
       },
