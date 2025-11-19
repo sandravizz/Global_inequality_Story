@@ -12,6 +12,7 @@ body {
   color: var(--color-chart-axis);
   min-height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {

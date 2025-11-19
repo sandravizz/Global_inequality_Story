@@ -52,8 +52,7 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-  <p class="text-medium">
-  </p>
+  <p class="text-medium"></p>
 </section>
 
 <style>

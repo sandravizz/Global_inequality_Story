@@ -113,6 +113,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%; 
+    width: 100%; 
   }
 
   .title {
@@ -121,12 +123,16 @@
     -webkit-text-stroke-width: 3.5px;
     letter-spacing: 1px;
     word-spacing: 30px;
-    text-wrap: nowrap;
     text-transform: uppercase;
     margin: -200px 0 0 0;
     padding: 0;
     font-family: "Syncopate";
     font-size: 110px;
+    text-align: center;
+    white-space: nowrap;    
+    word-wrap: normal;         
+    overflow-wrap: normal;
+  
   }
 
   .subtitle { 
@@ -136,6 +142,15 @@
     margin: 0 0 0 0;
     font-size: 26px;
     font-family: "Montserrat Alternates2", sans-serif;
+    display: block;             
+    text-align: center;        
+    max-width: 90%;        
+    margin: 0 auto;
+    white-space: normal;
+    overflow-wrap: break-word;
+    flex: 0 0 auto;
+    min-width: 0; 
+  
   }
 
   .credentials { 
@@ -231,14 +246,58 @@
   }
 }
 
+/* Tablet (< 590px) */
+
+@media screen and (max-width: 590px) {
+
+  .title {
+      font-size: 30px;
+      -webkit-text-stroke-width: 1.7px;
+      word-spacing: 15px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
 /* Mobile (< 480px) */
 
 @media screen and (max-width: 480px) {
 
   .title {
-      font-size: 24px;
+      font-size: 30px;
       -webkit-text-stroke-width: 1.2px;
       word-spacing: 10px;
+      white-space: normal; 
+      text-align: center;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 14px;
+    font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+/* Mobile (< 260px) */
+
+@media screen and (max-width: 260px) {
+
+  .title {
+      font-size: 20px;
+      -webkit-text-stroke-width: 1px;
+      word-spacing: 10px;
+      white-space: normal; 
+      text-align: center;
   }
 
   .subtitle { 
