@@ -197,20 +197,6 @@ a:focus {
 
 @media screen and (max-width: 1024px) {
 
-  .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 20px;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 18px;
-    font-family: "Montserrat Alternates2", sans-serif;
-  }
-
   .text-big {
     font-size: 36px;
   }
@@ -233,20 +219,6 @@ a:focus {
 /* Tablet (< 768px) */
 
 @media screen and (max-width: 768px) {
-
-  .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 20px;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 18px;
-    font-family: "Montserrat Alternates2", sans-serif;
-  }
 
   .text-big {
     font-size: 28px;
@@ -271,19 +243,6 @@ a:focus {
 
 @media screen and (max-width: 480px) {
 
-  .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 20px;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 18px;
-    font-family: "Montserrat Alternates2", sans-serif;
-  }
   .text-big {
     font-size: 24px;
   }

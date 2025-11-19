@@ -151,32 +151,53 @@
 /* Screen stylings */
 /*--------------------------------------*/
 
-/* Tablet landscape / Small laptop (< 1024px) */
+/* Tablet (< 1584px) */
 
-@media screen and (max-width: 1024px) {
-  
+@media screen and (max-width: 1584px) {
+
   .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 26px;
+      font-size: 95px;
+      -webkit-text-stroke-width: 2.5px;
+      word-spacing: 15px;
   }
 
   .subtitle { 
     word-spacing: 5px;
     letter-spacing: 0px;
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
   }
 }
 
-/* Tablet (< 768px) */
+/* Tablet (< 1355px) */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1355px) {
 
   .title {
+      font-size: 70px;
+      -webkit-text-stroke-width: 2px;
+      word-spacing: 13px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
+    font-size: 22px;
+    font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+/* Tablet landscape / Small laptop (< 1024px) */
+
+@media screen and (max-width: 1024px) {
+  
+  .title {
       font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
+      -webkit-text-stroke-width: 1.7px;
       word-spacing: 20px;
   }
 
@@ -184,8 +205,29 @@
     word-spacing: 5px;
     letter-spacing: 0px;
     margin: 0 0 0 0;
+    font-size: 20px;
+    font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+/* Tablet (< 768px) */
+
+@media screen and (max-width: 765px) {
+
+  .title {
+      font-size: 40px;
+      -webkit-text-stroke-width: 1.7px;
+      word-spacing: 15px;
+  }
+
+  .subtitle { 
+    word-spacing: 5px;
+    letter-spacing: 0px;
+    margin: 0 0 0 0;
     font-size: 18px;
     font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
   }
 }
 
@@ -194,17 +236,18 @@
 @media screen and (max-width: 480px) {
 
   .title {
-      font-size: 50px;
-      -webkit-text-stroke-width: 1.9px;
-      word-spacing: 20px;
+      font-size: 24px;
+      -webkit-text-stroke-width: 1.2px;
+      word-spacing: 10px;
   }
 
   .subtitle { 
     word-spacing: 5px;
     letter-spacing: 0px;
     margin: 0 0 0 0;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Montserrat Alternates2", sans-serif;
+    margin: 10px 10px 10px 10px;
   }
 }
 
