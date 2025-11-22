@@ -5,21 +5,24 @@
 </script>
 
 <section>
-  <p class="text-medium">   
-  <a target="_blank" href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-   >Today humanity produces more than ever before </a> enough to feed and sustain the entire planet. 
-    Yet millions still live and die in poverty. 
+  <p class="text-medium">
+    <a
+      target="_blank"
+      href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
+      >Today humanity produces more than ever before
+    </a> enough to feed and sustain the entire planet. Yet millions still live and
+    die in poverty.
   </p>
-  <p class="text-medium">      
-    If such abundance coexists with such deprivation, the problem cannot be production itself,
-    but the way its benefits are shared a way that is far from equal.
- </p>
- <p class="text-medium">
-   Global inequality remains deeply entrenched, 
-   reflecting a world economy that is profoundly hierarchical.  
-   As frustration and anger grow in many societies  
-   seen in the rise of extremist and authoritarian movements 
-   one might ask - could this be fueled by such extreme inequality?
+  <p class="text-medium">
+    If such abundance coexists with such deprivation, the problem cannot be
+    production itself, but the way its benefits are shared a way that is far
+    from equal.
+  </p>
+  <p class="text-medium">
+    Global inequality remains deeply entrenched, reflecting a world economy that
+    is profoundly hierarchical. As frustration and anger grow in many societies
+    seen in the rise of extremist and authoritarian movements one might ask -
+    could this be fueled by such extreme inequality?
   </p>
 </section>
 
@@ -56,22 +59,9 @@
 </section>
 
 <style>
-  
   section {
     max-width: 50rem;
-    padding: 20 0px;
+    padding: 20px 8px;
     margin: 0 auto;
   }
-
-  section.fullWidth {
-    max-width: none;
-    padding: 20px auto;
-    margin: 0 auto;
-  }
-
-  section.wide {
-    max-width: 70rem;
-    margin: 0 auto;
-  }
- 
 </style>
