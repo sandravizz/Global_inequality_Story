@@ -108,6 +108,8 @@
         ...padding,
         bottom: Math.ceil(textHeight),
       };
+
+      console.log("padding", padding);
     }
   }
 </script>
