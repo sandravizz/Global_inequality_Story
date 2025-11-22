@@ -33,10 +33,7 @@
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-<section
-  class:fullWidth={layout === "fullwidth"}
-  class:wide={layout === "wide"}
->
+<section class:wide={layout === "wide"}>
   <div class="container">
     <div class="chart-container">
       <div
@@ -64,9 +61,15 @@
                 <div class="content">
                   <p class="text_scroll_title">{step.description.title}</p>
                   {#if step.description.text}
-                    <p class="text-medium-scroller">{@html step.description.text}</p>
-                    <p class="text-medium-scroller">{@html step.description.text2}</p>
-                    <p class="text-medium-scroller">{@html step.description.text3}</p>
+                    <p class="text-medium-scroller">
+                      {@html step.description.text}
+                    </p>
+                    <p class="text-medium-scroller">
+                      {@html step.description.text2}
+                    </p>
+                    <p class="text-medium-scroller">
+                      {@html step.description.text3}
+                    </p>
                   {/if}
                 </div>
               </div>
@@ -85,12 +88,6 @@
     margin: 0 auto;
   }
 
-  section.fullWidth {
-    max-width: none;
-    padding: 20px auto;
-    margin: 0 auto;
-  }
-
   section.wide {
     max-width: 70rem;
     margin: 0 auto;
@@ -106,11 +103,6 @@
     width: calc(100% - 32px);
     position: relative;
     margin: auto 10px;
-  }
-
-  .fullWidth .chart-container {
-    width: 100%;
-    max-width: none;
   }
 
   .chart {
@@ -203,21 +195,8 @@
   }
 
   @media (min-width: 900px) {
-    .fullWidth .container {
-      margin: 0;
-    }
-
     .chart {
       padding-left: 0px;
-    }
-
-    .fullWidth .chart {
-      width: 100%;
-    }
-
-    .fullWidth .steps {
-      width: 40%;
-      margin-left: 0%;
     }
 
     .wide .contentwrapper {
