@@ -138,6 +138,8 @@
     padding: 0 20px;
     max-width: 100%;
     box-sizing: border-box;
+    align-self: flex-start;
+    margin-top: 30vh;
   }
 
   .title {
@@ -148,7 +150,6 @@
     word-spacing: 30px;
     text-wrap: wrap;
     text-transform: uppercase;
-    margin: -200px 0 0 0;
     padding: 0;
     font-family: "Syncopate";
     font-size: 110px;
@@ -180,7 +181,7 @@
 
   .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -190,7 +191,7 @@
   }
 
   .scroll-text {
-    color: #d5f2f2;
+    color: RGBA(213, 242, 242, 0.8);
     font-family: "Montserrat Alternates2", sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
@@ -198,7 +199,7 @@
   }
 
   .chevron {
-    color: #d5f2f2;
+    color: RGBA(213, 242, 242, 0.8);
   }
 
   /*--------------------------------------*/
@@ -219,11 +220,7 @@
     }
 
     .subtitle {
-      word-spacing: 5px;
-      letter-spacing: 0px;
-      margin: 0 0 0 0;
       font-size: 18px;
-      font-family: "Montserrat Alternates2", sans-serif;
     }
   }
 
@@ -242,10 +239,7 @@
 
     .subtitle {
       word-spacing: 4px;
-      letter-spacing: 0px;
-      margin: 0 0 0 0;
       font-size: 18px;
-      font-family: "Montserrat Alternates2", sans-serif;
     }
   }
 
@@ -265,18 +259,11 @@
 
     .subtitle {
       word-spacing: 3px;
-      letter-spacing: 0px;
-      margin: 0 0 0 0;
       font-size: 16px;
-      font-family: "Montserrat Alternates2", sans-serif;
     }
 
     .credits {
       font-size: 11px;
-    }
-
-    .scroll-indicator {
-      bottom: 30px;
     }
 
     .scroll-text {
