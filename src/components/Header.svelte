@@ -6,27 +6,36 @@
   let slideIndex = undefined;
   const setSlideIndex = (val) => (slideIndex = val);
 
+  // Create a GSAP timeline for automatic slideshow animation
   const tl = gsap.timeline();
-  tl.call(setSlideIndex, [1], 5);  
-  tl.call(setSlideIndex, [0], 15); 
+  // After 2 seconds, switch to slide 1 (second intro image)
+  tl.call(setSlideIndex, [1], 2);
+  // After 4 seconds, go back to slide 0 with subtitle
+  tl.call(setSlideIndex, [2], 4);
 </script>
 
 <div class="wrapper">
   <Intro
     src="{base}/assets/1.png"
     title="Global inequality"
-    subtitle="An interactive data-story tracing how inequality has shifted across countries and over time"
-    credentials="by Patrick and Sandra"
-    hide={slideIndex !== undefined ? slideIndex !== 0 : null}
-    show={slideIndex !== undefined ? slideIndex === 0 : null}
+    subtitle={slideIndex === 2
+      ? "An interactive data-story tracing how inequality has shifted across countries and over time"
+      : ""}
+    credits={slideIndex === 2 ? "by Patrick and Sandra" : ""}
+    hide={slideIndex !== undefined
+      ? slideIndex !== 0 && slideIndex !== 2
+      : null}
+    show={slideIndex !== undefined
+      ? slideIndex === 0 || slideIndex === 2
+      : null}
     isVisible={true}
   />
 
   <Intro
     src="{base}/assets/2.jpeg"
     title="Global inequality"
-    subtitle="An interactive data-story tracing how inequality has shifted across countries and over time"
-    credentials="by Patrick and Sandra"
+    subtitle=""
+    credits=""
     hide={slideIndex !== 1}
     show={slideIndex === 1}
   />

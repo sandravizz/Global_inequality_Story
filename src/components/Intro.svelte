@@ -4,7 +4,7 @@
   export let src;
   export let title;
   export let subtitle;
-  export let credentials;
+  export let credits;
   export let hide;
   export let show;
   export let isVisible = false;
@@ -75,8 +75,30 @@
     <p class="subtitle">
       {subtitle}
     </p>
+    <p class="credits">
+      {credits}
+    </p>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
+  <div class="scroll-indicator">
+    <span class="scroll-text">Scroll down</span>
+    <svg
+      class="chevron"
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 9L12 15L18 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </div>
 </div>
 
 <style>
@@ -113,8 +135,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%; 
-    width: 100%; 
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .title {
@@ -123,191 +146,141 @@
     -webkit-text-stroke-width: 3.5px;
     letter-spacing: 1px;
     word-spacing: 30px;
+    text-wrap: wrap;
     text-transform: uppercase;
     margin: -200px 0 0 0;
     padding: 0;
     font-family: "Syncopate";
     font-size: 110px;
     text-align: center;
-    white-space: nowrap;    
-    word-wrap: normal;         
-    overflow-wrap: normal;
-  
+    max-width: 100%;
   }
 
-  .subtitle { 
+  .subtitle {
     word-spacing: 5px;
     letter-spacing: 0px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     margin: 0 0 0 0;
     font-size: 26px;
     font-family: "Montserrat Alternates2", sans-serif;
-    display: block;             
-    text-align: center;        
-    max-width: 90%;        
-    margin: 0 auto;
-    white-space: normal;
-    overflow-wrap: break-word;
-    flex: 0 0 auto;
-    min-width: 0; 
-  
+    text-align: center;
+    max-width: 100%;
   }
 
-  .credentials { 
+  .credits {
     word-spacing: 5px;
     letter-spacing: 0px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     margin: 0 0 0 0;
     font-size: 12px;
     font-family: "Montserrat Alternates2", sans-serif;
+    text-align: center;
+    max-width: 100%;
   }
 
-/*--------------------------------------*/
-/* Screen stylings */
-/*--------------------------------------*/
-
-/* Tablet (< 1584px) */
-
-@media screen and (max-width: 1584px) {
-
-  .title {
-      font-size: 95px;
-      -webkit-text-stroke-width: 2.5px;
-      word-spacing: 15px;
+  .scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 24px;
+  .scroll-text {
+    color: #d5f2f2;
     font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-/* Tablet (< 1355px) */
-
-@media screen and (max-width: 1355px) {
-
-  .title {
-      font-size: 70px;
-      -webkit-text-stroke-width: 2px;
-      word-spacing: 13px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 22px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
+  .chevron {
+    color: #d5f2f2;
   }
-}
 
-/* Tablet landscape / Small laptop (< 1024px) */
+  /*--------------------------------------*/
+  /* Screen stylings */
+  /*--------------------------------------*/
 
-@media screen and (max-width: 1024px) {
-  
-  .title {
+  /* Tablet landscape / Small laptop (< 1024px) */
+
+  @media screen and (max-width: 1024px) {
+    .textcontainer {
+      padding: 0 30px;
+    }
+
+    .title {
       font-size: 50px;
+      -webkit-text-stroke-width: 1.9px;
+      word-spacing: 26px;
+    }
+
+    .subtitle {
+      word-spacing: 5px;
+      letter-spacing: 0px;
+      margin: 0 0 0 0;
+      font-size: 18px;
+      font-family: "Montserrat Alternates2", sans-serif;
+    }
+  }
+
+  /* Tablet (< 768px) */
+
+  @media screen and (max-width: 768px) {
+    .textcontainer {
+      padding: 0 20px;
+    }
+
+    .title {
+      font-size: 42px;
       -webkit-text-stroke-width: 1.7px;
-      word-spacing: 20px;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 20px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-/* Tablet (< 768px) */
-
-@media screen and (max-width: 765px) {
-
-  .title {
-      font-size: 40px;
-      -webkit-text-stroke-width: 1.6px;
       word-spacing: 15px;
+    }
+
+    .subtitle {
+      word-spacing: 4px;
+      letter-spacing: 0px;
+      margin: 0 0 0 0;
+      font-size: 18px;
+      font-family: "Montserrat Alternates2", sans-serif;
+    }
   }
 
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 17px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
+  /* Mobile (< 480px) */
 
-/* Tablet (< 590px) */
+  @media screen and (max-width: 480px) {
+    .textcontainer {
+      padding: 0 15px;
+    }
 
-@media screen and (max-width: 590px) {
-
-  .title {
-      font-size: 30px;
+    .title {
+      font-size: 32px;
       -webkit-text-stroke-width: 1.5px;
-      word-spacing: 15px;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 18px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-/* Mobile (< 480px) */
-
-@media screen and (max-width: 480px) {
-
-  .title {
-      font-size: 30px;
-      -webkit-text-stroke-width: 1.3px;
-      word-spacing: 12px;
-      white-space: normal; 
-      text-align: center;
-  }
-
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 14px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-/* Mobile (< 260px) */
-
-@media screen and (max-width: 260px) {
-
-  .title {
-      font-size: 20px;
-      -webkit-text-stroke-width: 1.2px;
       word-spacing: 10px;
-      white-space: normal; 
-      text-align: center;
-  }
+      letter-spacing: 0.5px;
+    }
 
-  .subtitle { 
-    word-spacing: 5px;
-    letter-spacing: 0px;
-    margin: 0 0 0 0;
-    font-size: 14px;
-    font-family: "Montserrat Alternates2", sans-serif;
-    margin: 10px 10px 10px 10px;
-  }
-}
+    .subtitle {
+      word-spacing: 3px;
+      letter-spacing: 0px;
+      margin: 0 0 0 0;
+      font-size: 16px;
+      font-family: "Montserrat Alternates2", sans-serif;
+    }
 
+    .credits {
+      font-size: 11px;
+    }
+
+    .scroll-indicator {
+      bottom: 30px;
+    }
+
+    .scroll-text {
+      font-size: 12px;
+    }
+  }
 </style>

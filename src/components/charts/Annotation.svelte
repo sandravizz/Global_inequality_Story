@@ -12,7 +12,6 @@
 {#key $width}
   {#each $custom.annotations as { x: xValue, y: yValue, z: zValue, text, dy = 0, dx = 0 }}
     {#if xValue && zValue && text}
-
       <!-- Inside chart annotation -->
       <div
         class=" text-small"
@@ -25,26 +24,23 @@
     {:else if xValue !== undefined && yValue !== undefined}
       <div
         class="text-small inside middle"
-        style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue)+ dy}px;"
+        style="left: {$xScale(xValue) + dx}px; top:{$yScale(yValue) + dy}px;"
       >
-      {@html text}
+        {@html text}
       </div>
     {:else}
       {#if xValue !== undefined}
-
         <!-- x axis annotation -->
         <div
           class="text-small absolute middle"
           style="left: {$xScale(xValue) + dx}px; top: -32px;"
         >
-        {@html text}
+          {@html text}
         </div>
         <div class="xLine absolute" style="left: {$xScale(xValue)}px;" />
-       
       {/if}
 
       {#if yValue !== undefined}
-
         <!-- y axis annotation -->
         <div
           class="text-small"
@@ -58,8 +54,7 @@
 {/key}
 
 <style>
-
- .inside {
+  .inside {
     position: absolute;
     margin-left: -3em;
   }
@@ -74,7 +69,7 @@
 
   .text-small {
     white-space: nowrap;
-    display: block; 
+    display: block;
     letter-spacing: -0.5px;
     transition: all 0.8s;
     text-align: right;
