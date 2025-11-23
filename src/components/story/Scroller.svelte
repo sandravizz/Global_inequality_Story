@@ -123,20 +123,23 @@
   }
 
   .step {
-    height: 100vh;
     width: 100%;
     background: none;
     z-index: 2;
     position: relative;
-    margin: 10vh 10vh 10vh 0vh;
+    margin: 130vh 10vw 10vw 0vh;
   }
 
   .steps {
     margin-top: 7vh;
   }
 
+  .step:first-of-type {
+    margin-top: 30vh;
+  }
+
   .step:last-of-type {
-    height: 150vh;
+    margin-bottom: 150vh;
   }
 
   .sticky {
@@ -156,7 +159,7 @@
     position: relative;
     width: 100%;
     margin: 0 0 0 0;
-    padding: 0px;
+    padding: 4px;
   }
 
   .contentbackground {

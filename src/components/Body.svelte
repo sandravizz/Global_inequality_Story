@@ -61,7 +61,7 @@
 <style>
   section {
     max-width: 50rem;
-    padding: 20px 8px;
+    padding: 20px 12px;
     margin: 0 auto;
   }
 </style>

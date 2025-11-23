@@ -80,8 +80,9 @@
     </p>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
+
   <div class="scroll-indicator">
-    <span class="scroll-text">Scroll down</span>
+    <span class="scroll-text">scroll down</span>
     <svg
       class="chevron"
       width="16"
@@ -166,17 +167,22 @@
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
     max-width: 100%;
+    padding: 4px 6px;
+    filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.7));
   }
 
   .credits {
     word-spacing: 5px;
     letter-spacing: 0px;
     text-wrap: wrap;
-    margin: 0 0 0 0;
+    margin: 1.5em 0 0 0;
     font-size: 12px;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
     max-width: 100%;
+    padding: 4px 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
   }
 
   .scroll-indicator {
@@ -188,6 +194,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 4px 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
   }
 
   .scroll-text {
@@ -195,7 +204,6 @@
     font-family: "Montserrat Alternates2", sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
-    text-transform: uppercase;
   }
 
   .chevron {
@@ -267,7 +275,7 @@
     }
 
     .scroll-text {
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 </style>

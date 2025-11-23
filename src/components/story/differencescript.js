@@ -99,7 +99,7 @@ export default {
               x: "2023",
               y: renderData[3].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[3].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-europe);'>${formatter.format(renderData[3].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
 
@@ -107,7 +107,7 @@ export default {
               x: "2023",
               y: renderData[2].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[2].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-europe);'>${formatter.format(renderData[2].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
 
@@ -149,7 +149,7 @@ export default {
               x: "2023",
               y: renderData[5].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[5].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-europe);'>${formatter.format(renderData[5].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
 
@@ -157,7 +157,7 @@ export default {
               x: "2023",
               y: renderData[4].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[4].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-europe);'>${formatter.format(renderData[4].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
@@ -202,14 +202,14 @@ export default {
               x: "2023",
               y: renderData[7].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[7].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-usa);'>${formatter.format(renderData[7].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
               x: "2023",
               y: renderData[6].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[7].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-usa);'>${formatter.format(renderData[7].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
@@ -265,14 +265,14 @@ export default {
               x: "2023",
               y: renderData[9].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[9].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-south-america);'>${formatter.format(renderData[9].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
               x: "2023",
               y: renderData[8].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[8].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-south-america);'>${formatter.format(renderData[8].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
@@ -321,14 +321,14 @@ export default {
               x: "2023",
               y: renderData[11].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[11].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-africa);'>${formatter.format(renderData[11].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
               x: "2023",
               y: renderData[10].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[10].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-africa);'>${formatter.format(renderData[10].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
@@ -373,14 +373,14 @@ export default {
               x: "2023",
               y: renderData[13].values[43].value,
               dy: "- 1.4em - 6px - 4px",
-              text: `${formatter.format(renderData[13].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-asia);'>${formatter.format(renderData[13].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
               x: "2023",
               y: renderData[12].values[43].value,
               dy: "3px + 4px",
-              text: `${formatter.format(renderData[12].values[43].value)} in 2023`,
+              text: `<span style='color: var(--color-asia);'>${formatter.format(renderData[12].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {

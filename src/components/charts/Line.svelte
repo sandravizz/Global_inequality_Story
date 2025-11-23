@@ -2,10 +2,12 @@
   import { getContext } from "svelte";
   import { line } from "d3-shape";
   import { curveMonotoneX } from "d3";
+  import { draw, fade } from "svelte/transition";
 
   export let stroke = "#fff";
   export let strokeWidth = 1;
   export let strokeOpacity = 1;
+  export let drawFade = false;
 
   const { data, xGet, yGet, width } = getContext("LayerCake");
 
@@ -25,6 +27,8 @@
         stroke-opacity={strokeOpacity}
         stroke-width={strokeWidth}
         fill="none"
+        in:draw={{ duration: drawFade ? 1500 : 0 }}
+        out:fade={{ duration: drawFade ? 500 : 0 }}
       />
     {/each}
   </g>

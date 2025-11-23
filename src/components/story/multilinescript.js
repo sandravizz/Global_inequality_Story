@@ -108,6 +108,7 @@ export default {
             stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
+            drawFade: true, // TODO: add this to the Line component
           },
         },
       ],

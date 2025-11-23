@@ -38,8 +38,7 @@ h6 {
 p {
   display: block;
   unicode-bidi: isolate;
-  margin-top: 10px;
-  margin-bottom: 10;
+  margin-top: 6px;
 }
 
 /*--------------------------------------*/
@@ -78,6 +77,8 @@ p {
   fill: var(--color-chart-axis);
   font-family: "Montserrat Alternates3", sans-serif;
   margin-bottom: 8px;
+  padding: 0px;
+  margin: 2px 0 0;
 }
 
 .text-medium {

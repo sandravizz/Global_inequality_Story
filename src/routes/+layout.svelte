@@ -9,4 +9,14 @@
 <main id="content"><slot /></main>
 <Footer />
 
+<style>
+  #content {
+    margin-top: 4em;
+  }
 
+  @media (max-width: 500px) {
+    #content {
+      margin-top: 1em;
+    }
+  }
+</style>

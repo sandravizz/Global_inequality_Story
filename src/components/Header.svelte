@@ -9,9 +9,9 @@
   // Create a GSAP timeline for automatic slideshow animation
   const tl = gsap.timeline();
   // After 2 seconds, switch to slide 1 (second intro image)
-  tl.call(setSlideIndex, [1], 2);
+  tl.call(setSlideIndex, [1], 5);
   // After 4 seconds, go back to slide 0 with subtitle
-  tl.call(setSlideIndex, [2], 4);
+  tl.call(setSlideIndex, [2], 15);
 </script>
 
 <div class="wrapper">
