@@ -84,12 +84,12 @@ p {
 .text-medium {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-global);
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 19px;
+  line-height: 1.5;
   hyphens: auto;
   text-align: left;
-  word-spacing: 0.15em;
-  letter-spacing: -0.38px;
+  word-spacing: 0.25em;
+  letter-spacing: -0.39px;
 }
 
 .text-medium-scroller {

@@ -157,9 +157,9 @@
 
   .contentwrapper {
     position: relative;
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 4px;
+    width: 70%;
+    margin: 0 0 0 150px;
+    padding: 6px;
   }
 
   .contentbackground {
@@ -206,4 +206,22 @@
       position: relative;
     }
   }
+
+    /* Mobile (< 480px) */
+
+@media screen and (max-width: 480px) {
+  .contentwrapper {
+    width: 100%;
+    margin: 0 0 0 0; 
+  }
+}
+
+  /* Mobile (< 260px) */
+
+@media screen and (max-width: 260px) {
+  .contentwrapper {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
 </style>

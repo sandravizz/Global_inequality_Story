@@ -85,8 +85,8 @@
     <span class="scroll-text">scroll down</span>
     <svg
       class="chevron"
-      width="16"
-      height="16"
+      width="14"
+      height="14"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +159,7 @@
   }
 
   .subtitle {
-    word-spacing: 5px;
+    word-spacing: 4px;
     letter-spacing: 0px;
     text-wrap: wrap;
     margin: 0 0 0 0;
@@ -167,12 +167,12 @@
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
     max-width: 100%;
-    padding: 4px 6px;
-    filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.7));
+    padding: 0px 6px;
+    filter: drop-shadow(1px 1px 1px #1CB0BA);
   }
 
   .credits {
-    word-spacing: 5px;
+    word-spacing: 2px;
     letter-spacing: 0px;
     text-wrap: wrap;
     margin: 1.5em 0 0 0;
@@ -181,7 +181,7 @@
     text-align: center;
     max-width: 100%;
     padding: 4px 6px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 6px;
   }
 
@@ -195,14 +195,13 @@
     flex-direction: column;
     align-items: center;
     padding: 4px 6px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 6px;
   }
 
   .scroll-text {
-    color: RGBA(213, 242, 242, 0.8);
     font-family: "Montserrat Alternates2", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
   }
 

@@ -88,10 +88,6 @@ export default {
               text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
-              x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
               x: "2023",
               y: 0.67,
               dy: "- 3.33em",
@@ -108,7 +104,7 @@ export default {
             stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
-            drawFade: true, // TODO: add this to the Line component
+            // drawFade: true, // TODO: add this to the Line component
           },
         },
       ],
@@ -546,7 +542,7 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
+              text: "💰 GFC",
             },
           ],
         },
@@ -649,7 +645,7 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
+              text: "💰 GFC",
             },
           ],
         },
@@ -753,7 +749,7 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
+              text: "💰 GFC",
             },
           ],
         },
@@ -822,7 +818,7 @@ export default {
       },
     },
     // --------------------------------------
-    // 11. Global average
+    // 11. Japan vs. China
     // --------------------------------------
     {
       charts: [
@@ -887,7 +883,7 @@ export default {
         {
           key: "country",
           componentIndex: 4,
-          data: renderData.filter((d) => ["JP"].includes(d.country)),
+          data: renderData.filter((d) => ["CN"].includes(d.country)),
           options: {
             stroke: "var(--color-asia)",
             strokeWidth: 4,
@@ -897,10 +893,10 @@ export default {
         {
           key: "country",
           componentIndex: 5,
-          data: renderData.filter((d) => ["JP"].includes(d.country)),
+          data: renderData.filter((d) => ["CN"].includes(d.country)),
           options: {
             stroke: "var(--color-asia)",
-            strokeWidth: 0,
+            strokeWidth: 4,
             yTickFormat: yTickFormatter,
           },
         },

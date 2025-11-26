@@ -9,9 +9,9 @@
   // Create a GSAP timeline for automatic slideshow animation
   const tl = gsap.timeline();
   // After 2 seconds, switch to slide 1 (second intro image)
-  tl.call(setSlideIndex, [1], 5);
+  tl.call(setSlideIndex, [1], 4);
   // After 4 seconds, go back to slide 0 with subtitle
-  tl.call(setSlideIndex, [2], 15);
+  tl.call(setSlideIndex, [2], 14);
 </script>
 
 <div class="wrapper">
@@ -19,9 +19,9 @@
     src="{base}/assets/1.png"
     title="Global inequality"
     subtitle={slideIndex === 2
-      ? "An interactive data-story tracing how inequality has shifted across countries and over time"
+      ? "Data-story about global inequality between and within countries over the last 4 decades"
       : ""}
-    credits={slideIndex === 2 ? "by Patrick and Sandra" : ""}
+    credits={slideIndex === 2 ? "by Patrick Wojda and Sandra Becker" : ""}
     hide={slideIndex !== undefined
       ? slideIndex !== 0 && slideIndex !== 2
       : null}

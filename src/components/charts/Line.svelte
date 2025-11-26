@@ -7,7 +7,10 @@
   export let stroke = "#fff";
   export let strokeWidth = 1;
   export let strokeOpacity = 1;
-  export let drawFade = false;
+  // export let drawFade = false;
+
+    //  in:draw={{ duration: drawFade ? 1500 : 0 }}
+    //  out:fade={{ duration: drawFade ? 500 : 0 }}
 
   const { data, xGet, yGet, width } = getContext("LayerCake");
 
@@ -26,9 +29,7 @@
         stroke={Array.isArray(stroke) ? stroke[i] : stroke}
         stroke-opacity={strokeOpacity}
         stroke-width={strokeWidth}
-        fill="none"
-        in:draw={{ duration: drawFade ? 1500 : 0 }}
-        out:fade={{ duration: drawFade ? 500 : 0 }}
+        fill="none"     
       />
     {/each}
   </g>
