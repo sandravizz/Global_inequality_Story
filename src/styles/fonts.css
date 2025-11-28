@@ -6,27 +6,64 @@
 @font-face {
   font-family: "Montserrat Alternates1";
   src: url("/assets/MontserratAlternate1.ttf") format("truetype");
- };
+}
 
 @font-face {
   font-family: "Montserrat Alternates2";
   src: url("/assets/MontserratAlternate2.ttf") format("truetype");
- };
+}
 
 @font-face {
   font-family: "Montserrat Alternates3";
   src: url("/assets/MontserratAlternate3.ttf") format("truetype");
- };
-
-
-@font-face {
-  font-family: "Kedebideri-Black";
-  src: url("/assets/MontserratAlternate2.ttf") format("truetype");
- };
+}
 
 @font-face {
-  font-family: "Kedebideri-Regular";
-  src: url("/assets/Kedebideri-Regular.ttf") format("truetype");
- };
+  font-family: "Montserrat Alternates Black";
+  src: url("/assets/MontserratAlternates-Black.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "Montserrat Alternates BlackItalic";
+  src: url("/assets/MontserratAlternates-BlackItalic.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "Montserrat Alternates Bold";
+  src: url("/assets/MontserratAlternates-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates BoldItalic";
+  src: url("/assets/MontserratAlternates-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Extrabold";
+  src: url("/assets/MontserratAlternates-Extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Italic";
+  src: url("/assets/MontserratAlternates-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Light";
+  src: url("/assets/MontserratAlternates-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Medium";
+  src: url("/assets/MontserratAlternates-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Regular";
+  src: url("/assets/MontserratAlternates-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates SemiBold";
+  src: url("/assets/MontserratAlternates-SemiBold.ttf") format("truetype");
+}

@@ -46,9 +46,11 @@
   "browserslist": "> 0.5%, last 4 versions, not ie <= 11, not ie_mob <= 11",
   "dependencies": {
     "@fontsource/lato": "^5.0.21",
+    "@tailwindcss/vite": "^4.1.17",
     "arquero": "^5.4.0",
     "d3-svg-annotation": "^2.5.1",
     "gsap": "^3.12.5",
+    "tailwindcss": "^4.1.17",
     "uuid": "^10.0.0"
   }
 }

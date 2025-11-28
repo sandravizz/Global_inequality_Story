@@ -2,45 +2,61 @@
   import Scroller from "./story/Scroller.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
+  import { Heart } from "lucide-svelte";
+  import { HeartCrack } from "lucide-svelte";
 </script>
 
 <section>
-  <p class="text-medium">
+  <p class="text-body">
+    <Heart
+      size="1em"
+      color="#1CB0BA"
+    /> <br>
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
-      >Today humanity produces more goods and services than ever before in history; <br>
-    </a> enough to feed and sustain the entire world. <br> Yet millions still live and
-    die in poverty.
+      >Today humanity produces more goods and services than ever before in
+      history,
+    </a>
+    enough to feed and sustain the entire world. 
   </p>
-  <p class="text-medium">
+ <p class="text-body">
+    <HeartCrack
+      size="1em"
+      color="#1CB0BA"
+    /> <br>
+    Yet millions still live and die in poverty. 
+  </p>
+
+  <p class="text-body">
     If such abundance coexists with such deprivation, the problem isn't
-    production, <br> but the way its benefits are distributed <br> a way that is far
-    from equal.
+    production, but the way its benefits are distributed a way that is far from
+    equal.
   </p>
-  <p class="text-medium">
+  <p class="text-body">
     Global inequality remains deeply entrenched, reflecting a world economy that
-    is profoundly hierarchical. <br> As frustration and anger grow in many societies 
-    seen in the rise of extremist and authoritarian movements in the political west;<br>
-    one might ask could this be fueled by such extreme inequality?
+    is profoundly hierarchical. As frustration and anger grow in many societies
+    seen in the rise of extremist and authoritarian movements in the political
+    west: one might ask could this be fueled by such extreme inequality?
   </p>
-    <p class="text-medium">
-    Now, inequality between whom? Who is rich and who is poor and how big is the gab between the two. 
-    In this project we take a deep look at global inequality from different prespective. 
-    Inequality refer to economic inequality, to be preceive differences in income distribution. 
-    And we start, with look a countries. 
+  <p class="text-body">
+    Now, inequality between whom? Who is rich and who is poor and how big is the
+    gab between the two? In this project we take a deep look at global
+    inequality from different prespectives. Inequality refers to economic
+    inequality, to be preceive differences in income distribution. And we start,
+    with looking at countries.
   </p>
 </section>
 
 <Scroller storyscript={multilinescript} layout="wide" />
 
 <section>
-  <p class="text-medium">
+  <p class="text-body">
     As the charts presented so far illustrate, economic inequality is strongly
     influenced by geographical context, which in turn is shaped by local
     politics and economic regulations, or the lack thereof.
   </p>
-  <p class="text-medium">
+  <p class="text-body">
     The previous visualizations focused on the Gini coefficient, a single
     numerical indicator that provides an overall summary of inequality within a
     country. While the Gini coefficient is useful for understanding the general
@@ -49,7 +65,7 @@
     inequality is driven by extreme income concetration at the top or lacking a
     miminum share at the bottom.
   </p>
-  <p class="text-medium">
+  <p class="text-body">
     To gain a more nuanced understanding, the following charts compare the share
     of national income held by the richest 10% with that of the poorest 50%.
     This comparison allows us to observe how these two income groups have
@@ -61,13 +77,49 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-  <p class="text-medium"></p>
+  <p class="text-body"></p>
 </section>
 
 <style>
   section {
     max-width: 50rem;
-    padding: 20px 12px;
+    padding: 20px 13px;
     margin: 0 auto;
+  }
+
+  .text-body {
+    font-family: "Montserrat Alternates Regular", sans-serif;
+    color: var(--color-global);
+    font-size: 1em;
+    line-height: 1.3;
+    hyphens: auto;
+    text-align: left;
+    word-spacing: 0.2em;
+    letter-spacing: -0.39px;
+    padding: 0.5em;
+  }
+
+  /*--------------------------------------*/
+  /* Screen stylings */
+  /*--------------------------------------*/
+
+  /* Tablet landscape / Small laptop (< 1024px) */
+  @media screen and (max-width: 1024px) {
+ 
+  }
+
+  /* Tablet (< 768px) */
+  @media screen and (max-width: 768px) {
+
+  }
+
+  /* Mobile (< 480px) */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* Mobile (< 260px) */
+  @media screen and (max-width: 260px) {
+
   }
 </style>
