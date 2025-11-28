@@ -8,24 +8,18 @@
 
 <section>
   <p class="text-body">
-    <Heart
-      size="1em"
-      color="#1CB0BA"
-    /> <br>
+    <Heart size="1em" color="#1CB0BA" /> <br />
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
       >Today humanity produces more goods and services than ever before in
       history,
     </a>
-    enough to feed and sustain the entire world. 
+    enough to feed and sustain the entire world.
   </p>
- <p class="text-body">
-    <HeartCrack
-      size="1em"
-      color="#1CB0BA"
-    /> <br>
-    Yet millions still live and die in poverty. 
+  <p class="text-body">
+    <HeartCrack size="1em" color="#1CB0BA" /> <br />
+    Yet millions still live and die in poverty.
   </p>
 
   <p class="text-body">
@@ -82,21 +76,26 @@
 
 <style>
   section {
-    max-width: 50rem;
-    padding: 20px 13px;
+    max-width: 42rem; /* a bit narrower for easier reading */
+    padding: 2em 1.5em;
     margin: 0 auto;
   }
 
   .text-body {
     font-family: "Montserrat Alternates Regular", sans-serif;
-    color: var(--color-global);
-    font-size: 1em;
-    line-height: 1.3;
+    color: #e5e6ed;
+    font-size: 1.1em;
+    line-height: 1.6;
     hyphens: auto;
     text-align: left;
-    word-spacing: 0.2em;
-    letter-spacing: -0.39px;
-    padding: 0.5em;
+    word-spacing: normal;
+    letter-spacing: 0;
+  }
+
+  .icon-line {
+    display: inline-block;
+    margin-right: 0.5em;
+    transform: translateY(0.05em); /* subtle vertical alignment */
   }
 
   /*--------------------------------------*/
@@ -105,21 +104,32 @@
 
   /* Tablet landscape / Small laptop (< 1024px) */
   @media screen and (max-width: 1024px) {
- 
   }
 
   /* Tablet (< 768px) */
   @media screen and (max-width: 768px) {
+    section {
+      padding: 1.5em 1.25em;
+      max-width: 100%;
+    }
 
+    .text-body {
+      font-size: 1em;
+      line-height: 1.6;
+    }
   }
 
   /* Mobile (< 480px) */
   @media screen and (max-width: 480px) {
-
+    section {
+      padding: 1.25em 1em;
+    }
+    .text-body {
+      font-size: 0.9em;
+    }
   }
 
   /* Mobile (< 260px) */
   @media screen and (max-width: 260px) {
-
   }
 </style>
