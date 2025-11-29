@@ -74,7 +74,7 @@ export default {
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>richest 10%. The lower line represents the income share of the<span class='highlight' style='color:var(--color-global)'>global</span>poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the<span class='highlight' style='color:var(--color-global)'>global</span>bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
+        text: "The upper line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> richest 10%. The lower line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
         text2: "",
         text3: "",
       },

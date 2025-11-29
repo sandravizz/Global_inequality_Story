@@ -2,8 +2,7 @@
   import Scroller from "./story/Scroller.svelte";
   import multilinescript from "./story/multilinescript.js";
   import differencescript from "./story/differencescript.js";
-  import { Heart } from "lucide-svelte";
-  import { HeartCrack } from "lucide-svelte";
+  import { Heart, HeartCrack, EqualNot, Angry, HandCoins } from "lucide-svelte";
 </script>
 
 <section>
@@ -18,27 +17,29 @@
     enough to feed and sustain the entire world.
   </p>
   <p class="text-body">
-    <HeartCrack size="1em" color="#1CB0BA" /> <br />
+    <HeartCrack size="1.2em" color="#1CB0BA" /> <br />
     Yet millions still live and die in poverty.
   </p>
 
   <p class="text-body">
-    If such abundance coexists with such deprivation, the problem isn't
-    production, but the way its benefits are distributed a way that is far from
-    equal.
+    <EqualNot size="1.2em" color="#1CB0BA" /> <br />
+    If such abundance coexists with such deprivation, the problem isn't production,
+    but the way its benefits are distributed a way that is far from equal. Global
+    inequality remains deeply entrenched, reflecting a world economy that is profoundly
+    hierarchical.
   </p>
   <p class="text-body">
-    Global inequality remains deeply entrenched, reflecting a world economy that
-    is profoundly hierarchical. As frustration and anger grow in many societies
-    seen in the rise of extremist and authoritarian movements in the political
-    west: one might ask could this be fueled by such extreme inequality?
+    <Angry size="1.2em" color="#1CB0BA" /> <br />
+    As frustration and anger grow in many societies seen in the rise of extremist
+    and authoritarian movements in the political west: one might ask could this be
+    fueled by such extreme inequality?
   </p>
   <p class="text-body">
+    <HandCoins size="1.2em" color="#1CB0BA" /> <br />
     Now, inequality between whom? Who is rich and who is poor and how big is the
-    gab between the two? In this project we take a deep look at global
-    inequality from different prespectives. Inequality refers to economic
-    inequality, to be preceive differences in income distribution. And we start,
-    with looking at countries.
+    gab between the two? In this project we take a deep look at global inequality
+    from different prespectives. Inequality refers to economic inequality, to be
+    preceive differences in income distribution. And we start, with looking at countries.
   </p>
 </section>
 
@@ -71,7 +72,13 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-  <p class="text-body"></p>
+  <p class="text-body">
+    We end this data story with a quote form Branko Milanovic, which describes
+    very well a reality often not taken into account. "It is an illusion to
+    believe that what is good for the world must be good for everyone." If we
+    want a world, which is currently very inequal, to become more equal, some people will
+    loose in status and financial standing.
+  </p>
 </section>
 
 <style>

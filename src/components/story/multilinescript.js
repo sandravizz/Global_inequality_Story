@@ -901,7 +901,12 @@ export default {
           },
         },
       ],
-      description: {},
+      description: {
+        title: `Now we need to look at China`,
+        text: "",
+        text2: "",
+        text3: "",
+      },
     },
     // --------------------------------------
     // 11. Global average
