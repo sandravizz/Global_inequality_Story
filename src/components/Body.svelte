@@ -37,9 +37,9 @@
   <p class="text-body">
     <HandCoins size="1.2em" color="#1CB0BA" /> <br />
     Now, inequality between whom? Who is rich and who is poor and how big is the
-    gab between the two? In this project we take a deep look at global inequality
+    gap between the two? In this project we take a deep look at global inequality
     from different prespectives. Inequality refers to economic inequality, to be
-    preceive differences in income distribution. And we start, with looking at countries.
+    perceice differences in income distribution. And we start, with looking at countries.
   </p>
 </section>
 
@@ -51,6 +51,11 @@
     influenced by geographical context, which in turn is shaped by local
     politics and economic regulations, or the lack thereof.
   </p>
+
+  <video controls width="100%">
+    <source src="/assets/videos/rich_poor_players.mp4" type="video/mp4" />
+  </video>
+
   <p class="text-body">
     The previous visualizations focused on the Gini coefficient, a single
     numerical indicator that provides an overall summary of inequality within a
@@ -76,8 +81,8 @@
     We end this data story with a quote form Branko Milanovic, which describes
     very well a reality often not taken into account. "It is an illusion to
     believe that what is good for the world must be good for everyone." If we
-    want a world, which is currently very inequal, to become more equal, some people will
-    loose in status and financial standing.
+    want a world, which is currently very inequal, to become more equal, some
+    people will loose in status and financial standing.
   </p>
 </section>
 

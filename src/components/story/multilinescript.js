@@ -62,11 +62,15 @@ export default {
         text3:
           "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it.",
         text2:
-          "A Gini of 1 means one person earns everything <img src='./assets/Musk_face.png' style='display: inline-block; width: 1.8em;' /> and a Gini of 0 means everyone earns the same, whereas a. You can imagine that extreme, one Musk holding all the world’s money.",
-      },
+            "  <video controls width=\"100%\"><source src=\"/assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
+
+        },
     },
     // --------------------------------------
     //2. Global average
+
+          // "A Gini of 1 means one person earns everything <img src='./assets/Musk_face.png' style='display: inline-block; width: 1.8em;' /> and a Gini of 0 means everyone earns the same, whereas a. You can imagine that extreme, one Musk holding all the world’s money.",
+ 
     // --------------------------------------
     {
       charts: [
