@@ -62,7 +62,7 @@ export default {
         text3:
           "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it.",
         text2:
-            "  <video controls width=\"100%\"><source src=\"/assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
+            "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
 
         },
     },

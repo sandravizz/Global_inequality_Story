@@ -53,7 +53,7 @@
   </p>
 
   <video controls width="100%">
-    <source src="/assets/videos/rich_poor_players.mp4" type="video/mp4" />
+    <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
   </video>
 
   <p class="text-body">

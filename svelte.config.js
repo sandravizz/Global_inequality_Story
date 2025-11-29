@@ -14,7 +14,7 @@ const config = {
     adapter: adapterStatic({ strict: false }),
     paths: {
       base:
-        process.env.NODE_ENV === "production" ? "/sveltekit-github-pages" : "",
+        process.env.NODE_ENV === "production" ? "/GLOBAL-INEQUALITY-STORY" : "",
     },
     appDir: "app",
   },
