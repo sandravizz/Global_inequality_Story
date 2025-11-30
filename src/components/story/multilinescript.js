@@ -910,14 +910,19 @@ export default {
       ],
       description: {
         title: `Now we need to look at China`,
-        text:  "  <video controls poster=\"assets/videos/1.png\" width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video> svninsdfvvndfokb"
-,
-        text2: "",
-        text3: "",
+        text2: `
+          <video controls poster="assets/videos/1.png" width="100%">
+            <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
+          </video> <span class="text-extra-small"> Source:  <a
+      target="_blank"
+      href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the Twenty-First Century by Justin Pemberton
+    </a></span>
+        `,
+        text: "dfbnpsfdbnpdfbndfºpbnfººdfb",
+        text3: "dfnbvºdfbºsbsºdfbvsfºosfo",
       },
     },
-
-
 
     // --------------------------------------
     // 11. Global average
