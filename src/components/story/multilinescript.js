@@ -72,7 +72,7 @@ export default {
     },
 
     // --------------------------------------
-    //2. Global average
+    // 2. Global average
     // --------------------------------------
     {
       charts: [
@@ -96,7 +96,7 @@ export default {
             {
               x: "2023",
               y: 0.67,
-              dy: "- 3.33em",
+              dy: "- 4em",
               text: "The global Gini was<br/>0.67 in 2023",
               anchor: "end",
             },

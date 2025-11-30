@@ -1,3 +1,9 @@
+<script>
+import { Github } from 'lucide-svelte';
+
+</script>
+
+
 <section>
   <h3 class="text-extra-small">Data source</h3>
 
@@ -40,6 +46,11 @@
       href="https://observablehq.com/@sandraviz/global-inequality"
       >All data notebook</a
     > includes all charts. The story above includes a selection of highlighted countries and region. In this notebook someone finds the complete EDA, meaning the visual analysis of all countries and region. It was the pre-work this storyline.  
+  </p>
+
+    <p class="text-extra-small">
+      <Github size="1.2em" color="#1CB0BA" display="block" />
+    INTRO
   </p>
   
 </section>
