@@ -7,13 +7,23 @@
   let innerWidth;
   let innerHeight;
   let stepIndex = 0;
-  $: stepIndex = stepIndex ?? 0;
+  let currentStepIndex = 0; // Track the last valid step index
 
   $: chartComponents = [];
 
+  // Only update currentStepIndex when stepIndex is defined and valid
+  $: {
+    if (stepIndex !== undefined && stepIndex !== null) {
+      // Clamp stepIndex to valid range [0, steps.length - 1]
+      const maxStepIndex = storyscript.steps.length - 1;
+      currentStepIndex = Math.max(0, Math.min(stepIndex, maxStepIndex));
+    }
+  }
+
+  // Update charts based on the stable currentStepIndex
   $: {
     if (chartComponents.length) {
-      const step = storyscript.steps[stepIndex];
+      const step = storyscript.steps[currentStepIndex];
       const { charts } = step;
 
       charts.forEach((chart) => {
@@ -38,8 +48,8 @@
     <div class="chart-container">
       <div
         class="chart"
-        class:sticky={stepIndex < storyscript.steps.length}
-        class:bottom={stepIndex >= storyscript.steps.length}
+        class:sticky={currentStepIndex < storyscript.steps.length}
+        class:bottom={currentStepIndex >= storyscript.steps.length}
       >
         {#each storyscript.components as component, i}
           <div class="chartComponent">
@@ -55,7 +65,7 @@
       <div class="steps">
         <Scrolly bind:value={stepIndex} top={innerHeight / 2}>
           {#each storyscript.steps as step, i}
-            <div class="step" class:active={stepIndex === i}>
+            <div class="step" class:active={currentStepIndex === i}>
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
@@ -162,7 +172,7 @@
     inset: 0;
     border-radius: 1.2em;
     background: var(--color-background);
-    border: 0.006em solid #0A6167;
+    border: 0.006em solid #0a6167;
     box-shadow:
       0 0 0 0.04em rgba(28, 176, 186, 0.4),
       0 0 1.1em rgba(28, 176, 186, 0.45);
