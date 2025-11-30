@@ -20,6 +20,13 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
+// --------------------------------------
+// How to add a video
+
+//  "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
+
+// --------------------------------------
+
 export default {
   components: [
     MultilineChart,
@@ -59,18 +66,15 @@ export default {
       description: {
         title: `The Inequality Spectrum`,
         text: "Let’s start with one simple number, the <span class='highlight'>Gini coefficient.</span> It tells us how income is shared within a country or across the world.",
-        text3:
-          "This single number will guide us through more than four decades, from the 1980s to today. The line may look simple, but it hides a lot of motion beneath it.",
         text2:
-            "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
-
-        },
+          "A Gini of 1 means one person earns everything <img src='./assets/Musk_face.png' style='display: inline-block; width: 1.8em;' /> and a Gini of 0 means everyone earns the same.",
+        text3:
+          "This single number will guide us through more than four decades, starting in the 80s until 2023.",
+      },
     },
+
     // --------------------------------------
     //2. Global average
-
-          // "A Gini of 1 means one person earns everything <img src='./assets/Musk_face.png' style='display: inline-block; width: 1.8em;' /> and a Gini of 0 means everyone earns the same, whereas a. You can imagine that extreme, one Musk holding all the world’s money.",
- 
     // --------------------------------------
     {
       charts: [
@@ -114,11 +118,11 @@ export default {
       ],
       description: {
         title: `One flat line 🤔`,
-        text: "Looking at the <span class='highlight' style='color:var(--color-global)'>global</span> average, the Gini line sits high and stays almost perfectly flat across four decades. At first glance that looks like stasis; unequal then and unequal now.",
+        text: "Looking at the <span class='highlight' style='color:var(--color-global)'>global</span> average, the Gini line sits high and stays almost perfectly flat across the four decades. At first glance that looks like unequal then and unequal now.",
         text2:
           "But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what is happening underneath?",
         text3:
-          "Even the 2008 financial crisis left only a small mark before the line steadied again.",
+          "",
       },
     },
     // --------------------------------------
@@ -186,11 +190,11 @@ export default {
       ],
       description: {
         title: `Average can be misleading 🤯`,
-        text: "Break apart that smooth <span class='highlight' style='color:var(--color-global)'>global</span> line and you find many stories. In the 1980s the gap between equal and unequal nations was wide.",
+        text: "Comparing the <span class='highlight' style='color:var(--color-global)'>global</span> average line to all countries (backgorund lines), we can clearly identify variance.",
         text2:
-          "Since then their distances have narrowed. Even with a smaller gap today the variance between countries remains enormous and a single average, condensed into one number, misses much of the real picture.",
+          "There is also another trend visible in this chart, the variance between countries has narrowed since 1980. Nevertheless a smaller gap today remains enormous and a single average, condensed into one number, misses much of this pattern.",
         text3:
-          "To understand what shapes it we need to look at countries, regions and the patterns that emerge between them.",
+          "Now let's look at specific countries and regions and how they've changed in context.",
       },
     },
     // --------------------------------------
@@ -258,15 +262,17 @@ export default {
       ],
       description: {
         title: `Europe most equal continent 🥳`,
-        text: "In comparison to the <span class='highlight' style='color:var(--color-global)'>global</span> average, <span class='highlight' style='color:var(--color-europe)'>Europe</span> is the most economically equal continent. Its Gini values have remained low and tightly clustered since the 1980s<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.",
+        text: "In comparison to the <span class='highlight' style='color:var(--color-global)'>global</span> average, <span class='highlight' style='color:var(--color-europe)'>Europe</span> is the most economically equal continent.",
         text2:
-          "Inequality in <span class='highlight' style='color:var(--color-europe)'>Europe</span> rose slightly from the early 1990s into the mid 2000s. This was largely due to labour market liberalization and the growing role of capital income. Even with these changes the region continued to compress disparities more effectively than most other parts of the world because of its welfare systems and progressive taxes<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+          "Inequality in <span class='highlight' style='color:var(--color-europe)'>Europe</span> rose slightly from the early 1990s into the mid 2000s. This was largely due to labour market liberalization and the growing role of capital income. Even with these changes the region continued to compress disparities more effectively than most other parts of the world because of its welfare systems and progressive taxes<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
         text3:
-          "The gap between <span class='highlight' style='color:var(--color-europe)'>Europe</span> and the <span class='highlight' style='color:var(--color-global)'>global</span> average narrowed mainly because emerging economies grew faster rather than because Europe became significantly more unequal<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>. Overall, <span class='highlight' style='color:var(--color-europe)'>Europe</span> shows a stable pattern with small movements but no major breaks. This reflects long standing redistributive institutions that continue to keep inequality in check<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>4</sup></span>.",
+          "Overall, <span class='highlight' style='color:var(--color-europe)'>Europe</span> shows a stable pattern with small movements but no major breaks. This reflects long standing redistributive institutions that continue to keep inequality in check<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>2</sup></span>.",
       },
     },
     // --------------------------------------
     // 5. European countries
+
+    // Its Gini values have remained low and tightly clustered since the 1980s<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.
     // --------------------------------------
     {
       charts: [

@@ -24,22 +24,21 @@
   <p class="text-body">
     <EqualNot size="1.2em" color="#1CB0BA" /> <br />
     If such abundance coexists with such deprivation, the problem isn't production,
-    but the way its benefits are distributed a way that is far from equal. Global
-    inequality remains deeply entrenched, reflecting a world economy that is profoundly
-    hierarchical.
+    but the way its benefits are distributed. Global inequality remains deeply entrenched,
+    reflecting a world economy that is profoundly hierarchical.
   </p>
   <p class="text-body">
     <Angry size="1.2em" color="#1CB0BA" /> <br />
     As frustration and anger grow in many societies seen in the rise of extremist
-    and authoritarian movements in the political west: one might ask could this be
-    fueled by such extreme inequality?
+    and authoritarian movements in the political west, one might ask could this be
+    fueled by the rise of inequality?
   </p>
   <p class="text-body">
     <HandCoins size="1.2em" color="#1CB0BA" /> <br />
-    Now, inequality between whom? Who is rich and who is poor and how big is the
-    gap between the two? In this project we take a deep look at global inequality
-    from different prespectives. Inequality refers to economic inequality, to be
-    perceice differences in income distribution. And we start, with looking at countries.
+    Now, inequality between whom? Who is rich and who is poor, and how big is the
+    gap between the two? In this project, we take a deep look at global inequality
+    from different perspectives. Inequality here refers to economic inequality, meaning
+    differences in income distribution. We begin by looking at countries.
   </p>
 </section>
 
@@ -51,10 +50,10 @@
     influenced by geographical context, which in turn is shaped by local
     politics and economic regulations, or the lack thereof.
   </p>
-
+  <!-- 
   <video controls width="100%">
     <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
-  </video>
+  </video> -->
 
   <p class="text-body">
     The previous visualizations focused on the Gini coefficient, a single
@@ -102,12 +101,6 @@
     text-align: left;
     word-spacing: normal;
     letter-spacing: 0;
-  }
-
-  .icon-line {
-    display: inline-block;
-    margin-right: 0.5em;
-    transform: translateY(0.05em); /* subtle vertical alignment */
   }
 
   /*--------------------------------------*/
