@@ -910,12 +910,15 @@ export default {
       ],
       description: {
         title: `Now we need to look at China`,
-        text:  "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video> svninsdfvvndfokb"
+        text:  "  <video controls poster=\"assets/videos/1.png\" width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video> svninsdfvvndfokb"
 ,
         text2: "",
         text3: "",
       },
     },
+
+
+
     // --------------------------------------
     // 11. Global average
     // --------------------------------------
