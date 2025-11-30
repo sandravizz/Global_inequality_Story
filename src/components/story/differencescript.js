@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-const countryCodes = ["WO", "QE", "SE", "US", "MX", "ZA", "JP"];
+const countryCodes = ["WO", "QE", "SE", "US", "MX", "ZA", "JP", "CN"];
 
 const renderData = countryCodes.flatMap((countryCode) => {
   const countryData = data.filter((d) => d.country === countryCode);
@@ -403,6 +403,60 @@ export default {
       description: {
         title: `Japan`,
         text: "Income inequality in <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> is one of the lowest globally.",
+        text2: "",
+        text3: "",
+      },
+    },
+    // --------------------------------------
+    // 8. China
+    // --------------------------------------
+      {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "CN"),
+          options: {
+            stroke: ["var(--color-asia)", "var(--color-asia)"],
+            strokeOpacity: 1,
+            strokeWidth: 1.5,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2023",
+              y: renderData[15].values[43].value,
+              dy: "- 1.4em - 6px - 4px",
+              text: `<span style='color: var(--color-asia);'>${formatter.format(renderData[15].values[43].value)} in 2023</span>`,
+              anchor: "end",
+            },
+            {
+              x: "2023",
+              y: renderData[14].values[43].value,
+              dy: "3px + 4px",
+              text: `<span style='color: var(--color-asia);'>${formatter.format(renderData[14].values[43].value)} in 2023</span>`,
+              anchor: "end",
+            },
+            {
+              y: 0,
+              dx: "8px",
+              dy: "- 0.23em",
+              text: "Income in China 🇨🇳",
+            },
+            {
+              x: "1991",
+              text: "bla",
+            },
+            {
+              x: "2005",
+              text: "bla",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `China`,
+        text: "Income inequality in <span class='highlight' style='color:var(--color-asia)'>China 🇨🇳</span> is one of the lowest globally.",
         text2: "",
         text3: "",
       },

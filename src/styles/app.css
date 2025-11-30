@@ -16,8 +16,8 @@ body {
 a {
   color: var(--color-link);
   outline: none;
-  text-decoration-line: none;
-  text-decoration-thickness: 0.2px;
+  text-decoration-thickness: 1.4px;
+  text-decoration-color: var(--color-link-hover);
 }
 
 a:hover,
@@ -35,11 +35,7 @@ h6 {
   margin: 16px 0;
 }
 
-p {
-  display: block;
-  unicode-bidi: isolate;
-  margin-top: 6px;
-}
+
 
 /*--------------------------------------*/
 /* Colours */
@@ -50,10 +46,10 @@ p {
   --color-annotation-background: rgba(2, 11, 12, 0.5);
   --color-chart-axis: #d7dcf0;
   --color-global: #e5e6ed;
-  --color-europe: #53e3ef;
+  --color-europe: #00FF9C;
   --color-asia: #bdea00;
-  --color-usa: #9ab6ff;
-  --color-south-america: #ff559c;
+  --color-usa:  #FF1686;
+  --color-south-america: #FFD65A;
   --color-africa: #8af8cc;
   --color-link-hover: #4c8ffe;
 }

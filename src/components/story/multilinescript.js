@@ -23,8 +23,6 @@ const yTickFormatter = (val) => formatter.format(val);
 // --------------------------------------
 // How to add a video
 
-//  "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video>"
-
 // --------------------------------------
 
 export default {
@@ -912,7 +910,8 @@ export default {
       ],
       description: {
         title: `Now we need to look at China`,
-        text: "",
+        text:  "  <video controls width=\"100%\"><source src=\"assets/videos/rich_poor_players.mp4\" type=\"video/mp4\" /></video> svninsdfvvndfokb"
+,
         text2: "",
         text3: "",
       },
