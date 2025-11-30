@@ -25,10 +25,10 @@ const renderData = countryCodes.flatMap((countryCode) => {
   ];
 });
 
-console.log(renderData[0].values[43]);
-//World 0.084
-console.log(renderData[1].values[43]);
-//World 0.53
+// console.log(renderData[0].values[43]);
+// World 0.084
+// console.log(renderData[1].values[43]);
+// World 0.53
 
 export default {
   components: [DifferenceChart],

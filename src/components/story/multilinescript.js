@@ -112,7 +112,7 @@ export default {
             stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
-            // drawFade: true, // TODO: add this to the Line component
+            drawFade: true, // TODO: add this to the Line component
           },
         },
       ],
@@ -121,8 +121,7 @@ export default {
         text: "Looking at the <span class='highlight' style='color:var(--color-global)'>global</span> average, the Gini line sits high and stays almost perfectly flat across the four decades. At first glance that looks like unequal then and unequal now.",
         text2:
           "But has the world really not changed at all in four decades? Has distribution stayed the same? Can a line so flat truly capture what is happening underneath?",
-        text3:
-          "",
+        text3: "",
       },
     },
     // --------------------------------------

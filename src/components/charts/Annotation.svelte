@@ -30,14 +30,6 @@
     const left = `calc(${xValue}px ${dxWithSign})`;
     return `top: ${top}; left: ${left}; ${transform}`;
   };
-
-  console.log(
-    "$custom.annotations",
-    $custom.annotations,
-    $yScale?.domain?.(),
-    $yScale?.range?.(),
-    $yScale(Math.max($yScale.domain()[0], $yScale.domain()[1])),
-  );
 </script>
 
 {#key $width}
