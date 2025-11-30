@@ -1,8 +1,6 @@
 <script>
-import { Github } from 'lucide-svelte';
-
+  import { Github } from "lucide-svelte";
 </script>
-
 
 <section>
   <h3 class="text-extra-small">Data source</h3>
@@ -26,12 +24,10 @@ import { Github } from 'lucide-svelte';
     Income data was sourced from the <a
       target="_blank"
       href="https://wid.world/wid-world/">World Inequality Database</a
-    > (WID). 
-    It aims to provide open and convenient access to the most extensive
-    available database on the historical evolution of the world distribution of
-    income and wealth, both within countries and between countries. The WID combines
-    different data sources: national accounts, survey data, fiscal data, and wealth
-    rankings.
+    > (WID). It aims to provide open and convenient access to the most extensive
+    available database on the historical evolution of the world distribution of income
+    and wealth, both within countries and between countries. The WID combines different
+    data sources: national accounts, survey data, fiscal data, and wealth rankings.
   </p>
 
   <p class="text-extra-small">
@@ -39,20 +35,59 @@ import { Github } from 'lucide-svelte';
       target="_blank"
       href="https://wid.world/document/why-is-europe-more-equal-than-the-united-states-world-inequality-lab-wp-2020-19/"
       >Pretax income</a
-    > corresponds to income after the operation of social insurance systems, but
-    before other types of redistribution. 
+    >
+    corresponds to income after the operation of social insurance systems, but before
+    other types of redistribution.
     <a
       target="_blank"
       href="https://observablehq.com/@sandraviz/global-inequality"
       >All data notebook</a
-    > includes all charts. The story above includes a selection of highlighted countries and region. In this notebook someone finds the complete EDA, meaning the visual analysis of all countries and region. It was the pre-work this storyline.  
+    > includes all charts. The story above includes a selection of highlighted countries
+    and region. In this notebook someone finds the complete EDA, meaning the visual
+    analysis of all countries and region. It was the pre-work this storyline.
   </p>
 
-    <p class="text-extra-small">
-      <Github size="1.2em" color="#1CB0BA" display="block" />
-    INTRO
+  <p
+    class="text-extra-small"
+    style="display: flex; align-items: center; gap: 0.5em;"
+  >
+    <Github size="1.2em" color="#1CB0BA" display="block" />
+    <a
+      target="_blank"
+      href="https://github.com/sandraviz/global-inequality"
+      style="display: flex; align-items: center; gap: 0.5em;"
+    >
+      This is our repository on GitHub.
+    </a>
   </p>
-  
+
+    <p
+    class="text-extra-small"
+    style="display: flex; align-items: center; gap: 0.5em;"
+  >
+    <Github size="1.2em" color="#1CB0BA" display="block" />
+    <a
+      target="_blank"
+      href="https://github.com/sandraviz/global-inequality"
+      style="display: flex; align-items: center; gap: 0.5em;"
+    >
+      This is our repository on GitHub.
+    </a>
+  </p>
+
+  <p
+  class="text-extra-small"
+  style="display: flex; align-items: center; gap: 0.5em;"
+>
+  <Github size="1.2em" color="#1CB0BA" display="block" />
+  <a
+    target="_blank"
+    href="https://github.com/sandraviz/global-inequality"
+    style="display: flex; align-items: center; gap: 0.5em;"
+  >
+    This is our repository on GitHub.
+  </a>
+</p>
 </section>
 
 <style>
@@ -66,4 +101,3 @@ import { Github } from 'lucide-svelte';
     max-width: 35rem;
   }
 </style>
-
