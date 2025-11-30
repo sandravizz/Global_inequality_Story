@@ -72,25 +72,6 @@ p {
   text-align: left;
 }
 
-.text_scroll_title {
-  font-size: 23px;
-  fill: var(--color-chart-axis);
-  font-family: "Montserrat Alternates3", sans-serif;
-  padding: 0px;
-  margin: 0.3em 0 0;
-}
-
-.text-medium-scroller {
-  font-family: "Montserrat Alternates2", sans-serif;
-  color: var(--color-global);
-  font-size: 18px;
-  line-height: 1.4;
-  hyphens: auto;
-  text-align: block;
-  word-spacing: 0.15em;
-  letter-spacing: -0.38px;
-}
-
 .text-small {
   font-family: "Montserrat Alternates2", sans-serif;
   color: var(--color-chart-axis);

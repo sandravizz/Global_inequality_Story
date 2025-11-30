@@ -59,17 +59,12 @@
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
-                  <p class="text_scroll_title">{step.description.title}</p>
+                  <!-- <p class="card-label">[ {i + 1} ]</p> -->
+                  <p class="card-title">{step.description.title}</p>
                   {#if step.description.text}
-                    <p class="text-medium-scroller">
-                      {@html step.description.text}
-                    </p>
-                    <p class="text-medium-scroller">
-                      {@html step.description.text2}
-                    </p>
-                    <p class="text-medium-scroller">
-                      {@html step.description.text3}
-                    </p>
+                    <p class="card-body">{@html step.description.text}</p>
+                    <p class="card-body">{@html step.description.text2}</p>
+                    <p class="card-body">{@html step.description.text3}</p>
                   {/if}
                 </div>
               </div>
@@ -157,25 +152,30 @@
 
   .contentwrapper {
     position: relative;
-    width: 70%;
-    margin: 0 0 0 150px;
-    padding: 6px;
+    width: min(36em, 80%); /* nice readable width */
+    margin: 0 auto; /* centers the box */
+    padding: 0;
   }
 
   .contentbackground {
-    border-radius: 30px;
-    background-color: var(--color-background2);
-    opacity: 0.8;
     position: absolute;
-    top: -10px;
-    bottom: -10px;
-    left: -10px;
-    right: -10px;
+    inset: 0;
+    border-radius: 1.2em;
+    background: var(--color-background);
+    border: 0.006em solid #0A6167;
+    box-shadow:
+      0 0 0 0.04em rgba(28, 176, 186, 0.4),
+      0 0 1.1em rgba(28, 176, 186, 0.45);
+    opacity: 1;
+    pointer-events: none;
   }
 
   .content {
     position: relative;
     z-index: 2;
+    padding: 1.2em 1.4em;
+    border-radius: 1em;
+    overflow-y: auto;
   }
 
   .step .content {
@@ -184,6 +184,55 @@
     letter-spacing: 0px;
     word-spacing: 2px;
     font-family: "Montserrat Alternates2", sans-serif;
+  }
+
+  .step .contentwrapper {
+    opacity: 0.6;
+    transform: translateY(0.6em) scale(0.99);
+    transition:
+      opacity 0.25s ease-out,
+      transform 0.25s ease-out;
+  }
+
+  .step.active .contentwrapper {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .step.active .contentwrapper {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* .card-label {
+    font-family:
+      "Space Grotesk",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #1cb0ba;
+    margin-bottom: 0.4em;
+  } */
+
+  .card-title {
+    font-size: 1.1em;
+    fill: var(--color-chart-axis);
+    font-family: "Montserrat Alternates3", sans-serif;
+    padding: 0px;
+    margin-bottom: 0.6em;
+    font-weight: 600;
+  }
+
+  .card-body {
+    font-family: "Montserrat Alternates2", sans-serif;
+    color: var(--color-global);
+    font-size: 0.95em;
+    line-height: 1.6;
+    hyphens: auto;
+    margin-bottom: 0.6em;
   }
 
   /* Mobile landscape - increase spacing between steps */
@@ -207,21 +256,33 @@
     }
   }
 
-    /* Mobile (< 480px) */
-
-@media screen and (max-width: 480px) {
-  .contentwrapper {
-    width: 100%;
-    margin: 0 0 0 0; 
+  /* Mobile (< 480px) */
+  @media screen and (max-width: 480px) {
+    .contentwrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .card-title {
+      font-size: 0.95em;
+      font-weight: 400;
+    }
+    .card-body {
+      font-size: 0.85em;
+    }
   }
-}
 
   /* Mobile (< 260px) */
-
-@media screen and (max-width: 260px) {
-  .contentwrapper {
-    width: 100%;
-    margin: 0 0 0 0;
+  @media screen and (max-width: 260px) {
+    .contentwrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .card-title {
+      font-size: 0.95em;
+      font-weight: 400;
+    }
+    .card-body {
+      font-size: 0.85em;
+    }
   }
-}
 </style>

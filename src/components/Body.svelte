@@ -7,7 +7,7 @@
 
 <section>
   <p class="text-body">
-    <Heart size="1em" color="#1CB0BA" /> <br />
+    <Heart size="1.2em" color="#1CB0BA" /> <br />
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
