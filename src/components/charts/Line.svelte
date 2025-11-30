@@ -52,7 +52,7 @@
   .draw-animation {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: draw-line 1.5s ease-out forwards;
+    animation: draw-line 5s ease-out forwards;
   }
 
   @keyframes draw-line {
