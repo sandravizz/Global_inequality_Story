@@ -607,7 +607,7 @@ export default {
         },
       ],
       description: {
-        title: `The unequal neighbour Mexico 🇲🇽`,
+        title: `The unequal neighbour 🇲🇽`,
         text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico</span> is one of the most inequal countries and a direct neighbour to the US.",
         text2: "",
         text3:
@@ -806,12 +806,12 @@ export default {
         },
       ],
       description: {
-        title: `Japan 🇯🇵 is the outlier of equality`,
+        title: `The outlier of equality 🇯🇵`,
         text: "<span class='highlight' style='color:var(--color-asia)'>Japan</span> remains one of the lowest inequality countries. It increased gradually during the 90s until the burst of the financial crises.",
         text2:
           "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
         text3:
-          "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
+          "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
       },
     },
     // --------------------------------------
