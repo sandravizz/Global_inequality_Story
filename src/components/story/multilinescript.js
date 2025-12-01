@@ -56,7 +56,7 @@ export default {
               y: 1,
               dy: "- 0.5em",
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -91,7 +91,7 @@ export default {
               y: 1,
               dy: "- 0.5em",
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2023",
@@ -110,7 +110,7 @@ export default {
             stroke: "var(--color-global)",
             strokeWidth: 4,
             yTickFormat: yTickFormatter,
-            drawFade: true, 
+            drawFade: true,
           },
         },
       ],
@@ -149,7 +149,7 @@ export default {
               y: 1,
               dy: "- 0.5em",
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -221,7 +221,7 @@ export default {
               y: 1,
               dy: "- 0.5em",
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -259,17 +259,15 @@ export default {
       ],
       description: {
         title: `Europe most equal continent 🥳`,
-        text: "In comparison to the <span class='highlight' style='color:var(--color-global)'>global</span> average, <span class='highlight' style='color:var(--color-europe)'>Europe</span> is the most economically equal continent.",
+        text: "<span class='highlight' style='color:var(--color-europe)'>Europe</span> is the most economically equal continent. Nevertheless Inequality rose slightly from the early 90s into the mid 2000s. This was largely due to labour market liberalization and the growing role of capital income.",
         text2:
-          "Inequality in <span class='highlight' style='color:var(--color-europe)'>Europe</span> rose slightly from the early 1990s into the mid 2000s. This was largely due to labour market liberalization and the growing role of capital income. Even with these changes the region continued to compress disparities more effectively than most other parts of the world because of its welfare systems and progressive taxes<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+          "Even with these changes the region continued to compress disparities more effectively than most other parts of the world because of its welfare systems and progressive taxes<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
         text3:
           "Overall, <span class='highlight' style='color:var(--color-europe)'>Europe</span> shows a stable pattern with small movements but no major breaks. This reflects long standing redistributive institutions that continue to keep inequality in check<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>2</sup></span>.",
       },
     },
     // --------------------------------------
     // 5. European countries
-
-    // Its Gini values have remained low and tightly clustered since the 1980s<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.
     // --------------------------------------
     {
       charts: [
@@ -295,7 +293,7 @@ export default {
               y: 1,
               dy: "- 0.5em",
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -333,9 +331,9 @@ export default {
       ],
       description: {
         title: `Even among equals`,
-        text: "Even within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality levels differ. Northern countries maintain especially low and stable Gini values supported by cohesive labour markets and strong social protections<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.",
+        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality levels differ. Northern countries maintain especially low and stable Gini values supported by cohesive labour markets and strong social protections<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.",
         text2:
-          "Parts of Southern and Eastern <span class='highlight' style='color:var(--color-europe)'>Europe</span> show gradual increases in inequality starting in the 1990s. This reflects economic transitions, weaker labour institutions and more volatile capital income<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+          "Parts of Southern and Eastern <span class='highlight' style='color:var(--color-europe)'>Europe</span> show gradual increases in inequality starting in the 90s, because of weaker labour institutions and more volatile capital income<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
         text3:
           "Despite these differences, all European countries remain far below the <span class='highlight' style='color:var(--color-global)'>global</span> inequality level. Together they form a compact cluster held together by a shared commitment to redistribution<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>.",
       },
@@ -368,7 +366,11 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+            },
+            {
+              x: "2008",
+              text: "💰 GFC",
             },
           ],
         },
@@ -415,12 +417,12 @@ export default {
         },
       ],
       description: {
-        title: `The United States of rising inequality`,
-        text: "In the early 1980s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+        title: `The United States 🇺🇸 of rising inequality`,
+        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
         text2:
-          "From that point onward inequality in the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
+          " ",
         text3:
-          "Today the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stands among the most unequal advanced economies and redistributes significantly less than most European countries<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
+          "Today the <span class='highlight' style='color:var(--color-usa)'>US</span> stands among the most unequal advanced economies<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
       },
     },
     // --------------------------------------
@@ -451,7 +453,7 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2020",
@@ -506,9 +508,9 @@ export default {
       ],
       description: {
         title: `South America's uneven paths`,
-        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 1980s and 1990s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>1</sup></span>.",
+        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 80s and 90s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>1</sup></span>. From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>2</sup></span>.",
         text2:
-          "From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>2</sup></span>.",
+          "",
         text3:
           "Inequality rose sharply during the COVID 19 pandemic especially for informal and urban workers. Although fiscal support softened the impact it remained above pre pandemic levels in several countries<span class='fn' tabindex='0' data-note='IDB and World Bank COVID 19 reports'><sup>3</sup></span>.",
       },
@@ -541,16 +543,12 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2020",
               text: "🦠 Covid",
-            },
-            {
-              x: "2008",
-              text: "💰 GFC",
-            },
+            }
           ],
         },
         {
@@ -610,10 +608,10 @@ export default {
       ],
       description: {
         title: `The unequal neighbour Mexico 🇲🇽`,
-        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> experienced rising inequality during the economic reforms and trade liberalization of the 1980s and 1990s<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+        text: "<span class='highlight' style='color:var(--color-south-america)'>Mexico</span> is one of the most inequal countries and a direct neighbour to the US.",
         text2: "",
         text3:
-          "During the COVID 19 pandemic inequality first increased then fell quickly as labour markets recovered and lower income wages rose. This pattern is documented in regional studies by the IDB<span class='fn' tabindex='0' data-note='IDB COVID 19 Report'><sup>3</sup></span>.",
+          "During and after the COVID 19 pandemic inequality kept falling, while in the <span class='highlight' style='color:var(--color-usa)'>US</span> the opposite was the case, bringing the two geographical neighbors closer together in terms of iniquality levels.",
       },
     },
     // --------------------------------------
@@ -644,16 +642,12 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "1991",
               text: "End of apartheid",
-            },
-            {
-              x: "2008",
-              text: "💰 GFC",
-            },
+            }
           ],
         },
         {
@@ -713,11 +707,11 @@ export default {
       ],
       description: {
         title: `The peak of inequality`,
-        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> is one of the most unequal countries in the world. Inequality was already extreme in the 1980s and increased further after the end of apartheid<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> is one of the most unequal countries in the world. It was already extreme in the 80s and increased further after the end of apartheid<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
         text2:
           "High unemployment, strong divides between skilled and unskilled work and large spatial and educational inequalities keep distribution highly polarized<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
         text3:
-          "Social grants reduce poverty but cannot compensate for the deep structural inequality generated in the labour market. Inequality therefore remains among the highest globally<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>.",
+          "Social grants reduce poverty but cannot compensate for the deep structural inequality generated in the labour market.<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>.",
       },
     },
     // --------------------------------------
@@ -748,11 +742,7 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
-            },
-            {
-              x: "1991",
-              text: "End of apartheid",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
             {
               x: "2008",
@@ -816,8 +806,8 @@ export default {
         },
       ],
       description: {
-        title: `Japan: the outlier of equality`,
-        text: "<span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> remains among the lowest inequality countries. Inequality increased gradually in the 1980s and again in the early 2000s<span class='fn' tabindex='0' data-note='Kambayashi et al. (2024)'><sup>1</sup></span>.",
+        title: `Japan 🇯🇵 is the outlier of equality`,
+        text: "<span class='highlight' style='color:var(--color-asia)'>Japan</span> remains one of the lowest inequality countries. It increased gradually during the 90s until the burst of the financial crises.",
         text2:
           "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
         text3:
@@ -842,7 +832,7 @@ export default {
           ),
           options: {
             stroke: "var(--color-global)",
-            strokeOpacity: 0.4,
+            strokeOpacity: 0.3,
             strokeWidth: 0.3,
             yTickFormat: yTickFormatter,
           },
@@ -850,9 +840,8 @@ export default {
             {
               y: 1,
               dy: "- 0.5em",
-
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
@@ -882,7 +871,7 @@ export default {
           data: renderData.filter((d) => d.region === "Asia"),
           options: {
             stroke: "var(--color-asia)",
-            strokeWidth: 0.4,
+            strokeWidth: 0.3,
             strokeOpacity: 1,
             yTickFormat: yTickFormatter,
           },

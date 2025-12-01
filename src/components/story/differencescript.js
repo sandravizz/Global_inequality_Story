@@ -69,9 +69,9 @@ export default {
       ],
       description: {
         title: `Gap between rich and poor`,
-        text: "The upper line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> richest 10%. The lower line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> poorest 50%. In 2023, the top 10% received about 54% of total income, while the bottom 50% received only 8%. Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
+        text: "The upper line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> richest 10%. The lower line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> poorest 50%.",
         text2: "",
-        text3: "",
+        text3: "Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
       },
     },
     // --------------------------------------
@@ -112,6 +112,10 @@ export default {
               dy: "- 0.23em",
               text: "Income in Europe",
             },
+                  {
+              x: "2008",
+              text: "💰 GFC",
+            },
           ],
         },
       ],
@@ -119,9 +123,9 @@ export default {
         title: `Smallest gap in Europe`,
         text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span> the gap between the richest 10% and the poorest 50% was exceptionally small in the 1980s. From the early 1990s onward the distance between the two began to widen, driven mainly by a decline in the income share of the lower half.",
         text2:
-          "A brief reversal appears around the 2008 financial crisis when top incomes fell slightly and the lower half recovered modestly. After this short period of adjustment the lines began to settle again.",
+          "A brief reversal appears around the financial crisis when top incomes fell slightly and the lower half recovered modestly. After this short period of adjustment the lines began to settle again.",
         text3:
-          "Since then both lines have stabilized, yet the overall gap remains wider than it once was, though still smaller than the <span class='highlight' style='color:var(--color-global)'>global</span> average.",
+          "Since then both lines have stabilized, yet the overall gap remains wider than it once was.",
       },
     },
     // --------------------------------------
@@ -170,9 +174,9 @@ export default {
       ],
       description: {
         title: `Sweden 🇸🇪 had a reverse ratio`,
-        text: "While inequalities have risen in Europe since the 1980s, <span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span> remains one of the most equal countries in the <span class='highlight' style='color:var(--color-global)'>world</span>.",
+        text: "While inequalities have risen in Europe since the 1980s, <span class='highlight' style='color:var(--color-europe)'>Sweden</span> remains one of the most equal countries in the <span class='highlight' style='color:var(--color-global)'>world</span>.",
         text2:
-          "The top 10% of the population earn just over 30% of total national income, while the bottom 50% receive around 24%.",
+          "",
         text3:
           "During the COVID-19 pandemic inequality briefly increased as low-income employment declined, but strong welfare support and recovery measures quickly reversed this effect, returning income shares to pre-pandemic levels.",
       },
@@ -219,12 +223,8 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
-            },
-            {
-              x: "2001",
-              text: "🌐 Dot.com",
-            },
+              text: "💰 GFC",
+            }
           ],
         },
       ],
@@ -282,7 +282,7 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
+              text: "💰 GFC",
             },
           ],
         },
@@ -386,7 +386,7 @@ export default {
             },
             {
               x: "1991",
-              text: "Asset bubble burst",
+              text: "Asset bubble",
             },
             {
               x: "2008",

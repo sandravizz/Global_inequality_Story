@@ -8,15 +8,17 @@
     EqualNot,
     Angry,
     HandCoins,
-    // ChartSpline,
-    // BanknoteArrowUp,
-    // BanknoteArrowDown,
+    Earth,
+    EyeOff,
+    ArrowDownUp,
+    Smile,
+    Frown,
   } from "lucide-svelte";
 </script>
 
 <section>
   <p class="text-body">
-    <Heart size="1.3em" color="#1CB0BA" display="block" /> 
+    <Heart size="1.3em" color="#1CB0BA" display="block" />
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
@@ -30,27 +32,26 @@
   </p>
 
   <p class="text-body">
-    <EqualNot size="1.3em" color="#1CB0BA" display="block" /> 
+    <EqualNot size="1.3em" color="#1CB0BA" display="block" />
     If such abundance coexists with such deprivation, the problem isn't production,
     but the way its benefits are distributed. Global inequality remains deeply entrenched,
     reflecting a world economy that is profoundly hierarchical.
   </p>
   <p class="text-body">
-    <Angry size="1.3em" color="#1CB0BA" display="block" /> 
+    <Angry size="1.3em" color="#1CB0BA" display="block" />
     As frustration and anger grow in many societies seen in the rise of extremist
     and authoritarian movements in the political west, one might ask could this be
     fueled by the rise of inequality?
   </p>
   <p class="text-body">
-    <HandCoins size="1.3em" color="#1CB0BA" display="block" /> 
+    <HandCoins size="1.3em" color="#1CB0BA" display="block" />
     Now, inequality between whom? Who is rich and who is poor, and how big is the
     gap between the two? In this project, we take a deep look at global inequality
     from different perspectives. Inequality here refers to economic inequality, meaning
-    differences in     <a
-      target="_blank"
-      href="https://wid.world/codes-dictionary/"
-      >income distribution
-    </a>.
+    differences in
+    <a target="_blank" href="https://wid.world/codes-dictionary/"
+      >income distribution.
+    </a>
   </p>
 </section>
 
@@ -58,9 +59,10 @@
 
 <section>
   <p class="text-body">
-    As the charts presented so far illustrate, economic inequality is strongly
-    influenced by geographical context, which in turn is shaped by local
-    politics and economic regulations, or the lack thereof.
+    <Earth size="1.3em" color="#1CB0BA" display="block" />
+    As the charts presented so far illustrate, economic inequality is strongly influenced
+    by geographical context, which in turn is shaped by local politics and economic
+    regulations, or the lack thereof.
   </p>
   <!-- 
   <video controls width="100%">
@@ -68,22 +70,20 @@
   </video> -->
 
   <p class="text-body">
-    <!-- <ChartSpline size="1.2em" color="#1CB0BA"/> -->
-    The previous visualizations focused on the Gini coefficient, a single numerical
-    indicator that provides an overall summary of inequality within a country. While
-    the Gini coefficient is useful for understanding the general level of inequality,
-    it can obscure important details. For instance, two countries with the same Gini
-    value might differ significantly in whether inequality is driven by extreme income
-    concetration at the top or lacking a miminum share at the bottom.
+    <EyeOff size="1.3em" color="#1CB0BA" display="block" />
+    The previous visualizations focused on the Gini coefficient, which can obscure
+    important details. For instance, two countries with the same Gini value might
+    differ significantly in whether inequality is driven by extreme income concetration
+    at the top or lacking a miminum share at the bottom.
   </p>
-  <!-- <BanknoteArrowUp size="1.2em" color="#1CB0BA" />
-  <BanknoteArrowDown size="1.2em" color="#1CB0BA" /> -->
+
   <p class="text-body">
+    <ArrowDownUp size="1.3em" color="#1CB0BA" display="block" />
     To gain a more nuanced understanding, the following charts compare the share
-    of national income held by the richest 10% with that of the poorest 50%.
-    This comparison allows us to observe how these two income groups have
-    evolved relative to each other over the past four decades, revealing more
-    subtle dynamics in inequality trends across countries.
+    of national income held by the richest 10% with that of the poorest 50%. This
+    comparison allows us to observe how these two income groups have evolved relative
+    to each other over the past four decades, revealing more subtle dynamics in inequality
+    trends across countries.
   </p>
 </section>
 
@@ -93,9 +93,9 @@
   <p class="text-body">
     We end this data story with a quote form Branko Milanovic, which describes
     very well a reality often not taken into account. "It is an illusion to
-    believe that what is good for the world must be good for everyone." If we
-    want a world, which is currently very inequal, to become more equal, some
-    people will loose in status and financial standing.
+    believe that what is good for the world must be good for everyone."
+    <Frown size="1.3em" color="#1CB0BA" display="block" />
+    <Smile size="1.3em" color="#1CB0BA" display="block" />
   </p>
 </section>
 
