@@ -259,8 +259,7 @@
       margin: 0 auto;
     }
     .card-title {
-      font-size: 0.95em;
-      font-weight: 400;
+      font-size: 0.9em;
     }
     .card-body {
       font-size: 0.85em;
@@ -274,8 +273,7 @@
       margin: 0 auto;
     }
     .card-title {
-      font-size: 0.95em;
-      font-weight: 400;
+      font-size: 0.9em;
     }
     .card-body {
       font-size: 0.85em;

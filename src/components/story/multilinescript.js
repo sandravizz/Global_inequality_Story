@@ -941,7 +941,7 @@ export default {
               dy: "- 0.5em",
 
               dx: "8px",
-              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span>=</span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
+              text: "<div style='display:flex; align-items: center; gap: 0.5em;'><span></span>Complete Inequality<img src='./assets/Musk_face.png' style='display: inline-block; width: 2em;' /></div>",
             },
           ],
         },
