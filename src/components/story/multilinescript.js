@@ -417,8 +417,8 @@ export default {
         },
       ],
       description: {
-        title: `The United States 🇺🇸 of rising inequality`,
-        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
+        title: `United States of rising inequality`,
+        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
         text2:
           " ",
         text3:
@@ -999,8 +999,8 @@ export default {
       ],
       description: {
         title: `The flat line revisited`,
-        text: "Seen up close, the flat <span class='highlight' style='color:var(--color-global)'>global</span> line is no longer a mystery. Opposite forces balanced each other out: countries drew closer together while internal gaps widened.The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves.",
-        text2: "",
+        text: "Seen up close, the flat <span class='highlight' style='color:var(--color-global)'>global</span> line is no longer a mystery. Opposite forces balanced each other out.",
+        text2: "countries drew closer together while internal gaps widened. The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves.",
         text3: "",
       },
     },

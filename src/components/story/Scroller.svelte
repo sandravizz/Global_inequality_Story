@@ -69,7 +69,6 @@
               <div class="contentwrapper">
                 <div class="contentbackground" />
                 <div class="content">
-                  <!-- <p class="card-label">[ {i + 1} ]</p> -->
                   <p class="card-title">{step.description.title}</p>
                   {#if step.description.text}
                     <p class="card-body">{@html step.description.text}</p>
@@ -162,8 +161,8 @@
 
   .contentwrapper {
     position: relative;
-    width: min(36em, 80%); /* nice readable width */
-    margin: 0 auto; /* centers the box */
+    width: min(36em, 80%); 
+    margin: 0 auto; 
     padding: 0;
   }
 
@@ -172,10 +171,10 @@
     inset: 0;
     border-radius: 1.2em;
     background: var(--color-background);
-    border: 0.006em solid #0a6167;
+    border: 0.0045em solid #0a6167;
     box-shadow:
-      0 0 0 0.04em rgba(28, 176, 186, 0.4),
-      0 0 1.1em rgba(28, 176, 186, 0.45);
+      0 0 0 0.05em rgba(28, 176, 186, 0.3),
+      0 0 1.2em rgba(28, 176, 186, 0.4);
     opacity: 1;
     pointer-events: none;
   }
@@ -214,33 +213,20 @@
     transform: translateY(0) scale(1);
   }
 
-  /* .card-label {
-    font-family:
-      "Space Grotesk",
-      system-ui,
-      -apple-system,
-      sans-serif;
-    font-size: 0.5em;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #1cb0ba;
-    margin-bottom: 0.4em;
-  } */
-
   .card-title {
-    font-size: 1.1em;
+    font-size: 1.05em;
     fill: var(--color-chart-axis);
-    font-family: "Montserrat Alternates3", sans-serif;
+    font-family: "Montserrat Alternates SemiBold", sans-serif;
     padding: 0px;
-    margin-bottom: 0.6em;
-    font-weight: 600;
+    margin-bottom: 0.8em;
+    line-height: 1.3em;
   }
 
   .card-body {
     font-family: "Montserrat Alternates2", sans-serif;
     color: var(--color-global);
     font-size: 0.95em;
-    line-height: 1.6;
+    line-height: 1.6em;
     hyphens: auto;
     margin-bottom: 0.6em;
   }

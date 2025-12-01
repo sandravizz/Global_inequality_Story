@@ -18,7 +18,7 @@
 
 <section>
   <p class="text-body">
-    <Heart size="1.3em" color="#1CB0BA" display="block" />
+    <Heart size="1.2em" color="#1CB0BA" display="block" />
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
@@ -27,24 +27,24 @@
     than ever before in history, enough to feed and sustain the entire world.
   </p>
   <p class="text-body">
-    <HeartCrack size="1.3em" color="#1CB0BA" display="block" />
+    <HeartCrack size="1.2em" color="#1CB0BA" display="block" />
     Yet millions still live and die in poverty.
   </p>
 
   <p class="text-body">
-    <EqualNot size="1.3em" color="#1CB0BA" display="block" />
+    <EqualNot size="1.2em" color="#1CB0BA" display="block" />
     If such abundance coexists with such deprivation, the problem isn't production,
     but the way its benefits are distributed. Global inequality remains deeply entrenched,
     reflecting a world economy that is profoundly hierarchical.
   </p>
   <p class="text-body">
-    <Angry size="1.3em" color="#1CB0BA" display="block" />
+    <Angry size="1.2em" color="#1CB0BA" display="block" />
     As frustration and anger grow in many societies seen in the rise of extremist
     and authoritarian movements in the political west, one might ask could this be
     fueled by the rise of inequality?
   </p>
   <p class="text-body">
-    <HandCoins size="1.3em" color="#1CB0BA" display="block" />
+    <HandCoins size="1.2em" color="#1CB0BA" display="block" />
     Now, inequality between whom? Who is rich and who is poor, and how big is the
     gap between the two? In this project, we take a deep look at global inequality
     from different perspectives. Inequality here refers to economic inequality, meaning
@@ -59,7 +59,7 @@
 
 <section>
   <p class="text-body">
-    <Earth size="1.3em" color="#1CB0BA" display="block" />
+    <Earth size="1.2em" color="#1CB0BA" display="block" />
     As the charts presented so far illustrate, economic inequality is strongly influenced
     by geographical context, which in turn is shaped by local politics and economic
     regulations, or the lack thereof.
@@ -70,19 +70,17 @@
   </video> -->
 
   <p class="text-body">
-    <EyeOff size="1.3em" color="#1CB0BA" display="block" />
-    The previous visualizations focused on the Gini coefficient, which can obscure
-    important details. For instance, two countries with the same Gini value might
-    differ significantly in whether inequality is driven by extreme income concetration
-    at the top or lacking a miminum share at the bottom.
+    <EyeOff size="1.2em" color="#1CB0BA" display="block" />
+    The Gini coefficient can obscure important details. For instance, two countries with the same value might
+    differ significantly in whether inequality is driven by concetration
+    at the top or at the bottom.
   </p>
 
   <p class="text-body">
-    <ArrowDownUp size="1.3em" color="#1CB0BA" display="block" />
+    <ArrowDownUp size="1.2em" color="#1CB0BA" display="block" />
     To gain a more nuanced understanding, the following charts compare the share
-    of national income held by the richest 10% with that of the poorest 50%. This
-    comparison allows us to observe how these two income groups have evolved relative
-    to each other over the past four decades, revealing more subtle dynamics in inequality
+    of national income held by the richest 10% vs. the poorest 50% in order to observe how these two income groups have evolved relative
+    to each other and hence offer a more subtle dynamics in inequality
     trends across countries.
   </p>
 </section>
@@ -94,8 +92,8 @@
     We end this data story with a quote form Branko Milanovic, which describes
     very well a reality often not taken into account. "It is an illusion to
     believe that what is good for the world must be good for everyone."
-    <Frown size="1.3em" color="#1CB0BA" display="block" />
-    <Smile size="1.3em" color="#1CB0BA" display="block" />
+    <Frown size="1.2em" color="#1CB0BA" display="block" />
+    <Smile size="1.2em" color="#1CB0BA" display="block" />
   </p>
 </section>
 
@@ -115,7 +113,7 @@
     text-align: left;
     word-spacing: normal;
     letter-spacing: 0;
-    margin-top: 1em;
+    margin-top: 1.3em;
   }
 
   /*--------------------------------------*/
