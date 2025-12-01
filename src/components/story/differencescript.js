@@ -25,11 +25,6 @@ const renderData = countryCodes.flatMap((countryCode) => {
   ];
 });
 
-// console.log(renderData[0].values[43]);
-// World 0.084
-// console.log(renderData[1].values[43]);
-// World 0.53
-
 export default {
   components: [DifferenceChart],
   steps: [
@@ -67,7 +62,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income of the world 🌎",
+              text: "Income in the world 🌎",
             },
           ],
         },
@@ -115,7 +110,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income Europe",
+              text: "Income in Europe",
             },
           ],
         },
@@ -164,7 +159,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income Sweden 🇸🇪",
+              text: "Income in Sweden 🇸🇪",
             },
             {
               x: "2020",
@@ -209,14 +204,14 @@ export default {
               x: "2023",
               y: renderData[6].values[43].value,
               dy: "3px + 4px",
-              text: `<span style='color: var(--color-usa);'>${formatter.format(renderData[7].values[43].value)} in 2023</span>`,
+              text: `<span style='color: var(--color-usa);'>${formatter.format(renderData[6].values[43].value)} in 2023</span>`,
               anchor: "end",
             },
             {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income USA  🇺🇸",
+              text: "Income in USA 🇺🇸",
             },
             {
               x: "2020",
@@ -279,7 +274,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income Mexico 🇲🇽",
+              text: "Income in Mexico 🇲🇽",
             },
             {
               x: "2020",
@@ -335,7 +330,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income South Africa 🇿🇦",
+              text: "Income in South Africa 🇿🇦",
             },
             {
               x: "1991",
@@ -387,7 +382,7 @@ export default {
               y: 0,
               dx: "8px",
               dy: "- 0.23em",
-              text: "income Japan 🇯🇵",
+              text: "Income in Japan 🇯🇵",
             },
             {
               x: "1991",
@@ -395,7 +390,7 @@ export default {
             },
             {
               x: "2008",
-              text: "💰 Financial crisis",
+              text: "💰 GFC",
             },
           ],
         },

@@ -16,7 +16,7 @@
 
 <section>
   <p class="text-body">
-    <Heart size="1.2em" color="#1CB0BA" display="block" /> 
+    <Heart size="1.3em" color="#1CB0BA" display="block" /> 
     <a
       target="_blank"
       href="https://www.statista.com/statistics/268750/global-gross-domestic-product-gdp/"
@@ -25,24 +25,24 @@
     than ever before in history, enough to feed and sustain the entire world.
   </p>
   <p class="text-body">
-    <HeartCrack size="1.2em" color="#1CB0BA" display="block" />
+    <HeartCrack size="1.3em" color="#1CB0BA" display="block" />
     Yet millions still live and die in poverty.
   </p>
 
   <p class="text-body">
-    <EqualNot size="1.2em" color="#1CB0BA" display="block" /> 
+    <EqualNot size="1.3em" color="#1CB0BA" display="block" /> 
     If such abundance coexists with such deprivation, the problem isn't production,
     but the way its benefits are distributed. Global inequality remains deeply entrenched,
     reflecting a world economy that is profoundly hierarchical.
   </p>
   <p class="text-body">
-    <Angry size="1.2em" color="#1CB0BA" display="block" /> 
+    <Angry size="1.3em" color="#1CB0BA" display="block" /> 
     As frustration and anger grow in many societies seen in the rise of extremist
     and authoritarian movements in the political west, one might ask could this be
     fueled by the rise of inequality?
   </p>
   <p class="text-body">
-    <HandCoins size="1.2em" color="#1CB0BA" display="block" /> 
+    <HandCoins size="1.3em" color="#1CB0BA" display="block" /> 
     Now, inequality between whom? Who is rich and who is poor, and how big is the
     gap between the two? In this project, we take a deep look at global inequality
     from different perspectives. Inequality here refers to economic inequality, meaning
@@ -115,7 +115,7 @@
     text-align: left;
     word-spacing: normal;
     letter-spacing: 0;
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 
   /*--------------------------------------*/

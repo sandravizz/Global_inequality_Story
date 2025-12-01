@@ -16,7 +16,7 @@ body {
 a {
   color: var(--color-link);
   outline: none;
-  text-decoration-thickness: 1.4px;
+  text-decoration-thickness: 0.12em;
   text-decoration-color: var(--color-link-hover);
 }
 
@@ -35,21 +35,19 @@ h6 {
   margin: 16px 0;
 }
 
-
-
 /*--------------------------------------*/
 /* Colours */
 /*--------------------------------------*/
 
 :root {
   --color-background: #020b0c;
-  --color-annotation-background: rgba(2, 11, 12, 0.5);
+  --color-annotation-background: rgba(2, 11, 12, 0.7);
   --color-chart-axis: #d7dcf0;
   --color-global: #e5e6ed;
   --color-europe: #00FF9C;
   --color-asia: #bdea00;
   --color-usa: #b7F0FF; 
-  --color-south-america: #FF1686;
+  --color-south-america: #ff00b7;
   --color-africa: #8af8cc;
   --color-link-hover: #4c8ffe;
 }
@@ -106,7 +104,7 @@ h6 {
 
 .highlight {
   background: var(--color-background);
-  font-family: "Montserrat Alternates3", sans-serif;
+  font-family: "Montserrat Alternates SemiBold", sans-serif;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px;
 }
