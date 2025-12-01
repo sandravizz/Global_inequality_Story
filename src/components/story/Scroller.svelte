@@ -259,10 +259,10 @@
       margin: 0 auto;
     }
     .card-title {
-      font-size: 0.9em;
+      font-size: 0.85em;
     }
     .card-body {
-      font-size: 0.85em;
+      font-size: 0.8em;
     }
   }
 
@@ -273,10 +273,10 @@
       margin: 0 auto;
     }
     .card-title {
-      font-size: 0.9em;
+      font-size: 0.85em;
     }
     .card-body {
-      font-size: 0.85em;
+      font-size: 0.8em;
     }
   }
 </style>
