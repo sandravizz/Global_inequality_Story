@@ -61,7 +61,7 @@
     </a>
   </p>
 
-    <p
+  <p
     class="text-extra-small"
     style="display: flex; align-items: center; gap: 0.5em;"
   >
@@ -76,18 +76,18 @@
   </p>
 
   <p
-  class="text-extra-small"
-  style="display: flex; align-items: center; gap: 0.5em;"
->
-  <Github size="1.2em" color="#1CB0BA" display="block" />
-  <a
-    target="_blank"
-    href="https://github.com/sandraviz/global-inequality"
+    class="text-extra-small"
     style="display: flex; align-items: center; gap: 0.5em;"
   >
-    This is our repository on GitHub.
-  </a>
-</p>
+    <Github size="1.2em" color="#1CB0BA" display="block" />
+    <a
+      target="_blank"
+      href="https://github.com/sandraviz/global-inequality"
+      style="display: flex; align-items: center; gap: 0.5em;"
+    >
+      This is our repository on GitHub.
+    </a>
+  </p>
 </section>
 
 <style>
