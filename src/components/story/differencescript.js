@@ -112,10 +112,6 @@ export default {
               dy: "- 0.23em",
               text: "Income in Europe",
             },
-                  {
-              x: "2008",
-              text: "💰 GFC",
-            },
           ],
         },
       ],
@@ -437,14 +433,6 @@ export default {
               dx: "8px",
               dy: "- 0.23em",
               text: "Income in China 🇨🇳",
-            },
-            {
-              x: "1991",
-              text: "bla",
-            },
-            {
-              x: "2005",
-              text: "bla",
             },
           ],
         },

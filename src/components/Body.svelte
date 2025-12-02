@@ -65,43 +65,42 @@
     regulations, or the lack thereof.
   </p>
 
-  <video controls width="100%">
-    <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
-  </video>
-
   <p class="text-body">
     <EyeOff size="1.2em" color="#1CB0BA" display="block" />
-    The Gini coefficient can obscure important details. For instance, two countries with the same value might
-    differ significantly in whether inequality is driven by concetration
-    at the top or at the bottom.
+    The Gini coefficient can obscure important details. For instance, two countries
+    with the same value might differ significantly in whether inequality is driven
+    by concetration at the top or at the bottom.
   </p>
 
   <p class="text-body">
     <ArrowDownUp size="1.2em" color="#1CB0BA" display="block" />
     To gain a more nuanced understanding, the following charts compare the share
-    of national income held by the richest 10% vs. the poorest 50% in order to observe how these two income groups have evolved relative
-    to each other and hence offer a more subtle dynamics in inequality
-    trends across countries.
+    of national income held by the richest 10% vs. the poorest 50% in order to observe
+    how these two income groups have evolved relative to each other and hence offer
+    a more subtle dynamics in inequality trends across countries.
   </p>
 </section>
 
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
-
   <p class="text-body">
-   <Smile size="1.2em" color="#1CB0BA" display="block" />
-    As Thomas Piketty pointed out, sometimes ironiclly looking at history is what can give us hope looking to a future.
+    <Smile size="1.2em" color="#1CB0BA" display="block" />
+    Looking at all these charts and noticing a clear tendency toward extreme inequality
+    in many parts of the world can leave someone feeling hopeless and worried about
+    our future. We often hear expressions like ‘history repeats itself.’ But as Thomas
+    Piketty pointed out in the documentary, sometimes looking back at history is
+    exactly what can give us hope for the future.
   </p>
-   <p class="text-body">
-  </p>
-    <video controls poster="assets/videos/after_ww2.jpg" width="100%">
+  <p class="text-body"></p>
+  <video controls poster="assets/videos/after_ww2.jpg" width="100%">
     <source src="assets/videos/after_ww2.mp4" type="video/mp4" />
-  </video><span class="text-extra-small"> Source:  <a
-      target="_blank"
-      href="https://www.imdb.com/title/tt5723056/"
+  </video><span class="text-extra-small">
+    Source: <a target="_blank" href="https://www.imdb.com/title/tt5723056/"
       >Capital in the 21st Century (2019) by Justin Pemberton
-    </a></span>
+    </a></span
+  >
+  <p class="text-body">Thanks.</p>
 </section>
 
 <style>
