@@ -49,7 +49,7 @@
     <Github size="1.2em" color="#1CB0BA" display="block" />
     <a
       target="_blank"
-      href="https://github.com/sandraviz/global-inequality"
+      href="https://github.com/sandravizz/Global-Inequality-Intro"
       style="display: flex; align-items: center; gap: 0.5em;"
     >
       Intro
@@ -57,7 +57,7 @@
    <Github size="1.2em" color="#1CB0BA" display="block" />
     <a
       target="_blank"
-      href="https://github.com/sandraviz/global-inequality"
+      href="https://github.com/sandravizz/Global-Inequality-Data"
       style="display: flex; align-items: center; gap: 0.5em;"
     >
       Data 
@@ -65,7 +65,7 @@
        <Github size="1.2em" color="#1CB0BA" display="block" />
     <a
       target="_blank"
-      href="https://github.com/sandraviz/global-inequality"
+      href="https://github.com/sandravizz/Global_inequality_Story"
       style="display: flex; align-items: center; gap: 0.5em;"
     >
       Story
