@@ -20,11 +20,6 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 const yTickFormatter = (val) => formatter.format(val);
 
-// --------------------------------------
-// How to add a video
-
-// --------------------------------------
-
 export default {
   components: [
     MultilineChart,
@@ -70,7 +65,6 @@ export default {
           "This single number will guide us through more than four decades, starting in the 80s until 2023.",
       },
     },
-
     // --------------------------------------
     // 2. Global average
     // --------------------------------------
@@ -918,7 +912,6 @@ export default {
         text3: "",
       },
     },
-
     // --------------------------------------
     // 11. Global average
     // --------------------------------------

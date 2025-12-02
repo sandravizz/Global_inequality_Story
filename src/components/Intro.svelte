@@ -76,7 +76,7 @@
     <p class="subtitle">
       {subtitle}
     </p>
-      <p class="subtitle2">
+      <p class="subtitleB">
       {subtitleB}
     </p>
     <p class="credits">
@@ -162,7 +162,7 @@
     max-width: 100%;
   }
 
-  .subtitle, .subtitle2 {
+  .subtitle, .subtitleB  {
     margin: 0 0;
     font-size: 1.3em;
     font-family: "Montserrat Alternates2", sans-serif;
@@ -172,7 +172,6 @@
     text-shadow: 0 3px 5px #7291fe;
     letter-spacing: 0.5px;
     line-height: 1.2;
-    background: none;
     display: inline-block;
   }
 
@@ -232,9 +231,13 @@
       word-spacing: 26px;
     }
 
-    .subtitle {
-      font-size: 18px;
-    }
+  .subtitle, .subtitleB  {
+    font-size: 1.1em;
+  }
+
+    .credits  {
+    font-size: 0.45em;
+  }
   }
 
   /* Tablet (< 768px) */
@@ -250,11 +253,15 @@
       word-spacing: 15px;
     }
 
-    .subtitle {
-      word-spacing: 4px;
-      font-size: 18px;
-    }
+  .subtitle, .subtitleB  {
+    font-size: 1em;
   }
+
+      .credits  {
+    font-size: 0.5em;
+  }
+
+   }
 
   /* Mobile (< 480px) */
 
@@ -270,17 +277,17 @@
       letter-spacing: 0.5px;
     }
 
-    .subtitle {
-      word-spacing: 3px;
-      font-size: 16px;
-    }
+  .subtitle, .subtitleB  {
+    font-size: 0.75em;
+  }
 
-    .credits {
-      font-size: 11px;
-    }
+ 
+      .credits  {
+    font-size: 0.45em;
+  }
 
     .scroll-text {
-      font-size: 11px;
+      font-size: 0.6em;
     }
   }
 </style>
