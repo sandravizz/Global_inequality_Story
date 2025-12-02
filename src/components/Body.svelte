@@ -89,10 +89,11 @@
 
 <section>
   <p class="text-body">
+     <Frown size="1.2em" color="#1CB0BA" display="block" />
     We end this data story with a quote form Branko Milanovic, which describes
     very well a reality often not taken into account. "It is an illusion to
     believe that what is good for the world must be good for everyone."
-    <Frown size="1.2em" color="#1CB0BA" display="block" />
+   
     <Smile size="1.2em" color="#1CB0BA" display="block" />
   </p>
 </section>
