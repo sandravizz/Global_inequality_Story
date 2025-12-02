@@ -898,18 +898,18 @@ export default {
         },
       ],
       description: {
-        title: `Now we need to look at China`,
+        title: `The rise of China 🇨🇳`,
+        text: "<span class='highlight' style='color:var(--color-asia)'>China</span> is neither one of the most equal nor unequal countries but what stands out is it's enormous economic grows in the last decades affecting other countries. The graph reveals the rise of productivity goes hand in hand with the rise of inequality.",
         text2: `
-          <video controls poster="assets/videos/1.png" width="100%">
-            <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
+          <video controls poster="assets/videos/China_1.jpeg" width="100%">
+            <source src="assets/videos/China_1.mp4" type="video/mp4" />
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"
       href="https://www.imdb.com/title/tt5723056/"
       >Capital in the Twenty-First Century by Justin Pemberton
     </a></span>
         `,
-        text: "dfbnpsfdbnpdfbndfºpbnfººdfb",
-        text3: "dfnbvºdfbºsbsºdfbvsfºosfo",
+        text3: "",
       },
     },
 
