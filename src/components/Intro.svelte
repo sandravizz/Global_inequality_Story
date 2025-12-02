@@ -159,30 +159,37 @@
   }
 
   .subtitle {
-    word-spacing: 4px;
-    letter-spacing: 0px;
-    text-wrap: wrap;
-    margin: 0 0 0 0;
-    font-size: 26px;
+    margin: 0 auto;
+    font-size: 22px;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
-    max-width: 100%;
-    padding: 0px 6px;
-    filter: drop-shadow(1px 1px 1px #1CB0BA);
+    padding: 0.4em 1em;
+    color: #e5e6ed;
+    text-shadow: 0 3px 5px #7291fe;
+
+    /* More elegant spacing */
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+
+    /* Remove box look */
+    background: none;
+    display: inline-block;
   }
 
   .credits {
-    word-spacing: 2px;
-    letter-spacing: 0px;
-    text-wrap: wrap;
-    margin: 1.5em 0 0 0;
-    font-size: 12px;
+    margin: 1.2em auto 0 auto;
+    font-size: 0.7em;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
-    max-width: 100%;
-    padding: 4px 6px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    padding: 0.3em 0.8em;
+    color: #e5e6ed;
+    text-shadow: 0 1px 3px rgba(33, 82, 66, 0.4);
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    line-height: 1.3;
+    background-color: rgba(33, 82, 66, 0.6);
+    border-radius: 4px;
+    display: inline-block;
   }
 
   .scroll-indicator {
@@ -195,7 +202,7 @@
     flex-direction: column;
     align-items: center;
     padding: 4px 6px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(33, 82, 66, 0.7);
     border-radius: 6px;
   }
 

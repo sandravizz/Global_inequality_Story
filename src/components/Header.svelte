@@ -18,8 +18,8 @@
   <Intro
     src="{base}/assets/1.png"
     title="Global inequality"
-    subtitle={slideIndex === 2
-      ? "Data-story about global inequality between and within countries over the last 4 decades"
+    subtitle={ slideIndex === 2
+      ? "Data-story about global inequality within and across countries over the last 4 decades"
       : ""}
     credits={slideIndex === 2 ? "by Patrick Wojda and Sandra Becker" : ""}
     hide={slideIndex !== undefined
