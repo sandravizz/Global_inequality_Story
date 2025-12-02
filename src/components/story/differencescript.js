@@ -507,7 +507,7 @@ export default {
         title: `Where are we heading?`,
         text: "A rather negative continution of this development might look like...",
            text2: `
-          <video controls poster="assets/videos/China_2.jpeg" width="100%">
+          <video controls poster="assets/videos/Negative_outcome.jpg" width="100%">
             <source src="assets/videos/Negative_outcome.mp4" type="video/mp4" />
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"

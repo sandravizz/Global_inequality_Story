@@ -4,6 +4,7 @@
   export let src;
   export let title;
   export let subtitle;
+   export let subtitleB;
   export let credits;
   export let hide;
   export let show;
@@ -74,6 +75,9 @@
     </h3>
     <p class="subtitle">
       {subtitle}
+    </p>
+      <p class="subtitle2">
+      {subtitleB}
     </p>
     <p class="credits">
       {credits}
@@ -158,27 +162,23 @@
     max-width: 100%;
   }
 
-  .subtitle {
-    margin: 0 auto;
-    font-size: 22px;
+  .subtitle, .subtitle2 {
+    margin: 0 0;
+    font-size: 1.3em;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
-    padding: 0.4em 1em;
+    padding: 0.2em 0em;
     color: #e5e6ed;
     text-shadow: 0 3px 5px #7291fe;
-
-    /* More elegant spacing */
     letter-spacing: 0.5px;
-    line-height: 1.4;
-
-    /* Remove box look */
+    line-height: 1.2;
     background: none;
     display: inline-block;
   }
 
   .credits {
     margin: 1.2em auto 0 auto;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
     padding: 0.3em 0.8em;
@@ -187,7 +187,6 @@
     letter-spacing: 0.3px;
     word-spacing: 1px;
     line-height: 1.3;
-    background-color: rgba(33, 82, 66, 0.6);
     border-radius: 4px;
     display: inline-block;
   }
@@ -202,13 +201,13 @@
     flex-direction: column;
     align-items: center;
     padding: 4px 6px;
-    background-color: rgba(33, 82, 66, 0.7);
+    background-color: rgba(33, 82, 66, 0);
     border-radius: 6px;
   }
 
   .scroll-text {
     font-family: "Montserrat Alternates2", sans-serif;
-    font-size: 12px;
+    font-size: 0.7em;
     letter-spacing: 1px;
   }
 
