@@ -85,13 +85,17 @@
 
 <section>
   <p class="text-body">
-    <Smile size="1.2em" color="#1CB0BA" display="block" />
+    <Frown size="1.2em" color="#1CB0BA" display="block" />
     Looking at all these charts and noticing a clear tendency toward extreme inequality
     in many parts of the world can leave someone feeling hopeless and worried about
-    our future. We often hear expressions like ‘history repeats itself.’ But as Thomas
-    Piketty pointed out in the documentary, sometimes looking back at history is
+    our future. We often hear expressions like ‘history repeats itself.’ 
+     </p> 
+      <p class="text-body">
+    <Smile size="1.2em" color="#1CB0BA" display="block" />
+    But as Thomas Piketty pointed out in the documentary, sometimes looking back at history is
     exactly what can give us hope for the future.
-  </p>
+         </p> 
+
   <p class="text-body"></p>
   <video controls poster="assets/videos/after_ww2.jpg" width="100%">
     <source src="assets/videos/after_ww2.mp4" type="video/mp4" />
