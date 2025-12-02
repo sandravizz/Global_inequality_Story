@@ -282,6 +282,7 @@
 
     .subtitle,
     .subtitleB {
+        font-family: "Montserrat Alternates3", sans-serif;
       font-size: 0.75em;
     }
 
@@ -306,11 +307,13 @@
 
     .subtitle,
     .subtitleB {
+        font-family: "Montserrat Alternates3", sans-serif;
       font-size: 0.6em;
     }
 
     .credits,
     .scroll-text {
+        font-family: "Montserrat Alternates2", sans-serif;
       font-size: 0.45em;
     }
   }
