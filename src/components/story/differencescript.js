@@ -405,7 +405,7 @@ export default {
     // --------------------------------------
     // 8. China
     // --------------------------------------
-      {
+    {
       charts: [
         {
           key: "country",
@@ -451,8 +451,70 @@ export default {
       ],
       description: {
         title: `China`,
-        text: "Income inequality in <span class='highlight' style='color:var(--color-asia)'>China 🇨🇳</span> is one of the lowest globally.",
-        text2: "",
+        text: "The gap between these to income groups grew immensly in <span class='highlight' style='color:var(--color-asia)'>China 🇨🇳</span> over these 4 four decades.",
+        text2: `
+          <video controls poster="assets/videos/China_2.jpeg" width="100%">
+            <source src="assets/videos/China_2.mp4" type="video/mp4" />
+          </video> <span class="text-extra-small"> Source:  <a
+      target="_blank"
+      href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the Twenty-First Century by Justin Pemberton
+    </a></span>
+        `,
+        text3: "",
+      },
+    },
+    // --------------------------------------
+    // 1. Global
+    // --------------------------------------
+    {
+      charts: [
+        {
+          key: "country",
+          componentIndex: 0,
+          data: renderData.filter((d) => d.country === "WO"),
+          options: {
+            stroke: ["var(--color-global)", "var(--color-global)"],
+            strokeOpacity: 1,
+            strokeWidth: 2,
+            yTickFormat: yTickFormatter,
+          },
+          annotations: [
+            {
+              x: "2023",
+              y: renderData[1].values[43].value,
+              dy: "- 1.4em - 6px - 4px",
+              text: "53% in 2023",
+              anchor: "end",
+            },
+            {
+              x: "2023",
+              y: renderData[0].values[43].value,
+              dy: "3px + 4px",
+              text: "8% in 2023",
+              anchor: "end",
+            },
+            {
+              y: 0,
+              dx: "8px",
+              dy: "- 0.23em",
+              text: "Income in the world 🌎",
+            },
+          ],
+        },
+      ],
+      description: {
+        title: `Where are we heading?`,
+        text: "A rather negative continution of this development might look like...",
+           text2: `
+          <video controls poster="assets/videos/China_2.jpeg" width="100%">
+            <source src="assets/videos/Negative_outcome.mp4" type="video/mp4" />
+          </video> <span class="text-extra-small"> Source:  <a
+      target="_blank"
+      href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the Twenty-First Century by Justin Pemberton
+    </a></span>
+        `,
         text3: "",
       },
     },

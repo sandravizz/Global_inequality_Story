@@ -418,9 +418,16 @@ export default {
       ],
       description: {
         title: `United States of rising inequality`,
-        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
-        text2:
-          " ",
+        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span> and of course deregulation, which lead to the financial crises.",
+        text2: `
+          <video controls poster="assets/videos/GFC.jpeg" width="100%">
+            <source src="assets/videos/GFC.mp4" type="video/mp4" />
+          </video> <span class="text-extra-small"> Source:  <a
+      target="_blank"
+      href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the Twenty-First Century by Justin Pemberton
+    </a></span>
+        `,
         text3:
           "Today the <span class='highlight' style='color:var(--color-usa)'>US</span> stands among the most unequal advanced economies<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
       },
@@ -509,8 +516,7 @@ export default {
       description: {
         title: `South America's uneven paths`,
         text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 80s and 90s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>1</sup></span>. From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>2</sup></span>.",
-        text2:
-          "",
+        text2: "",
         text3:
           "Inequality rose sharply during the COVID 19 pandemic especially for informal and urban workers. Although fiscal support softened the impact it remained above pre pandemic levels in several countries<span class='fn' tabindex='0' data-note='IDB and World Bank COVID 19 reports'><sup>3</sup></span>.",
       },
@@ -548,7 +554,7 @@ export default {
             {
               x: "2020",
               text: "🦠 Covid",
-            }
+            },
           ],
         },
         {
@@ -647,7 +653,7 @@ export default {
             {
               x: "1991",
               text: "End of apartheid",
-            }
+            },
           ],
         },
         {
@@ -1000,7 +1006,8 @@ export default {
       description: {
         title: `The flat line revisited`,
         text: "Seen up close, the flat <span class='highlight' style='color:var(--color-global)'>global</span> line is no longer a mystery. Opposite forces balanced each other out.",
-        text2: "countries drew closer together while internal gaps widened. The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves.",
+        text2:
+          "countries drew closer together while internal gaps widened. The <span class='highlight' style='color:var(--color-global)'>world’s</span> line looks calm, but beneath it, everything moves.",
         text3: "",
       },
     },
