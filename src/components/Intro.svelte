@@ -4,7 +4,7 @@
   export let src;
   export let title;
   export let subtitle;
-   export let subtitleB;
+  export let subtitleB;
   export let credits;
   export let hide;
   export let show;
@@ -76,7 +76,7 @@
     <p class="subtitle">
       {subtitle}
     </p>
-      <p class="subtitleB">
+    <p class="subtitleB">
       {subtitleB}
     </p>
     <p class="credits">
@@ -162,14 +162,15 @@
     max-width: 100%;
   }
 
-  .subtitle, .subtitleB  {
+  .subtitle,
+  .subtitleB {
     margin: 0 0;
     font-size: 1.3em;
     font-family: "Montserrat Alternates2", sans-serif;
     text-align: center;
     padding: 0.2em 0em;
     color: #e5e6ed;
-    text-shadow: 0 3px 5px #7291fe;
+    text-shadow: 0 1px 2px rgba(33, 82, 66, 0.8);
     letter-spacing: 0.5px;
     line-height: 1.2;
     display: inline-block;
@@ -182,7 +183,7 @@
     text-align: center;
     padding: 0.3em 0.8em;
     color: #e5e6ed;
-    text-shadow: 0 1px 3px rgba(33, 82, 66, 0.4);
+    text-shadow: 0 1px 2px rgba(33, 82, 66, 0.8);
     letter-spacing: 0.3px;
     word-spacing: 1px;
     line-height: 1.3;
@@ -191,6 +192,7 @@
   }
 
   .scroll-indicator {
+    text-shadow: 0 1px 2px rgba(33, 82, 66, 0.8);
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -200,14 +202,12 @@
     flex-direction: column;
     align-items: center;
     padding: 4px 6px;
-    background-color: rgba(33, 82, 66, 0);
-    border-radius: 6px;
   }
 
   .scroll-text {
     font-family: "Montserrat Alternates2", sans-serif;
-    font-size: 0.7em;
-    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(33, 82, 66, 0.8);
+    font-size: 0.6em;
   }
 
   .chevron {
@@ -231,13 +231,15 @@
       word-spacing: 26px;
     }
 
-  .subtitle, .subtitleB  {
-    font-size: 1.1em;
-  }
+    .subtitle,
+    .subtitleB {
+      font-size: 1.1em;
+    }
 
-    .credits  {
-    font-size: 0.45em;
-  }
+    .credits,
+    .scroll-text {
+      font-size: 0.45em;
+    }
   }
 
   /* Tablet (< 768px) */
@@ -253,15 +255,16 @@
       word-spacing: 15px;
     }
 
-  .subtitle, .subtitleB  {
-    font-size: 1em;
-  }
+    .subtitle,
+    .subtitleB {
+      font-size: 1em;
+    }
 
-      .credits  {
-    font-size: 0.5em;
+    .credits,
+    .scroll-text {
+      font-size: 0.5em;
+    }
   }
-
-   }
 
   /* Mobile (< 480px) */
 
@@ -277,17 +280,38 @@
       letter-spacing: 0.5px;
     }
 
-  .subtitle, .subtitleB  {
-    font-size: 0.75em;
-  }
+    .subtitle,
+    .subtitleB {
+      font-size: 0.75em;
+    }
 
- 
-      .credits  {
-    font-size: 0.45em;
-  }
-
+    .credits,
     .scroll-text {
+      font-size: 0.45em;
+    }
+  }
+
+  /* Mobile (< 260px) */
+  @media screen and (max-width: 338px) {
+    .textcontainer {
+      padding: 0 15px;
+    }
+
+    .title {
+      font-size: 32px;
+      -webkit-text-stroke-width: 1.5px;
+      word-spacing: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle,
+    .subtitleB {
       font-size: 0.6em;
+    }
+
+    .credits,
+    .scroll-text {
+      font-size: 0.45em;
     }
   }
 </style>

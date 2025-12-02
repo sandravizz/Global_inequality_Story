@@ -226,11 +226,11 @@ export default {
       ],
       description: {
         title: `USA 🇺🇸 with historical highs`,
-        text: "Now let’s compare to the <span class='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span>. The gap is clear when set against <span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span>. The top 10% earn on average 17 times more than the bottom 50%.",
+        text: "The gap in the <span class='highlight' style='color:var(--color-usa)'>US</span> is huge, the top 10% earn on average 17 times more than the bottom 50%.",
         text2:
-          "Since the early 1980s deregulation, privatization, lower tax progressivity, and declining union coverage have contributed to a steady rise in the top 10% income share. During the COVID-19 pandemic the income of the richest 10% continued to rise, while the recovery for lower-income groups lagged.",
+          "Since the early 80s deregulation, privatization, lower tax progressivity, and declining union coverage have contributed to a steady rise in the top 10% income share. During the COVID-19 pandemic the income of the richest 10% continued to rise, while the recovery for lower-income groups lagged.",
         text3:
-          "Unlike in <span class='highlight' style='color:var(--color-europe)'>Sweden 🇸🇪</span> where inequality fell after the initial shock, the post-pandemic increase in top incomes in the <span class='highlight' style='color:var(--color-usa)'>USA 🇺🇸</span> persisted, reinforcing the long-term trend of widening inequality.",
+          "Unlike in <span class='highlight' style='color:var(--color-europe)'>Sweden</span> where inequality fell after the initial shock, the post-pandemic increase in top incomes in the <span class='highlight' style='color:var(--color-usa)'>USA</span> persisted, reinforcing the long-term trend of widening inequality.",
       },
     },
     // --------------------------------------
@@ -285,7 +285,7 @@ export default {
       ],
       description: {
         title: `Mexico 🇲🇽`,
-        text: "In <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> inequality has long been among the highest in the <span class='highlight' style='color:var(--color-global)'>world</span>. Yet during COVID-19, <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>, one of the few clear declines among major economies.",
+        text: "In <span class='highlight' style='color:var(--color-south-america)'>Mexico</span> inequality has long been among the highest in the <span class='highlight' style='color:var(--color-global)'>world</span>. Yet during COVID-19, <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>, one of the few clear declines among major economies.",
         text2:
           "As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes, <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom.",
         text3:
@@ -337,7 +337,7 @@ export default {
       ],
       description: {
         title: `South Africa 🇿🇦 biggest gap`,
-        text: "As seen before <span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 1980s and from the early 1990s onward it rose even further, reaching its highest levels around 2010.",
+        text: "As seen before <span class='highlight' style='color:var(--color-africa)'>South Africa</span> stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 1980s and from the early 1990s onward it rose even further, reaching its highest levels around 2010.",
         text2:
           "The end of apartheid brought profound political change, but only limited economic redistribution. This reflects the deep structural legacy of apartheid, including persistent racial divides, stark spatial separation, limited land reform and concentrated ownership.",
         text3:
@@ -383,11 +383,7 @@ export default {
             {
               x: "1991",
               text: "Asset bubble",
-            },
-            {
-              x: "2008",
-              text: "💰 GFC",
-            },
+            }
           ],
         },
       ],
@@ -438,8 +434,8 @@ export default {
         },
       ],
       description: {
-        title: `China`,
-        text: "The gap between these to income groups grew immensly in <span class='highlight' style='color:var(--color-asia)'>China 🇨🇳</span> over these 4 four decades.",
+        title: `China 🇨🇳`,
+        text: "The gap between these to income groups grew immensly in <span class='highlight' style='color:var(--color-asia)'>China</span> over these 4 four decades.",
         text2: `
           <video controls poster="assets/videos/China_2.jpeg" width="100%">
             <source src="assets/videos/China_2.mp4" type="video/mp4" />

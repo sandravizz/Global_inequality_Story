@@ -325,11 +325,11 @@ export default {
       ],
       description: {
         title: `Even among equals`,
-        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality levels differ. Northern countries maintain especially low and stable Gini values supported by cohesive labour markets and strong social protections<span class='fn' tabindex='0' data-note='EU (2024)'><sup>1</sup></span>.",
+        text: "Within <span class='highlight' style='color:var(--color-europe)'>Europe</span>, inequality levels differ. Northern countries maintain especially low and stable Gini values supported by cohesive labour markets and strong social protections<span class='fn' tabindex='0' data-note='EU (2024)'><sup>3</sup></span>.",
         text2:
-          "Parts of Southern and Eastern <span class='highlight' style='color:var(--color-europe)'>Europe</span> show gradual increases in inequality starting in the 90s, because of weaker labour institutions and more volatile capital income<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+          "Parts of Southern and Eastern <span class='highlight' style='color:var(--color-europe)'>Europe</span> show gradual increases in inequality starting in the 90s, because of weaker labour institutions and more volatile capital income<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>4</sup></span>.",
         text3:
-          "Despite these differences, all European countries remain far below the <span class='highlight' style='color:var(--color-global)'>global</span> inequality level. Together they form a compact cluster held together by a shared commitment to redistribution<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>.",
+          "Despite these differences, all European countries remain far below the <span class='highlight' style='color:var(--color-global)'>global</span> inequality level. Together they form a compact cluster held together by a shared commitment to redistribution<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>5</sup></span>.",
       },
     },
     // --------------------------------------
@@ -412,7 +412,7 @@ export default {
       ],
       description: {
         title: `United States of rising inequality`,
-        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers, declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span> and of course deregulation, which lead to the financial crises.",
+        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers, declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>6</sup></span> and of course deregulation, which lead to the financial crises.",
         text2: `
           <video controls poster="assets/videos/GFC.jpeg" width="100%">
             <source src="assets/videos/GFC.mp4" type="video/mp4" />
@@ -509,10 +509,10 @@ export default {
       ],
       description: {
         title: `South America's uneven paths`,
-        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 80s and 90s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>1</sup></span>. From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>2</sup></span>.",
+        text: "Across <span class='highlight' style='color:var(--color-south-america)'>South America</span> inequality remained high throughout the 80s and 90s. Many countries saw a decline during the 2000s due to stronger labour markets, improved education and expanded social programs<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>7</sup></span>. From the mid 2010s onward progress slowed as growth weakened and labour markets became more fragile<span class='fn' tabindex='0' data-note='ILO (2023)'><sup>8</sup></span>.",
         text2: "",
         text3:
-          "Inequality rose sharply during the COVID 19 pandemic especially for informal and urban workers. Although fiscal support softened the impact it remained above pre pandemic levels in several countries<span class='fn' tabindex='0' data-note='IDB and World Bank COVID 19 reports'><sup>3</sup></span>.",
+          "Inequality rose sharply during the COVID 19 pandemic especially for informal and urban workers. Although fiscal support softened the impact it remained above pre pandemic levels in several countries<span class='fn' tabindex='0' data-note='IDB and World Bank COVID 19 reports'><sup>9</sup></span>.",
       },
     },
     // --------------------------------------
@@ -707,11 +707,11 @@ export default {
       ],
       description: {
         title: `The peak of inequality`,
-        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> is one of the most unequal countries in the world. It was already extreme in the 80s and increased further after the end of apartheid<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>.",
+        text: "<span class='highlight' style='color:var(--color-africa)'>South Africa 🇿🇦</span> is one of the most unequal countries in the world. It was already extreme in the 80s and increased further after the end of apartheid<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>10</sup></span>.",
         text2:
-          "High unemployment, strong divides between skilled and unskilled work and large spatial and educational inequalities keep distribution highly polarized<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span>.",
+          "High unemployment, strong divides between skilled and unskilled work and large spatial and educational inequalities keep distribution highly polarized<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>11</sup></span>.",
         text3:
-          "Social grants reduce poverty but cannot compensate for the deep structural inequality generated in the labour market.<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>3</sup></span>.",
+          "Social grants reduce poverty but cannot compensate for the deep structural inequality generated in the labour market.<span class='fn' tabindex='0' data-note='Gradín (2023)'><sup>12</sup></span>.",
       },
     },
     // --------------------------------------
@@ -809,9 +809,9 @@ export default {
         title: `The outlier of equality 🇯🇵`,
         text: "<span class='highlight' style='color:var(--color-asia)'>Japan</span> remains one of the lowest inequality countries. It increased gradually during the 90s until the burst of the financial crises.",
         text2:
-          "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>2</sup></span>.",
+          "Stable labour institutions, broad middle income employment and progressive taxation helped hold inequality at a comparatively low level<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>13</sup></span>.",
         text3:
-          "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
+          "Demographic change and the rise of non regular work added modest upward pressure but <span class='highlight' style='color:var(--color-asia)'>Japan</span> still shows one of the most stable long term inequality trajectories in the world<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>14</sup></span>.",
       },
     },
     // --------------------------------------
@@ -899,7 +899,7 @@ export default {
       ],
       description: {
         title: `The rise of China 🇨🇳`,
-        text: "<span class='highlight' style='color:var(--color-asia)'>China</span> is neither one of the most equal nor unequal countries but what stands out is it's enormous economic grows in the last decades affecting other countries. The graph reveals the rise of productivity goes hand in hand with the rise of inequality.",
+        text: "<span class='highlight' style='color:var(--color-asia)'>China</span> China is neither one of the most equal nor one of the most unequal countries, but what stands out is its enormous economic growth in recent decades and its impact on other countries. The graph shows that the rise in productivity goes hand in hand with a rise in inequality.",
         text2: `
           <video controls poster="assets/videos/China_1.jpeg" width="100%">
             <source src="assets/videos/China_1.mp4" type="video/mp4" />
