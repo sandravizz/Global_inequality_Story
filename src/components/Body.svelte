@@ -64,10 +64,10 @@
     by geographical context, which in turn is shaped by local politics and economic
     regulations, or the lack thereof.
   </p>
-  <!-- 
+
   <video controls width="100%">
     <source src="assets/videos/rich_poor_players.mp4" type="video/mp4" />
-  </video> -->
+  </video>
 
   <p class="text-body">
     <EyeOff size="1.2em" color="#1CB0BA" display="block" />
@@ -88,14 +88,20 @@
 <Scroller storyscript={differencescript} layout="wide" />
 
 <section>
+
   <p class="text-body">
-     <Frown size="1.2em" color="#1CB0BA" display="block" />
-    We end this data story with a quote form Branko Milanovic, which describes
-    very well a reality often not taken into account. "It is an illusion to
-    believe that what is good for the world must be good for everyone."
-   
-    <Smile size="1.2em" color="#1CB0BA" display="block" />
+   <Smile size="1.2em" color="#1CB0BA" display="block" />
+    As Thomas Piketty pointed out, sometimes ironiclly looking at history is what can give us hope looking to a future.
   </p>
+   <p class="text-body">
+  </p>
+    <video controls poster="assets/videos/after_ww2.jpg" width="100%">
+    <source src="assets/videos/after_ww2.mp4" type="video/mp4" />
+  </video><span class="text-extra-small"> Source:  <a
+      target="_blank"
+      href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the 21st Century (2019) by Justin Pemberton
+    </a></span>
 </section>
 
 <style>

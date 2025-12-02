@@ -458,7 +458,7 @@ export default {
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"
       href="https://www.imdb.com/title/tt5723056/"
-      >Capital in the Twenty-First Century by Justin Pemberton
+      >Capital in the 21st Century (2019) by Justin Pemberton
     </a></span>
         `,
         text3: "",
@@ -512,7 +512,7 @@ export default {
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"
       href="https://www.imdb.com/title/tt5723056/"
-      >Capital in the Twenty-First Century by Justin Pemberton
+      >Capital in the 21st Century (2019) by Justin Pemberton
     </a></span>
         `,
         text3: "",

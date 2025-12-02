@@ -412,18 +412,18 @@ export default {
       ],
       description: {
         title: `United States of rising inequality`,
-        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality<span class='fn' tabindex='0' data-note='Sauer et al. (2020)'><sup>1</sup></span>. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers and a declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span> and of course deregulation, which lead to the financial crises.",
+        text: "In the early 80s the <span class='highlight' style='color:var(--color-usa)'>United States 🇺🇸</span> stood close to <span class='highlight' style='color:var(--color-europe)'>Europe</span> in terms of inequality. From that point onward inequality increased steadily. This was driven by financialization, technological change that favored skilled workers, declining labour share<span class='fn' tabindex='0' data-note='UNCTAD (2023)'><sup>2</sup></span> and of course deregulation, which lead to the financial crises.",
         text2: `
           <video controls poster="assets/videos/GFC.jpeg" width="100%">
             <source src="assets/videos/GFC.mp4" type="video/mp4" />
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"
       href="https://www.imdb.com/title/tt5723056/"
-      >Capital in the Twenty-First Century by Justin Pemberton
+      >Capital in the 21st Century (2019) by Justin Pemberton
     </a></span>
         `,
         text3:
-          "Today the <span class='highlight' style='color:var(--color-usa)'>US</span> stands among the most unequal advanced economies<span class='fn' tabindex='0' data-note='IFS Deaton Review (2024)'><sup>3</sup></span>.",
+          "Today the <span class='highlight' style='color:var(--color-usa)'>US</span> stands among the most unequal advanced economies.",
       },
     },
     // --------------------------------------
@@ -905,8 +905,8 @@ export default {
             <source src="assets/videos/China_1.mp4" type="video/mp4" />
           </video> <span class="text-extra-small"> Source:  <a
       target="_blank"
-      href="https://www.imdb.com/title/tt5723056/"
-      >Capital in the Twenty-First Century by Justin Pemberton
+        href="https://www.imdb.com/title/tt5723056/"
+      >Capital in the 21st Century (2019) by Justin Pemberton
     </a></span>
         `,
         text3: "",
