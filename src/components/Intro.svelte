@@ -3,9 +3,9 @@
 
   export let src;
   export let title;
-  export let subtitle;
-  export let subtitleB;
-  export let credits;
+  export let subtitle = "";
+  export let subtitleB = "";
+  export let credits = "";
   export let hide;
   export let show;
   export let isVisible = false;
@@ -79,9 +79,11 @@
     <p class="subtitleB">
       {subtitleB}
     </p>
-    <p class="credits">
-      {credits}
-    </p>
+    <div class="credits">
+      <slot name="credits">
+        {credits}
+      </slot>
+    </div>
   </div>
   <img bind:this={imgEl} {src} alt={title} />
 
@@ -189,6 +191,17 @@
     line-height: 1.3;
     border-radius: 4px;
     display: inline-block;
+  }
+
+  .credits :global(a) {
+    color: #e5e6ed;
+    text-decoration: underline;
+    text-shadow: 0 1px 2px rgba(33, 82, 66, 0.8);
+    transition: opacity 0.2s ease;
+  }
+
+  .credits :global(a:hover) {
+    opacity: 0.8;
   }
 
   .scroll-indicator {
