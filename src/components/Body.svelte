@@ -76,8 +76,7 @@
     <ArrowDownUp size="1.2em" color="#1CB0BA" display="block" />
     To gain a more nuanced understanding, the following charts compare the share
     of national income held by the richest 10% vs. the poorest 50% in order to observe
-    how these two income groups have evolved relative to each other and hence offer
-    a more subtle dynamics in inequality trends across countries.
+    how these two income groups have evolved relative to each other.
   </p>
 </section>
 

@@ -71,7 +71,8 @@ export default {
         title: `Gap between rich and poor`,
         text: "The upper line represents the income share of the <span class='highlight' style='color:var(--color-global)'>global</span> richest 10%, the lower of the poorest 50%.",
         text2: "",
-        text3: "Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
+        text3:
+          "Despite growth in emerging economies over recent decades, the <span class='highlight' style='color:var(--color-global)'>global</span> bottom half’s share remains historically low: underscoring how much of the world’s income continues to concentrate at the top.",
       },
     },
     // --------------------------------------
@@ -112,12 +113,16 @@ export default {
               dy: "- 0.23em",
               text: "Income in Europe",
             },
+            {
+              x: "2008",
+              text: "💰 GFC",
+            },
           ],
         },
       ],
       description: {
         title: `Smallest gap in Europe`,
-        text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span> the gap between the richest 10% and the poorest 50% was exceptionally small in the 1980s. From the early 1990s onward the distance between the two began to widen, driven mainly by a decline in the income share of the lower half.",
+        text: "In <span class='highlight' style='color:var(--color-europe)'>Europe</span> the gap between the richest 10% and the poorest 50% was exceptionally small in the 80s. From the early 90s onward the distance between the two began to widen, driven mainly by a decline in the income share of the lower half.",
         text2:
           "A brief reversal appears around the financial crisis when top incomes fell slightly and the lower half recovered modestly. After this short period of adjustment the lines began to settle again.",
         text3:
@@ -162,6 +167,10 @@ export default {
               text: "Income in Sweden 🇸🇪",
             },
             {
+              x: "2008",
+              text: "💰 GFC",
+            },
+            {
               x: "2020",
               text: "🦠 Covid",
             },
@@ -170,9 +179,8 @@ export default {
       ],
       description: {
         title: `Sweden 🇸🇪 had a reverse ratio`,
-        text: "While inequalities have risen in Europe since the 1980s, <span class='highlight' style='color:var(--color-europe)'>Sweden</span> remains one of the most equal countries in the <span class='highlight' style='color:var(--color-global)'>world</span>.",
-        text2:
-          "",
+        text: "While inequalities have risen in Europe since the 80s, <span class='highlight' style='color:var(--color-europe)'>Sweden</span> remains one of the most equal countries in the <span class='highlight' style='color:var(--color-global)'>world</span>.",
+        text2: "",
         text3:
           "During the COVID-19 pandemic inequality briefly increased as low-income employment declined, but strong welfare support and recovery measures quickly reversed this effect, returning income shares to pre-pandemic levels.",
       },
@@ -214,13 +222,13 @@ export default {
               text: "Income in USA 🇺🇸",
             },
             {
+              x: "2008",
+              text: "💰 GFC",
+            },
+            {
               x: "2020",
               text: "🦠 Covid",
             },
-            {
-              x: "2008",
-              text: "💰 GFC",
-            }
           ],
         },
       ],
@@ -273,21 +281,21 @@ export default {
               text: "Income in Mexico 🇲🇽",
             },
             {
-              x: "2020",
-              text: "🦠 Covid",
-            },
-            {
               x: "2008",
               text: "💰 GFC",
+            },
+            {
+              x: "2020",
+              text: "🦠 Covid",
             },
           ],
         },
       ],
       description: {
-        title: `Mexico 🇲🇽`,
-        text: "In <span class='highlight' style='color:var(--color-south-america)'>Mexico</span> inequality has long been among the highest in the <span class='highlight' style='color:var(--color-global)'>world</span>. Yet during COVID-19, <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>, one of the few clear declines among major economies.",
+        title: `Mexico 🇲🇽 with postive recent trend`,
+        text: "Yet during COVID-19, <span class='highlight' style='color:var(--color-south-america)'>Mexico</span> broke from the global pattern: the income share of the richest 10% <strong>fell noticeably</strong>, one of the few clear declines among major economies.",
         text2:
-          "As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes, <span class='highlight' style='color:var(--color-south-america)'>Mexico 🇲🇽</span> is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom.",
+          "As the <a href='https://wid.world/document/income-inequality-series-for-latin-america-and-the-caribbean-world-inequality-lab-issue-brief-2022-07/' target='_blank'>World Inequality Lab</a> notes, <span class='highlight' style='color:var(--color-south-america)'>Mexico</span> is an <strong>exceptional case</strong> where the top’s losses outpaced those at the bottom.",
         text3:
           "The gap remains large, but this turn marks a rare departure from the region’s norm.",
       },
@@ -337,7 +345,7 @@ export default {
       ],
       description: {
         title: `South Africa 🇿🇦 biggest gap`,
-        text: "As seen before <span class='highlight' style='color:var(--color-africa)'>South Africa</span> stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 1980s and from the early 1990s onward it rose even further, reaching its highest levels around 2010.",
+        text: "As seen before <span class='highlight' style='color:var(--color-africa)'>South Africa</span> stands as the most unequal country in the <span class='highlight' style='color:var(--color-global)'>world</span>. Inequality was already extreme in the 80s and from the early 90s onward it rose even further, reaching its highest levels around 2010.",
         text2:
           "The end of apartheid brought profound political change, but only limited economic redistribution. This reflects the deep structural legacy of apartheid, including persistent racial divides, stark spatial separation, limited land reform and concentrated ownership.",
         text3:
@@ -383,15 +391,15 @@ export default {
             {
               x: "1991",
               text: "Asset bubble",
-            }
+            },
           ],
         },
       ],
       description: {
-        title: `Japan`,
-        text: "Income inequality in <span class='highlight' style='color:var(--color-asia)'>Japan 🇯🇵</span> is one of the lowest globally.",
+        title: `Japan 🇯🇵 remains rather stable`,
+        text: "The chart shows that <span class='highlight' style='color:var(--color-asia)'>Japan´s</span>income inequality has stayed among the lowest globally.",
         text2: "",
-        text3: "",
+        text3: "Around the 1991 asset bubble, the top 10% share briefly declined, but long-term trends remained remarkably stable.",
       },
     },
     // --------------------------------------
@@ -434,8 +442,8 @@ export default {
         },
       ],
       description: {
-        title: `China 🇨🇳`,
-        text: "The gap between these to income groups grew immensly in <span class='highlight' style='color:var(--color-asia)'>China</span> over these 4 four decades.",
+        title: `China 🇨🇳 with growing gap`,
+        text: "The gap between these two income groups grew immensly in <span class='highlight' style='color:var(--color-asia)'>China</span> over these 4 four decades.",
         text2: `
           <video controls poster="assets/videos/China_2.jpeg" width="100%">
             <source src="assets/videos/China_2.mp4" type="video/mp4" />
@@ -449,7 +457,7 @@ export default {
       },
     },
     // --------------------------------------
-    // 1. Global
+    // 9. Global
     // --------------------------------------
     {
       charts: [
@@ -490,7 +498,7 @@ export default {
       description: {
         title: `Where are we heading?`,
         text: "A rather negative continution of this development might look like...",
-           text2: `
+        text2: `
           <video controls poster="assets/videos/Negative_outcome.jpg" width="100%">
             <source src="assets/videos/Negative_outcome.mp4" type="video/mp4" />
           </video> <span class="text-extra-small"> Source:  <a
