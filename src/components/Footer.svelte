@@ -15,7 +15,7 @@
     and region reading the Gini coefficient and in this
     <a
       target="_blank"
-      href="https://observablehq.com/@sandraviz/global-inequality?collection=@sandraviz/global-inequality"
+      href="https://observablehq.com/d/b8a01ac60f823d87?collection=@sandraviz/global-inequality"
       >one</a
     > reading the different incomes share.
   </p>
