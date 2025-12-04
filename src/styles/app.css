@@ -160,13 +160,12 @@ h6 {
   box-shadow: 0 4px 12px rgb(10, 97, 103, 0.3);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(4px);
+  transform: translate(-50%, 2px);
   transition:
     opacity 150ms ease-out,
     transform 150ms ease-out;
   z-index: 10;
 }
-
 
 /* Show tooltip on hover or keyboard focus */
 .fn:hover::after,
@@ -174,15 +173,6 @@ h6 {
 .fn:focus-visible::after,
 .fn:focus-visible::before {
   opacity: 1;
-  transform: translateY(0);
-}
-
-/* Make sure tooltip stays on screen on narrow viewports */
-@media (max-width: 600px) {
-  .fn::after {
-    left: auto;
-    right: 0;
-  }
 }
 
 /*--------------------------------------*/
