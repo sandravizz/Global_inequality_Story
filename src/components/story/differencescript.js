@@ -397,9 +397,9 @@ export default {
       ],
       description: {
         title: `Japan 🇯🇵 remains rather stable`,
-        text: "The chart shows that <span class='highlight' style='color:var(--color-asia)'>Japan's</span> income inequality has stayed among the lowest globally.",
-        text2: "",
-        text3: "Around the 1991 asset bubble, the top 10% share briefly declined, but long-term trends remained remarkably stable.",
+        text: "Around the 1991 asset bubble, the top 10% share briefly declined as stock and land values collapsed.At the same time, the bottom 50% saw a brief rise in their share, reflecting the temporary compression of incomes during the downturn.",
+        text2:"Since then, both income groups have moved within a narrow range, showing <span class='highlight' style='color:var(--color-asia)'>Japan's</span> long-term stability and relatively low inequality despite economic stagnation.", 
+             text3: "",
       },
     },
     // --------------------------------------
