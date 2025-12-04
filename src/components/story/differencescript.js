@@ -397,7 +397,7 @@ export default {
       ],
       description: {
         title: `Japan 🇯🇵 remains rather stable`,
-        text: "The chart shows that <span class='highlight' style='color:var(--color-asia)'>Japan´s</span>income inequality has stayed among the lowest globally.",
+        text: "The chart shows that <span class='highlight' style='color:var(--color-asia)'>Japan's</span> income inequality has stayed among the lowest globally.",
         text2: "",
         text3: "Around the 1991 asset bubble, the top 10% share briefly declined, but long-term trends remained remarkably stable.",
       },
